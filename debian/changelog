@@ -1,3 +1,9 @@
+mx-installer (17.4mx16+2) mx; urgency=medium
+
+  * don't select a root device by default (might be Windows or another Linux installation)
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 20 Apr 2017 13:18:05 -0400
+
 mx-installer (17.4mx16+1) mx; urgency=medium
 
   * new translations

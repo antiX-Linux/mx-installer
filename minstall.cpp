@@ -471,7 +471,7 @@ bool MInstall::makeLinuxPartition(QString dev, const char *type, bool bad, QStri
 // in this case use all of the drive
 
 bool MInstall::makeDefaultPartitions()
-{    
+{
     char line[130];
     int ans;
     int prog = 0;
@@ -552,7 +552,7 @@ bool MInstall::makeDefaultPartitions()
         remaining -= free;
     } else { // no free space
         free = 0;
-    }   
+    }
 
     if(uefi && arch64) { // if booted from UEFI and 64bit make ESP
         // new GPT partition table
@@ -592,7 +592,7 @@ bool MInstall::makeDefaultPartitions()
         return false;
     }
 
-    // create swap partition   
+    // create swap partition
     err = runCmd("parted -s " + drv + " mkpart primary  " + QString::number(end_root) + "MiB " + QString::number(end_root + swap) + "MiB");
     if (err != 0) {
         qDebug() << "Could not create swap partition";
@@ -663,7 +663,7 @@ bool MInstall::makeChosenPartitions()
     QString homedev = QString("/dev/%1").arg(tok);
     QStringList homesplit = getCmdOut("partition-info split-device=" + homedev).split(" ", QString::SkipEmptyParts);
 
-    if (rootdev.compare("/dev/none") == 0) {
+    if (rootdev.compare("/dev/none") == 0 || rootdev.compare("/dev/") == 0) {
         QMessageBox::critical(0, QString::null,
                               tr("You must choose a root partition.\nThe root partition must be at least 3.5 GB."));
         return false;
@@ -2415,8 +2415,10 @@ void MInstall::on_diskCombo_activated(QString)
 
     // build rootCombo
     QStringList partitions = getCmdOuts(QString("partition-info -n --exclude=all --min-size=4000 %1").arg(drv));
+    rootCombo->addItem(""); // add an empty item to make sure nothing is selected by default
     rootCombo->addItems(partitions);
     if (partitions.size() == 0) {
+        rootCombo->clear();
         rootCombo->addItem("none");
     }
 

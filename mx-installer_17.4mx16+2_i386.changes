@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Thu, 20 Apr 2017 13:18:05 -0400
+Source: mx-installer
+Binary: mx-installer
+Architecture: i386
+Version: 17.4mx16+2
+Distribution: mx
+Urgency: medium
+Maintainer: anticapitalista <antiX@operamail.com>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-installer - GUI installer for MX Linux.
+Changes:
+ mx-installer (17.4mx16+2) mx; urgency=medium
+ .
+   * don't select a root device by default (might be Windows or another Linux installation)
+Checksums-Sha1:
+ 833acd21e276a1b70bf2ce420bcfca3c3c529017 428160 mx-installer_17.4mx16+2_i386.deb
+Checksums-Sha256:
+ 8564337413e089c2cc878c1d87b4cf16aa3a0b8941215d2429b6f5361578e23d 428160 mx-installer_17.4mx16+2_i386.deb
+Files:
+ 30b1790f0b34e71496ff19e31170f2d4 428160 system optional mx-installer_17.4mx16+2_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJY+QDzAAoJEHCTjHgGee6Y3HIH/0LZrHpK3wQiItbxOAIbFI7B
+IIK6arvCX6akua0AmtYlRPAvMQlf6rRdZqQdMQ0nuX/zjFWeE1CaUMM3HTwaR1o/
+PIDhwdG/LLmKHWmw7KUsirqMYQvMJ+J3f9Gql3ISJydlkEReeQXfscWwp3qCu9gS
+bGjrz2TuT5aQ9IM0xY8Vt3mB9ersrlHy/3aYFzPRG3wVnCmBNe7RCm1HkcFVu7d3
+X/u6JC2++BUQsnMSN9xLfZ7QomG/uXEplq7cC3n1kmahUoOws14s9wQfsLelWSgp
+7o1Y7OnTrZbmcz9We0F5ygsF6dDy//itQPRyj39ojufL4m2twAlXbGLl5+Moi5k=
+=U9xU
+-----END PGP SIGNATURE-----

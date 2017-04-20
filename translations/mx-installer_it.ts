@@ -53,7 +53,7 @@ Il disco contenente la partizione scelta per l&apos;installazione è difettoso.
         <location filename="../minstall.cpp" line="1127"/>
         <location filename="../minstall.cpp" line="1797"/>
         <location filename="../minstall.cpp" line="1811"/>
-        <location filename="../minstall.cpp" line="2502"/>
+        <location filename="../minstall.cpp" line="2504"/>
         <source>Yes</source>
         <translation>Sì</translation>
     </message>
@@ -72,7 +72,7 @@ Il disco contenente la partizione scelta per l&apos;installazione è difettoso.
         <location filename="../minstall.cpp" line="1127"/>
         <location filename="../minstall.cpp" line="1797"/>
         <location filename="../minstall.cpp" line="1811"/>
-        <location filename="../minstall.cpp" line="2502"/>
+        <location filename="../minstall.cpp" line="2504"/>
         <source>No</source>
         <translation>No</translation>
     </message>
@@ -638,63 +638,63 @@ Torna allo Step 1.</translation>
         <translation>Servizio per la stampa in Linux e OS X</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2501"/>
+        <location filename="../minstall.cpp" line="2503"/>
         <source>MX Linux is installing, are you 
 sure you want to Close now?</source>
         <translation>MX Linux è in fase di  installazione, 
 sei sicuro che vuoi Chiudere ora?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2528"/>
+        <location filename="../minstall.cpp" line="2530"/>
         <source>Deleting old system</source>
         <translation>Eliminazione del vecchio sistema</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2537"/>
+        <location filename="../minstall.cpp" line="2539"/>
         <source>Failed to delete old MX Linux on destination.
 Returning to Step 1.</source>
         <translation>Fallita eliminizione del vecchio MX Linux dalla sua posizione.
 Torna allo Step 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2563"/>
+        <location filename="../minstall.cpp" line="2565"/>
         <source>Copying new system</source>
         <translation>Copia del nuovo sistema</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2587"/>
+        <location filename="../minstall.cpp" line="2589"/>
         <source>Fixing configuration</source>
         <translation>Riparazione della configurazione</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2678"/>
+        <location filename="../minstall.cpp" line="2680"/>
         <source>Failed to write MX Linux to destination.
 Returning to Step 1.</source>
         <translation>Fallita scrittura di MX Linux nella sua destinazione.
 Torna allo Step 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2705"/>
+        <location filename="../minstall.cpp" line="2707"/>
         <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at https://mxlinux.org There are volunteers to help you at the MX forum, https://forum.mxlinux.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Ricevere Assistenza&lt;/b&gt;&lt;br/&gt;Informazioni di base su MX Linux puoi trovarle in https://mxlinux.org. Ci sono volontari che ti possono aiutare nel Forum di MX, https://forum.mxlinux.org &lt;/p&gt;&lt;p&gt;Se chiedi aiuto, per favore ricordati di fornire sufficienti dettagli per descrivere il tuo problema e il tuo computer. Di solito con richieste del tipo &apos;non funziona&apos; non si riceve aiuto.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2713"/>
+        <location filename="../minstall.cpp" line="2715"/>
         <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from LiveDVD or LiveUSB and running one of the utilities in MX Tools or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux LiveDVD or LiveUSB to recover data from MS-Windows systems!&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Riparare la tua Installazione&lt;/b&gt;&lt;br/&gt;Se MX Linux, installato sul disco, per qualche motivo non dovesse funzionare, talvolta è possibile riparare il danno avviando il DVD-Live o l&apos;USB-Live e facendo uso delle utility presenti negli specifici strumenti d&apos;aiuto della distribuzione MX Tools o usando i normali strumenti Linux per riparare il sistema.&lt;/p&gt;&lt;p&gt;Puoi usare il DVD-Live o l&apos;USB-Live di MX Linux anche per recuperare dati da un sistema MS-Windows!&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2719"/>
+        <location filename="../minstall.cpp" line="2721"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Sostieni MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux è sostenuto da persone come te. Alcuni aiutano altri nei forum di supporto - https://forum.mxlinux.org, - http://antix.freeforums.org o traducono guide in lingue diverse, danno consigli, scrivono documentazione, o aiutano a testare nuovo software.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2726"/>
+        <location filename="../minstall.cpp" line="2728"/>
         <source>&lt;p&gt;&lt;b&gt;Adjusting Your Sound Mixer&lt;/b&gt;&lt;br/&gt;MX Linux attempts to configure the sound mixer for you but sometimes it will be necessary for you to turn up volumes and unmute channels in the mixer in order to hear sound.&lt;/p&gt; &lt;p&gt;The mixer shortcut is located in the menu. Click on it to open the mixer. &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Regolare il Mixer del Suono&lt;/b&gt;&lt;br/&gt;MX Linux cerca di configurare il mixer del suono per te, ma talvolta dopo l&apos;installazione sarà necessario alzare i volumi e attivare i canali per riuscire ad udire il suono.&lt;/p&gt; &lt;p&gt;L&apos;icona del mixer si trova nel pannello. Cliccaci col destro per aprire il mixer. &lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2734"/>
+        <location filename="../minstall.cpp" line="2736"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit https://mxlinux.org or http://antix.freeforums.org&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Mantenere MX Linux aggiornato&lt;/b&gt;&lt;br/&gt;Per informazioni e aggiornamenti di MX Linux, prego visita https://mxlinux.org or http://antix.freeforums.org&lt;/p&gt;</translation>
     </message>
