@@ -1,8 +1,14 @@
-mx-installer (17.4mx16+3) mx; urgency=medium
+mx-installer (17.4mx16+4) mx; urgency=medium
 
   * added /home and swap encryption
 
  -- Adrian <adrian@mxlinux.org>  Mon, 24 Apr 2017 16:04:06 -0400
+
+mx-installer (17.4mx16+3) mx; urgency=medium
+
+  * fixed autoinstall bug intruduced by previous change
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 24 Apr 2017 18:18:02 -0400
 
 mx-installer (17.4mx16+2) mx; urgency=medium
 

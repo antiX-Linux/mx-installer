@@ -496,6 +496,7 @@ bool MInstall::makeDefaultPartitions()
     system("/sbin/swapoff -a 2>&1");
 
     // unmount root part
+    rootdev = drv + "1";
     QString cmd = QString("/bin/umount -l %1 >/dev/null 2>&1").arg(rootdev);
     if (system(cmd.toUtf8()) != 0) {
         qDebug() << "could not umount: " << rootdev;
@@ -624,7 +625,7 @@ bool MInstall::makeDefaultPartitions()
     mkdir("/mnt/antiX/home",0755);
 
     on_diskCombo_activated();
-    rootCombo->setCurrentIndex(0);
+    rootCombo->setCurrentIndex(1);
     swapCombo->setCurrentIndex(1);
     homeCombo->setCurrentIndex(0);
 
