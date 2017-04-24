@@ -155,4 +155,5 @@ private slots:
     void on_homeCombo_activated(const QString &arg1);
     void on_grubBootCombo_activated(QString item = "");
     void on_closeButton_clicked();
+    void on_encryptCheckBox_toggled(bool checked);
 };

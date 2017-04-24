@@ -1210,6 +1210,35 @@ bool MInstall::setUserName()
     }
     cmd = QString("touch /mnt/antiX/var/mail/%1").arg(userNameEdit->text());
     system(cmd.toUtf8());
+
+    // Encrypt /home partition
+    if (encryptCheckBox->isChecked()) {
+        cmd = "chroot /mnt/antiX ecryptfs-migrate-home -u " + userNameEdit->text();
+        FILE *fp = popen(cmd.toUtf8(), "w");
+        bool fpok = true;
+        cmd = QString("%1\n").arg(rootPasswordEdit->text());
+        if (fp != NULL) {
+            sleep(2);
+            if (fputs(cmd.toUtf8(), fp) >= 0) {
+                fflush(fp);
+             } else {
+                fpok = false;
+            }
+            pclose(fp);
+        } else {
+            fpok = false;
+        }
+
+        if (!fpok) {
+            setCursor(QCursor(Qt::ArrowCursor));
+            return false;
+        }
+
+        // encrypt swap
+        if (system("chroot /mnt/antiX ecryptfs-setup-swap --force") != 0) {
+            qDebug() << "could not encrypt swap partition";
+        }
+    }
     setCursor(QCursor(Qt::ArrowCursor));
     return true;
 }
@@ -2745,4 +2774,14 @@ void MInstall::copyTime()
 void MInstall::on_closeButton_clicked()
 {
    ((MMain *)mmn)->closeClicked();
+}
+
+void MInstall::on_encryptCheckBox_toggled(bool checked)
+{
+    if (checked) {
+        autologinCheckBox->setChecked(false);
+        autologinCheckBox->setDisabled(true);
+    } else {
+        autologinCheckBox->setDisabled(false);
+    }
 }

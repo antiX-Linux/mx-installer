@@ -1,3 +1,9 @@
+mx-installer (17.4mx16+3) mx; urgency=medium
+
+  * added /home and swap encryption
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 24 Apr 2017 16:04:06 -0400
+
 mx-installer (17.4mx16+2) mx; urgency=medium
 
   * don't select a root device by default (might be Windows or another Linux installation)
