@@ -1213,7 +1213,13 @@ bool MInstall::setUserName()
     system(cmd.toUtf8());
 
     // Encrypt /home partition
-    if (encryptCheckBox->isChecked()) {
+    if (encryptCheckBox->isChecked() && system("modprobe ecryptfs") == 0 ) {
+        // set mounts for chroot
+        system("mount -o bind /dev /mnt/antiX/dev");
+        system("mount -o bind /dev/shm /mnt/antiX/dev/shm");
+        system("mount -o bind /sys /mnt/antiX/sys");
+        system("mount -o bind /proc /mnt/antiX/proc");
+
         cmd = "chroot /mnt/antiX ecryptfs-migrate-home -u " + userNameEdit->text();
         FILE *fp = popen(cmd.toUtf8(), "w");
         bool fpok = true;
@@ -1231,7 +1237,10 @@ bool MInstall::setUserName()
         }
 
         if (!fpok) {
+            system("umount -l /mnt/antiX/proc; umount -l /mnt/antiX/sys; umount -l /mnt/antiX/dev/shm; umount -l /mnt/antiX/dev");
             setCursor(QCursor(Qt::ArrowCursor));
+            QMessageBox::critical(0, QString::null,
+                                  tr("Sorry, could not encrypt /home/") + userNameEdit->text());
             return false;
         }
 
@@ -1240,6 +1249,7 @@ bool MInstall::setUserName()
             qDebug() << "could not encrypt swap partition";
         }
     }
+    system("umount -l /mnt/antiX/proc; umount -l /mnt/antiX/sys; umount -l /mnt/antiX/dev/shm; umount -l /mnt/antiX/dev");
     setCursor(QCursor(Qt::ArrowCursor));
     return true;
 }
