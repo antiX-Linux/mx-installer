@@ -871,10 +871,6 @@ void MInstall::installLinux()
     char *tok = strtok(line, " -");
     QString rootdev = QString("/dev/%1").arg(tok);
 
-    strcpy(line, homeCombo->currentText().toUtf8());
-    tok = strtok(line, " -");
-    QString homedev = QString("/dev/%1").arg(tok);
-
     // maybe root was formatted
     if (isRootFormatted) {
         // yes it was
@@ -905,10 +901,6 @@ void MInstall::copyLinux()
     strcpy(line, rootCombo->currentText().toUtf8());
     char *tok = strtok(line, " -");
     QString rootdev = QString("/dev/%1").arg(tok);
-
-    strcpy(line, homeCombo->currentText().toUtf8());
-    tok = strtok(line, " -");
-    QString homedev = QString("/dev/%1").arg(tok);
 
     // make empty dirs for opt, dev, proc, sys, run,
     // home already done
@@ -1476,7 +1468,7 @@ void MInstall::setLocale()
     QString homedev = "/dev/" + QString(homeCombo->currentText()).section(" ", 0, 0);
     runCmd("umount -R /mnt/antiX");
     runCmd(QString("mount %1 /mnt/antiX").arg(rootdev));
-    if (homedev != "/dev/root") {
+    if (homedev != "/dev/root" && homedev != rootdev) {
         runCmd(QString("mount %1 /mnt/antiX/home").arg(homedev));
     }
     system("cp -f /etc/adjtime /mnt/antiX/etc/");
@@ -2622,7 +2614,7 @@ void MInstall::copyDone(int, QProcess::ExitStatus exitStatus)
             //}
             //fputs("proc /proc proc defaults 0 0\n", fp);
             //fputs("devpts /dev/pts devpts mode=0622 0 0\n", fp);
-            if (strcmp(homedev, "/dev/root") != 0) {
+            if (strcmp(homedev, "/dev/root") != 0 && strcmp(homedev, rootdev) != 0) {
                 if (isHomeFormatted) {
                     if (isFormatExt4) {
                         sprintf(line, "%s /home auto defaults,noatime 1 2\n", homedev);

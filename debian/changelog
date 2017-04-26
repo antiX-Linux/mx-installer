@@ -1,3 +1,9 @@
+mx-installer (17.4mx16+4) mx; urgency=medium
+
+  * bug fix
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 26 Apr 2017 18:47:13 -0400
+
 mx-installer (17.4mx16+3) mx; urgency=medium
 
   * fixed autoinstall bug intruduced by previous change
