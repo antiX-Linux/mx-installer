@@ -156,4 +156,5 @@ private slots:
     void on_grubBootCombo_activated(QString item = "");
     void on_closeButton_clicked();
     void on_encryptCheckBox_toggled(bool checked);
+    void on_saveHomeCheck_toggled(bool checked);
 };

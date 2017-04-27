@@ -1204,14 +1204,16 @@ bool MInstall::setUserName()
     cmd = QString("touch /mnt/antiX/var/mail/%1").arg(userNameEdit->text());
     system(cmd.toUtf8());
 
-    // Encrypt /home partition
+    // Encrypt /home and swap partition
     if (encryptCheckBox->isChecked() && system("modprobe ecryptfs") == 0 ) {
+
         // set mounts for chroot
         system("mount -o bind /dev /mnt/antiX/dev");
         system("mount -o bind /dev/shm /mnt/antiX/dev/shm");
         system("mount -o bind /sys /mnt/antiX/sys");
         system("mount -o bind /proc /mnt/antiX/proc");
 
+        // encrypt /home
         cmd = "chroot /mnt/antiX ecryptfs-migrate-home -u " + userNameEdit->text();
         FILE *fp = popen(cmd.toUtf8(), "w");
         bool fpok = true;
@@ -2787,4 +2789,9 @@ void MInstall::on_encryptCheckBox_toggled(bool checked)
     } else {
         autologinCheckBox->setDisabled(false);
     }
+}
+
+void MInstall::on_saveHomeCheck_toggled(bool checked)
+{
+    encryptCheckBox->setEnabled(!checked);
 }
