@@ -1219,7 +1219,7 @@ bool MInstall::setUserName()
         bool fpok = true;
         cmd = QString("%1\n").arg(rootPasswordEdit->text());
         if (fp != NULL) {
-            sleep(2);
+            sleep(4);
             if (fputs(cmd.toUtf8(), fp) >= 0) {
                 fflush(fp);
              } else {
@@ -1241,6 +1241,10 @@ bool MInstall::setUserName()
         // encrypt swap
         if (system("chroot /mnt/antiX ecryptfs-setup-swap --force") != 0) {
             qDebug() << "could not encrypt swap partition";
+        }
+        // clean up, remove folder only if one usename.* directory is present
+        if (getCmdOuts("find /mnt/antiX/home -maxdepth 1  -type d -name " + userNameEdit->text() + ".*").length() == 1) {
+            system("rm -r "+ dpath.toUtf8() + ".*");
         }
     }
     system("umount -l /mnt/antiX/proc; umount -l /mnt/antiX/sys; umount -l /mnt/antiX/dev/shm; umount -l /mnt/antiX/dev");
