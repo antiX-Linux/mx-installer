@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="fr">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.1">
 <context>
     <name>MInstall</name>
     <message>
@@ -241,7 +239,7 @@ et en créer un nouveau ?</translation>
     <message>
         <location filename="../minstall.cpp" line="1109"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you&apos;ll have to select a different username or
+you'll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>Désolé, la sauvegarde de l&apos;ancien répertoire home a échoué.
 Avant de poursuivre, vous devez sélectionner un autre nom
@@ -263,7 +261,7 @@ d&apos;utilisateur.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1135"/>
-        <source>You&apos;ve chosen to not use, save or delete the old home directory.
+        <source>You've chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Vous avez décidé de ne pas utiliser, sauvegarder ou effacer l&apos;ancien répertoire /home. 
 Avant de poursuivre, vous devez sélectionner un autre 
@@ -292,7 +290,7 @@ nom d&apos;utilisateur.</translation>
     <message>
         <location filename="../minstall.cpp" line="1237"/>
         <source>Sorry, could not encrypt /home/</source>
-        <translation type="unfinished"></translation>
+        <translation>Désolé, chiffrement de /home impossible</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1282"/>
@@ -369,7 +367,7 @@ Veuillez, svp, essayer à nouveau.</translation>
     <message>
         <location filename="../minstall.cpp" line="1399"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You&apos;ll have to
+at least 2 characters long. You'll have to
 select a different name before proceeding.</source>
         <translation>Désolé, le nom de votre ordinateur doit faire 
 au  moins 2 caractères. Veuillez, svp, choisir
@@ -378,7 +376,7 @@ un nom plus long avant de continuer.</translation>
     <message>
         <location filename="../minstall.cpp" line="1403"/>
         <source>Sorry your computer name contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Désolé, votre nom de l&apos;ordinateur contient des caractères non valides. 
 Veuillez, svp, choisir un autre nom avant de continuer.</translation>
@@ -386,7 +384,7 @@ Veuillez, svp, choisir un autre nom avant de continuer.</translation>
     <message>
         <location filename="../minstall.cpp" line="1409"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Désolé, le nom du domaine doit faire au
 moins 2 caractères. Veuillez, svp, choisir
@@ -395,7 +393,7 @@ un nom plus long avant de continuer.</translation>
     <message>
         <location filename="../minstall.cpp" line="1413"/>
         <source>Sorry your computer domain contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Désolé, votre domaine de l&apos;ordinateur contient des caractères non valides.
 Veuillez, svp, choisir un autre nom avant de continuer.</translation>
@@ -403,7 +401,7 @@ Veuillez, svp, choisir un autre nom avant de continuer.</translation>
     <message>
         <location filename="../minstall.cpp" line="1422"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Désolé, le nom du groupe de travail doit faire 
 au moins 2 caractères. Veuillez, svp, choisir
@@ -1136,7 +1134,7 @@ Profitez de l&apos;utilisation de MX Linux.</translation>
     <message>
         <location filename="../meinstall.ui" line="2074"/>
         <source>Encrypt /home</source>
-        <translation type="unfinished"></translation>
+        <translation>Chiffrer /home</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2106"/>
@@ -1150,7 +1148,7 @@ Profitez de l&apos;utilisation de MX Linux.</translation>
 MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.</source>
         <translation>Supporter MX Linux
 
-MX Linux est soutenu par des personnes telles que vous. Certains proposent leur aide sur le Forum - https://forum.mxlinux.org, - http://antix.freeforums.org, d&apos;autres traduisent des fichiers d&apos;aides dans d&apos;autres langues, font des suggestions, écrivent des documentations ou aident à tester de nouveaux logiciels.</translation>
+MX Linux est soutenu par des personnes comme vous. Certains proposent leur aide sur le Forum - https://forum.mxlinux.org, - http://antix.freeforums.org, d&apos;autres traduisent des fichiers d&apos;aides dans d&apos;autres langues, font des suggestions, écrivent des documentations ou aident à tester de nouveaux logiciels.</translation>
     </message>
 </context>
 <context>
@@ -1170,7 +1168,7 @@ MX Linux est soutenu par des personnes telles que vous. Certains proposent leur 
     <name>QApplication</name>
     <message>
         <location filename="../app.cpp" line="47"/>
-        <source>The installer won&apos;t launch because it appears to be running already in the background.
+        <source>The installer won't launch because it appears to be running already in the background.
 
 Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</source>
         <translation>L&apos;installateur ne peut démarrer car il semblerait qu&apos;il soit déjà lancé en arrière-plan.

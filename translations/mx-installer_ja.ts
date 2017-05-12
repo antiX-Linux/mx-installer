@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ja">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ja" version="2.1">
 <context>
     <name>MInstall</name>
     <message>
@@ -13,6 +11,7 @@ The disk with the partition you selected for installation is failing.
         <translation>
 
 選択したインストールパーティションを含むディスクは問題があります。
+
 </translation>
     </message>
     <message>
@@ -29,6 +28,7 @@ The disk with the partition you selected for installation is failing.
 
 </source>
         <translation>自信がなければ、インストーラを終了して GSmartControl を実行し、詳細情報を確認してください。
+
 </translation>
     </message>
     <message>
@@ -120,7 +120,7 @@ The disk with the partition you selected for installation is failing.
     <message>
         <location filename="../minstall.cpp" line="567"/>
         <source>Formating EFI System Partition (ESP)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="603"/>
@@ -150,8 +150,7 @@ The root partition must be at least 3.5 GB.</source>
         <source>OK to format and destroy all data on 
 %1 for the / (root) partition?</source>
         <translation>/ （ルート) パーティション %1 をフォーマットし、
-全データを破壊してよろしいですか？ OK で実施します
-</translation>
+全データを破壊してよろしいですか？ OK で実施します</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="686"/>
@@ -242,9 +241,11 @@ and create a new home directory?</source>
     <message>
         <location filename="../minstall.cpp" line="1109"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you&apos;ll have to select a different username or
+you'll have to select a different username or
 delete a previously saved copy of your home directory.</source>
-        <translation type="unfinished"></translation>
+        <translation>/home ディレクトリの保存に失敗しました。
+処理を進めるために異なるユーザー名を選択するか
+/home ディレクトリを削除しなければいけません。</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1118"/>
@@ -255,13 +256,15 @@ delete a previously saved copy of your home directory.</source>
         <location filename="../minstall.cpp" line="1128"/>
         <source>Sorry, failed to delete old home directory. Before proceeding, 
 you&apos;ll have to select a different username.</source>
-        <translation>ホームディレクトリの削除ができませんでした。処理を進めるために、異なるユーザー名にする必要があります。</translation>
+        <translation>ホームディレクトリの削除ができませんでした。処理を進めるために、
+異なるユーザー名にする必要があります。</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1135"/>
-        <source>You&apos;ve chosen to not use, save or delete the old home directory.
+        <source>You've chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
-        <translation type="unfinished"></translation>
+        <translation>ホームディレクトリの使用・保存・削除をしたくない場合は
+ユーザー名を変更して下さい。</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1148"/>
@@ -286,7 +289,7 @@ Before proceeding, you&apos;ll have to select a different username.</source>
     <message>
         <location filename="../minstall.cpp" line="1237"/>
         <source>Sorry, could not encrypt /home/</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1282"/>
@@ -360,37 +363,47 @@ not match.  Please try again.</source>
     <message>
         <location filename="../minstall.cpp" line="1399"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You&apos;ll have to
+at least 2 characters long. You'll have to
 select a different name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation>コンピューター名は2文字より
+長くしなければいけません。
+再度設定して下さい。</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1403"/>
         <source>Sorry your computer name contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation>コンピュータ名に使用できない文字が
+含まれています。
+もう一度入力して下さい。</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1409"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation>ドメイン名は2文字以上に
+しなければいけません。
+再度入力して下さい。</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1413"/>
         <source>Sorry your computer domain contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation>ドメイン名に使用できない文字が
+含まれています。
+もう一度入力して下さい。</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1422"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation>ワープグループは2文字以上で
+なければいけません。
+再度入力して下さい。</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1832"/>
@@ -400,6 +413,7 @@ To use the new installation, reboot without the installation media.
 Do you want to reboot now?</source>
         <translation>MX Linux のインストールと設定が完了しました。
 新たにインストールされたものを使用するため、インストールメディアを外して再起動します。
+
 今すぐ再起動を行ってもよろしいですか？</translation>
     </message>
     <message>
@@ -417,7 +431,7 @@ Do you really want to stop now?</source>
     <message>
         <location filename="../minstall.cpp" line="1934"/>
         <source>&lt;p&gt;&lt;b&gt;Limitations&lt;/b&gt;&lt;br/&gt;Remember, this software is provided AS-IS with no warranty what-so-ever. It&apos;s solely your responsibility to backup your data before proceeding.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Choose Partitions&lt;/b&gt;&lt;br/&gt;MX Linux requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX Linux, you will need a swap partition that is larger than your physical memory size.&lt;/p&gt;&lt;p&gt;If you choose a separate /home partition it will be easier for you to upgrade in the future, but this will not be possible if you are upgrading from an installation that does not have a separate home partition.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrading&lt;/b&gt;&lt;br/&gt;To upgrade from an existing Linux installation, select the same home partition as before and check the preference to preserve data in /home.&lt;/p&gt;&lt;p&gt;If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. As a result, the installation will take much longer than usual.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Preferred Filesystem Type&lt;/b&gt;&lt;br/&gt;For MX Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for bad blocks on the drive. The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has bad blocks.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;制限事項&lt;/b&gt;&lt;br/&gt;このソフトウェアは何の保証もない現状のまま提供されている事を覚えておいてください。あなたの責任で進む前に、まずはデータのバックアップを行いましょう。&lt;/p&gt;&lt;p&gt;&lt;b&gt;パーティションの選択&lt;/b&gt;&lt;br/&gt;MX Linux のルートパーティションが必要です。swap パーティションはオプションですが、非常におすすめされます。MX Linux でディスクへのサスペンド機能を使用したい場合、物理メモリのサイズよりも大きいスワップパーティションが必要になります。&lt;/p&gt;&lt;p&gt;別の /home パーティションを選択した場合、将来的にアップグレードすることが容易になりますが、別のホームパーティションを持たずにインストールされた MX Linux をアップグレードする場合、これは行えません。&lt;/p&gt;&lt;p&gt;&lt;b&gt;アップグレード&lt;/b&gt;&lt;br/&gt;既存 Linux インストールからアップグレードするには、前と同じ /home パーティションを選択し、/home 内のデータを保存する設定にしている事を確認してください。&lt;/p&gt;&lt;p&gt;ルートパーティション上にある既存の /home ディレクトリツリーを保持している場合、インストーラはルートパーティションをフォーマットしません。その結果、インストールが通常よりもはるかに長い時間がかかります。&lt;/p&gt;&lt;p&gt;&lt;b&gt;最適なファイルシステムの種類&lt;/b&gt;&lt;br/&gt;MX Linux では次のパーティションでフォーマットすることを選択することができます。ext2 ext3 ext4 jfs xfs btrfs reiser&lt;/p&gt;&lt;p&gt;&lt;b&gt;不良ブロック&lt;/b&gt;&lt;br/&gt;フォーマットの種類として ext2 ext3 ext4 のファイルシステムを選択した場合、ドライブの不良ブロックを確認・補正するオプションがあります。 ドライブが不良ブロックを持っていると思われる場合を除き、これはスキップする事が可能です。不正ブロックの確認は非常に時間を要します。&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;&lt;b&gt;無保証&lt;/b&gt;&lt;br/&gt;このソフトウェアは保証なしで提供されます。 データのバックアップを取って下さい。&lt;/p&gt;&lt;p&gt;&lt;b&gt;パーティション&lt;/b&gt;&lt;br/&gt;MX Linux はルートパーティションが必須です。また swap パーティションも作成でき、推奨されます。MX Linux でディスクを休ませるようにするには、swap パーティションを実際のメモリより大きい容量にして下さい。&lt;/p&gt;&lt;p&gt;ホームパーティションを別のパーティションで作成すると、将来的にアップグレードを容易に行う事ができます。&lt;/p&gt;&lt;p&gt;&lt;b&gt;更新&lt;/b&gt;&lt;br/&gt;すでにインストールしている Linux を更新する場合、ホームパーティションが存在すれば、それを選んで下さい。&lt;/p&gt;&lt;p&gt;もしルートパーティション内にホームディレクトリが存在する場合、ルートパーティションのフォーマットを行いません。この場合インストール作業は時間を要します。&lt;/p&gt;&lt;p&gt;&lt;b&gt;望ましいファイルシステムの種類&lt;/b&gt;&lt;br/&gt;MX Linux ではext2、ext3、ext4、jfs、xfs、btrfs、reiser をフォーマットの種類として選択できます。&lt;/p&gt;&lt;p&gt;&lt;b&gt;不良ブロック&lt;/b&gt;&lt;br/&gt;ext2、ext3、ext4 をフォーマット形式で選んだ場合、ドライブの不良ブロック確認するオプションを選択できます。不良ドライブの確認はとても時間を要します。ドライブに不良ブロックがある事を思われない限りはこの手順をスキップしても良いでしょう。&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1948"/>
@@ -427,7 +441,7 @@ Do you really want to stop now?</source>
     <message>
         <location filename="../minstall.cpp" line="1952"/>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;スペシャルサンクス&lt;/b&gt;&lt;br/&gt;MX Linux をサポートするために、自分の時間、お金、提案、仕事、賞賛、アイデア、プロモーション、激励を提供してくれたすべての方々に感謝いたします。&lt;/p&gt;&lt;p&gt;あなたなしでは MX Linux はなかったでしょう。&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;&lt;b&gt;スペシャルサンクス&lt;/b&gt;&lt;br/&gt;時間、金銭、作業、賞賛、アイデアなど、MX Linux を支援していただく皆様に感謝いたします。&lt;/p&gt;&lt;p&gt;あなたなしでは MX Linux は存在しません。&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1955"/>
@@ -481,7 +495,7 @@ Step 1 に処理を戻します。</translation>
     <message>
         <location filename="../minstall.cpp" line="2037"/>
         <source>&lt;/p&gt;&lt;p&gt;&lt;b&gt;Finding Applications&lt;/b&gt;&lt;br/&gt;There are hundreds of excellent applications installed with MX Linux. The best way to learn about them is to browse through the Menu and try them. Many of the apps were developed specifically for the Xfce environment. These are shown in the main menus. &lt;p&gt;In addition MX Linux includes many standard Linux applications that are run only from the command line and therefore do not show up in the Menu.&lt;/p&gt;</source>
-        <translation>&lt;/p&gt;&lt;p&gt;&lt;b&gt;アプリケーションの検索&lt;/b&gt;&lt;br/&gt;MX Linux には優れた何百ものアプリケーションがインストールされています。 それらについて学ぶ最も良い方法は、メニューを参照し、それらを試してみることです。アプリの多くは、Xfce 環境のため特別に開発されました。これらはメインメニューに表示されています。&lt;p&gt;また MX Linux ではコマンドラインでのみ実行されるメニューに表示されない多くの標準的な Linux アプリケーションが含まれています。&lt;/p&gt;</translation>
+        <translation>&lt;/p&gt;&lt;p&gt;&lt;b&gt;アプリケーションの検索&lt;/b&gt;&lt;br/&gt;MX Linux には優れた何百ものアプリケーションがインストールされています。 それらについて学ぶ最も良い方法は、メニューを参照し、それらを試してみることです。アプリの多くは、Xfce 環境のため特別に開発されました。これらはメインメニューに表示されています。&amp;lt;p&amp;gt;また MX Linux ではコマンドラインでのみ実行されるメニューに表示されない多くの標準的な Linux アプリケーションが含まれています。&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2049"/>
@@ -668,7 +682,7 @@ Step 1 へ処理を戻します。</translation>
     <message>
         <location filename="../minstall.cpp" line="2753"/>
         <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from LiveDVD or LiveUSB and running one of the utilities in MX Tools or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux LiveDVD or LiveUSB to recover data from MS-Windows systems!&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;インストールの修復&lt;/b&gt;&lt;br/&gt;MX Linux はハードドライブから作業を停止した場合、LiveDVD や LiveUSB からブートし MX ツールのユーティリティいずれかを実行するか、システムを修復するため Linux ツールを使用して問題を解決することが可能です。&lt;/p&gt;&lt;p&gt;また、MS-Windows システムからデータを回復するために MX Linux LiveDVD やLiveUSB を使用することができます！&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;&lt;b&gt;インストールの修復&lt;/b&gt;&lt;br/&gt;MX Linux はハードドライブから作業を停止した場合、LiveDVD や LiveUSB からブートし MX ツールのユーティリティいずれかを実行するか、システムを修復するため Linux ツールを使用して問題を解決することが可能です。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;また、MS-Windows システムからデータを回復するために MX Linux LiveDVD やLiveUSB を使用することができます！&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2759"/>
@@ -966,7 +980,7 @@ MX Linux をお楽しみ下さい。</translation>
     <message>
         <location filename="../meinstall.ui" line="1388"/>
         <source>Workgroup</source>
-        <translation>Workgroup</translation>
+        <translation>ワークグループ</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1401"/>
@@ -1116,7 +1130,7 @@ MX Linux をお楽しみ下さい。</translation>
     <message>
         <location filename="../meinstall.ui" line="2074"/>
         <source>Encrypt /home</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2106"/>
@@ -1150,10 +1164,12 @@ MX Linux はあなたのような人々によってサポートされていま�
     <name>QApplication</name>
     <message>
         <location filename="../app.cpp" line="47"/>
-        <source>The installer won&apos;t launch because it appears to be running already in the background.
+        <source>The installer won't launch because it appears to be running already in the background.
 
 Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</source>
-        <translation type="unfinished"></translation>
+        <translation>インストーラはすでにバックグラウンドで実行されているように見えるため起動しません。
+
+可能であれば閉じてください。または端末で &apos;pkill minstall&apos; を実行して下さい。</translation>
     </message>
     <message>
         <location filename="../app.cpp" line="55"/>
@@ -1161,7 +1177,7 @@ Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</sou
 We recommend you quit now and restart in Legacy Boot
 
 Do you want to continue the installation?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../app.cpp" line="59"/>

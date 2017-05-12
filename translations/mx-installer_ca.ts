@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ca">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ca" version="2.1">
 <context>
     <name>MInstall</name>
     <message>
@@ -243,7 +241,7 @@ i crear-ne un de nou?</translation>
     <message>
         <location filename="../minstall.cpp" line="1109"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you&apos;ll have to select a different username or
+you'll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>Ho sento, no s&apos;ha pogut desar el directori d&apos;usuaris antic.
 Abans de continuar, cal triar un nom d&apos;usuari nou o
@@ -263,7 +261,7 @@ Abans de continuar, cal triar un nom d&apos;usuari diferent.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1135"/>
-        <source>You&apos;ve chosen to not use, save or delete the old home directory.
+        <source>You've chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Heu triat no usar, desar o esborrar el directori d&apos;usuaris antic.
 Abans de continuar, cal que trieu un nom d&apos;usuari diferent. </translation>
@@ -291,7 +289,7 @@ Abans de continuar, cal que trieu un nom d&apos;usuari diferent. </translation>
     <message>
         <location filename="../minstall.cpp" line="1237"/>
         <source>Sorry, could not encrypt /home/</source>
-        <translation type="unfinished"></translation>
+        <translation>Ho sento, no he pogut encriptar /home/</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1282"/>
@@ -366,7 +364,7 @@ coincideixen. Proveu-ho un altre cop.</translation>
     <message>
         <location filename="../minstall.cpp" line="1399"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You&apos;ll have to
+at least 2 characters long. You'll have to
 select a different name before proceeding.</source>
         <translation>Ho sento, el nom de l&apos;ordinador ha de
 tenir 2 caràcters com a mínim. Cal que
@@ -375,7 +373,7 @@ en trieu un altre abans de continuar.</translation>
     <message>
         <location filename="../minstall.cpp" line="1403"/>
         <source>Sorry your computer name contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Ho sento, el nom de l&apos;ordinador conté caràcters no vàlids. 
 Cal que en trieu un altre diferent
@@ -384,7 +382,7 @@ abans de continuar.</translation>
     <message>
         <location filename="../minstall.cpp" line="1409"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Ho sento, el domini de l&apos;ordinador ha de tenir
 2 caràcters com a mínim. Cal que en trieu un
@@ -393,7 +391,7 @@ altre diferent abans de continuar.</translation>
     <message>
         <location filename="../minstall.cpp" line="1413"/>
         <source>Sorry your computer domain contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Ho sento, el domini de l&apos;ordinador conté caràcters no vàlids. 
 Cal que en trieu un altre diferent
@@ -402,7 +400,7 @@ abans de continuar.</translation>
     <message>
         <location filename="../minstall.cpp" line="1422"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Ho sento, el nom del grup de treball ha de
 tenir 2 caràcters com a mínim. Cal que en
@@ -1134,7 +1132,7 @@ Gaudiu tot usant MX Linux.</translation>
     <message>
         <location filename="../meinstall.ui" line="2074"/>
         <source>Encrypt /home</source>
-        <translation type="unfinished"></translation>
+        <translation>Encripta /home</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2106"/>
@@ -1168,7 +1166,7 @@ MX Linux té el suport de persones com vosaltres. Alguns donen ajuda als usuaris
     <name>QApplication</name>
     <message>
         <location filename="../app.cpp" line="47"/>
-        <source>The installer won&apos;t launch because it appears to be running already in the background.
+        <source>The installer won't launch because it appears to be running already in the background.
 
 Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</source>
         <translation>L&apos;instal·lador no arrencarà perquè sembla que ja s&apos;està executant en segon pla.

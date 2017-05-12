@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="tr" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="sk" version="2.1">
 <context>
     <name>MInstall</name>
     <message>
@@ -8,13 +8,17 @@
 The disk with the partition you selected for installation is failing.
 
 </source>
-        <translation type="unfinished"/>
+        <translation>
+
+Disk s oddilelom, ktorý ste vybrali pre inštaláciu je chybný.
+</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="288"/>
         <source>You are strongly advised to abort.
 </source>
-        <translation type="unfinished"/>
+        <translation>Dôrazne doporučujeme odísť.
+</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="289"/>
@@ -22,12 +26,13 @@ The disk with the partition you selected for installation is failing.
         <source>If unsure, please exit the Installer and run GSmartControl for more information.
 
 </source>
-        <translation type="unfinished"/>
+        <translation>Ak si nie ste istí, prosím ukončite inštaláciu a spustite GSmartControl pre viac informácií.
+</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="290"/>
         <source>Do you want to abort the installation?</source>
-        <translation>Kurulumu iptal etmek istiyor musunuz?</translation>
+        <translation>Prajete si prerušiť inštaláciu?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="292"/>
@@ -46,7 +51,7 @@ The disk with the partition you selected for installation is failing.
         <location filename="../minstall.cpp" line="1849"/>
         <location filename="../minstall.cpp" line="2542"/>
         <source>Yes</source>
-        <translation>Evet</translation>
+        <translation>Ano</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="292"/>
@@ -65,222 +70,236 @@ The disk with the partition you selected for installation is failing.
         <location filename="../minstall.cpp" line="1849"/>
         <location filename="../minstall.cpp" line="2542"/>
         <source>No</source>
-        <translation>Hayır</translation>
+        <translation>Nie</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="300"/>
         <source>Smartmon tool output:
 
 </source>
-        <translation type="unfinished"/>
+        <translation>Výstup nástroja Smartmon:
+
+</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="301"/>
         <source>The disk with the partition you selected for installation passes the S.M.A.R.T. monitor test (smartctl)
 </source>
-        <translation type="unfinished"/>
+        <translation>Disk s oddilelom, ktorý ste vybrali pre inštaláciu prešiel testom S.M.A.R.T. (smartctl)
+
+</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="302"/>
         <source>but the tests indicate it will have a higher than average failure rate in the upcoming year.
 </source>
-        <translation type="unfinished"/>
+        <translation>ale test naznačuje, že v najbližšom období bude mať vyšší než priemerný pomer zlyhaní.
+</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="304"/>
         <source>Do you want to continue?</source>
-        <translation>Devam etmek istiyor musunuz?</translation>
+        <translation>Prajete si pokračovať?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="338"/>
         <source>Ready to install MX Linux filesystem</source>
-        <translation>MX Linux dosya sistemi kuruluma hazır</translation>
+        <translation>Pripravené na inštaláciu systému MX Linux</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="484"/>
         <source>OK to format and use the entire disk (%1) for MX Linux?</source>
-        <translation type="unfinished"/>
+        <translation>Má sa zformátovať a pre MX Linux použiť celý disk (%1)?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="492"/>
         <source>Creating required partitions</source>
-        <translation>Gerekli bölümler oluşturuluyor</translation>
+        <translation>Príprava požadovaných diskových oddielov</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="567"/>
         <source>Formating EFI System Partition (ESP)</source>
-        <translation type="unfinished"/>
+        <translation>Formátovanie systémového oddielu EFI (ESP)</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="603"/>
         <location filename="../minstall.cpp" line="769"/>
         <source>Formatting swap partition</source>
-        <translation>Takas alanı biçimlendiriliyor</translation>
+        <translation>Formátovanie SWAP oddielu</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="612"/>
         <source>Formatting root partition</source>
-        <translation>Kök bölümü biçimlendiriliyor</translation>
+        <translation>Formátovanie ROOT oddielu</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="669"/>
         <source>You must choose a root partition.
 The root partition must be at least 3.5 GB.</source>
-        <translation>Bir kök bölümü seçmelisiniz.
-Kök bölümü en az 3.5 GB olmalı.</translation>
+        <translation>Musíte zvoliť ROOT diskový oddiel.
+ROOT oddiel musí mať aspoň 3.5 GB.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="675"/>
         <source>The partition you selected for root, appears to be a MS-Windows partition.  Are you sure you want to reformat this partition?</source>
-        <translation type="unfinished"/>
+        <translation>Diskový oddiel, ktorý ste vybrali pre ROOT sa zdá byť oddielom s inštaláciou MS-Windows. Ste si istí, že chcete tento diskový oddiel preformátovať?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="684"/>
         <source>OK to format and destroy all data on 
 %1 for the / (root) partition?</source>
-        <translation type="unfinished"/>
+        <translation>Má sa zformátovať a tým zničiť všetky uložené dáta
+na %1 pre diskový oddiel / (ROOT)?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="686"/>
         <source>All data on %1 will be deleted, except for /home
 OK to continue?</source>
-        <translation type="unfinished"/>
+        <translation>Všetky dáta na %1 okrem /home budú zmazané
+Prajete si pokračovať?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="703"/>
         <source>OK to format and destroy all data on 
 %1 for the swap partition?</source>
-        <translation type="unfinished"/>
+        <translation>Má sa zformátovať a tým zničiť všetky uložené dáta
+na %1 pre SWAP diskový oddiel?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="716"/>
         <source>The partition you selected for /home, appears to be a MS-Windows partition.  Are you sure you want to reformat this partition?</source>
-        <translation type="unfinished"/>
+        <translation>Diskový oddiel, ktorý ste vybrali pre /home sa zdá byť oddielom s inštaláciou MS-Windows. Ste si istí, že chcete tento diskový oddiel preformátovať?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="725"/>
         <source>OK to reuse (no reformat) %1 as the /home partition?</source>
-        <translation type="unfinished"/>
+        <translation>Má sa %1 prepoužiť (bez formátovania) ako diskový oddiel /home?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="727"/>
         <source>OK to format and destroy all data on %1 for the /home partition?</source>
-        <translation type="unfinished"/>
+        <translation>Má sa zformátovať a tým zničiť všetky uložené dáta
+na %1 pre diskový oddiel /home?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="738"/>
         <source>Preparing required partitions</source>
-        <translation>Gerekli bölümler hazırlanıyor</translation>
+        <translation>Príprava požadovaných diskových oddielov</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="789"/>
         <source>Formatting the / (root) partition</source>
-        <translation>/ (kök) bölümü biçimlendiriliyor</translation>
+        <translation>Formátovanie / (root) oddielu</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="823"/>
         <source>Mounting the /home partition</source>
-        <translation>/home bölümü bağlanıyor</translation>
+        <translation>Pripájanie oddielu /home</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="838"/>
         <source>Formatting the /home partition</source>
-        <translation>/home bölümü biçimlendiriliyor</translation>
+        <translation>Formátovanie /home oddielu</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="880"/>
         <source>Mounting the / (root) partition</source>
-        <translation>/ (kök) bölümü bağlanıyor</translation>
+        <translation>Pripájanie oddielu / (ROOT)</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="907"/>
         <source>Creating system directories</source>
-        <translation>Sistem dizinleri oluşturuluyor</translation>
+        <translation>Vytváranie systémových zložiek</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="971"/>
         <source>OK to install GRUB bootloader at %1 ?</source>
-        <translation type="unfinished"/>
+        <translation>Má sa zavádzač GRUB nainštalovať na %1 ?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="983"/>
         <source>Please wait till GRUB is installed, it might take a couple of minutes.</source>
-        <translation type="unfinished"/>
+        <translation>Prosím vyčkajte pokiaľ sa GRUB nainštaluje, môže to trvať pár minút.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1018"/>
         <source>Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the LiveDVD or LiveUSB and repair the installation with the reinstall GRUB function.</source>
-        <translation type="unfinished"/>
+        <translation>Je nám ľúto, inštalácia GRUBu zlyhala. Mohlo by to byť spôsobené zmenou vo formátovaní disku. Skúste odvybrať GRUB a dokončiť inštaláciu systému MX Linux. Následne reštartujte PC, zavedte systém znovu z LiveDVD alebo LiveUSB a opravte zavádzač pomocou funkcie preinštalovať GRUB.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1087"/>
         <source>The home directory for %1 already exists.Would you like to reuse the old home directory?</source>
-        <translation type="unfinished"/>
+        <translation>Domovská zložka užívateľa %1 už existuje. Prajete si prepoužiť túto zložku?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1093"/>
         <source>Would you like to save the old home directory
 and create a new home directory?</source>
-        <translation type="unfinished"/>
+        <translation>Prajete si ponechať starú domovskú zložku
+a vytvoriť novú domovskú zložku?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1109"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
 you'll have to select a different username or
 delete a previously saved copy of your home directory.</source>
-        <translation type="unfinished"/>
+        <translation>Je nám ľúto, preuloženie starej domovskej zložky zlyhalo.
+Než budete pokračovať, budete musieť zvoliť iné užívateľské
+meno alebo zmazať už uloženú kópiu vašej domovskej zložky.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1118"/>
         <source>Would you like to delete the old home directory for %1?</source>
-        <translation type="unfinished"/>
+        <translation>Prajete si vymazať starú domovskú zložku užívateľa %1?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1128"/>
         <source>Sorry, failed to delete old home directory. Before proceeding, 
 you&apos;ll have to select a different username.</source>
-        <translation type="unfinished"/>
+        <translation>Je nám ľúto, zmazanie starej domovskej zložky zlyhalo. Než 
+budete pokračovať, budete musieť zvoliť iné užívateľské meno.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1135"/>
         <source>You've chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
-        <translation type="unfinished"/>
+        <translation>Nezvolili ste prepoužiť, uložiť ani zmazať starú domovskú zložku.
+Než budete pokračovať, budete musieť zvoliť iné užívateľské meno.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1148"/>
         <source>Sorry, failed to create user directory.</source>
-        <translation>Üzgünüm,kullanıcı dizini oluşturma başarısız.</translation>
+        <translation>Je nám ľúto, vytvorenie zložky užívateľa zlyhalo.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1155"/>
         <source>Sorry, failed to name user directory.</source>
-        <translation>Üzgünüm,kullanıcı dizini adı hatalı.</translation>
+        <translation>Je nám ľúto, pomenovanie zložky užívateľa zlyhalo.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1180"/>
         <source>Sorry, failed to save desktop changes.</source>
-        <translation type="unfinished"/>
+        <translation>Je nám ľúto, uloženie zmien pracovenj plochy zlyhalo.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1188"/>
         <source>Sorry, failed to set ownership of user directory.</source>
-        <translation type="unfinished"/>
+        <translation>Je nám ľúto, priradenie práv k zložke užívateľa zlyhalo.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1237"/>
         <source>Sorry, could not encrypt /home/</source>
-        <translation type="unfinished"/>
+        <translation>Je nám ľúto, zložka /home nejde zašifrovať</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1282"/>
         <source>Sorry, unable to set root password.</source>
-        <translation type="unfinished"/>
+        <translation>Je nám ľúto, nebolo možné nastaviť heslo užívateľa ROOT.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1309"/>
         <source>Sorry, unable to set user password.</source>
-        <translation>Üzgünüm, kullanıcı parolası yetersiz</translation>
+        <translation>Je nám ľúto, nebolo možné nastaviť heslo užívateľa.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1322"/>
@@ -317,9 +336,7 @@ a longer password before proceeding.</source>
         <source>Sorry that name is in use.
 Please select a different name.
 </source>
-        <translation>Üzgünüm bu ad kullanılıyor.
-Farklı bir ad seçin.
-</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1358"/>
@@ -380,8 +397,7 @@ Do you want to reboot now?</source>
         <location filename="../minstall.cpp" line="1848"/>
         <source>The installation and configuration is incomplete.
 Do you really want to stop now?</source>
-        <translation>Kurulum ve yapılandırma tamamlanmadı.
-Gerçekten şimdi durdurmak istiyor musunuz?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1923"/>
@@ -412,7 +428,7 @@ Gerçekten şimdi durdurmak istiyor musunuz?</translation>
         <location filename="../minstall.cpp" line="1967"/>
         <source>Failed to create required partitions.
 Returning to Step 1.</source>
-        <translation>Gerekli bölümlendirmelerin oluşturulması başarısız.Adım 1&apos;e geri dönülüyor.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1976"/>
@@ -464,17 +480,17 @@ Returning to Step 1.</source>
         <location filename="../minstall.cpp" line="2063"/>
         <location filename="../minstall.cpp" line="2075"/>
         <source>Next &gt;</source>
-        <translation>İleri</translation>
+        <translation>Ďalej &gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2073"/>
         <source>Finish</source>
-        <translation>Son</translation>
+        <translation>Dokončiť</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2137"/>
         <source>Administration</source>
-        <translation>Yönetim</translation>
+        <translation>Správa</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2143"/>
@@ -494,12 +510,12 @@ Returning to Step 1.</source>
     <message>
         <location filename="../minstall.cpp" line="2172"/>
         <source>Hardware</source>
-        <translation>Donanım</translation>
+        <translation>Hardvér</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2177"/>
         <source>CPU frequency, irqbalance</source>
-        <translation type="unfinished"/>
+        <translation>Frekvencia CPU, irqbalance</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2187"/>
@@ -514,7 +530,7 @@ Returning to Step 1.</source>
     <message>
         <location filename="../minstall.cpp" line="2207"/>
         <source>HDD temperature monitor</source>
-        <translation>HDD sıcaklık izleme</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2217"/>
@@ -539,7 +555,7 @@ Returning to Step 1.</source>
     <message>
         <location filename="../minstall.cpp" line="2257"/>
         <source>Random number generator</source>
-        <translation>Rasgele numara üreteci</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2267"/>
@@ -549,27 +565,27 @@ Returning to Step 1.</source>
     <message>
         <location filename="../minstall.cpp" line="2276"/>
         <source>Networking</source>
-        <translation>Ağ kurma</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2282"/>
         <source>Network connection</source>
-        <translation>Ağ bağlantısı</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2292"/>
         <source>Secure Shell</source>
-        <translation>Güvenli Kabuk</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2302"/>
         <source>Mail filter</source>
-        <translation>Posta süzgeci</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2312"/>
         <source>Network File System</source>
-        <translation>Ağ Dosya Sistemi</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2326"/>
@@ -584,17 +600,17 @@ Returning to Step 1.</source>
     <message>
         <location filename="../minstall.cpp" line="2346"/>
         <source>File-copying tool</source>
-        <translation>Dosya kopyalama aracı</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2355"/>
         <source>Printing</source>
-        <translation>Yazdırılıyor</translation>
+        <translation>Tlač</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2361"/>
         <source>Linux and OS X printer service</source>
-        <translation>Linux ve OS X yazıcı hizmeti</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2541"/>
@@ -605,31 +621,29 @@ sure you want to Close now?</source>
     <message>
         <location filename="../minstall.cpp" line="2568"/>
         <source>Deleting old system</source>
-        <translation>Eski sistem siliniyor</translation>
+        <translation>Odstraňovanie starého systému</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2577"/>
         <source>Failed to delete old MX Linux on destination.
 Returning to Step 1.</source>
-        <translation>Eski antiX silme yolu başarısız.
-1. adıma geri dönün.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2603"/>
         <source>Copying new system</source>
-        <translation>Yeni sistem kopyalanıyor</translation>
+        <translation>Kopírovanie nového systému</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2627"/>
         <source>Fixing configuration</source>
-        <translation type="unfinished"/>
+        <translation>Oprava konfigurácie</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2718"/>
         <source>Failed to write MX Linux to destination.
 Returning to Step 1.</source>
-        <translation>MX Linux silme yolu başarısız oldu.
-1.Adıma Geri Dönün</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2745"/>
@@ -667,12 +681,12 @@ Returning to Step 1.</source>
     <message>
         <location filename="../meinstall.ui" line="47"/>
         <source>Close</source>
-        <translation>Kapat</translation>
+        <translation>Zatvoriť</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="67"/>
         <source>Next &gt;</source>
-        <translation>İleri</translation>
+        <translation>Ďalej &gt;</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="70"/>
@@ -682,7 +696,7 @@ Returning to Step 1.</source>
     <message>
         <location filename="../meinstall.ui" line="80"/>
         <source>&lt; Back</source>
-        <translation>&lt; Geri</translation>
+        <translation>&lt;Naspäť</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="83"/>
@@ -692,7 +706,7 @@ Returning to Step 1.</source>
     <message>
         <location filename="../meinstall.ui" line="130"/>
         <source>Terms of Use</source>
-        <translation>Kullanım Koşulları</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="184"/>
@@ -706,7 +720,7 @@ Enjoy using MX Linux.</source>
     <message>
         <location filename="../meinstall.ui" line="226"/>
         <source>1c. Select type of installation</source>
-        <translation>1c. Kurulum türünü seçin</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="272"/>
@@ -721,7 +735,7 @@ Enjoy using MX Linux.</source>
     <message>
         <location filename="../meinstall.ui" line="323"/>
         <source>Auto-install using entire disk </source>
-        <translation type="unfinished"/>
+        <translation>Automatická inštalácia, použiť celý disk</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="339"/>
@@ -731,12 +745,12 @@ Enjoy using MX Linux.</source>
     <message>
         <location filename="../meinstall.ui" line="358"/>
         <source>1a. Choose disk for installation</source>
-        <translation>1a. Kurulacak diski seç</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="398"/>
         <source>Use disk:</source>
-        <translation type="unfinished"/>
+        <translation>Použiť disk:</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="417"/>
@@ -746,7 +760,7 @@ Enjoy using MX Linux.</source>
     <message>
         <location filename="../meinstall.ui" line="444"/>
         <source>Run partition tool...</source>
-        <translation>bölümlendirme aracını çalıştır...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="457"/>
@@ -756,7 +770,7 @@ Enjoy using MX Linux.</source>
     <message>
         <location filename="../meinstall.ui" line="521"/>
         <source>2b. Preferences</source>
-        <translation>2b. Yeğlenenler</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="548"/>
@@ -766,47 +780,47 @@ Enjoy using MX Linux.</source>
     <message>
         <location filename="../meinstall.ui" line="583"/>
         <source>Filesystem type:</source>
-        <translation>Dosya sistemi türü:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="609"/>
         <source>Change default / (root) partition label:</source>
-        <translation>Öntanımlı / (kök) bölüm etiketini değiştir:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="623"/>
         <source>ext4</source>
-        <translation>ext4</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="628"/>
         <source>ext3</source>
-        <translation>ext3</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="633"/>
         <source>ext2</source>
-        <translation>ext2</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="638"/>
         <source>jfs</source>
-        <translation>jfs</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="643"/>
         <source>xfs</source>
-        <translation>xfs</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="648"/>
         <source>btrfs</source>
-        <translation>btrfs</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="653"/>
         <source>reiserfs</source>
-        <translation>reiserfs</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="664"/>
@@ -826,12 +840,12 @@ Enjoy using MX Linux.</source>
     <message>
         <location filename="../meinstall.ui" line="732"/>
         <source>/ (root) partition:</source>
-        <translation>/ (kök) bölümü:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="748"/>
         <source>swap partition:</source>
-        <translation>takas alanı:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="764"/>
@@ -842,17 +856,17 @@ Enjoy using MX Linux.</source>
         <location filename="../meinstall.ui" line="843"/>
         <location filename="../meinstall.ui" line="1194"/>
         <source>root</source>
-        <translation>Kök</translation>
+        <translation>root</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="879"/>
         <source>3. Installation in progress</source>
-        <translation>3. Kurulum ilerliyor</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="922"/>
         <source>Abort</source>
-        <translation>Vazgeç</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="925"/>
@@ -863,7 +877,7 @@ Enjoy using MX Linux.</source>
     <message>
         <location filename="../meinstall.ui" line="964"/>
         <source>Ready to install MX Linux filesystem</source>
-        <translation>MX Linux dosya sistemi kuruluma hazır</translation>
+        <translation>Pripravené na inštaláciu systému MX Linux</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="986"/>
@@ -873,7 +887,7 @@ Enjoy using MX Linux.</source>
     <message>
         <location filename="../meinstall.ui" line="1060"/>
         <source>4. Select Boot Method</source>
-        <translation>4. Önyükleme Yöntemini Seçin</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1093"/>
@@ -888,7 +902,7 @@ Enjoy using MX Linux.</source>
     <message>
         <location filename="../meinstall.ui" line="1124"/>
         <source>Install on:</source>
-        <translation>Buraya kur:</translation>
+        <translation>Inštalovať do:</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1140"/>
@@ -923,22 +937,22 @@ Enjoy using MX Linux.</source>
     <message>
         <location filename="../meinstall.ui" line="1325"/>
         <source>Description</source>
-        <translation>Açıklama</translation>
+        <translation>Popis</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1361"/>
         <source>5. Computer Network Names</source>
-        <translation>Bilgisayar Ağ Adları</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1388"/>
         <source>Workgroup</source>
-        <translation>Çalışmagrubu</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1401"/>
         <source>Workgroup:</source>
-        <translation>Çalışma grubu</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1417"/>
@@ -953,17 +967,17 @@ Enjoy using MX Linux.</source>
     <message>
         <location filename="../meinstall.ui" line="1446"/>
         <source>Computer domain:</source>
-        <translation>Bilgisayar alan adı:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1462"/>
         <source>mx1</source>
-        <translation>mx1</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1478"/>
         <source>Computer name:</source>
-        <translation>Bilgisayar adı:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1551"/>
@@ -978,7 +992,7 @@ Enjoy using MX Linux.</source>
     <message>
         <location filename="../meinstall.ui" line="1572"/>
         <source>View</source>
-        <translation>Görünüm</translation>
+        <translation>Zobraziť</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1601"/>
@@ -988,7 +1002,7 @@ Enjoy using MX Linux.</source>
     <message>
         <location filename="../meinstall.ui" line="1629"/>
         <source>Format:</source>
-        <translation>Biçimlendirme:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1646"/>
@@ -1003,72 +1017,72 @@ Enjoy using MX Linux.</source>
     <message>
         <location filename="../meinstall.ui" line="1705"/>
         <source>Locale:</source>
-        <translation>Bölge</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1744"/>
         <source>Keyboard:</source>
-        <translation>Tuş takımı:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1763"/>
         <source>6c. Timezone Settings</source>
-        <translation>6c. Saat Dilimi Ayarları</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1769"/>
         <source>Timezone:</source>
-        <translation>Saat dilimi:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1823"/>
         <source>7b. Root (administrator) Account</source>
-        <translation>7b. Kök (yönetici) Hesabı</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1882"/>
         <source>Confirm root password:</source>
-        <translation>Kök parolasını onayla:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1898"/>
         <source>Root password:</source>
-        <translation>Kök parolası:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1930"/>
         <source>7a. Default User Account</source>
-        <translation>7a. Öntanımlı Kullanıcı Hesabı</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1992"/>
         <source>username</source>
-        <translation>kullanıcı adı</translation>
+        <translation>uživateľské meno</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2005"/>
         <source>Confirm user password:</source>
-        <translation>Kullanıcı parolasını onayla:</translation>
+        <translation>potvrdiť heslo:</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2021"/>
         <source>Default user password:</source>
-        <translation>Öntanımlı kullanıcı parolası:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2037"/>
         <source>Default user login name:</source>
-        <translation>Öntanımlı kullanıcı giriş adı:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2050"/>
         <source>Autologin</source>
-        <translation>Otomatik Oturum Aç</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2057"/>
         <source>Show passwords</source>
-        <translation>Parolayı göster</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2064"/>
@@ -1088,7 +1102,7 @@ Enjoy using MX Linux.</source>
     <message>
         <location filename="../meinstall.ui" line="2106"/>
         <source>Reminders</source>
-        <translation>Anımsatıcılar</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2154"/>
@@ -1103,12 +1117,12 @@ MX Linux is supported by people like you. Some help others at the support forum 
     <message>
         <location filename="../memain.ui" line="32"/>
         <source>MX Linux Install</source>
-        <translation>MX Linux Yükle</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../memain.ui" line="58"/>
         <source>Help</source>
-        <translation>Yardım</translation>
+        <translation>Pomocník</translation>
     </message>
 </context>
 <context>
@@ -1131,17 +1145,17 @@ Do you want to continue the installation?</source>
     <message>
         <location filename="../app.cpp" line="59"/>
         <source>Yes</source>
-        <translation>Evet</translation>
+        <translation>Ano</translation>
     </message>
     <message>
         <location filename="../app.cpp" line="59"/>
         <source>No</source>
-        <translation>Hayır</translation>
+        <translation>Nie</translation>
     </message>
     <message>
         <location filename="../app.cpp" line="73"/>
         <source>You must run this app as root.</source>
-        <translation>Bu uygulamayı root olarak çalıştırmalısınız.</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>
