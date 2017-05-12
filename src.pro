@@ -11,13 +11,16 @@ TRANSLATIONS += translations/mx-installer_ca.ts \
                 translations/mx-installer_hu.ts \
                 translations/mx-installer_it.ts \
                 translations/mx-installer_ja.ts \
+                translations/mx-installer_lt.ts \
                 translations/mx-installer_nl.ts \
                 translations/mx-installer_pl.ts \
                 translations/mx-installer_pt_BR.ts \
                 translations/mx-installer_pt.ts \
                 translations/mx-installer_ro.ts \
                 translations/mx-installer_ru.ts \
+                translations/mx-installer_sk.ts \
                 translations/mx-installer_sv.ts \
+                translations/mx-installer_tr.ts \
                 translations/mx-installer_uk.ts
 FORMS += memain.ui meinstall.ui
 HEADERS += mmain.h minstall.h

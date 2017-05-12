@@ -164,6 +164,13 @@ bool MInstall::is32bit()
     return (getCmdOut("uname -m") == "i686");
 }
 
+// Check if running from a 64bit environment
+bool MInstall::is64bit()
+{
+    return (getCmdOut("uname -m") == "x86_64");
+}
+
+
 // Check if running inside VirtualBox
 bool MInstall::isInsideVB()
 {
@@ -354,6 +361,25 @@ bool MInstall::makeSwapPartition(QString dev)
     return true;
 }
 
+// create ESP at the begining of the drive
+bool MInstall::makeEsp(QString drv, int size)
+{
+    int err = runCmd("parted -s " + drv + " mkpart primary 0 " + QString::number(size) + "MiB");
+    if (err != 0) {
+        qDebug() << "Could not create ESP";
+        return false;
+    }
+
+    runCmd("parted -s " + drv + " set 1 esp on");   // sets boot flag and esp flag
+
+    err = runCmd("mkfs.msdos -F 32 " + drv + "1");
+    if (err != 0) {
+        qDebug() << "Could not format ESP";
+        return false;
+    }
+    return true;
+}
+
 bool MInstall::makeLinuxPartition(QString dev, const char *type, bool bad, QString label)
 {
     QString cmd;
@@ -440,6 +466,7 @@ bool MInstall::makeLinuxPartition(QString dev, const char *type, bool bad, QStri
     }
     return true;
 }
+
 ///////////////////////////////////////////////////////////////////////////
 // in this case use all of the drive
 
@@ -447,39 +474,38 @@ bool MInstall::makeDefaultPartitions()
 {
     char line[130];
     int ans;
+    int prog = 0;
+    bool uefi = isUefi();
+    bool arch64 = is64bit();
+
+    QString rootdev, swapdev;
 
     QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
-    QString rootdev = QString(drv).append("1");
-    QString swapdev = QString(drv).append("2");
-    QString msg = QString(tr("Ok to format and use the entire disk (%1) for MX Linux?")).arg(drv);
+    QString msg = QString(tr("OK to format and use the entire disk (%1) for MX Linux?")).arg(drv);
     ans = QMessageBox::information(0, QString::null, msg,
                                    tr("Yes"), tr("No"));
-    if (ans != 0) {
-        // don't format--stop install
+    if (ans != 0) { // don't format--stop install
         return false;
     }
-    isRootFormatted = true;
-    isHomeFormatted = false;
-    isFormatExt3 = true;
 
     // entire disk, create partitions
-    updateStatus(tr("Creating required partitions"), 1);
+    updateStatus(tr("Creating required partitions"), ++prog);
 
     // ready to partition
     // try to be sure that entire drive is available
     system("/sbin/swapoff -a 2>&1");
 
     // unmount root part
+    rootdev = drv + "1";
     QString cmd = QString("/bin/umount -l %1 >/dev/null 2>&1").arg(rootdev);
     if (system(cmd.toUtf8()) != 0) {
-        // error
+        qDebug() << "could not umount: " << rootdev;
     }
 
-    bool free = false;
-    bool fiok = true;
-    int fi = freeSpaceEdit->text().toInt(&fiok,10);
-    if (!fiok) {
-        fi = 0;
+    bool ok = true;
+    int free = freeSpaceEdit->text().toInt(&ok,10);
+    if (!ok) {
+        free = 0;
     }
 
     const char *tstr;                    // total size
@@ -492,57 +518,89 @@ bool MInstall::makeDefaultPartitions()
     fgets(line, sizeof line, fp);
     tstr = strtok(line," ");
     pclose(fp);
-    int sz = atoi(tstr);
-    sz = sz / 1024;
+    int size = atoi(tstr);
+    size = size / 1024; // in MiB
     // pre-compensate for rounding errors in disk geometry
-    sz = sz - 32;
+    size = size - 32;
+    int remaining = size;
+
+    // allocate space for ESP
+    int esp_size = 0;
+    if(uefi && arch64) { // if booted from UEFI and 64bit
+        esp_size = 256;
+        remaining -= esp_size;
+    }
+
     // 2048 swap should be ample
-    int si = 2048;
-    if (sz < 2048) {
-        si = 128;
-    } else if (sz < 3096) {
-        si = 256;
-    } else if (sz < 4096) {
-        si = 512;
-    } else if (sz < 12288) {
-        si = 1024;
+    int swap = 2048;
+    if (remaining < 2048) {
+        swap = 128;
+    } else if (remaining < 3096) {
+        swap = 256;
+    } else if (remaining < 4096) {
+        swap = 512;
+    } else if (remaining < 12288) {
+        swap = 1024;
     }
-    int ri = sz - si;
+    remaining -= swap;
 
-    if (fi > 0 && ri > 8192) {
-        // allow fi
-        // ri is capped until fi is satisfied
-        if (fi > ri - 8192) {
-            fi = ri - 8192;
+    if (free > 0 && remaining > 8192) {
+        // allow free_size
+        // remaining is capped until free is satisfied
+        if (free > remaining - 8192) {
+            free = remaining - 8192;
         }
-        ri = ri - fi;
-        free = true;             // free space will be unallocated
-    } else {
-        // no fi
-        fi = 0;
-        free = false;		// no free space
+        remaining -= free;
+    } else { // no free space
+        free = 0;
     }
 
-    // new partition table
-    cmd = QString("/bin/dd if=/dev/zero of=%1 bs=512 count=100").arg(drv);
-    system(cmd.toUtf8());
-    cmd = QString("/sbin/sfdisk --no-reread -D -uM %1").arg(drv);
-    fp = popen(cmd.toUtf8(), "w");
-    if (fp != NULL) {
-        if (free) {
-            cmd = QString(",%1,L,*\n,%2,S\n,,\n;\ny\n").arg(ri).arg(si);
-        } else {
-            cmd = QString(",%1,L,*\n,,S\n,,\n;\ny\n").arg(ri);
+    if(uefi && arch64) { // if booted from UEFI and 64bit make ESP
+        // new GPT partition table
+        int err = runCmd("parted -s " + drv + " mklabel gpt");
+        if (err != 0 ) {
+            qDebug() << "Could not create gpt partition table on " + drv;
+            return false;
         }
-        fputs(cmd.toUtf8(), fp);
-        fputc(EOF, fp);
-        pclose(fp);
+        rootdev = drv + "2";
+        swapdev = drv + "3";
+        updateStatus(tr("Formating EFI System Partition (ESP)"), ++prog);
+        if(!makeEsp(drv, esp_size)) {
+            return false;
+        }
     } else {
-        // error
+        // new msdos partition table
+        int err = runCmd("parted -s " + drv + " mklabel msdos");
+        if (err != 0 ) {
+            qDebug() << "Could not create msdos partition table on " + drv;
+            return false;
+        }
+        rootdev = drv + "1";
+        swapdev = drv + "2";
+    }
+
+    // create root partition
+    QString start;
+    if (esp_size == 0) {
+        start = "0 "; // have to do this because parted fails if 0MiB is used as start point, while 0 (or 0MB) works.
+    } else {
+        start = QString::number(esp_size) + "MiB ";
+    }
+    int end_root = esp_size + remaining;
+    int err = runCmd("parted -s " + drv + " mkpart primary  " + start + QString::number(end_root) + "MiB");
+    if (err != 0) {
+        qDebug() << "Could not create root partition";
         return false;
     }
 
-    updateStatus(tr("Formatting swap partition"), 2);
+    // create swap partition
+    err = runCmd("parted -s " + drv + " mkpart primary  " + QString::number(end_root) + "MiB " + QString::number(end_root + swap) + "MiB");
+    if (err != 0) {
+        qDebug() << "Could not create swap partition";
+        return false;
+    }
+
+    updateStatus(tr("Formatting swap partition"), ++prog);
     system("sleep 1");
     if (!makeSwapPartition(swapdev)) {
         return false;
@@ -551,7 +609,7 @@ bool MInstall::makeDefaultPartitions()
     system("make-fstab -s");
     system("/sbin/swapon -a 2>&1");
 
-    updateStatus(tr("Formatting root partition"), 3);
+    updateStatus(tr("Formatting root partition"), ++prog);
     if (!makeLinuxPartition(rootdev, "ext4", false, rootLabelEdit->text())) {
         return false;
     }
@@ -567,7 +625,7 @@ bool MInstall::makeDefaultPartitions()
     mkdir("/mnt/antiX/home",0755);
 
     on_diskCombo_activated();
-    rootCombo->setCurrentIndex(0);
+    rootCombo->setCurrentIndex(1);
     swapCombo->setCurrentIndex(1);
     homeCombo->setCurrentIndex(0);
 
@@ -579,7 +637,6 @@ bool MInstall::makeDefaultPartitions()
 
 bool MInstall::makeChosenPartitions()
 {
-    bool gpt;
     int ans;
     char line[130];
     char type[20];
@@ -587,13 +644,7 @@ bool MInstall::makeChosenPartitions()
     QString cmd;
 
     QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
-
-    cmd = QString("blkid %1 | grep -q PTTYPE=\\\"gpt\\\"").arg(drv);
-    if (system(cmd.toUtf8()) == 0) {
-        gpt = true;
-    } else {
-        gpt = false;
-    }
+    bool gpt = isGpt(drv);
 
     // get config
     strncpy(type, rootTypeCombo->currentText().toUtf8(), 4);
@@ -613,7 +664,7 @@ bool MInstall::makeChosenPartitions()
     QString homedev = QString("/dev/%1").arg(tok);
     QStringList homesplit = getCmdOut("partition-info split-device=" + homedev).split(" ", QString::SkipEmptyParts);
 
-    if (rootdev.compare("/dev/none") == 0) {
+    if (rootdev.compare("/dev/none") == 0 || rootdev.compare("/dev/") == 0) {
         QMessageBox::critical(0, QString::null,
                               tr("You must choose a root partition.\nThe root partition must be at least 3.5 GB."));
         return false;
@@ -630,9 +681,9 @@ bool MInstall::makeChosenPartitions()
         }
     }
     if (!(saveHomeCheck->isChecked() && homedev.compare("/dev/root") == 0)) {
-        msg = QString(tr("Ok to format and destroy all data on \n%1 for the / (root) partition?")).arg(rootdev);
+        msg = QString(tr("OK to format and destroy all data on \n%1 for the / (root) partition?")).arg(rootdev);
     } else {
-        msg = QString(tr("All data on %1 will be deleted, except for /home\nOk to continue?")).arg(rootdev);
+        msg = QString(tr("All data on %1 will be deleted, except for /home\nOK to continue?")).arg(rootdev);
     }
     ans = QMessageBox::warning(0, QString::null, msg,
                                tr("Yes"), tr("No"));
@@ -642,16 +693,22 @@ bool MInstall::makeChosenPartitions()
     }
 
     // format swap
-    if (swapdev.compare("/dev/none") != 0) {
-        msg = QString(tr("Ok to format and destroy all data on \n%1 for the swap partition?")).arg(swapdev);
-        ans = QMessageBox::warning(0, QString::null, msg,
-                                   tr("Yes"), tr("No"));
-        if (ans != 0) {
-            // don't format--stop install
-            return false;
-        }
-    }
 
+        //if partition chosen is already swap, don't do anything
+
+        cmd = QString("partition-info %1 |grep swap").arg(swapdev);
+
+        if (system(cmd.toUtf8()) != 0) {
+            if (swapdev.compare("/dev/none") != 0) {
+                msg = QString(tr("OK to format and destroy all data on \n%1 for the swap partition?")).arg(swapdev);
+                ans = QMessageBox::warning(0, QString::null, msg,
+                                           tr("Yes"), tr("No"));
+                if (ans != 0) {
+                    // don't format--stop install
+                    return false;
+                }
+            }
+        }
     // format /home?
     if (homedev.compare("/dev/root") != 0) {
         cmd = QString("partition-info is-linux=%1").arg(homedev);
@@ -665,9 +722,9 @@ bool MInstall::makeChosenPartitions()
             }
         }
         if (saveHomeCheck->isChecked()) {
-            msg = QString(tr("Ok to reuse (no reformat) %1 as the /home partition?")).arg(homedev);
+            msg = QString(tr("OK to reuse (no reformat) %1 as the /home partition?")).arg(homedev);
         } else {
-            msg = QString(tr("Ok to format and destroy all data on %1 for the /home partition?")).arg(homedev);
+            msg = QString(tr("OK to format and destroy all data on %1 for the /home partition?")).arg(homedev);
         }
 
         ans = QMessageBox::warning(0, QString::null, msg,
@@ -698,31 +755,35 @@ bool MInstall::makeChosenPartitions()
         if (swapoff(rootdev.toUtf8()) != 0) {
         }
     }
+    //if swap exists, do nothing
 
-    if (swapdev.compare("/dev/none") != 0) {
-        if (swapoff(swapdev.toUtf8()) != 0) {
-            cmd = QString("pumount %1").arg(swapdev);
-            if (system(cmd.toUtf8()) != 0) {
+    cmd = QString("partition-info %1 |grep swap").arg(swapdev);
+
+    if (system(cmd.toUtf8()) != 0) {
+        if (swapdev.compare("/dev/none") != 0) {
+            if (swapoff(swapdev.toUtf8()) != 0) {
+                cmd = QString("pumount %1").arg(swapdev);
+                if (system(cmd.toUtf8()) != 0) {
+                }
             }
+            updateStatus(tr("Formatting swap partition"), 2);
+            // always set type
+            if (gpt) {
+                cmd = QString("/sbin/sgdisk /dev/%1 --typecode=%2:8200").arg(swapsplit[0]).arg(swapsplit[1]);
+            } else {
+                cmd = QString("/sbin/sfdisk /dev/%1 --change-id %2 82").arg(swapsplit[0]).arg(swapsplit[1]);
+            }
+            system(cmd.toUtf8());
+            system("sleep 1");
+            if (!makeSwapPartition(swapdev)) {
+                return false;
+            }
+            // enable the new swap partition asap
+            system("sleep 1");
+            system("make-fstab -s");
+            swapon(swapdev.toUtf8(),0);
         }
-        updateStatus(tr("Formatting swap partition"), 2);
-        // always set type
-        if (gpt) {
-            cmd = QString("/sbin/sgdisk /dev/%1 --typecode=%2:8200").arg(swapsplit[0]).arg(swapsplit[1]);
-        } else {
-            cmd = QString("/sbin/sfdisk /dev/%1 --change-id %2 82").arg(swapsplit[0]).arg(swapsplit[1]);
-        }
-        system(cmd.toUtf8());
-        system("sleep 1");
-        if (!makeSwapPartition(swapdev)) {
-            return false;
-        }
-        // enable the new swap partition asap
-        system("sleep 1");
-        system("make-fstab -s");
-        swapon(swapdev.toUtf8(),0);
     }
-
     // maybe format root
     if (!(saveHomeCheck->isChecked() && homedev.compare("/dev/root") == 0)) {
         updateStatus(tr("Formatting the / (root) partition"), 3);
@@ -810,10 +871,6 @@ void MInstall::installLinux()
     char *tok = strtok(line, " -");
     QString rootdev = QString("/dev/%1").arg(tok);
 
-    strcpy(line, homeCombo->currentText().toUtf8());
-    tok = strtok(line, " -");
-    QString homedev = QString("/dev/%1").arg(tok);
-
     // maybe root was formatted
     if (isRootFormatted) {
         // yes it was
@@ -844,10 +901,6 @@ void MInstall::copyLinux()
     strcpy(line, rootCombo->currentText().toUtf8());
     char *tok = strtok(line, " -");
     QString rootdev = QString("/dev/%1").arg(tok);
-
-    strcpy(line, homeCombo->currentText().toUtf8());
-    tok = strtok(line, " -");
-    QString homedev = QString("/dev/%1").arg(tok);
 
     // make empty dirs for opt, dev, proc, sys, run,
     // home already done
@@ -909,12 +962,13 @@ bool MInstall::installLoader()
         QString cmd = QString("partition-info find-esp=%1").arg(bootdrv);
         boot = getCmdOut(cmd);
         if (boot == "") {
+            qDebug() << "could not find ESP on: " << bootdrv;
             return false;
         }
     }
 
     // install Grub?
-    QString msg = QString( tr("Ok to install GRUB bootloader at %1 ?")).arg(boot);
+    QString msg = QString( tr("OK to install GRUB bootloader at %1 ?")).arg(boot);
     int ans = QMessageBox::warning(this, QString::null, msg,
                                    tr("Yes"), tr("No"));
     if (ans != 0) {
@@ -951,7 +1005,7 @@ bool MInstall::installLoader()
         if (arch == "i686") { // rename arch to match grub-install target
             arch = "i386";
         }
-        cmd = QString("chroot /mnt/antiX grub-install --target=%1-efi --efi-directory=/boot/efi --bootloader-id=MX15 --recheck").arg(arch);
+        cmd = QString("chroot /mnt/antiX grub-install --target=%1-efi --efi-directory=/boot/efi --bootloader-id=MX16 --recheck").arg(arch);
     }
     if (runCmd(cmd) != 0) {
         // error, try again
@@ -961,7 +1015,7 @@ bool MInstall::installLoader()
             progress->close();
             setCursor(QCursor(Qt::ArrowCursor));
             QMessageBox::critical(this, QString::null,
-                                  tr("Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the CD and repair the installation with the reinstall GRUB function."));
+                                  tr("Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the LiveDVD or LiveUSB and repair the installation with the reinstall GRUB function."));
             system("umount /mnt/antiX/proc; umount /mnt/antiX/sys; umount /mnt/antiX/dev");
             if (system("mountpoint -q /mnt/antiX/boot/efi") == 0) {
                 system("umount /mnt/antiX/boot/efi");
@@ -970,12 +1024,12 @@ bool MInstall::installLoader()
         }
     }
     //  // install GRUB as the active bootloader
-    //  if (grubEspButton->isChecked() && system("efibootmgr -v | grep -q MX15") != 0) {
+    //  if (grubEspButton->isChecked() && system("efibootmgr -v | grep -q MX16") != 0) {
     //      QString arch = getCmdOut("uname -m");
     //      if (arch == "i686") {
-    //          cmd = QString("chroot /mnt/antiX efibootmgr -c -d /dev/%1 -p %2 -L \"MX15\" -l \"\\efi\\mx15\\bootia32.efi\"").arg(bootdrv).arg(boot.remove(bootdrv));
+    //          cmd = QString("chroot /mnt/antiX efibootmgr -c -d /dev/%1 -p %2 -L \"MX16\" -l \"\\efi\\mx16\\bootia32.efi\"").arg(bootdrv).arg(boot.remove(bootdrv));
     //      } else {
-    //          cmd = QString("chroot /mnt/antiX efibootmgr -c -d /dev/%1 -p %2 -L \"MX15\" -l \"\\efi\\mx15\\bootx64.efi\"").arg(bootdrv).arg(boot.remove(bootdrv));
+    //          cmd = QString("chroot /mnt/antiX efibootmgr -c -d /dev/%1 -p %2 -L \"MX16\" -l \"\\efi\\mx16\\bootx64.efi\"").arg(bootdrv).arg(boot.remove(bootdrv));
     //      }
     //      runCmd(cmd);
     //  }
@@ -1003,6 +1057,17 @@ bool MInstall::installLoader()
     timer->stop();
     progress->close();
     return true;
+}
+
+bool MInstall::isGpt(QString drv)
+{
+    QString cmd = QString("blkid %1 | grep -q PTTYPE=\\\"gpt\\\"").arg(drv);
+    return (system(cmd.toUtf8()) == 0);
+}
+
+bool MInstall::isUefi()
+{
+    return (system("test -d /sys/firmware/efi") == 0);
 }
 
 /////////////////////////////////////////////////////////////////////////
@@ -1138,6 +1203,51 @@ bool MInstall::setUserName()
     }
     cmd = QString("touch /mnt/antiX/var/mail/%1").arg(userNameEdit->text());
     system(cmd.toUtf8());
+
+    // Encrypt /home and swap partition
+    if (encryptCheckBox->isChecked() && system("modprobe ecryptfs") == 0 ) {
+
+        // set mounts for chroot
+        system("mount -o bind /dev /mnt/antiX/dev");
+        system("mount -o bind /dev/shm /mnt/antiX/dev/shm");
+        system("mount -o bind /sys /mnt/antiX/sys");
+        system("mount -o bind /proc /mnt/antiX/proc");
+
+        // encrypt /home
+        cmd = "chroot /mnt/antiX ecryptfs-migrate-home -u " + userNameEdit->text();
+        FILE *fp = popen(cmd.toUtf8(), "w");
+        bool fpok = true;
+        cmd = QString("%1\n").arg(rootPasswordEdit->text());
+        if (fp != NULL) {
+            sleep(4);
+            if (fputs(cmd.toUtf8(), fp) >= 0) {
+                fflush(fp);
+             } else {
+                fpok = false;
+            }
+            pclose(fp);
+        } else {
+            fpok = false;
+        }
+
+        if (!fpok) {
+            system("umount -l /mnt/antiX/proc; umount -l /mnt/antiX/sys; umount -l /mnt/antiX/dev/shm; umount -l /mnt/antiX/dev");
+            setCursor(QCursor(Qt::ArrowCursor));
+            QMessageBox::critical(0, QString::null,
+                                  tr("Sorry, could not encrypt /home/") + userNameEdit->text());
+            return false;
+        }
+
+        // encrypt swap
+        if (system("chroot /mnt/antiX ecryptfs-setup-swap --force") != 0) {
+            qDebug() << "could not encrypt swap partition";
+        }
+        // clean up, remove folder only if one usename.* directory is present
+        if (getCmdOuts("find /mnt/antiX/home -maxdepth 1  -type d -name " + userNameEdit->text() + ".*").length() == 1) {
+            system("rm -r "+ dpath.toUtf8() + ".*");
+        }
+    }
+    system("umount -l /mnt/antiX/proc; umount -l /mnt/antiX/sys; umount -l /mnt/antiX/dev/shm; umount -l /mnt/antiX/dev");
     setCursor(QCursor(Qt::ArrowCursor));
     return true;
 }
@@ -1216,8 +1326,8 @@ bool MInstall::setUserInfo()
     } else if (!userNameEdit->text().contains(QRegExp("^[a-z_][a-z0-9_-]*[$]?$"))) {
         QMessageBox::critical(0, QString::null,
                               tr("The user name needs be lower case and it\n"
-                                 "cannot contain special characters or spaces\n"
-                                 "please choose another name before proceeding."));
+                                 "cannot contain special characters or spaces.\n"
+                                 "Please choose another name before proceeding."));
         return false;
     }
     if (strlen(userPasswordEdit->text().toUtf8()) < 2) {
@@ -1403,7 +1513,7 @@ void MInstall::setLocale()
     QString homedev = "/dev/" + QString(homeCombo->currentText()).section(" ", 0, 0);
     runCmd("umount -R /mnt/antiX");
     runCmd(QString("mount %1 /mnt/antiX").arg(rootdev));
-    if (homedev != "/dev/root") {
+    if (homedev != "/dev/root" && homedev != rootdev) {
         runCmd(QString("mount %1 /mnt/antiX/home").arg(homedev));
     }
     system("cp -f /etc/adjtime /mnt/antiX/etc/");
@@ -1829,8 +1939,8 @@ void MInstall::pageDisplayed(int next)
                                        "<p>If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. "
                                        "As a result, the installation will take much longer than usual.</p>"
                                        "<p><b>Preferred Filesystem Type</b><br/>For MX Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. </p>"
-                                       "<p><b>Bad Blocks</b><br/>If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for badblocks on the drive. "
-                                       "The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has badblocks.</p>"));
+                                       "<p><b>Bad Blocks</b><br/>If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for bad blocks on the drive. "
+                                       "The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has bad blocks.</p>"));
         break;
 
     case 3:
@@ -1885,7 +1995,7 @@ void MInstall::pageDisplayed(int next)
 
     case 5:
         setCursor(QCursor(Qt::ArrowCursor));
-        ((MMain *)mmn)->setHelpText(tr("<p><b>Common Services to Enable</b><br/>Select any of the these common services that you might need with your system configuration and the services will be started automatically when you start MX Linux.</p>"));
+        ((MMain *)mmn)->setHelpText(tr("<p><b>Common Services to Enable</b><br/>Select any of these common services that you might need with your system configuration and the services will be started automatically when you start MX Linux.</p>"));
         nextButton->setEnabled(true);
         backButton->setEnabled(true);
         break;
@@ -1903,9 +2013,9 @@ void MInstall::pageDisplayed(int next)
 
     case 7:
         setCursor(QCursor(Qt::ArrowCursor));
-        ((MMain *)mmn)->setHelpText(tr("<p><b>Localization Defaults</b><br/>Set the default keyboard and locale. These will apply unless, they are overridden later by the user.</p>"
+        ((MMain *)mmn)->setHelpText(tr("<p><b>Localization Defaults</b><br/>Set the default keyboard and locale. These will apply unless they are overridden later by the user.</p>"
                                        "<p><b>Configure Clock</b><br/>If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for 'System clock uses LOCAL.'</p>"
-                                       "<p><b>Timezone Settings</b><br/>The CD boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Adjust Date & Time...</p>"
+                                       "<p><b>Timezone Settings</b><br/>The system boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Properties.</p>"
                                        "<p><b>Service Settings</b><br/>Most users should not change the defaults. Users with low-resource computers sometimes want to disable unneeded services in order to keep the RAM usage as low as possible. Make sure you know what you are doing! "));
         nextButton->setEnabled(true);
         backButton->setEnabled(false);
@@ -1929,7 +2039,7 @@ void MInstall::pageDisplayed(int next)
                                                                                                                                      "The best way to learn about them is to browse through the Menu and try them. "
                                                                                                                                      "Many of the apps were developed specifically for the Xfce environment. "
                                                                                                                                      "These are shown in the main menus. "
-                                                                                                                                     "<p>In addition MX Linux includes many standard Linux applications that are run only from the commandline and therefore do not show up in Menu.</p>"));
+                                                                                                                                     "<p>In addition MX Linux includes many standard Linux applications that are run only from the command line and therefore do not show up in the Menu.</p>"));
         nextButton->setEnabled(true);
         backButton->setEnabled(false);
         break;
@@ -2343,8 +2453,10 @@ void MInstall::on_diskCombo_activated(QString)
 
     // build rootCombo
     QStringList partitions = getCmdOuts(QString("partition-info -n --exclude=all --min-size=4000 %1").arg(drv));
+    rootCombo->addItem(""); // add an empty item to make sure nothing is selected by default
     rootCombo->addItems(partitions);
     if (partitions.size() == 0) {
+        rootCombo->clear();
         rootCombo->addItem("none");
     }
 
@@ -2404,9 +2516,9 @@ void MInstall::on_grubBootCombo_activated(QString)
     QString cmd = QString("blkid %1 | grep -q PTTYPE=\\\"gpt\\\"").arg(drv);
     QString detectESP = QString("sgdisk -p %1 | grep -q ' EF00 '").arg(drv);
     // if 64bit, GPT, and ESP exists
-    if (getCmdOut("uname -m") == "x86_64" && system(cmd.toUtf8()) == 0 && system(detectESP.toUtf8()) == 0) {
+    if (is64bit() && system(cmd.toUtf8()) == 0 && system(detectESP.toUtf8()) == 0) {
         grubEspButton->setEnabled(true);
-        if (system("test -d /sys/firmware/efi") == 0) { // if booted from UEFI
+        if (isUefi()) { // if booted from UEFI
             grubEspButton->setChecked(true);
         } else {
             grubMbrButton->setChecked(true);
@@ -2547,7 +2659,7 @@ void MInstall::copyDone(int, QProcess::ExitStatus exitStatus)
             //}
             //fputs("proc /proc proc defaults 0 0\n", fp);
             //fputs("devpts /dev/pts devpts mode=0622 0 0\n", fp);
-            if (strcmp(homedev, "/dev/root") != 0) {
+            if (strcmp(homedev, "/dev/root") != 0 && strcmp(homedev, rootdev) != 0) {
                 if (isHomeFormatted) {
                     if (isFormatExt4) {
                         sprintf(line, "%s /home auto defaults,noatime 1 2\n", homedev);
@@ -2631,22 +2743,22 @@ void MInstall::copyTime()
     switch (i) {
     case 1:
         tipsEdit->setText(tr("<p><b>Getting Help</b><br/>"
-                             "Basic information about MX Linux is at http://mxlinux.org"
-                             "There are volunteers to help you at the MX forum, http://forum.mxlinux.org </p>"
+                             "Basic information about MX Linux is at https://mxlinux.org "
+                             "There are volunteers to help you at the MX forum, https://forum.mxlinux.org </p>"
                              "<p>If you ask for help, please remember to describe your problem and your computer "
                              "in some detail. Usually statements like 'it didn't work' are not helpful.</p>"));
         break;
 
     case 15:
         tipsEdit->setText(tr("<p><b>Repairing Your Installation</b><br/>"
-                             "If MX Linux stops working from the hard drive, sometimes it's possible to fix the problem by booting from CD and running one of the utilities in System Configuration or by using one of the regular Linux tools to repair the system.</p>"
-                             "<p>You can also use your MX Linux CD to recover data from MS-Windows systems!</p>"));
+                             "If MX Linux stops working from the hard drive, sometimes it's possible to fix the problem by booting from LiveDVD or LiveUSB and running one of the utilities in MX Tools or by using one of the regular Linux tools to repair the system.</p>"
+                             "<p>You can also use your MX Linux LiveDVD or LiveUSB to recover data from MS-Windows systems!</p>"));
         break;
 
     case 30:
         tipsEdit->setText(tr("<p><b>Support MX Linux</b><br/>"
                              "MX Linux is supported by people like you. Some help others at the "
-                             "support forum - http://forum.mxlinux.org, - http://antix.freeforums.org, or translate help files into different "
+                             "support forum - https://forum.mxlinux.org, - http://antix.freeforums.org, or translate help files into different "
                              "languages, or make suggestions, write documentation, or help test new software.</p>"));
         break;
 
@@ -2660,7 +2772,7 @@ void MInstall::copyTime()
 
     case 60:
         tipsEdit->setText(tr("<p><b>Keep Your Copy of MX Linux up-to-date</b><br/>"
-                             "For MX Linux information and updates please visit http://mxlinux.org or http://antix.freeforums.org</p>"));
+                             "For MX Linux information and updates please visit https://mxlinux.org or http://antix.freeforums.org</p>"));
         break;
 
     default:
@@ -2671,4 +2783,19 @@ void MInstall::copyTime()
 void MInstall::on_closeButton_clicked()
 {
    ((MMain *)mmn)->closeClicked();
+}
+
+void MInstall::on_encryptCheckBox_toggled(bool checked)
+{
+    if (checked) {
+        autologinCheckBox->setChecked(false);
+        autologinCheckBox->setDisabled(true);
+    } else {
+        autologinCheckBox->setDisabled(false);
+    }
+}
+
+void MInstall::on_saveHomeCheck_toggled(bool checked)
+{
+    encryptCheckBox->setEnabled(!checked);
 }
