@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="fr">
 <context>
     <name>MInstall</name>
     <message>
@@ -239,7 +241,7 @@ et en créer un nouveau ?</translation>
     <message>
         <location filename="../minstall.cpp" line="1109"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you'll have to select a different username or
+you&apos;ll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>Désolé, la sauvegarde de l&apos;ancien répertoire home a échoué.
 Avant de poursuivre, vous devez sélectionner un autre nom
@@ -261,7 +263,7 @@ d&apos;utilisateur.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1135"/>
-        <source>You've chosen to not use, save or delete the old home directory.
+        <source>You&apos;ve chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Vous avez décidé de ne pas utiliser, sauvegarder ou effacer l&apos;ancien répertoire /home. 
 Avant de poursuivre, vous devez sélectionner un autre 
@@ -367,7 +369,7 @@ Veuillez, svp, essayer à nouveau.</translation>
     <message>
         <location filename="../minstall.cpp" line="1399"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You'll have to
+at least 2 characters long. You&apos;ll have to
 select a different name before proceeding.</source>
         <translation>Désolé, le nom de votre ordinateur doit faire 
 au  moins 2 caractères. Veuillez, svp, choisir
@@ -376,7 +378,7 @@ un nom plus long avant de continuer.</translation>
     <message>
         <location filename="../minstall.cpp" line="1403"/>
         <source>Sorry your computer name contains invalid characters.
-You'll have to select a different
+You&apos;ll have to select a different
 name before proceeding.</source>
         <translation>Désolé, votre nom de l&apos;ordinateur contient des caractères non valides. 
 Veuillez, svp, choisir un autre nom avant de continuer.</translation>
@@ -384,7 +386,7 @@ Veuillez, svp, choisir un autre nom avant de continuer.</translation>
     <message>
         <location filename="../minstall.cpp" line="1409"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You'll have to select a different
+2 characters long. You&apos;ll have to select a different
 name before proceeding.</source>
         <translation>Désolé, le nom du domaine doit faire au
 moins 2 caractères. Veuillez, svp, choisir
@@ -393,7 +395,7 @@ un nom plus long avant de continuer.</translation>
     <message>
         <location filename="../minstall.cpp" line="1413"/>
         <source>Sorry your computer domain contains invalid characters.
-You'll have to select a different
+You&apos;ll have to select a different
 name before proceeding.</source>
         <translation>Désolé, votre domaine de l&apos;ordinateur contient des caractères non valides.
 Veuillez, svp, choisir un autre nom avant de continuer.</translation>
@@ -401,7 +403,7 @@ Veuillez, svp, choisir un autre nom avant de continuer.</translation>
     <message>
         <location filename="../minstall.cpp" line="1422"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You'll have to select a different
+2 characters long. You&apos;ll have to select a different
 name before proceeding.</source>
         <translation>Désolé, le nom du groupe de travail doit faire 
 au moins 2 caractères. Veuillez, svp, choisir
@@ -1168,7 +1170,7 @@ MX Linux est soutenu par des personnes comme vous. Certains proposent leur aide 
     <name>QApplication</name>
     <message>
         <location filename="../app.cpp" line="47"/>
-        <source>The installer won't launch because it appears to be running already in the background.
+        <source>The installer won&apos;t launch because it appears to be running already in the background.
 
 Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</source>
         <translation>L&apos;installateur ne peut démarrer car il semblerait qu&apos;il soit déjà lancé en arrière-plan.
