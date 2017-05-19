@@ -2478,13 +2478,16 @@ void MInstall::on_rootCombo_activated(QString)
         homeCombo->insertItem(removedItemIndex, removedItem);
     }
     // remove item that matches root selection
-    int index = homeCombo->findText(rootCombo->currentText().section(' ', 0, 0).toUtf8(), Qt::MatchStartsWith);
-    if ( index != -1 ) {
-        removedItem = homeCombo->itemText(index);
-        removedItemIndex = index;
-        homeCombo->removeItem(index);
-    } else {
-        removedItem = "";
+    if (rootCombo->currentText() != "") {
+        int index = homeCombo->findText(rootCombo->currentText().section(' ', 0, 0).toUtf8(), Qt::MatchStartsWith);
+        if ( index != -1 ) {
+            removedItem = homeCombo->itemText(index);
+            qDebug() << "removed " << removedItem;
+            removedItemIndex = index;
+            homeCombo->removeItem(index);
+        } else {
+            removedItem = "";
+        }
     }
 }
 

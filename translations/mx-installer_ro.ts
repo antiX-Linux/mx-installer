@@ -53,7 +53,7 @@ Discul cu partiția selectă pentru instalare este in curs de defectare.
         <location filename="../minstall.cpp" line="1120"/>
         <location filename="../minstall.cpp" line="1835"/>
         <location filename="../minstall.cpp" line="1849"/>
-        <location filename="../minstall.cpp" line="2542"/>
+        <location filename="../minstall.cpp" line="2545"/>
         <source>Yes</source>
         <translation>Da</translation>
     </message>
@@ -72,7 +72,7 @@ Discul cu partiția selectă pentru instalare este in curs de defectare.
         <location filename="../minstall.cpp" line="1120"/>
         <location filename="../minstall.cpp" line="1835"/>
         <location filename="../minstall.cpp" line="1849"/>
-        <location filename="../minstall.cpp" line="2542"/>
+        <location filename="../minstall.cpp" line="2545"/>
         <source>No</source>
         <translation>Nu</translation>
     </message>
@@ -645,63 +645,63 @@ Returning to Step 1.</source>
         <translation>Linux and OS X printer service </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2541"/>
+        <location filename="../minstall.cpp" line="2544"/>
         <source>MX Linux is installing, are you 
 sure you want to Close now?</source>
         <translation>MX Linux se instaleaza, sigur
 doriți sa Inchideți acum?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2568"/>
+        <location filename="../minstall.cpp" line="2571"/>
         <source>Deleting old system</source>
         <translation>Se șterge sistemul vechi</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2577"/>
+        <location filename="../minstall.cpp" line="2580"/>
         <source>Failed to delete old MX Linux on destination.
 Returning to Step 1.</source>
         <translation>Nu s-a putut șterge vechiul MX Linux pe destinație.
 Întoarcere la Pasul 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2603"/>
+        <location filename="../minstall.cpp" line="2606"/>
         <source>Copying new system</source>
         <translation>Copiere sistem nou</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2627"/>
+        <location filename="../minstall.cpp" line="2630"/>
         <source>Fixing configuration</source>
         <translation>Se prepară configurarea</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2718"/>
+        <location filename="../minstall.cpp" line="2721"/>
         <source>Failed to write MX Linux to destination.
 Returning to Step 1.</source>
         <translation>Nu s-a putut scrie MX Linux la destinație.
 Întoarcere la Pasul 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2745"/>
+        <location filename="../minstall.cpp" line="2748"/>
         <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at https://mxlinux.org There are volunteers to help you at the MX forum, https://forum.mxlinux.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Cum să obțineți ajutor &lt;/b&gt;&lt;br/&gt;Puteți găsi informații de bază despre antiX Linux la https://mxlinux.org  Există voluntari care vă pot ajuta la forumul antiX, https://forum.mxlinux.org &lt;/p&gt;&lt;p&gt;Dacă cereți ajutor, vă rugăm să nu uitați să descrieți problema dvs. și computerul dvs. în detaliu. De obicei, afirmații de genul &quot;nu merge&quot;, nu sunt de ajutor. &lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2753"/>
+        <location filename="../minstall.cpp" line="2756"/>
         <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from LiveDVD or LiveUSB and running one of the utilities in MX Tools or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux LiveDVD or LiveUSB to recover data from MS-Windows systems!&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Repararea instalării&lt;/b&gt;&lt;br/&gt;Dacă MX Linux nu mai funcționează de pe hard disk, uneori, este posibil să rezolvați problema pornind de pe DVD sau USB și rulând unul dintre utilitarele din System Configuration sau folosind unul dintre obișnuitele utilitare Linux pentru a repara sistemul. &lt;/p&gt;&lt;p&gt;Puteți folosi, de asemenea, DVD-ul MX Linux pentru a recupera datele de pe sistemele MS-Windows!&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2759"/>
+        <location filename="../minstall.cpp" line="2762"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Sprijin MX Linux&lt;/ b&gt;&lt;br/&gt;MX Linux este susținut de către oameni ca tine. Se ajută unii pe alții pe forumul comunitații - https://forum.mxlinux.org, - http://antix.freeforums.org, traduc fișiere de ajutor în diverse limbi, fac sugestii, scriu documentație, sau ajută la testarea programelor noi.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2766"/>
+        <location filename="../minstall.cpp" line="2769"/>
         <source>&lt;p&gt;&lt;b&gt;Adjusting Your Sound Mixer&lt;/b&gt;&lt;br/&gt;MX Linux attempts to configure the sound mixer for you but sometimes it will be necessary for you to turn up volumes and unmute channels in the mixer in order to hear sound.&lt;/p&gt; &lt;p&gt;The mixer shortcut is located in the menu. Click on it to open the mixer. &lt;/p&gt;</source>
         <translation>&lt;p&gt; &lt;b&gt;Reglarea mixer de sunet &lt;/b&gt;&lt;br/&gt; MX Linux încercă să configureze mixerul de sunet automat, dar, uneori, pentru a auzi ceva, va fi necesar să modificați volumul și canale de activare sunet în mixer.&lt;/p&gt;&lt;p&gt;Comanda pentru mixer se află în meniu. Faceți clic pe el pentru a deschide mixerul. &lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2774"/>
+        <location filename="../minstall.cpp" line="2777"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit https://mxlinux.org or http://antix.freeforums.org&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Țineți MX Linux la curent&lt;/b&gt;&lt;br/&gt;Pentru informații despre MX Linux și actualizări, vă rugăm să vizitați https://mxlinux.org sau http://antix.freeforums.org&lt;/p&gt;</translation>
     </message>
