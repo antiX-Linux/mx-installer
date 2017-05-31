@@ -570,6 +570,8 @@ bool MInstall::makeDefaultPartitions()
         }
     } else {
         // new msdos partition table
+        cmd = QString("/bin/dd if=/dev/zero of=%1 bs=512 count=100").arg(drv);
+        system(cmd.toUtf8());
         int err = runCmd("parted -s " + drv + " mklabel msdos");
         if (err != 0 ) {
             qDebug() << "Could not create msdos partition table on " + drv;
