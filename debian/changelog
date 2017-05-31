@@ -1,3 +1,9 @@
+mx-installer (17.5.03mx16) mx; urgency=medium
+
+  * blank mbr when creating msdos partition table
+
+ -- dolphinoracle <dolphin@mx1>  Wed, 31 May 2017 12:30:54 -0400
+
 mx-installer (17.5.02mx16) mx; urgency=medium
 
   * added pop up message about encrypting swap 
