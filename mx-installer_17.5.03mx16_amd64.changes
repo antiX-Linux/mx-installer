@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Wed, 31 May 2017 12:30:54 -0400
+Source: mx-installer
+Binary: mx-installer
+Architecture: source amd64
+Version: 17.5.03mx16
+Distribution: mx
+Urgency: medium
+Maintainer: anticapitalista <antiX@operamail.com>
+Changed-By: dolphinoracle <dolphin@mx1>
+Description:
+ mx-installer - GUI installer for MX Linux.
+Changes:
+ mx-installer (17.5.03mx16) mx; urgency=medium
+ .
+   * blank mbr when creating msdos partition table
+Checksums-Sha1:
+ fdb77e267856149570a931122b6d9c91f2d85dee 648 mx-installer_17.5.03mx16.dsc
+ 07538239268ba1b8554b09db026094b752064230 350964 mx-installer_17.5.03mx16.tar.xz
+ 359471b11111ee47c801cbaaf6df15bbf22579e0 424924 mx-installer_17.5.03mx16_amd64.deb
+Checksums-Sha256:
+ 9df892ae56fb935f7a8791779d2ea0c059fc033730bf265296343785981b9e4c 648 mx-installer_17.5.03mx16.dsc
+ a1358bde2f900437612f0115eddc624c2c717ef046689faf7883d4d7cdd4d45d 350964 mx-installer_17.5.03mx16.tar.xz
+ b2c319f89e1225b55ba654f00b504ed7be4ba326f5290f14e354de5a6747841a 424924 mx-installer_17.5.03mx16_amd64.deb
+Files:
+ c0e2ad8ae0bacde235f340b47719bd37 648 system optional mx-installer_17.5.03mx16.dsc
+ a52fe92efc5df76088e27c9f087921d1 350964 system optional mx-installer_17.5.03mx16.tar.xz
+ 48099ae4882eec3f85926497d0a09cc3 424924 system optional mx-installer_17.5.03mx16_amd64.deb
