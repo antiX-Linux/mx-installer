@@ -1,3 +1,9 @@
+mx-installer (17.6mx16) mx; urgency=medium
+
+  * added boot flags for GPT and MBR
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 01 Jun 2017 17:46:33 -0400
+
 mx-installer (17.5.03mx16) mx; urgency=medium
 
   * blank mbr when creating msdos partition table
