@@ -962,6 +962,9 @@ bool MInstall::installLoader()
     } else if (grubRootButton->isChecked()) {
         boot = rootpart;
     } else if (grubEspButton->isChecked()) {
+        if (entireDiskButton->isChecked()) { // don't use PMBR if installing on ESP and doing automatic partitioning
+            runCmd("parted -s " + bootdrv + " disk_set pmbr_boot off");
+        }
         // find first ESP on the boot disk
         QString cmd = QString("partition-info find-esp=%1").arg(bootdrv);
         boot = getCmdOut(cmd);

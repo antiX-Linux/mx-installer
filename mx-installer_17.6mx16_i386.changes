@@ -18,20 +18,20 @@ Changes:
  .
    * added boot flags for GPT and MBR
 Checksums-Sha1:
- 249a3693350cedf46bd7e00bf2fe642c7363c03a 428222 mx-installer_17.6mx16_i386.deb
+ 90cff2af10e59a449c4fcf9c8bf71962c4d8a594 428592 mx-installer_17.6mx16_i386.deb
 Checksums-Sha256:
- bc2b2230b1d1f2bf8d8f536b143b398ffd68844fd2d566d5066b3447ea0992f7 428222 mx-installer_17.6mx16_i386.deb
+ 77b80d57b5ff8e84fe7b3135f998aed43c618e85d3724d62506ff02fa8b09e17 428592 mx-installer_17.6mx16_i386.deb
 Files:
- 2e2313caa6eea97c392f97a69f0bd43a 428222 system optional mx-installer_17.6mx16_i386.deb
+ 21e85001c754377b101b27918265267f 428592 system optional mx-installer_17.6mx16_i386.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJZMIuuAAoJEHCTjHgGee6YNacIALbGrsc4c/lBasu5Hoaa82Kt
-ESea8HvlKTpiK160R3VzaRuUVyAtvgtS8tPW5dMMiSYbos5ywmedJlbhQcF1Ut8G
-Qswz+Ktx1s6hldqf8m/PoSqdh18ITQUpprLqjVlmpDdfODMs7Jb/pwsyhwQPW/i3
-Dmuy+RkKyd8ONurU5w6TvHK8E5h5nxay47DsYn6W8sJif7sfm+Em43Z1NbrxkGtq
-YoHIS/Hv8PgkR9dchowaJFULLX3quFpvk7z6Uyz5bF0ItyvLYHRtth3yUzLBmp5q
-dMIGbE84dX5BoJYKu6P+5pC2krV8p7ySSN2tzKsAytJow0w0hyYpbIblVLnkesc=
-=vFWc
+iQEcBAEBAgAGBQJZMNCIAAoJEHCTjHgGee6YB48IAKloab9l6QMTfqtN/jQjktuZ
+8mvY+Cq8xNxhw3N6HOSLioCCp/q6Q/is8+go2SwHALsWK05lZ+uhY8agaYtPF6m2
+cq3aCor9nwhGdqfw4Rgudfeg86BW9GZFoVre/7UPDEWSjPJbybkaVkg4J2H+x2Ts
+tJRbw73i+AYWNA5TiQXEvb+J3I32dLvVQVWWBaf69OY2vyOA46Myn1pGdXVl32e3
+ARn4aukm9Ea3P99o9OgW5VyUsZYgXZo4FPh60k1syakIMBTsCcLPOOU+uOnyTL/M
+dNHrfbY6i4c+nZnip0gXQi8nKT6RgJk6yeBsl/K27sfLeXZ+7L9ZWq39c2R1EVE=
+=AWqR
 -----END PGP SIGNATURE-----

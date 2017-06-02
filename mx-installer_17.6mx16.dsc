@@ -13,20 +13,20 @@ Build-Depends: qt5-qmake, qt5-default, qttools5-dev-tools, debhelper (>= 9.20120
 Package-List:
  mx-installer deb system optional arch=any
 Checksums-Sha1:
- 9824f3a427a818f7cbcaa7967e28d6b6b27f284d 349524 mx-installer_17.6mx16.tar.xz
+ 596af52a319bcea26119e8f8beea358928be5f9a 349540 mx-installer_17.6mx16.tar.xz
 Checksums-Sha256:
- 4c2362acfc2c7a13cad064b7ad0df780b740f403e8c22a65b2705017eb5936c7 349524 mx-installer_17.6mx16.tar.xz
+ f14153b24e1306d68eab10d2774227f543ed9a9784a7b3747065b1ca80146bb7 349540 mx-installer_17.6mx16.tar.xz
 Files:
- e150eb4ddc4d12c9b3658aaab3735d73 349524 mx-installer_17.6mx16.tar.xz
+ 46f1aa962e7015f1452d9dc4f121b14d 349540 mx-installer_17.6mx16.tar.xz
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJZMIttAAoJEHCTjHgGee6YtFoIAJ1K08yKmyaMLtKB1Li3JszE
-Seb/QaHBOQNhb21XkSZUy7+YBfNGzhh24vFomm4F/Pqtdud5XmoXBBYM9+ob4xmc
-Z7WQdHUkOkuelh3ZIQKBdYMJEtAEZVD3lTG/SgUDSD70N8r4FlQAI3Mvg2EG/Hm3
-VxHPdtR4BQ08Cwd3WBRl9aaERUQ963/6/2alI9P7aUAKpEOOAHdo5VUdlwObgevK
-p+Qeuhagcem47hy154dc1aMHHj3z33sZacyx6O2JEMI26gvRjbtFN+4wVhCtQSQ7
-u0lVS5DI3PbNcERZXJxuvW/RpDYJGb5LUlsZ6XQIx1gQ1FTKI7Tp66effRIw/r4=
-=YOAm
+iQEcBAEBAgAGBQJZMNBEAAoJEHCTjHgGee6Y+gMH/2RWAzXqGcQDQ9gv+ad8MxTa
+W8W6ar8CguQiXByLrdDLQWIRzy5veGlhFjy4t+t/KQ42T4jByjj4HrwPllfKv+Av
+KN5w7uymIPJpQ/7Ef4XdcffBhfsF5EGq7J2XVMecvCDAdVq0oSczxq27m7CYE2Qk
+c035pITnSA3tgQcupqdIDpFdyPxpLxB1o7Wsi8rh01bk5PHy5LTOukR6z+1pMHvF
+BSNETkaitivYy8luV4PaJPeHzUfE046FHO8wbjPOZKIsNM0v8dqJP+yNUCucZ1wm
+5o4JGohe8GOKjUfyEv+tFDUNsck9yLmvmHRGgc4ZM/1JiYjAoh1IzgGtLpnHuGw=
+=i+Q/
 -----END PGP SIGNATURE-----
