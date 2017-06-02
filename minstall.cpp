@@ -568,7 +568,6 @@ bool MInstall::makeDefaultPartitions()
         if(!makeEsp(drv, esp_size)) {
             return false;
         }
-        runCmd("parted -s " + drv + " disk_set pmbr_boot on");
     } else {
         // new msdos partition table
         cmd = QString("/bin/dd if=/dev/zero of=%1 bs=512 count=100").arg(drv);
@@ -580,7 +579,6 @@ bool MInstall::makeDefaultPartitions()
         }
         rootdev = drv + "1";
         swapdev = drv + "2";
-        runCmd("parted -s " + drv + " set 1 boot on");
     }
 
     // create root partition
@@ -616,6 +614,12 @@ bool MInstall::makeDefaultPartitions()
     updateStatus(tr("Formatting root partition"), ++prog);
     if (!makeLinuxPartition(rootdev, "ext4", false, rootLabelEdit->text())) {
         return false;
+    }
+
+    if(uefi && arch64) { // set appropriate flags
+        runCmd("parted -s " + drv + " disk_set pmbr_boot on");
+    } else {
+        runCmd("parted -s " + drv + " set 1 boot on");
     }
 
     system("sleep 1");
