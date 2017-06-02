@@ -18,26 +18,26 @@ Changes:
  .
    * added boot flags for GPT and MBR
 Checksums-Sha1:
- 67f0588892496638e0f5368088902fd7710219f1 1157 mx-installer_17.6mx16.dsc
- 596af52a319bcea26119e8f8beea358928be5f9a 349540 mx-installer_17.6mx16.tar.xz
- f27fa98b755f076c213ad7030e96819a5b4eae13 426214 mx-installer_17.6mx16_amd64.deb
+ 492842c9d512f83415669fbedc31683446ffb48e 1157 mx-installer_17.6mx16.dsc
+ d15aca66fd633a868ad65098e18cffeb0d6db755 349552 mx-installer_17.6mx16.tar.xz
+ 38ca66382309ebb999573fe50b36755b3d086394 425514 mx-installer_17.6mx16_amd64.deb
 Checksums-Sha256:
- f963f6b44562d30f34046cd9194330cd645f815f4616d83584980ae6999e8978 1157 mx-installer_17.6mx16.dsc
- f14153b24e1306d68eab10d2774227f543ed9a9784a7b3747065b1ca80146bb7 349540 mx-installer_17.6mx16.tar.xz
- 6821397b92e0b2057553e2a1aac2eefcd77100dcc28df9ca55151c8084eaf7d3 426214 mx-installer_17.6mx16_amd64.deb
+ 0186758c77b595472e66adae36872990646c1ccad1a7524de62bb1a908761b6b 1157 mx-installer_17.6mx16.dsc
+ a436b295c7e4145a36f2641fe6540df03ca938eb3067302a2357369d30ebdda4 349552 mx-installer_17.6mx16.tar.xz
+ 3dd45c4f7ab7566625ffe4d70358e918a06c9f7c38f377cecda60f8ea359794d 425514 mx-installer_17.6mx16_amd64.deb
 Files:
- 063e1c80fab1033d7cdff70a3dcf4af9 1157 system optional mx-installer_17.6mx16.dsc
- 46f1aa962e7015f1452d9dc4f121b14d 349540 system optional mx-installer_17.6mx16.tar.xz
- 14ff16c56588c43f842e5b8e69ac7629 426214 system optional mx-installer_17.6mx16_amd64.deb
+ 037e0108e3b47242194d86d8e380e003 1157 system optional mx-installer_17.6mx16.dsc
+ 23861d88459d4d7f0e545e6fa6ba82c0 349552 system optional mx-installer_17.6mx16.tar.xz
+ b49378f6f5005fe927ef5e756c08c8e4 425514 system optional mx-installer_17.6mx16_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJZMNBIAAoJEHCTjHgGee6YHF8IAKbKbr+ol7KBp2SjDJodJ6E/
-VTqcwoa7SEke9KDOTJPt7XmT00LGyK8Zo46H2mHcB7MCuO8JWYh+Zpux8HQH0tsX
-hCVwVKAKuGSh80a3El9Aw76jJD5KRKg54u4Qod8tiYPKKu0LOcQ2egz+cpdxK3Hf
-fHUl118ssXHGUMIFyxOqsBPJmrbkxnl3jxDIzJzEx6j89WG3JWu9/KsAsUUsghxf
-rGHeXXNjVrC1CgY0kjpdhCCphvQpDNsl58Eg4lrRtuAIE9XqWVGVy20YttKALGcT
-WUTSvSoVeZIFpzEyS9QehIlJUkuLXt/PUiDckFqfEyqKbLkHyjTzEjRGTegUJnA=
-=yqMG
+iQEcBAEBAgAGBQJZMNa4AAoJEHCTjHgGee6YEUsH/jILkM2UbWJTD3E6CTj9/rNe
+RLVhUw0RUp2AMkjHiKh+pf0h3GTXjz4TUugjgY2EAcGmkTrYNWZ2hOX/lbm/EGoI
+w/q5Owpnw6OjmnL1kEWV7x4wsLWvIiTPTsK94rup4ln4s5c0POI+iaL850dqPQ5A
+DpNePeQjDZ9NRPpV1dJIPxsAUav44ovnf10qEKwZhQQH9tNcEAb10IC+dXlHeonu
+KXWoSb4T8xQuHZ/EOAu9HNmlutglwBrLHsQCT+NUN0kRplSdTd1W76PBk2wTyIfR
+iPQPDXMW7KCkRTU+YW0nEkxQ7dSrLFTyO9QotWXqWcxHknm3PKkiiBmV7BrALv0=
+=F/A4
 -----END PGP SIGNATURE-----
