@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="pt_BR" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="pt_BR">
 <context>
     <name>MInstall</name>
     <message>
@@ -113,7 +115,7 @@ O disco com a partição que você selecionou para a instalação está falhando
     <message>
         <location filename="../minstall.cpp" line="567"/>
         <source>Formating EFI System Partition (ESP)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="605"/>
@@ -235,7 +237,7 @@ e criar um diretório home novo?</translation>
     <message>
         <location filename="../minstall.cpp" line="1120"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you'll have to select a different username or
+you&apos;ll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>Desculpe, salvar o diretório home antigo falhou. Antes de prosseguir
 você deverá selecionar um nome de usuário diferente ou
@@ -255,7 +257,7 @@ você deverá selecionar um nome de usuário diferente.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1146"/>
-        <source>You've chosen to not use, save or delete the old home directory.
+        <source>You&apos;ve chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Você escolheu não usar, salvar ou apagar o diretório home antigo.
 Antes de prosseguir você deverá selecionar um nome de usuário diferente.</translation>
@@ -283,7 +285,7 @@ Antes de prosseguir você deverá selecionar um nome de usuário diferente.</tra
     <message>
         <location filename="../minstall.cpp" line="1248"/>
         <source>Sorry, could not encrypt /home/</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1293"/>
@@ -359,7 +361,7 @@ Por favor, tente de novo.</translation>
     <message>
         <location filename="../minstall.cpp" line="1410"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You'll have to
+at least 2 characters long. You&apos;ll have to
 select a different name before proceeding.</source>
         <translation>Desculpe, o nome da máquina deve ter
 ao menos 2 caracteres. Você deve escolher
@@ -368,7 +370,7 @@ um nome diferente antes de prosseguir.</translation>
     <message>
         <location filename="../minstall.cpp" line="1414"/>
         <source>Sorry your computer name contains invalid characters.
-You'll have to select a different
+You&apos;ll have to select a different
 name before proceeding.</source>
         <translation>Desculpe o nome do computador contém caracteres inválidos. 
 Você deve escolher um nome diferente antes de prosseguir.</translation>
@@ -376,7 +378,7 @@ Você deve escolher um nome diferente antes de prosseguir.</translation>
     <message>
         <location filename="../minstall.cpp" line="1420"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You'll have to select a different
+2 characters long. You&apos;ll have to select a different
 name before proceeding.</source>
         <translation>Desculpe, o domínio da sua máquina deve conter
 ao menos 2 caracteres. Você deve escolher um
@@ -385,7 +387,7 @@ nome diferente antes de prosseguir.</translation>
     <message>
         <location filename="../minstall.cpp" line="1424"/>
         <source>Sorry your computer domain contains invalid characters.
-You'll have to select a different
+You&apos;ll have to select a different
 name before proceeding.</source>
         <translation>Desculpe, o domínio da sua máquina contém caracteres inválidos.
 Você deve escolher um nome diferente antes de prosseguir.</translation>
@@ -393,7 +395,7 @@ Você deve escolher um nome diferente antes de prosseguir.</translation>
     <message>
         <location filename="../minstall.cpp" line="1433"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You'll have to select a different
+2 characters long. You&apos;ll have to select a different
 name before proceeding.</source>
         <translation>Desculpe, seu grupo de trabalho deve ter
 ao menos 2 caracteres. Você deve escolher
@@ -474,7 +476,7 @@ Retornando ao Passo 1.</translation>
     <message>
         <location filename="../minstall.cpp" line="2027"/>
         <source>&lt;p&gt;&lt;b&gt;Localization Defaults&lt;/b&gt;&lt;br/&gt;Set the default keyboard and locale. These will apply unless they are overridden later by the user.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configure Clock&lt;/b&gt;&lt;br/&gt;If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for &apos;System clock uses LOCAL.&apos;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Timezone Settings&lt;/b&gt;&lt;br/&gt;The system boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Properties.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Service Settings&lt;/b&gt;&lt;br/&gt;Most users should not change the defaults. Users with low-resource computers sometimes want to disable unneeded services in order to keep the RAM usage as low as possible. Make sure you know what you are doing! </source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2037"/>
@@ -696,7 +698,7 @@ Retornando ao Passo 1.</translation>
     <message>
         <location filename="../minstall.cpp" line="2808"/>
         <source>This option also encyrpts /swap, which will render the swap partition unable to be shared with other installed operating systems.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2809"/>
@@ -1134,7 +1136,7 @@ Aproveite bem o Linux MX.</translation>
     <message>
         <location filename="../meinstall.ui" line="2074"/>
         <source>Encrypt /home</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2106"/>
@@ -1168,10 +1170,10 @@ O Linux MX é suportado por pessoas como você. Algumas prestam ajuda a quem a s
     <name>QApplication</name>
     <message>
         <location filename="../app.cpp" line="47"/>
-        <source>The installer won't launch because it appears to be running already in the background.
+        <source>The installer won&apos;t launch because it appears to be running already in the background.
 
 Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../app.cpp" line="55"/>
@@ -1179,7 +1181,7 @@ Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</sou
 We recommend you quit now and restart in Legacy Boot
 
 Do you want to continue the installation?</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../app.cpp" line="59"/>

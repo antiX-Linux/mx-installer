@@ -1,3 +1,9 @@
+mx-installer (17.6mx16+1) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 04 Jun 2017 00:28:58 -0400
+
 mx-installer (17.6mx16) mx; urgency=medium
 
   * added boot flags for GPT and MBR
