@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="el">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.1">
 <context>
     <name>MInstall</name>
     <message>
@@ -240,7 +238,7 @@ and create a new home directory?</source>
     <message>
         <location filename="../minstall.cpp" line="1120"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you&apos;ll have to select a different username or
+you'll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>Συγγνώμη, αποτυχία αποθήκευσης του Φακέλλου Χρήστη (home directory). 
 Πριν συνεχίσετε, πρέπει να επιλέξετε ένα διαφορετικό Όνομα Χρήστη, ή να 
@@ -260,7 +258,7 @@ you&apos;ll have to select a different username.</source>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1146"/>
-        <source>You&apos;ve chosen to not use, save or delete the old home directory.
+        <source>You've chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Επιλέξατε να μη χρησιμοποιήσετε, αποθηκεύσετε ή διαγράψετε τον παλιό Φάκελλο Χρήστη (home directory). 
 Πριν προχωρήσετε, θα πρέπει να επιλέξετε ένα διαφορετικό όνομα χρήστη.</translation>
@@ -363,7 +361,7 @@ not match.  Please try again.</source>
     <message>
         <location filename="../minstall.cpp" line="1410"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You&apos;ll have to
+at least 2 characters long. You'll have to
 select a different name before proceeding.</source>
         <translation>Συγγνώμη, το όνομα του υπολογιστή σας πρέπει να έχει 
 μήκος τουλάχιστον 2 χαρακτήρων. Θα πρέπει να 
@@ -372,7 +370,7 @@ select a different name before proceeding.</source>
     <message>
         <location filename="../minstall.cpp" line="1414"/>
         <source>Sorry your computer name contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Συγγνώμη, το όνομα του υπολογιστή σας περιέχει μη έγκυρους χαρακτήρες. 
 Θα πρέπει να επιλέξετε ένα διαφορετικό όνομα 
@@ -381,7 +379,7 @@ name before proceeding.</source>
     <message>
         <location filename="../minstall.cpp" line="1420"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Συγγνώμη, αλλά το όνομα του υπολογιστή σας πρέπει να έχει τουλάχιστον 
 ένα μήκος 2 χαρακτήρων. Θα πρέπει να επιλέξετε ένα διαφορετικό 
@@ -390,7 +388,7 @@ name before proceeding.</source>
     <message>
         <location filename="../minstall.cpp" line="1424"/>
         <source>Sorry your computer domain contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Συγγνώμη, αλλά το όνομα του υπολογιστή σας περιέχει μη έγκυρους χαρακτήρες. 
 Θα πρέπει να επιλέξετε ένα διαφορετικό όνομα πριν συνεχίσετε.</translation>
@@ -398,7 +396,7 @@ name before proceeding.</source>
     <message>
         <location filename="../minstall.cpp" line="1433"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Συγγνώμη, η Ομάδα Εργασίας σας πρέπει να έχει μήκος 
 τουλάχιστον 2 χαρακτήρων. Πρέπει να επιλέξετε ένα 
@@ -702,12 +700,12 @@ Returning to Step 1.</source>
     <message>
         <location filename="../minstall.cpp" line="2808"/>
         <source>This option also encyrpts /swap, which will render the swap partition unable to be shared with other installed operating systems.</source>
-        <translation type="unfinished"></translation>
+        <translation>Αυτή η επιλογή επίσης εγκρίνει /swap, πράγμα που θα καταστήσει το διαμέρισμα ανταλλαγής αδύνατο να μοιραστεί με άλλα εγκατεστημένα λειτουργικά συστήματα.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2809"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>Εντάξει</translation>
     </message>
 </context>
 <context>
@@ -1174,7 +1172,7 @@ MX Linux is supported by people like you. Some help others at the support forum 
     <name>QApplication</name>
     <message>
         <location filename="../app.cpp" line="47"/>
-        <source>The installer won&apos;t launch because it appears to be running already in the background.
+        <source>The installer won't launch because it appears to be running already in the background.
 
 Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</source>
         <translation>Το πρόγραμμα εγκατάστασης δεν θα ξεκινήσει επειδή φαίνεται να τρέχει ήδη στο background.

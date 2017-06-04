@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="fr">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.1">
 <context>
     <name>MInstall</name>
     <message>
@@ -241,7 +239,7 @@ et en créer un nouveau ?</translation>
     <message>
         <location filename="../minstall.cpp" line="1120"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you&apos;ll have to select a different username or
+you'll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>Désolé, la sauvegarde de l&apos;ancien répertoire home a échoué.
 Avant de poursuivre, vous devez sélectionner un autre nom
@@ -263,7 +261,7 @@ d&apos;utilisateur.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1146"/>
-        <source>You&apos;ve chosen to not use, save or delete the old home directory.
+        <source>You've chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Vous avez décidé de ne pas utiliser, sauvegarder ou effacer l&apos;ancien répertoire /home. 
 Avant de poursuivre, vous devez sélectionner un autre 
@@ -369,7 +367,7 @@ Veuillez, svp, essayer à nouveau.</translation>
     <message>
         <location filename="../minstall.cpp" line="1410"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You&apos;ll have to
+at least 2 characters long. You'll have to
 select a different name before proceeding.</source>
         <translation>Désolé, le nom de votre ordinateur doit faire 
 au  moins 2 caractères. Veuillez, svp, choisir
@@ -378,15 +376,15 @@ un nom plus long avant de continuer.</translation>
     <message>
         <location filename="../minstall.cpp" line="1414"/>
         <source>Sorry your computer name contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
-        <translation>Désolé, votre nom de l&apos;ordinateur contient des caractères non valides. 
-Veuillez, svp, choisir un autre nom avant de continuer.</translation>
+        <translation>Désolé mais le nom de votre ordinateur contient des caractères non valides.
+Veuillez choisir un nom différent avant de continuer.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1420"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Désolé, le nom du domaine doit faire au
 moins 2 caractères. Veuillez, svp, choisir
@@ -395,15 +393,15 @@ un nom plus long avant de continuer.</translation>
     <message>
         <location filename="../minstall.cpp" line="1424"/>
         <source>Sorry your computer domain contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
-        <translation>Désolé, votre domaine de l&apos;ordinateur contient des caractères non valides.
-Veuillez, svp, choisir un autre nom avant de continuer.</translation>
+        <translation>Désolé mais le nom de domaine de votre ordinateur contient des caractères non valides.
+Veuillez choisir un nom différent avant de continuer.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1433"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Désolé, le nom du groupe de travail doit faire 
 au moins 2 caractères. Veuillez, svp, choisir
@@ -489,7 +487,7 @@ Retour à l&apos;étape 1.</translation>
     <message>
         <location filename="../minstall.cpp" line="2027"/>
         <source>&lt;p&gt;&lt;b&gt;Localization Defaults&lt;/b&gt;&lt;br/&gt;Set the default keyboard and locale. These will apply unless they are overridden later by the user.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configure Clock&lt;/b&gt;&lt;br/&gt;If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for &apos;System clock uses LOCAL.&apos;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Timezone Settings&lt;/b&gt;&lt;br/&gt;The system boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Properties.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Service Settings&lt;/b&gt;&lt;br/&gt;Most users should not change the defaults. Users with low-resource computers sometimes want to disable unneeded services in order to keep the RAM usage as low as possible. Make sure you know what you are doing! </source>
-        <translation>&lt;p&gt;&lt;b&gt;Localisation par défaut&lt;/b&gt;&lt;br/&gt;Définissez le clavier par défaut et la localisation. Ces paramètres s’appliqueront à moins qu’ils ne soient modifiés par la suite par l’utilisateur.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Réglage de l’Horloge&lt;/b&gt;&lt;br/&gt;Si vous possédez un ordinateur Apple ou purement Unix, l’horloge système est réglée par défaut sur GMT ou Temps Universel. Pour changer, cochez la case &quot;l’horloge système utilise LOCAL.&quot; &lt;/p&gt;&lt;p&gt;&lt;b&gt;Réglage du fuseau horaire&lt;/b&gt;&lt;br/&gt;Le système démarre avec la zone de temps préréglée sur GMT/UTC. Pour changer le fuseau horaire, après avoir redémarré sur la nouvelle installation, cliquez avec le bouton droit sur l’horloge dans le Panneau et choisissez Propriétés.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Réglage des services&lt;/b&gt;&lt;br/&gt;La plupart des utilisateurs ne doivent pas changer les paramètres par défaut. Les utilisateurs ayant un ordinateur aux ressources limitées souhaitent parfois désactiver les services inutiles pour minimiser l&apos;utilisation de la RAM. Assurez-vous que vous savez ce que vous faites!</translation>
+        <translation>&lt;p&gt;&lt;b&gt;Localisation par défaut&lt;/b&gt;&lt;br/&gt;Définissez le clavier par défaut et la localisation. Ces paramètres s’appliqueront à moins qu’ils ne soient modifiés par la suite par l’utilisateur.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Réglage de l’Horloge&lt;/b&gt;&lt;br/&gt;Si vous possédez un ordinateur Apple ou purement Unix, l’horloge système est réglée par défaut sur GMT ou Temps Universel. Pour changer, cochez la case &quot;l’horloge système utilise LOCAL.&quot; &lt;/p&gt;&lt;p&gt;&lt;b&gt;Réglage du fuseau horaire&lt;/b&gt;&lt;br/&gt;Le système démarre avec la zone de temps préréglée sur GMT/UTC. Pour changer le fuseau horaire, après avoir redémarré sur la nouvelle installation, cliquez avec le bouton droit sur l’horloge dans le tableau de bord et choisissez Propriétés.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Réglage des services&lt;/b&gt;&lt;br/&gt;La plupart des utilisateurs ne doivent pas changer les paramètres par défaut.Les utilisateurs possédant un ordinateur aux ressources limitées veulent parfois inactiver les services inutiles afin de minimiser l&apos;utilisation de la RAM. Assurez-vous que vous savez ce que vous faites!</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2037"/>
@@ -698,7 +696,7 @@ Returning to Step 1.</source>
     <message>
         <location filename="../minstall.cpp" line="2780"/>
         <source>&lt;p&gt;&lt;b&gt;Adjusting Your Sound Mixer&lt;/b&gt;&lt;br/&gt;MX Linux attempts to configure the sound mixer for you but sometimes it will be necessary for you to turn up volumes and unmute channels in the mixer in order to hear sound.&lt;/p&gt; &lt;p&gt;The mixer shortcut is located in the menu. Click on it to open the mixer. &lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt; Réglages de l’Équaliseur Sonore &lt;/b&gt;&lt;br/&gt;MX Linux essaie de configurer l’équaliseur sonore pour vous mais il est parfois nécessaire de modifier le volume et les canaux de l’équaliseur pour entendre du son.&lt;/p&gt; &lt;p&gt;Le raccourci vers l’équaliseur est situé dans le panneau. Cliquez dessus pour l’ouvrir.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;&lt;b&gt; Réglages de la console de mixage &lt;/b&gt;&lt;br/&gt;MX Linux essaie de configurer la console de mixage à votre place mais il est parfois nécessaire de modifier le volume et les canaux de la console pour entendre du son.&lt;/p&gt; &lt;p&gt;Le raccourci vers la console est situé dans le panneau. Cliquez dessus pour l’ouvrir.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2788"/>
@@ -708,12 +706,12 @@ Returning to Step 1.</source>
     <message>
         <location filename="../minstall.cpp" line="2808"/>
         <source>This option also encyrpts /swap, which will render the swap partition unable to be shared with other installed operating systems.</source>
-        <translation type="unfinished"></translation>
+        <translation>Cette option cryptera la partition /swap, ce qui la rendra impossible à être partagée avec d&apos;autres systèmes d&apos;exploitation déjà installés. </translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2809"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -1180,7 +1178,7 @@ MX Linux est soutenu par des personnes comme vous. Certains proposent leur aide 
     <name>QApplication</name>
     <message>
         <location filename="../app.cpp" line="47"/>
-        <source>The installer won&apos;t launch because it appears to be running already in the background.
+        <source>The installer won't launch because it appears to be running already in the background.
 
 Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</source>
         <translation>L&apos;installateur ne peut démarrer car il semblerait qu&apos;il soit déjà lancé en arrière-plan.
