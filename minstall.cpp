@@ -413,7 +413,7 @@ bool MInstall::makeLinuxPartition(QString dev, const char *type, bool bad, QStri
                     if (strncmp(type, "btrfs", 4) == 0) {
                         // btrfs and set up fsck
                         system("/bin/cp -fp /bin/true /sbin/fsck.auto");
-                        cmd = QString("/sbin/mkfs.btrfs -f %1 -L \"%2\"").arg(dev).arg(label);
+                        cmd = QString("mkfs.btrfs -f %1 -L \"%2\"").arg(dev).arg(label);
                     } else {
                         //xfs
                         if (strncmp(type, "xfs", 4) == 0) {
