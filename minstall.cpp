@@ -2131,6 +2131,7 @@ void MInstall::refresh()
     homeLabelEdit->setHidden(true);
     homeLabelCheck->setHidden(true);
     diskCombo->addItems(drives);
+    diskCombo->setCurrentIndex(0);
     grubBootCombo->addItems(drives);
 
     on_diskCombo_activated();

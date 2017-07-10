@@ -50,7 +50,7 @@ The disk with the partition you selected for installation is failing.
         <location filename="../minstall.cpp" line="1131"/>
         <location filename="../minstall.cpp" line="1846"/>
         <location filename="../minstall.cpp" line="1860"/>
-        <location filename="../minstall.cpp" line="2556"/>
+        <location filename="../minstall.cpp" line="2557"/>
         <source>Yes</source>
         <translation>Да</translation>
     </message>
@@ -69,7 +69,7 @@ The disk with the partition you selected for installation is failing.
         <location filename="../minstall.cpp" line="1131"/>
         <location filename="../minstall.cpp" line="1846"/>
         <location filename="../minstall.cpp" line="1860"/>
-        <location filename="../minstall.cpp" line="2556"/>
+        <location filename="../minstall.cpp" line="2557"/>
         <source>No</source>
         <translation>Нет</translation>
     </message>
@@ -514,198 +514,198 @@ Returning to Step 1.</source>
         <translation>Готово</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2148"/>
+        <location filename="../minstall.cpp" line="2149"/>
         <source>Administration</source>
         <translation>Администрирование</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2154"/>
+        <location filename="../minstall.cpp" line="2155"/>
         <source>Runs commands periodically</source>
         <translation>Выполняет команды периодически</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2164"/>
+        <location filename="../minstall.cpp" line="2165"/>
         <source>Time-based job scheduler</source>
         <translation>Планировщик заданий, основанный на времени</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2174"/>
+        <location filename="../minstall.cpp" line="2175"/>
         <source>Execute a command as another user</source>
         <translation>Выполнить команду от имени другого пользователя</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2183"/>
+        <location filename="../minstall.cpp" line="2184"/>
         <source>Hardware</source>
         <translation>Оборудование</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2188"/>
+        <location filename="../minstall.cpp" line="2189"/>
         <source>CPU frequency, irqbalance</source>
         <translation>Частота центрального процессора, баланс IRQ</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2198"/>
+        <location filename="../minstall.cpp" line="2199"/>
         <source>S.M.A.R.T. monitoring tools</source>
         <translation>S.M.A.R.T. Инструменты мониторинга</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2208"/>
+        <location filename="../minstall.cpp" line="2209"/>
         <source>Advanced Configuration and Power Interface event daemon</source>
         <translation>Демон расширенной конфигурации и событий интерфейса питания</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2218"/>
+        <location filename="../minstall.cpp" line="2219"/>
         <source>HDD temperature monitor</source>
         <translation>Контроль температуры жесткого диска</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2228"/>
+        <location filename="../minstall.cpp" line="2229"/>
         <source>Generates key events for ACPI scripts</source>
         <translation>Создает ключевые события для скриптов ACPI</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2238"/>
+        <location filename="../minstall.cpp" line="2239"/>
         <source>Message bus daemon</source>
         <translation>Демон шины сообщений</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2248"/>
+        <location filename="../minstall.cpp" line="2249"/>
         <source>Mouse event server</source>
         <translation>Сервер событий мыши</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2258"/>
+        <location filename="../minstall.cpp" line="2259"/>
         <source>Scanner daemon</source>
         <translation>Демон сканера</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2268"/>
+        <location filename="../minstall.cpp" line="2269"/>
         <source>Random number generator</source>
         <translation>Генератор случайных чисел</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2278"/>
+        <location filename="../minstall.cpp" line="2279"/>
         <source>Enables programs to publish and discover services and hosts</source>
         <translation>Включает программы для создания общих ресурсов и обнаружения служб и компьютеров.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2287"/>
+        <location filename="../minstall.cpp" line="2288"/>
         <source>Networking</source>
         <translation>Сеть</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2293"/>
+        <location filename="../minstall.cpp" line="2294"/>
         <source>Network connection</source>
         <translation>Сетевое подключение</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2303"/>
+        <location filename="../minstall.cpp" line="2304"/>
         <source>Secure Shell</source>
         <translation>Безопасная оболочка</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2313"/>
+        <location filename="../minstall.cpp" line="2314"/>
         <source>Mail filter</source>
         <translation>Почтовый фильтр</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2323"/>
+        <location filename="../minstall.cpp" line="2324"/>
         <source>Network File System</source>
         <translation>Сетевая файловая система</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2337"/>
+        <location filename="../minstall.cpp" line="2338"/>
         <source>VPN program that creates secure connections</source>
         <translation>Программа VPN, которая создает безопасные соединения.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2347"/>
+        <location filename="../minstall.cpp" line="2348"/>
         <source>Bluetooth</source>
         <translation>Блютуз</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2357"/>
+        <location filename="../minstall.cpp" line="2358"/>
         <source>File-copying tool</source>
         <translation>Инструмент файлового копирования</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2366"/>
+        <location filename="../minstall.cpp" line="2367"/>
         <source>Printing</source>
         <translation>Печать</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2372"/>
+        <location filename="../minstall.cpp" line="2373"/>
         <source>Linux and OS X printer service</source>
         <translation>Служба принтеров Linux и OS X</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2555"/>
+        <location filename="../minstall.cpp" line="2556"/>
         <source>MX Linux is installing, are you 
 sure you want to Close now?</source>
         <translation>Идет процесс установки MX Linux, Вы
 уверены, что хотите прекратить сейчас?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2582"/>
+        <location filename="../minstall.cpp" line="2583"/>
         <source>Deleting old system</source>
         <translation>Удаление старой системы</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2591"/>
+        <location filename="../minstall.cpp" line="2592"/>
         <source>Failed to delete old MX Linux on destination.
 Returning to Step 1.</source>
         <translation>Не удалось удалить старый MX Linux в месте назначения.
 Возврат к шагу 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2617"/>
+        <location filename="../minstall.cpp" line="2618"/>
         <source>Copying new system</source>
         <translation>Копирование новой системы</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2641"/>
+        <location filename="../minstall.cpp" line="2642"/>
         <source>Fixing configuration</source>
         <translation>Установка конфигурации</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2732"/>
+        <location filename="../minstall.cpp" line="2733"/>
         <source>Failed to write MX Linux to destination.
 Returning to Step 1.</source>
         <translation>Не удалось записать MX Linux в место назначения.
 Возврат к шагу 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2759"/>
+        <location filename="../minstall.cpp" line="2760"/>
         <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at https://mxlinux.org There are volunteers to help you at the MX forum, https://forum.mxlinux.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Получение помощи&lt;/b&gt;&lt;br/&gt;Основная информация о MX Linux находится на https://mxlinux.org Есть добровольцы, которые помогут Вам на  MX Форуме, https://forum.mxlinux.org &lt;/p&gt;&lt;p&gt;Если Вы обратитесь за помощью, пожалуйста, не забудьте описать Вашу проблему и Ваш компьютер в некоторых деталях. Обычно обращения, подобные &quot;это не работает&quot;, не помогают.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2767"/>
+        <location filename="../minstall.cpp" line="2768"/>
         <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from LiveDVD or LiveUSB and running one of the utilities in MX Tools or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux LiveDVD or LiveUSB to recover data from MS-Windows systems!&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Восстановление установки&lt;/b&gt;&lt;br/&gt;Если MX Linux перестает работать с жесткого диска, иногда можно исправить эту проблему, загрузившись с компакт-диска и работая под управлением одной из утилит в MX Инструменты, или с помощью одного из официальных инструментов Linux для восстановления системы.&lt;/p&gt;&lt;p&gt;Вы также можете использовать MX Linux CD для восстановления данных из систем MS-Windows!&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2773"/>
+        <location filename="../minstall.cpp" line="2774"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Поддержка MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux поддерживается такими же людьми, как Вы. Некоторые помогают другим на форуме поддержки - https://forum.mxlinux.org, - http://antix.freeforums.org, или переводят файлы справки на различные языки, или внoсят предложения, пишут документацию, или помогают в тестировании нового программного обеспечения.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2780"/>
+        <location filename="../minstall.cpp" line="2781"/>
         <source>&lt;p&gt;&lt;b&gt;Adjusting Your Sound Mixer&lt;/b&gt;&lt;br/&gt;MX Linux attempts to configure the sound mixer for you but sometimes it will be necessary for you to turn up volumes and unmute channels in the mixer in order to hear sound.&lt;/p&gt; &lt;p&gt;The mixer shortcut is located in the menu. Click on it to open the mixer. &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Настройка Вашего звуковогo микшерa&lt;/b&gt;&lt;br/&gt;MX Linux пытается сама настроить звуковой микшер для Вас, но иногда Вам придется увеличить звук и включить звуковые каналы в микшере, чтобы услышать звук.&lt;/p&gt; &lt;p&gt;Ярлык микшера находится в меню. Нажмите на него, чтобы открыть микшер. &lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2788"/>
+        <location filename="../minstall.cpp" line="2789"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit https://mxlinux.org or http://antix.freeforums.org&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Имейте Вашу копию MX Linux обновленной&lt;/b&gt;&lt;br/&gt;Для получения дополнительной информации и обновлений MX Linux, пожалуйста, посетите https://mxlinux.org или http://antix.freeforums.org&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2808"/>
+        <location filename="../minstall.cpp" line="2809"/>
         <source>This option also encyrpts /swap, which will render the swap partition unable to be shared with other installed operating systems.</source>
         <translation>Эта опция также шифрует /swap, делая раздел подкачки недоступным для других установленных операционных систем.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2809"/>
+        <location filename="../minstall.cpp" line="2810"/>
         <source>OK</source>
         <translation>Да</translation>
     </message>
