@@ -1,5 +1,11 @@
 mx-installer (17.7mx16) mx; urgency=medium
 
+  * minor change to timezone settings
+
+ -- dolphinoracle <dolphinoracle@gmail.com>  Wed, 06 Sep 2017 10:16:28 -0400
+
+mx-installer (17.7mx16) mx; urgency=medium
+
   * select first drive by default
 
  -- Adrian <adrian@mxlinux.org>  Mon, 10 Jul 2017 12:16:28 -0400
