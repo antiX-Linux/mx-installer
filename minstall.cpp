@@ -1056,7 +1056,7 @@ bool MInstall::installLoader()
     system(cmd.toUtf8());
     // update grub config
     runCmd("chroot /mnt/antiX update-grub");
-    runCmd("chroot /mnt/antiX make-fstab --swap-only");
+    runCmd("/sbin/make-fstab --install /mnt/antiX");
     runCmd("chroot /mnt/antiX dev2uuid_fstab");
     runCmd("chroot /mnt/antiX update-initramfs -u -t -k all");
     system("umount /mnt/antiX/proc; umount /mnt/antiX/sys; umount /mnt/antiX/dev");
