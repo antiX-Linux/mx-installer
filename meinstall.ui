@@ -593,7 +593,7 @@ Enjoy using MX Linux.</string>
              <bool>false</bool>
             </property>
             <property name="text">
-             <string notr="true">rootMX16</string>
+             <string notr="true"/>
             </property>
             <property name="maxLength">
              <number>16</number>
