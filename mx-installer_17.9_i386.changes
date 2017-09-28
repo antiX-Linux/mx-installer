@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Thu, 28 Sep 2017 14:41:58 -0400
+Source: mx-installer
+Binary: mx-installer
+Architecture: i386
+Version: 17.9
+Distribution: mx
+Urgency: medium
+Maintainer: anticapitalista <antiX@operamail.com>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-installer - GUI installer for MX Linux.
+Changes:
+ mx-installer (17.9) mx; urgency=medium
+ .
+   * generalize name for root partition and for GRUB installation
+Checksums-Sha1:
+ b09143167e6cd068b304b6cfab9015c3ed5c4253 432600 mx-installer_17.9_i386.deb
+Checksums-Sha256:
+ 94960f1a73ce8b981955042ae1d69c7f1b71df9657ed911a0e733a8a40e474b2 432600 mx-installer_17.9_i386.deb
+Files:
+ 6f7960958d35c52bbea101da330f15a6 432600 system optional mx-installer_17.9_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJZzUcIAAoJEHCTjHgGee6Y0nAIAMw/1EiMSaPr+V1ijwJzgjq0
+PIxPq29bNmp2G+3vk+N8eOFGunvUzH5vfRYsHHbX/yvz0tzaONF8upBM1QWaaQiw
+wbzDlmg0YyGKpvpX2yWdv4aBeY3LHkJ/5D/ojkWuzTyJzM3MeqgeRDiHUw+lydM3
+kJJgE2yw1ppqzkBHbq/9xJ6xNXHyU5T5o6nl4j65HcO+wZ6ERTxjTCEyXl+/VJnR
+1Q6Tv4Jj0iAirFvYaMkYWvejE8X2P+KgK6bhduOurKFFJTQmM62H3nLxzL8MwBGx
+nPFhDbedG+ZqqwjVFCaqJrrPXsmn5UKD8RdtIoaKu0SGWuRH38QIyJ6sSVWlnkU=
+=Sv+b
+-----END PGP SIGNATURE-----

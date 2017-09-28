@@ -4,7 +4,7 @@
 <context>
     <name>MInstall</name>
     <message>
-        <location filename="../minstall.cpp" line="287"/>
+        <location filename="../minstall.cpp" line="289"/>
         <source>
 
 The disk with the partition you selected for installation is failing.
@@ -17,15 +17,15 @@ The disk with the partition you selected for installation is failing.
 </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="288"/>
+        <location filename="../minstall.cpp" line="290"/>
         <source>You are strongly advised to abort.
 </source>
         <translation>中断する事を強くおすすめします。
 </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="289"/>
-        <location filename="../minstall.cpp" line="303"/>
+        <location filename="../minstall.cpp" line="291"/>
+        <location filename="../minstall.cpp" line="305"/>
         <source>If unsure, please exit the Installer and run GSmartControl for more information.
 
 </source>
@@ -34,50 +34,50 @@ The disk with the partition you selected for installation is failing.
 </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="290"/>
+        <location filename="../minstall.cpp" line="292"/>
         <source>Do you want to abort the installation?</source>
         <translation>インストールを中止してよろしいですか？</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="292"/>
-        <location filename="../minstall.cpp" line="306"/>
-        <location filename="../minstall.cpp" line="486"/>
-        <location filename="../minstall.cpp" line="685"/>
-        <location filename="../minstall.cpp" line="697"/>
-        <location filename="../minstall.cpp" line="713"/>
-        <location filename="../minstall.cpp" line="726"/>
-        <location filename="../minstall.cpp" line="739"/>
-        <location filename="../minstall.cpp" line="984"/>
-        <location filename="../minstall.cpp" line="1101"/>
-        <location filename="../minstall.cpp" line="1106"/>
-        <location filename="../minstall.cpp" line="1131"/>
-        <location filename="../minstall.cpp" line="1846"/>
-        <location filename="../minstall.cpp" line="1860"/>
-        <location filename="../minstall.cpp" line="2557"/>
+        <location filename="../minstall.cpp" line="294"/>
+        <location filename="../minstall.cpp" line="308"/>
+        <location filename="../minstall.cpp" line="488"/>
+        <location filename="../minstall.cpp" line="687"/>
+        <location filename="../minstall.cpp" line="699"/>
+        <location filename="../minstall.cpp" line="715"/>
+        <location filename="../minstall.cpp" line="728"/>
+        <location filename="../minstall.cpp" line="741"/>
+        <location filename="../minstall.cpp" line="986"/>
+        <location filename="../minstall.cpp" line="1094"/>
+        <location filename="../minstall.cpp" line="1099"/>
+        <location filename="../minstall.cpp" line="1124"/>
+        <location filename="../minstall.cpp" line="1839"/>
+        <location filename="../minstall.cpp" line="1853"/>
+        <location filename="../minstall.cpp" line="2550"/>
         <source>Yes</source>
         <translation>はい</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="292"/>
-        <location filename="../minstall.cpp" line="306"/>
-        <location filename="../minstall.cpp" line="486"/>
-        <location filename="../minstall.cpp" line="685"/>
-        <location filename="../minstall.cpp" line="697"/>
-        <location filename="../minstall.cpp" line="713"/>
-        <location filename="../minstall.cpp" line="726"/>
-        <location filename="../minstall.cpp" line="739"/>
-        <location filename="../minstall.cpp" line="984"/>
-        <location filename="../minstall.cpp" line="1101"/>
-        <location filename="../minstall.cpp" line="1106"/>
-        <location filename="../minstall.cpp" line="1131"/>
-        <location filename="../minstall.cpp" line="1846"/>
-        <location filename="../minstall.cpp" line="1860"/>
-        <location filename="../minstall.cpp" line="2557"/>
+        <location filename="../minstall.cpp" line="294"/>
+        <location filename="../minstall.cpp" line="308"/>
+        <location filename="../minstall.cpp" line="488"/>
+        <location filename="../minstall.cpp" line="687"/>
+        <location filename="../minstall.cpp" line="699"/>
+        <location filename="../minstall.cpp" line="715"/>
+        <location filename="../minstall.cpp" line="728"/>
+        <location filename="../minstall.cpp" line="741"/>
+        <location filename="../minstall.cpp" line="986"/>
+        <location filename="../minstall.cpp" line="1094"/>
+        <location filename="../minstall.cpp" line="1099"/>
+        <location filename="../minstall.cpp" line="1124"/>
+        <location filename="../minstall.cpp" line="1839"/>
+        <location filename="../minstall.cpp" line="1853"/>
+        <location filename="../minstall.cpp" line="2550"/>
         <source>No</source>
         <translation>いいえ</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="300"/>
+        <location filename="../minstall.cpp" line="302"/>
         <source>Smartmon tool output:
 
 </source>
@@ -86,162 +86,162 @@ The disk with the partition you selected for installation is failing.
 </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="301"/>
+        <location filename="../minstall.cpp" line="303"/>
         <source>The disk with the partition you selected for installation passes the S.M.A.R.T. monitor test (smartctl)
 </source>
         <translation>インストールパーティションを含むディスクは、S.M.A.R.T. モニター・テスト (smartctl) を通過しました。
 </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="302"/>
+        <location filename="../minstall.cpp" line="304"/>
         <source>but the tests indicate it will have a higher than average failure rate in the upcoming year.
 </source>
         <translation>しかしテストは年数に応じた平均失敗率より高い値を返す事があります。
 </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="304"/>
+        <location filename="../minstall.cpp" line="306"/>
         <source>Do you want to continue?</source>
         <translation>作業を続けてもよろしいですか？</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="338"/>
+        <location filename="../minstall.cpp" line="340"/>
         <source>Ready to install MX Linux filesystem</source>
         <translation>MX Linux ファイルシステムインストール準備</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="484"/>
+        <location filename="../minstall.cpp" line="486"/>
         <source>OK to format and use the entire disk (%1) for MX Linux?</source>
         <translation>フォーマットし、MX Linux 用にディスク全体 (%1) を使用しますか？ よければ OK を押して下さい</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="492"/>
+        <location filename="../minstall.cpp" line="494"/>
         <source>Creating required partitions</source>
         <translation>パーティションを作成する必要があります</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="567"/>
+        <location filename="../minstall.cpp" line="569"/>
         <source>Formating EFI System Partition (ESP)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="605"/>
-        <location filename="../minstall.cpp" line="777"/>
+        <location filename="../minstall.cpp" line="607"/>
+        <location filename="../minstall.cpp" line="779"/>
         <source>Formatting swap partition</source>
         <translation>swap パーティションのフォーマット中</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="614"/>
+        <location filename="../minstall.cpp" line="616"/>
         <source>Formatting root partition</source>
         <translation>ルートパーティションのフォーマット中</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="677"/>
+        <location filename="../minstall.cpp" line="679"/>
         <source>You must choose a root partition.
 The root partition must be at least 3.5 GB.</source>
         <translation>ルートパーティションを選んで下さい。
 3.5 GB 以上必要です。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="683"/>
+        <location filename="../minstall.cpp" line="685"/>
         <source>The partition you selected for root, appears to be a MS-Windows partition.  Are you sure you want to reformat this partition?</source>
         <translation>/ (ルート) として選んだパーティションは Windows パーティションです。このパーティションをフォーマットしてよろしいですか？</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="692"/>
+        <location filename="../minstall.cpp" line="694"/>
         <source>OK to format and destroy all data on 
 %1 for the / (root) partition?</source>
         <translation>/ （ルート) パーティション %1 をフォーマットし、
 全データを破壊してよろしいですか？ OK で実施します</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="694"/>
+        <location filename="../minstall.cpp" line="696"/>
         <source>All data on %1 will be deleted, except for /home
 OK to continue?</source>
         <translation>/home を除く %1 の全データを削除してよろしいですか？
 OK で実施します</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="711"/>
+        <location filename="../minstall.cpp" line="713"/>
         <source>OK to format and destroy all data on 
 %1 for the swap partition?</source>
         <translation>swap パーティション %1 をフォーマットし、
 全データを削除してよろしいですか？ OK で実施します。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="724"/>
+        <location filename="../minstall.cpp" line="726"/>
         <source>The partition you selected for /home, appears to be a MS-Windows partition.  Are you sure you want to reformat this partition?</source>
         <translation>/home として選んだパーティションは Windows パーティションです。このパーティションをフォーマットしてよろしいですか？</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="733"/>
+        <location filename="../minstall.cpp" line="735"/>
         <source>OK to reuse (no reformat) %1 as the /home partition?</source>
         <translation>%1 を /home パーティションにしますか？(未初期化) OK で確定します。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="735"/>
+        <location filename="../minstall.cpp" line="737"/>
         <source>OK to format and destroy all data on %1 for the /home partition?</source>
         <translation>/home パーティション %1 を初期化し、全データを削除してよろしいですか？ OK で実施します</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="746"/>
+        <location filename="../minstall.cpp" line="748"/>
         <source>Preparing required partitions</source>
         <translation>パーティションが必要です。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="797"/>
+        <location filename="../minstall.cpp" line="799"/>
         <source>Formatting the / (root) partition</source>
         <translation>/ (ルート) パーティションのフォーマット中</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="831"/>
+        <location filename="../minstall.cpp" line="833"/>
         <source>Mounting the /home partition</source>
         <translation>/home パーティションのマウント中</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="846"/>
+        <location filename="../minstall.cpp" line="848"/>
         <source>Formatting the /home partition</source>
         <translation>/home パーティションのフォーマット中</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="888"/>
+        <location filename="../minstall.cpp" line="890"/>
         <source>Mounting the / (root) partition</source>
         <translation>/ (ルート) パーティションのマウント中</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="915"/>
+        <location filename="../minstall.cpp" line="917"/>
         <source>Creating system directories</source>
         <translation>システムディレクトリの生成中</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="982"/>
+        <location filename="../minstall.cpp" line="984"/>
         <source>OK to install GRUB bootloader at %1 ?</source>
         <translation>%1 に GRUB ブートローダーをインストールしてよろしいですか？ OK で実施します</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="994"/>
+        <location filename="../minstall.cpp" line="996"/>
         <source>Please wait till GRUB is installed, it might take a couple of minutes.</source>
         <translation>GRUB をインストールするため、数分要する事があります。お待ち下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1029"/>
+        <location filename="../minstall.cpp" line="1032"/>
         <source>Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the LiveDVD or LiveUSB and repair the installation with the reinstall GRUB function.</source>
         <translation>ごめんなさい。 GRUB インストールに失敗しました。これはディスクフォーマットの変化した事に起因し得ます。GRUBをオフにして、MX Linux LiveDVD・LiveUSB を再起動し、GRUB 再インストール機能を使用して復旧インストールを行う事でインストールを完了できます。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1098"/>
+        <location filename="../minstall.cpp" line="1091"/>
         <source>The home directory for %1 already exists.Would you like to reuse the old home directory?</source>
         <translation>ホームディレクトリ %1 はすでに存在しています。このホームディレクトリを使用しますか？</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1104"/>
+        <location filename="../minstall.cpp" line="1097"/>
         <source>Would you like to save the old home directory
 and create a new home directory?</source>
         <translation>今までのホームディレクトリを保存し、
 新たなホームディレクトリを作成しますか？</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1120"/>
+        <location filename="../minstall.cpp" line="1113"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
 you&apos;ll have to select a different username or
 delete a previously saved copy of your home directory.</source>
@@ -250,61 +250,61 @@ delete a previously saved copy of your home directory.</source>
 /home ディレクトリを削除しなければいけません。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1129"/>
+        <location filename="../minstall.cpp" line="1122"/>
         <source>Would you like to delete the old home directory for %1?</source>
         <translation>古いホームディレクトリ %1 を削除してよろしいですか？</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1139"/>
+        <location filename="../minstall.cpp" line="1132"/>
         <source>Sorry, failed to delete old home directory. Before proceeding, 
 you&apos;ll have to select a different username.</source>
         <translation>ホームディレクトリの削除ができませんでした。処理を進めるために、
 異なるユーザー名にする必要があります。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1146"/>
+        <location filename="../minstall.cpp" line="1139"/>
         <source>You&apos;ve chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>ホームディレクトリの使用・保存・削除をしたくない場合は
 ユーザー名を変更して下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1159"/>
+        <location filename="../minstall.cpp" line="1152"/>
         <source>Sorry, failed to create user directory.</source>
         <translation>ユーザーディレクトリの生成に失敗しました。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1166"/>
+        <location filename="../minstall.cpp" line="1159"/>
         <source>Sorry, failed to name user directory.</source>
         <translation>ユーザーディレクトリ生成に失敗しました。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1191"/>
+        <location filename="../minstall.cpp" line="1184"/>
         <source>Sorry, failed to save desktop changes.</source>
         <translation>ごめんなさい。デスクトップの変更保存に問題が発生しました。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1199"/>
+        <location filename="../minstall.cpp" line="1192"/>
         <source>Sorry, failed to set ownership of user directory.</source>
         <translation>ユーザーディレクトリの権限設定に失敗しました。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1248"/>
+        <location filename="../minstall.cpp" line="1241"/>
         <source>Sorry, could not encrypt /home/</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1293"/>
+        <location filename="../minstall.cpp" line="1286"/>
         <source>Sorry, unable to set root password.</source>
         <translation>root パスワードが設定できませんでした。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1320"/>
+        <location filename="../minstall.cpp" line="1313"/>
         <source>Sorry, unable to set user password.</source>
         <translation>ユーザーパスワードの設定ができませんでした。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1333"/>
+        <location filename="../minstall.cpp" line="1326"/>
         <source>The user name needs to be at least
 2 characters long. Please select
 a longer name before proceeding.</source>
@@ -313,7 +313,7 @@ a longer name before proceeding.</source>
 再度入力して下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1339"/>
+        <location filename="../minstall.cpp" line="1332"/>
         <source>The user name needs be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
@@ -322,8 +322,8 @@ Please choose another name before proceeding.</source>
 先へ進む前に別の名前を入力して下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1346"/>
-        <location filename="../minstall.cpp" line="1381"/>
+        <location filename="../minstall.cpp" line="1339"/>
+        <location filename="../minstall.cpp" line="1374"/>
         <source>The user password needs to be at least
 2 characters long. Please select
 a longer password before proceeding.</source>
@@ -332,8 +332,8 @@ a longer password before proceeding.</source>
 再度入力して下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1353"/>
-        <location filename="../minstall.cpp" line="1388"/>
+        <location filename="../minstall.cpp" line="1346"/>
+        <location filename="../minstall.cpp" line="1381"/>
         <source>The root password needs to be at least
 2 characters long. Please select
 a longer password before proceeding.</source>
@@ -342,7 +342,7 @@ a longer password before proceeding.</source>
 再度入力して下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1362"/>
+        <location filename="../minstall.cpp" line="1355"/>
         <source>Sorry that name is in use.
 Please select a different name.
 </source>
@@ -350,20 +350,20 @@ Please select a different name.
 別の名前を入力して下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1369"/>
+        <location filename="../minstall.cpp" line="1362"/>
         <source>The user password entries do
 not match.  Please try again.</source>
         <translation>パスワードが一致しません。
 もう一度入力して下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1375"/>
+        <location filename="../minstall.cpp" line="1368"/>
         <source>The root password entries do
  not match.  Please try again.</source>
         <translation>ルートパスワードが一致していません。再度行って下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1410"/>
+        <location filename="../minstall.cpp" line="1403"/>
         <source>Sorry your computer name needs to be
 at least 2 characters long. You&apos;ll have to
 select a different name before proceeding.</source>
@@ -372,7 +372,7 @@ select a different name before proceeding.</source>
 再度設定して下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1414"/>
+        <location filename="../minstall.cpp" line="1407"/>
         <source>Sorry your computer name contains invalid characters.
 You&apos;ll have to select a different
 name before proceeding.</source>
@@ -381,7 +381,7 @@ name before proceeding.</source>
 もう一度入力して下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1420"/>
+        <location filename="../minstall.cpp" line="1413"/>
         <source>Sorry your computer domain needs to be at least
 2 characters long. You&apos;ll have to select a different
 name before proceeding.</source>
@@ -390,7 +390,7 @@ name before proceeding.</source>
 再度入力して下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1424"/>
+        <location filename="../minstall.cpp" line="1417"/>
         <source>Sorry your computer domain contains invalid characters.
 You&apos;ll have to select a different
 name before proceeding.</source>
@@ -399,7 +399,7 @@ name before proceeding.</source>
 もう一度入力して下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1433"/>
+        <location filename="../minstall.cpp" line="1426"/>
         <source>Sorry your workgroup needs to be at least
 2 characters long. You&apos;ll have to select a different
 name before proceeding.</source>
@@ -408,7 +408,7 @@ name before proceeding.</source>
 再度入力して下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1843"/>
+        <location filename="../minstall.cpp" line="1836"/>
         <source>MX Linux installation and configuration is complete.
 To use the new installation, reboot without the installation media.
 
@@ -419,295 +419,295 @@ Do you want to reboot now?</source>
 今すぐ再起動を行ってもよろしいですか？</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1859"/>
+        <location filename="../minstall.cpp" line="1852"/>
         <source>The installation and configuration is incomplete.
 Do you really want to stop now?</source>
         <translation>インストールと設定がまだ完了していません。
 処理を止めてよろしいですか？</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1934"/>
+        <location filename="../minstall.cpp" line="1927"/>
         <source>&lt;p&gt;&lt;b&gt;General Instructions&lt;/b&gt;&lt;br/&gt;BEFORE PROCEEDING, CLOSE ALL OTHER APPLICATIONS.&lt;/p&gt;&lt;p&gt;On each page, please read the instructions, make your selections, and then click on Next when you are ready to proceed. You will be prompted for confirmation before any destructive actions are performed.&lt;/p&gt;&lt;p&gt;MX Linux requires about 3.5 GB of space. 5 GB or more is preferred. You can use the entire disk or you can put MX Linux on existing partitions. &lt;/p&gt;&lt;p&gt;If you are running Mac OS or Windows OS (from Vista onwards), you may have to use that system&apos;s software to set up partitions and boot manager before installing MX Linux.&lt;/p&gt;&lt;p&gt;The ext2, ext3, ext4, jfs, xfs, btrfs and reiserfs Linux filesystems are supported and ext4 is recommended.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;はじめに&lt;/b&gt;&lt;br/&gt;実行の前に他のアプリケーションを閉じて下さい。&lt;/p&gt;&lt;p&gt;各ページに表示される表示を読み、選択を行って下さい。進めてもよろしければ「次へ」を押して進めて下さい。&lt;/p&gt;&lt;p&gt;MX Linux では 3.5 GB の空き容量が必要です。5 GB 以上が推奨されます。任意のディスクによるパーティション内で MX Linux を使用する事ができます。&lt;/p&gt;&lt;p&gt;もしパソコンをご利用で、パーティション作業が必要であれば GParted を実行しパーティションを修正した後、カスタムインストールを使用して下さい。もし Apple 製のハードウェアを使用している場合は parted や GParted を起動ドライブで使用しないで下さい。MX Linux をインストールする前に OS X または Windows OS (Vista 以降) からパーティションとブートマネージャの設定を行って下さい。&lt;/p&gt;&lt;p&gt;ファイルシステムは ext2、ext3、ext4、jfs、xfs、btrfs、reiserfs の Linux ファイルシステムに対応しています。ext4 が推奨されます。&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1945"/>
+        <location filename="../minstall.cpp" line="1938"/>
         <source>&lt;p&gt;&lt;b&gt;Limitations&lt;/b&gt;&lt;br/&gt;Remember, this software is provided AS-IS with no warranty what-so-ever. It&apos;s solely your responsibility to backup your data before proceeding.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Choose Partitions&lt;/b&gt;&lt;br/&gt;MX Linux requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX Linux, you will need a swap partition that is larger than your physical memory size.&lt;/p&gt;&lt;p&gt;If you choose a separate /home partition it will be easier for you to upgrade in the future, but this will not be possible if you are upgrading from an installation that does not have a separate home partition.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrading&lt;/b&gt;&lt;br/&gt;To upgrade from an existing Linux installation, select the same home partition as before and check the preference to preserve data in /home.&lt;/p&gt;&lt;p&gt;If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. As a result, the installation will take much longer than usual.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Preferred Filesystem Type&lt;/b&gt;&lt;br/&gt;For MX Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for bad blocks on the drive. The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has bad blocks.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;無保証&lt;/b&gt;&lt;br/&gt;このソフトウェアは保証なしで提供されます。 データのバックアップを取って下さい。&lt;/p&gt;&lt;p&gt;&lt;b&gt;パーティション&lt;/b&gt;&lt;br/&gt;MX Linux はルートパーティションが必須です。また swap パーティションも作成でき、推奨されます。MX Linux でディスクを休ませるようにするには、swap パーティションを実際のメモリより大きい容量にして下さい。&lt;/p&gt;&lt;p&gt;ホームパーティションを別のパーティションで作成すると、将来的にアップグレードを容易に行う事ができます。&lt;/p&gt;&lt;p&gt;&lt;b&gt;更新&lt;/b&gt;&lt;br/&gt;すでにインストールしている Linux を更新する場合、ホームパーティションが存在すれば、それを選んで下さい。&lt;/p&gt;&lt;p&gt;もしルートパーティション内にホームディレクトリが存在する場合、ルートパーティションのフォーマットを行いません。この場合インストール作業は時間を要します。&lt;/p&gt;&lt;p&gt;&lt;b&gt;望ましいファイルシステムの種類&lt;/b&gt;&lt;br/&gt;MX Linux ではext2、ext3、ext4、jfs、xfs、btrfs、reiser をフォーマットの種類として選択できます。&lt;/p&gt;&lt;p&gt;&lt;b&gt;不良ブロック&lt;/b&gt;&lt;br/&gt;ext2、ext3、ext4 をフォーマット形式で選んだ場合、ドライブの不良ブロック確認するオプションを選択できます。不良ドライブの確認はとても時間を要します。ドライブに不良ブロックがある事を思われない限りはこの手順をスキップしても良いでしょう。&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1959"/>
+        <location filename="../minstall.cpp" line="1952"/>
         <source>Returning to Step 1 to select another disk.</source>
         <translation>Step 1 へ処理を戻します。他のディスクを選んで下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1963"/>
+        <location filename="../minstall.cpp" line="1956"/>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;スペシャルサンクス&lt;/b&gt;&lt;br/&gt;時間、金銭、作業、賞賛、アイデアなど、MX Linux を支援していただく皆様に感謝いたします。&lt;/p&gt;&lt;p&gt;あなたなしでは MX Linux は存在しません。&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1966"/>
+        <location filename="../minstall.cpp" line="1959"/>
         <source>&lt;p&gt;&lt;b&gt;Installation in Progress&lt;/b&gt;&lt;br/&gt;MX Linux is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.&lt;/p&gt;&lt;p&gt;If you click the Abort button, the installation will be stopped as soon as possible.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;インストール作業&lt;/b&gt;&lt;br/&gt;MX Linux をインストールしています。フレッシュインストールの場合はおおよそ 3〜20 分要します。この速度はシステムやパーティション構成で変わります。&lt;/p&gt;&lt;p&gt;もし Abort ボタンを押した場合、はやいうちにインストールを止める事ができます。&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1978"/>
+        <location filename="../minstall.cpp" line="1971"/>
         <source>Failed to create required partitions.
 Returning to Step 1.</source>
         <translation>必須パーティションの生成に失敗しました。
 Step 1 へ処理を戻します。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1987"/>
+        <location filename="../minstall.cpp" line="1980"/>
         <source>Failed to prepare chosen partitions.
 Returning to Step 1.</source>
         <translation>パーティションの設定に失敗しました。
 Step 1 に処理を戻します。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2000"/>
+        <location filename="../minstall.cpp" line="1993"/>
         <source>&lt;p&gt;&lt;b&gt;Select Boot Method&lt;/b&gt;&lt;br/&gt;MX Linux uses the GRUB bootloader to boot MX Linux and MS-Windows. &lt;p&gt;By default GRUB2 is installed in the Master Boot Record or ESP (EFI System Partition for 64-bit UEFI boot systems) of your boot drive and replaces the boot loader you were using before. This is normal.&lt;/p&gt;&lt;p&gt;If you choose to install GRUB2 at root instead, then GRUB2 will be installed at the beginning of the root partition. This option is for experts only.&lt;/p&gt;&lt;p&gt;If you uncheck the Install GRUB box, GRUB will not be installed at this time. This option is for experts only.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;起動メソッドの選択&lt;/b&gt;&lt;br/&gt;MX Linux と MS Windows の起動に GRUB ブートローダーを起動できます。&lt;p&gt;標準の GRUB2 は起動ドライブの MBR または ESP (64 ビット UEFI 起動システムの EFI システムパーティション) へインストールし、ブートローダーを置き換えます。これは標準です。&lt;/p&gt;&lt;p&gt;もし、GRUB をルートパーティションにインストールするよう選択した場合、GRUB2 はルートパーティションへインストールされます。これは経験者向けのオプションです。&lt;/p&gt;&lt;p&gt;もし、GRUB のチェックを外した場合、GRUB はインストールされません。これは経験者向けのオプションです。&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2009"/>
+        <location filename="../minstall.cpp" line="2002"/>
         <source>&lt;p&gt;&lt;b&gt;Common Services to Enable&lt;/b&gt;&lt;br/&gt;Select any of these common services that you might need with your system configuration and the services will be started automatically when you start MX Linux.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;コモンサービスの有効&lt;/b&gt;&lt;br/&gt;ご使用のシステム構成に必要なサービスがあればそれを選択して下さい。これは MX Linux 起動時に自動的に開始されます。&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2016"/>
+        <location filename="../minstall.cpp" line="2009"/>
         <source>&lt;p&gt;&lt;b&gt;Computer Identity&lt;/b&gt;&lt;br/&gt;The computer name is a common unique name which will identify your computer if it is on a network. The computer domain is unlikely to be used unless your ISP or local network requires it.&lt;/p&gt;&lt;p&gt;The computer and domain names can contain only alphanumeric characters, dots, hyphens. They cannot contain blank spaces, start or end with hyphens&lt;/p&gt;&lt;p&gt;The SaMBa Server needs to be activated if you want to use it to share some of your directories or printer with a local computer that is running MS-Windows or Mac OSX.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;コンピュータ ID&lt;/b&gt;&lt;br/&gt;コンピュータ名は、ネットワーク上でコンピュータを特定するための名称です。インターネットサービスプロバイダ（ISP）またはローカル・ネットワークが必要としない限り、コンピュータドメインは使われません。&lt;/p&gt;&lt;p&gt;コンピュータ名・ドメイン名は英数・ドット（.）・ハイフン（-）の文字で構成されます。空白を含めず、ハイフンは前後に付けられません。&lt;/p&gt;&lt;p&gt;フォルダやプリンターを Windows・Mac OS X を実行するコンピュータを共有するためには SAMBA サーバを有効にする必要があります。&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2027"/>
+        <location filename="../minstall.cpp" line="2020"/>
         <source>&lt;p&gt;&lt;b&gt;Localization Defaults&lt;/b&gt;&lt;br/&gt;Set the default keyboard and locale. These will apply unless they are overridden later by the user.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configure Clock&lt;/b&gt;&lt;br/&gt;If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for &apos;System clock uses LOCAL.&apos;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Timezone Settings&lt;/b&gt;&lt;br/&gt;The system boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Properties.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Service Settings&lt;/b&gt;&lt;br/&gt;Most users should not change the defaults. Users with low-resource computers sometimes want to disable unneeded services in order to keep the RAM usage as low as possible. Make sure you know what you are doing! </source>
         <translation>&lt;p&gt;&lt;b&gt;言語のデフォルト&lt;/b&gt;&lt;br/&gt;デフォルトキーボードと言語(ロケール)を設定します。これらは後にユーザーによって上書きされない限り適用されます。&lt;/p&gt;&lt;p&gt;&lt;b&gt;クロックの設定&lt;/b&gt;&lt;br/&gt;もし Apple や純粋な Unix コンピュータを使用している場合、そのシステムは通常 GMT または Universal Time (UTC) へ設定します。それを変更する場合は「シシテムクロックにローカルタイムを使用する」をクリックしチェックを入れます&lt;/p&gt;&lt;p&gt;&lt;b&gt;タイムゾーンの設定&lt;/b&gt;&lt;br/&gt;システム起動時、タイムゾーンは GMT/UTC へ設定されています。タイムゾーンを再起動して新たにインストールしたシステムで変更したい場合、パネルにある時計を右クリックし、プロパティを選択して下さい。&lt;/p&gt;&lt;p&gt;&lt;b&gt;サービス設定&lt;/b&gt;&lt;br/&gt;通常ユーザーはこれを変更しないで下さい。低リソースのコンピュータを使用するユーザーはいくつかのサービスを無効にする事でメモリ使用を低く抑える事ができます。行っている事を承知の上で実施して下さい！ </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2037"/>
+        <location filename="../minstall.cpp" line="2030"/>
         <source>&lt;p&gt;&lt;b&gt;Default User Login&lt;/b&gt;&lt;br/&gt;The root user is similar to the Administrator user in some other operating systems. You should not use the root user as your daily user account. Please enter the name for a new (default) user account that you will use on a daily basis. If needed, you can add other user accounts later with MX User Manager. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Passwords&lt;/b&gt;&lt;br/&gt;Enter a new password for your default user account and for the root account. Each password must be entered twice.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;デフォルトユーザーログイン&lt;/b&gt;&lt;br/&gt;root ユーザーは他の OS でいう Administrator ユーザーに類似します。root ユーザーをユーザーアカウントとして通常使用すべきではありません。通常使用するユーザーアカウントを入力して下さい。必要な場合は MX ユーザーマネージャーで他のユーザーアカウントを後に追加する事ができます。&lt;/p&gt;&lt;p&gt;&lt;b&gt;パスワード&lt;/b&gt;&lt;br/&gt;ユーザーアカウントと root アカウントのパスワードを入力して下さい。このパスワードは2回入力する必要があります。&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2048"/>
+        <location filename="../minstall.cpp" line="2041"/>
         <source>&lt;p&gt;&lt;b&gt;Congratulations!&lt;/b&gt;&lt;br/&gt;You have completed the installation of </source>
         <translation>&lt;p&gt;&lt;b&gt;おめでとうございます！&lt;/b&gt;&lt;br/&gt;インストールが完了しました</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2048"/>
+        <location filename="../minstall.cpp" line="2041"/>
         <source>&lt;/p&gt;&lt;p&gt;&lt;b&gt;Finding Applications&lt;/b&gt;&lt;br/&gt;There are hundreds of excellent applications installed with MX Linux. The best way to learn about them is to browse through the Menu and try them. Many of the apps were developed specifically for the Xfce environment. These are shown in the main menus. &lt;p&gt;In addition MX Linux includes many standard Linux applications that are run only from the command line and therefore do not show up in the Menu.&lt;/p&gt;</source>
         <translation>&lt;/p&gt;&lt;p&gt;&lt;b&gt;アプリケーションの検索&lt;/b&gt;&lt;br/&gt;MX Linux には優れた何百ものアプリケーションがインストールされています。 それらについて学ぶ最も良い方法は、メニューを参照し、それらを試してみることです。アプリの多くは、Xfce 環境のため特別に開発されました。これらはメインメニューに表示されています。&amp;lt;p&amp;gt;また MX Linux ではコマンドラインでのみ実行されるメニューに表示されない多くの標準的な Linux アプリケーションが含まれています。&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2060"/>
+        <location filename="../minstall.cpp" line="2053"/>
         <source>&lt;p&gt;&lt;b&gt;Enjoy using MX Linux!&lt;/b&gt;&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;MX Linux を楽しんで使用して下さい！&lt;/b&gt;&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2074"/>
-        <location filename="../minstall.cpp" line="2086"/>
+        <location filename="../minstall.cpp" line="2067"/>
+        <location filename="../minstall.cpp" line="2079"/>
         <source>Next &gt;</source>
         <translation>次へ &gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2084"/>
+        <location filename="../minstall.cpp" line="2077"/>
         <source>Finish</source>
         <translation>完了</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2149"/>
+        <location filename="../minstall.cpp" line="2142"/>
         <source>Administration</source>
         <translation>管理者</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2155"/>
+        <location filename="../minstall.cpp" line="2148"/>
         <source>Runs commands periodically</source>
         <translation>定期的にコマンドを実行する</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2165"/>
+        <location filename="../minstall.cpp" line="2158"/>
         <source>Time-based job scheduler</source>
         <translation>時間スケジュール処理</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2175"/>
+        <location filename="../minstall.cpp" line="2168"/>
         <source>Execute a command as another user</source>
         <translation>他のユーザがコマンドを実行</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2184"/>
+        <location filename="../minstall.cpp" line="2177"/>
         <source>Hardware</source>
         <translation>ハードウェア</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2189"/>
+        <location filename="../minstall.cpp" line="2182"/>
         <source>CPU frequency, irqbalance</source>
         <translation>CPU 周波数, irqbalance</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2199"/>
+        <location filename="../minstall.cpp" line="2192"/>
         <source>S.M.A.R.T. monitoring tools</source>
         <translation>S.M.A.R.T. 監視ツール</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2209"/>
+        <location filename="../minstall.cpp" line="2202"/>
         <source>Advanced Configuration and Power Interface event daemon</source>
         <translation>拡張オプション・電源管理</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2219"/>
+        <location filename="../minstall.cpp" line="2212"/>
         <source>HDD temperature monitor</source>
         <translation>ハードディスク温度管理</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2229"/>
+        <location filename="../minstall.cpp" line="2222"/>
         <source>Generates key events for ACPI scripts</source>
         <translation>ACPI スクリプトのキー生成</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2239"/>
+        <location filename="../minstall.cpp" line="2232"/>
         <source>Message bus daemon</source>
         <translation>BUS デーモン出力</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2249"/>
+        <location filename="../minstall.cpp" line="2242"/>
         <source>Mouse event server</source>
         <translation>マウスイベントサーバ</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2259"/>
+        <location filename="../minstall.cpp" line="2252"/>
         <source>Scanner daemon</source>
         <translation>デーモンを検索</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2269"/>
+        <location filename="../minstall.cpp" line="2262"/>
         <source>Random number generator</source>
         <translation>順番をランダムにする</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2279"/>
+        <location filename="../minstall.cpp" line="2272"/>
         <source>Enables programs to publish and discover services and hosts</source>
         <translation>サービスやホストを検出するためプログラムの公開を有効にします</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2288"/>
+        <location filename="../minstall.cpp" line="2281"/>
         <source>Networking</source>
         <translation>ネットワーク</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2294"/>
+        <location filename="../minstall.cpp" line="2287"/>
         <source>Network connection</source>
         <translation>ネットワーク接続</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2304"/>
+        <location filename="../minstall.cpp" line="2297"/>
         <source>Secure Shell</source>
         <translation>セキュアシェル</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2314"/>
+        <location filename="../minstall.cpp" line="2307"/>
         <source>Mail filter</source>
         <translation>メールフィルタ</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2324"/>
+        <location filename="../minstall.cpp" line="2317"/>
         <source>Network File System</source>
         <translation>ネットワークファイルシステム</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2338"/>
+        <location filename="../minstall.cpp" line="2331"/>
         <source>VPN program that creates secure connections</source>
         <translation>VPN プログラムはセキュア接続を生成します</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2348"/>
+        <location filename="../minstall.cpp" line="2341"/>
         <source>Bluetooth</source>
         <translation>Bluetooth</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2358"/>
+        <location filename="../minstall.cpp" line="2351"/>
         <source>File-copying tool</source>
         <translation>ファイルコピーツール</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2367"/>
+        <location filename="../minstall.cpp" line="2360"/>
         <source>Printing</source>
         <translation>印刷</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2373"/>
+        <location filename="../minstall.cpp" line="2366"/>
         <source>Linux and OS X printer service</source>
         <translation>Linux・OS X 印刷サービス</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2556"/>
+        <location filename="../minstall.cpp" line="2549"/>
         <source>MX Linux is installing, are you 
 sure you want to Close now?</source>
         <translation>MX Linux はインストール中です。
 本当に閉じてもよろしいですか？</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2583"/>
+        <location filename="../minstall.cpp" line="2576"/>
         <source>Deleting old system</source>
         <translation>旧システムの削除中</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2592"/>
+        <location filename="../minstall.cpp" line="2585"/>
         <source>Failed to delete old MX Linux on destination.
 Returning to Step 1.</source>
         <translation>古い MX Linux の削除に失敗しました。
 Step 1 に処理を戻します。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2618"/>
+        <location filename="../minstall.cpp" line="2611"/>
         <source>Copying new system</source>
         <translation>新システムのコピー中</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2642"/>
+        <location filename="../minstall.cpp" line="2635"/>
         <source>Fixing configuration</source>
         <translation>設定の構築中</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2733"/>
+        <location filename="../minstall.cpp" line="2726"/>
         <source>Failed to write MX Linux to destination.
 Returning to Step 1.</source>
         <translation>MX Linux の書き込みに失敗しました。
 Step 1 へ処理を戻します。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2760"/>
+        <location filename="../minstall.cpp" line="2753"/>
         <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at https://mxlinux.org There are volunteers to help you at the MX forum, https://forum.mxlinux.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;ヘルプを求める&lt;/b&gt;&lt;br/&gt;MX Linux に関する基本的な情報は https://mxlinux.org 、助けるためのボランティア MX フォーラム（掲示板） https://forum.mxlinux.org があります。 &lt;/p&gt;&lt;p&gt;助けを求める場合は、問題といくつかコンピュータの詳細を記述するのを忘れないで下さい。通常、「動作しません」のような文は有用ではありません。&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2768"/>
+        <location filename="../minstall.cpp" line="2761"/>
         <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from LiveDVD or LiveUSB and running one of the utilities in MX Tools or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux LiveDVD or LiveUSB to recover data from MS-Windows systems!&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;インストールの修復&lt;/b&gt;&lt;br/&gt;MX Linux はハードドライブから作業を停止した場合、LiveDVD や LiveUSB からブートし MX ツールのユーティリティいずれかを実行するか、システムを修復するため Linux ツールを使用して問題を解決することが可能です。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;また、MS-Windows システムからデータを回復するために MX Linux LiveDVD やLiveUSB を使用することができます！&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2774"/>
+        <location filename="../minstall.cpp" line="2767"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;MX Linux のサポート&lt;/b&gt;&lt;br/&gt;MX Linux はあなたのような人々によってサポートされています。サポートフォーラム https://forum.mxlinux.org および http://antix.freeforums.org で他の人たちが助けてくれます。また別の言語やヘルプファイルの翻訳、新たなソフトウェアのテスト、ドキュメントを製作、提案などを行っています。&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2781"/>
+        <location filename="../minstall.cpp" line="2774"/>
         <source>&lt;p&gt;&lt;b&gt;Adjusting Your Sound Mixer&lt;/b&gt;&lt;br/&gt;MX Linux attempts to configure the sound mixer for you but sometimes it will be necessary for you to turn up volumes and unmute channels in the mixer in order to hear sound.&lt;/p&gt; &lt;p&gt;The mixer shortcut is located in the menu. Click on it to open the mixer. &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;音量調整&lt;/b&gt;&lt;br/&gt;MX Linux は音楽ミキサーを備えます。たまに音を聞くため、ミキサーでチャンネル毎の音量調整が必要になるかもしれません。&lt;/p&gt; &lt;p&gt;ミキサーの素早い起動はメニューからミキサーをクリックして開いて下さい。 &lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2789"/>
+        <location filename="../minstall.cpp" line="2782"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit https://mxlinux.org or http://antix.freeforums.org&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;MX Linux を最新にする&lt;/b&gt;&lt;br/&gt;MX Linux 情報やアップデートについてをご参照ください。  https://mxlinux.org または  http://antix.freeforums.org&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2809"/>
+        <location filename="../minstall.cpp" line="2802"/>
         <source>This option also encyrpts /swap, which will render the swap partition unable to be shared with other installed operating systems.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2810"/>
+        <location filename="../minstall.cpp" line="2803"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
