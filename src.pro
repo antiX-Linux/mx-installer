@@ -27,3 +27,6 @@ HEADERS += mmain.h minstall.h
 SOURCES += app.cpp mmain.cpp minstall.cpp
 LIBS += -lcrypt
 CONFIG += release warn_on thread qt
+
+RESOURCES += \
+    images.qrc

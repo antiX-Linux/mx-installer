@@ -1,7 +1,7 @@
 Source: mx-installer
 Section: system
 Priority: optional
-Maintainer: anticapitalista <antiX@operamail.com>
+Maintainer: Adrian <adrian@mxlinux.org>
 Build-Depends: qt5-qmake,
 	qt5-default,
 	qttools5-dev-tools,

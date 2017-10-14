@@ -1,3 +1,9 @@
+mx-installer (17.10) mx; urgency=medium
+
+  * resizable installer window
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 14 Oct 2017 17:08:05 -0400
+
 mx-installer (17.9) mx; urgency=medium
 
   * generalize name for root partition and for GRUB installation

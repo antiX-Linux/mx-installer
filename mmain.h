@@ -28,7 +28,8 @@ public:
 
 public slots:
     virtual void closeClicked();
-    virtual void showEvent(QShowEvent *e);
+    virtual void showEvent(QShowEvent *);
+    virtual void resizeEvent(QResizeEvent *);
 };
 
 

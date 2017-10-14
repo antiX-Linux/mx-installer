@@ -444,8 +444,12 @@ De debò voleu aturar-la ara?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1956"/>
+        <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;MX Dev Team&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Agraïments&lt;/b&gt;&lt;br/&gt;Gràcies a tothom que ha donat suport a  MX Linux amb el seu temps, suggeriments,, treball, diners, recomanacions, idees, promoció i/o suport moral.&lt;/p&gt;&lt;p&gt;Sense vosaltres no hi hauria MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, Comunitat MX.&lt;/p&gt;</translation>
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;Agraïments&lt;/b&gt;&lt;br/&gt;Gràcies a tothom que ha donat suport a  MX Linux amb el seu temps, suggeriments,, treball, diners, recomanacions, idees, promoció i/o suport moral.&lt;/p&gt;&lt;p&gt;Sense vosaltres no hi hauria MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, Comunitat MX.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1959"/>
@@ -1155,8 +1159,14 @@ Gaudiu tot usant MX Linux.</translation>
         <location filename="../meinstall.ui" line="2154"/>
         <source>Support MX Linux
 
+MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Support MX Linux
+
 MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.</source>
-        <translation>Doneu suport a  MX Linux
+        <translation type="vanished">Doneu suport a  MX Linux
 
 MX Linux té el suport de persones com vosaltres. Alguns donen ajuda als usuaris dels fòrums:  https://forum.mxlinux.org, - http://antix.freeforums.org o bé tradueixen fitxers d&amp;apos;ajuda a diferents llengües, fan suggeriments, escriuen documentació o senzillament col·laboren a comprovar el programari nou.</translation>
     </message>
@@ -1164,12 +1174,12 @@ MX Linux té el suport de persones com vosaltres. Alguns donen ajuda als usuaris
 <context>
     <name>MeMain</name>
     <message>
-        <location filename="../memain.ui" line="32"/>
+        <location filename="../memain.ui" line="26"/>
         <source>MX Linux Install</source>
         <translation>Instal·lació de MX Linux</translation>
     </message>
     <message>
-        <location filename="../memain.ui" line="58"/>
+        <location filename="../memain.ui" line="55"/>
         <source>Help</source>
         <translation>Ajuda</translation>
     </message>

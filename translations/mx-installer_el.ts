@@ -440,8 +440,12 @@ Do you really want to stop now?</source>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1956"/>
+        <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;MX Dev Team&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Ιδιαίτερες Ευχαριστίες&lt;/b&gt;&lt;br/&gt;Τις ευχαριστίες μου προς όλους εκείνους που επέλεξαν να υποστηρίξουν το MX Linux με τον χρόνο τους, χρήμα, υποδείξεις, εργασία, επαίνους, ιδέες, προώθηση και/ή ενθάρρυνση.&lt;/p&gt;&lt;p&gt;Χωρίς εσάς, δεν θα υπήρχε καθόλου το MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</translation>
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;Ιδιαίτερες Ευχαριστίες&lt;/b&gt;&lt;br/&gt;Τις ευχαριστίες μου προς όλους εκείνους που επέλεξαν να υποστηρίξουν το MX Linux με τον χρόνο τους, χρήμα, υποδείξεις, εργασία, επαίνους, ιδέες, προώθηση και/ή ενθάρρυνση.&lt;/p&gt;&lt;p&gt;Χωρίς εσάς, δεν θα υπήρχε καθόλου το MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1959"/>
@@ -1151,8 +1155,14 @@ Enjoy using MX Linux.</source>
         <location filename="../meinstall.ui" line="2154"/>
         <source>Support MX Linux
 
+MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Support MX Linux
+
 MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.</source>
-        <translation>Υποστηρίξτε το MX Linux
+        <translation type="vanished">Υποστηρίξτε το MX Linux
 
 Το MX Linux στηρίζεται από ανθρώπους σαν κι&amp;apos; εσάς. Κάποιο βοηθούν κάποιους άλλους στο forum υποστήριξης-  https://forum.mxlinux.org, - http://antix.freeforums.org ή μεταφράζουν αρχεία βοήθειας σε διάφορες γλώσσες, ή κάνουν υποδείξεις, γράφουν τεκμηρίωση, ή βοηθούν δοκιμάζοντας νέο λογισμικό.</translation>
     </message>
@@ -1160,12 +1170,12 @@ MX Linux is supported by people like you. Some help others at the support forum 
 <context>
     <name>MeMain</name>
     <message>
-        <location filename="../memain.ui" line="32"/>
+        <location filename="../memain.ui" line="26"/>
         <source>MX Linux Install</source>
         <translation>Εγκατάσταση του MX Linux </translation>
     </message>
     <message>
-        <location filename="../memain.ui" line="58"/>
+        <location filename="../memain.ui" line="55"/>
         <source>Help</source>
         <translation>Βοήθεια</translation>
     </message>

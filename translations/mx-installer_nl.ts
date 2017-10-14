@@ -438,8 +438,12 @@ Wilt u werkelijk stoppen?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1956"/>
+        <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;MX Dev Team&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Speciale Dank&lt;/b&gt;&lt;br/&gt;Dank aan iedereen die ervoor gekozen heeft MX Linux te ondersteunen met hun tijd, geld, suggesties, werk, waardering, ideëen, promotie, en/of aanmoediging.&lt;/p&gt;&lt;p&gt;Zonder u zou er geen MX Linux zijn.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Gemeenschap&lt;/p&gt;</translation>
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;Speciale Dank&lt;/b&gt;&lt;br/&gt;Dank aan iedereen die ervoor gekozen heeft MX Linux te ondersteunen met hun tijd, geld, suggesties, werk, waardering, ideëen, promotie, en/of aanmoediging.&lt;/p&gt;&lt;p&gt;Zonder u zou er geen MX Linux zijn.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Gemeenschap&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1959"/>
@@ -1149,8 +1153,14 @@ Veel plezier met MX Linux.</translation>
         <location filename="../meinstall.ui" line="2154"/>
         <source>Support MX Linux
 
+MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Support MX Linux
+
 MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.</source>
-        <translation>Ondersteun MX Linux
+        <translation type="vanished">Ondersteun MX Linux
 
 MX Linux wordt ondersteund door mensen als U. Sommigen helpen anderen in het support forums - https://forum.mxlinux.org, - http://antix.freeforums.org of vertalen help bestanden naar verschillende talen, of geven suggesties, schrijven documentatie of helpen om nieuwe software uit te testen.</translation>
     </message>
@@ -1158,12 +1168,12 @@ MX Linux wordt ondersteund door mensen als U. Sommigen helpen anderen in het sup
 <context>
     <name>MeMain</name>
     <message>
-        <location filename="../memain.ui" line="32"/>
+        <location filename="../memain.ui" line="26"/>
         <source>MX Linux Install</source>
         <translation>MX Linux installatie</translation>
     </message>
     <message>
-        <location filename="../memain.ui" line="58"/>
+        <location filename="../memain.ui" line="55"/>
         <source>Help</source>
         <translation>Help</translation>
     </message>

@@ -26,7 +26,7 @@
 MInstall::MInstall(QWidget *parent) : QWidget(parent)
 {
     setupUi(this);
-    labelMX->setPixmap(QPixmap("/usr/share/mx-installer/images/mxfcelogo-installer.png"));
+    labelMX->setPixmap(QPixmap(":/images/logo.png"));
     char line[260];
     char *tok;
     FILE *fp;
@@ -1955,7 +1955,7 @@ void MInstall::pageDisplayed(int next)
         setCursor(QCursor(Qt::WaitCursor));
         tipsEdit->setText(tr("<p><b>Special Thanks</b><br/>Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.</p>"
                              "<p>Without you there would be no MX Linux.</p>"
-                             "<p>anticapitalista, MX Community</p>"));
+                             "<p>MX Dev Team</p>"));
         ((MMain *)mmn)->setHelpText(tr("<p><b>Installation in Progress</b><br/>"
                                        "MX Linux is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.</p>"
                                        "<p>If you click the Abort button, the installation will be stopped as soon as possible.</p>"));

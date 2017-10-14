@@ -40,6 +40,7 @@ void MMain::setHelpText(const QString &text)
 
 void MMain::closeEvent(QCloseEvent *e)
 {
+    qDebug() << "close event";
     system("umount -l /mnt/antiX/home >/dev/null 2>&1");
     system("umount -l /mnt/antiX >/dev/null 2>&1");
     system("rm -r /mnt/antiX >/dev/null 2>&1");
@@ -55,10 +56,18 @@ void MMain::closeClicked()
     close();
 }
 
-void MMain::showEvent(QShowEvent *e)
+void MMain::showEvent(QShowEvent *)
 {
     if (firstShow) {
         firstShow = false;
         minstall->firstRefresh(this);
+        minstall->adjustSize();
     }
+}
+
+void MMain::resizeEvent(QResizeEvent *)
+{
+    minstall->resize(mainFrame->size());
+    mainHelp->resize(tab->size());
+    helpbackdrop->resize(mainHelp->size());
 }

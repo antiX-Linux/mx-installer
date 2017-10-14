@@ -419,8 +419,12 @@ Ar tikrai, norite sustabdyti dabar?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1956"/>
+        <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;MX Dev Team&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Ypatingos padėkos&lt;/b&gt;&lt;br/&gt;Dėkojame kiekvienam, kas nusprendė palaikyti MX Linux savo laiku, pinigais, pasiūlymais, darbu, pagyrimais, idėjomis, reklama, ir/arba padrąsinimu.&lt;/p&gt;&lt;p&gt;Be jūsų nebūtų jokios MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX bendruomenė&lt;/p&gt;</translation>
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;Ypatingos padėkos&lt;/b&gt;&lt;br/&gt;Dėkojame kiekvienam, kas nusprendė palaikyti MX Linux savo laiku, pinigais, pasiūlymais, darbu, pagyrimais, idėjomis, reklama, ir/arba padrąsinimu.&lt;/p&gt;&lt;p&gt;Be jūsų nebūtų jokios MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX bendruomenė&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1959"/>
@@ -1130,8 +1134,14 @@ Mėgaukitės, naudodami MX Linux.</translation>
         <location filename="../meinstall.ui" line="2154"/>
         <source>Support MX Linux
 
+MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Support MX Linux
+
 MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.</source>
-        <translation>Palaikykite MX Linux
+        <translation type="vanished">Palaikykite MX Linux
 
 MX Linux yra palaikoma tokių žmonių kaip jūs. Vieni padeda kitiems palaikymo forume - https://forum.mxlinux.org, - http://antix.freeforums.org arba verčia žinyno failus į skirtingas kalbas, arba pateikia pasiūlymus, rašo dokumentaciją, arba padeda išbandyti naują programinę įrangą.</translation>
     </message>
@@ -1139,12 +1149,12 @@ MX Linux yra palaikoma tokių žmonių kaip jūs. Vieni padeda kitiems palaikymo
 <context>
     <name>MeMain</name>
     <message>
-        <location filename="../memain.ui" line="32"/>
+        <location filename="../memain.ui" line="26"/>
         <source>MX Linux Install</source>
         <translation>MX Linux įdiegimas</translation>
     </message>
     <message>
-        <location filename="../memain.ui" line="58"/>
+        <location filename="../memain.ui" line="55"/>
         <source>Help</source>
         <translation>Žinynas</translation>
     </message>
