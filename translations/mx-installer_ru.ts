@@ -900,7 +900,7 @@ MX Linux использует некоторые компоненты из MEPIS
         <translation>/home раздел:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="843"/>
+        <location filename="../meinstall.ui" line="830"/>
         <location filename="../meinstall.ui" line="1194"/>
         <source>root</source>
         <translation>корень</translation>
@@ -1077,82 +1077,82 @@ MX Linux использует некоторые компоненты из MEPIS
         <translation>6c. Настройки часового пояса</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1769"/>
+        <location filename="../meinstall.ui" line="1775"/>
         <source>Timezone:</source>
         <translation>Часовой пояс:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1823"/>
+        <location filename="../meinstall.ui" line="1836"/>
         <source>7b. Root (administrator) Account</source>
         <translation>7b. Суперпользователь (администратор)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1882"/>
+        <location filename="../meinstall.ui" line="1895"/>
         <source>Confirm root password:</source>
         <translation>Подтвердите пароль суперпользователя:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1898"/>
+        <location filename="../meinstall.ui" line="1911"/>
         <source>Root password:</source>
         <translation>Пароль суперпользователя:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1930"/>
+        <location filename="../meinstall.ui" line="1943"/>
         <source>7a. Default User Account</source>
         <translation>7а. Пользователь по умолчанию</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1992"/>
+        <location filename="../meinstall.ui" line="2005"/>
         <source>username</source>
         <translation>Имя пользователя</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2005"/>
+        <location filename="../meinstall.ui" line="2018"/>
         <source>Confirm user password:</source>
         <translation>Подтвердите пароль пользователя:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2021"/>
+        <location filename="../meinstall.ui" line="2034"/>
         <source>Default user password:</source>
         <translation>Пароль пользователя по умолчанию:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2037"/>
+        <location filename="../meinstall.ui" line="2050"/>
         <source>Default user login name:</source>
         <translation>Логин пользователя по умолчанию:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2050"/>
+        <location filename="../meinstall.ui" line="2069"/>
         <source>Autologin</source>
         <translation>Автологин</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2057"/>
+        <location filename="../meinstall.ui" line="2082"/>
         <source>Show passwords</source>
         <translation>Показать пароли</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2064"/>
+        <location filename="../meinstall.ui" line="2095"/>
         <source>Desktop modifications made in the live environment will be carried over to the installed OS</source>
         <translation>Перенести изменения рабочей среды, сделанные в live-режиме, в установленную ОС</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2067"/>
+        <location filename="../meinstall.ui" line="2098"/>
         <source>Save live desktop changes</source>
         <translation>Сохранить изменения рабочей среды</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2074"/>
+        <location filename="../meinstall.ui" line="2111"/>
         <source>Encrypt /home</source>
         <translation>Зашифровать /home</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2106"/>
+        <location filename="../meinstall.ui" line="2143"/>
         <source>Reminders</source>
         <translation>Напоминания</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2154"/>
+        <location filename="../meinstall.ui" line="2191"/>
         <source>Support MX Linux
 
 MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.</source>
@@ -1175,7 +1175,7 @@ MX Linux поддерживается такими же людьми, как и 
         <translation>Установка MX Linux</translation>
     </message>
     <message>
-        <location filename="../memain.ui" line="55"/>
+        <location filename="../memain.ui" line="76"/>
         <source>Help</source>
         <translation>Справка</translation>
     </message>

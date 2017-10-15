@@ -851,7 +851,7 @@ Enjoy using MX Linux.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="843"/>
+        <location filename="../meinstall.ui" line="830"/>
         <location filename="../meinstall.ui" line="1194"/>
         <source>root</source>
         <translation>Kök</translation>
@@ -1028,82 +1028,82 @@ Enjoy using MX Linux.</source>
         <translation>6c. Saat Dilimi Ayarları</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1769"/>
+        <location filename="../meinstall.ui" line="1775"/>
         <source>Timezone:</source>
         <translation>Saat dilimi:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1823"/>
+        <location filename="../meinstall.ui" line="1836"/>
         <source>7b. Root (administrator) Account</source>
         <translation>7b. Kök (yönetici) Hesabı</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1882"/>
+        <location filename="../meinstall.ui" line="1895"/>
         <source>Confirm root password:</source>
         <translation>Kök parolasını onayla:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1898"/>
+        <location filename="../meinstall.ui" line="1911"/>
         <source>Root password:</source>
         <translation>Kök parolası:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1930"/>
+        <location filename="../meinstall.ui" line="1943"/>
         <source>7a. Default User Account</source>
         <translation>7a. Öntanımlı Kullanıcı Hesabı</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1992"/>
+        <location filename="../meinstall.ui" line="2005"/>
         <source>username</source>
         <translation>kullanıcı adı</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2005"/>
+        <location filename="../meinstall.ui" line="2018"/>
         <source>Confirm user password:</source>
         <translation>Kullanıcı parolasını onayla:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2021"/>
+        <location filename="../meinstall.ui" line="2034"/>
         <source>Default user password:</source>
         <translation>Öntanımlı kullanıcı parolası:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2037"/>
+        <location filename="../meinstall.ui" line="2050"/>
         <source>Default user login name:</source>
         <translation>Öntanımlı kullanıcı giriş adı:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2050"/>
+        <location filename="../meinstall.ui" line="2069"/>
         <source>Autologin</source>
         <translation>Otomatik Oturum Aç</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2057"/>
+        <location filename="../meinstall.ui" line="2082"/>
         <source>Show passwords</source>
         <translation>Parolayı göster</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2064"/>
+        <location filename="../meinstall.ui" line="2095"/>
         <source>Desktop modifications made in the live environment will be carried over to the installed OS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2067"/>
+        <location filename="../meinstall.ui" line="2098"/>
         <source>Save live desktop changes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2074"/>
+        <location filename="../meinstall.ui" line="2111"/>
         <source>Encrypt /home</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2106"/>
+        <location filename="../meinstall.ui" line="2143"/>
         <source>Reminders</source>
         <translation>Anımsatıcılar</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2154"/>
+        <location filename="../meinstall.ui" line="2191"/>
         <source>Support MX Linux
 
 MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.</source>
@@ -1118,7 +1118,7 @@ MX Linux is supported by people like you. Some help others at the support forum 
         <translation>MX Linux Yükle</translation>
     </message>
     <message>
-        <location filename="../memain.ui" line="55"/>
+        <location filename="../memain.ui" line="76"/>
         <source>Help</source>
         <translation>Yardım</translation>
     </message>

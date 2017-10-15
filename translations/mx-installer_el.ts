@@ -900,7 +900,7 @@ Enjoy using MX Linux.</source>
         <translation>κατάτμηση χρήστη /home :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="843"/>
+        <location filename="../meinstall.ui" line="830"/>
         <location filename="../meinstall.ui" line="1194"/>
         <source>root</source>
         <translation>root</translation>
@@ -1077,82 +1077,82 @@ Enjoy using MX Linux.</source>
         <translation>6c. Ρυθμόσεις Ζώνης ώρας</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1769"/>
+        <location filename="../meinstall.ui" line="1775"/>
         <source>Timezone:</source>
         <translation>Ζώνη ώρας:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1823"/>
+        <location filename="../meinstall.ui" line="1836"/>
         <source>7b. Root (administrator) Account</source>
         <translation>7b. Λογαριασμός Root (Διαχειριστή)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1882"/>
+        <location filename="../meinstall.ui" line="1895"/>
         <source>Confirm root password:</source>
         <translation>Επιβεβαιώστε τον Κωδικό Συστήματος:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1898"/>
+        <location filename="../meinstall.ui" line="1911"/>
         <source>Root password:</source>
         <translation>Κωδικός του χρήστη root:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1930"/>
+        <location filename="../meinstall.ui" line="1943"/>
         <source>7a. Default User Account</source>
         <translation>7a. Λογαριασμός Προεπιλεγμένου Χρήστη</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1992"/>
+        <location filename="../meinstall.ui" line="2005"/>
         <source>username</source>
         <translation>όνομα χρήστη</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2005"/>
+        <location filename="../meinstall.ui" line="2018"/>
         <source>Confirm user password:</source>
         <translation>Επιβεβαίωση Κωδικού Χρήστη:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2021"/>
+        <location filename="../meinstall.ui" line="2034"/>
         <source>Default user password:</source>
         <translation>Κωδικός Προεπιλεγμένου Χρήστη:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2037"/>
+        <location filename="../meinstall.ui" line="2050"/>
         <source>Default user login name:</source>
         <translation>Όνομα σύνδεσης προεπιλεγμένου χρήστη:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2050"/>
+        <location filename="../meinstall.ui" line="2069"/>
         <source>Autologin</source>
         <translation>Autologin</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2057"/>
+        <location filename="../meinstall.ui" line="2082"/>
         <source>Show passwords</source>
         <translation>Εμφάνιση κωδικών</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2064"/>
+        <location filename="../meinstall.ui" line="2095"/>
         <source>Desktop modifications made in the live environment will be carried over to the installed OS</source>
         <translation>Οι τροποποιήσεις της επιφάνειας εργασίας σε live περιβάλλον, θα μεταφέρονται στο εγκατεστημένο λειτουργικό σύστημα</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2067"/>
+        <location filename="../meinstall.ui" line="2098"/>
         <source>Save live desktop changes</source>
         <translation>Αποθηκεύστε ζωντανά αλλαγές στην επιφάνεια εργασίας </translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2074"/>
+        <location filename="../meinstall.ui" line="2111"/>
         <source>Encrypt /home</source>
         <translation>Κρυπτογράφηση του /home </translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2106"/>
+        <location filename="../meinstall.ui" line="2143"/>
         <source>Reminders</source>
         <translation>Υπενθυμίσεις</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2154"/>
+        <location filename="../meinstall.ui" line="2191"/>
         <source>Support MX Linux
 
 MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.</source>
@@ -1175,7 +1175,7 @@ MX Linux is supported by people like you. Some help others at the support forum 
         <translation>Εγκατάσταση του MX Linux </translation>
     </message>
     <message>
-        <location filename="../memain.ui" line="55"/>
+        <location filename="../memain.ui" line="76"/>
         <source>Help</source>
         <translation>Βοήθεια</translation>
     </message>
