@@ -451,6 +451,12 @@ Voulez vous vraiment quitter maintenant ?</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../minstall.cpp" line="2067"/>
+        <location filename="../minstall.cpp" line="2079"/>
+        <source>Next</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</source>
         <translation type="vanished">&lt;p&gt;&lt;b&gt;Remerciements&lt;/b&gt;&lt;br/&gt;Merci à tous ceux qui ont choisi de soutenir MX Linux en donnant de leur temps, de l&apos;argent, des suggestions, du travail, des idées, en en faisant la promotion et/ou en l&apos;encourageant.&lt;/p&gt;&lt;p&gt;Sans vous il n&apos;y aurait pas de MX Linux&lt;/p&gt;&lt;p&gt;anticapitalista, la communauté MX&lt;/p&gt;</translation>
     </message>
@@ -516,10 +522,8 @@ Retour à l&apos;étape 1.</translation>
         <translation>&lt;p&gt;&lt;b&gt;Profitez de l&apos;utilisation de MX Linux !&lt;/b&gt;&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2067"/>
-        <location filename="../minstall.cpp" line="2079"/>
         <source>Next &gt;</source>
-        <translation>Suivant &gt;</translation>
+        <translation type="vanished">Suivant &gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2077"/>
@@ -733,32 +737,40 @@ Returning to Step 1.</source>
         <translation>Fermer</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="67"/>
         <source>Next &gt;</source>
-        <translation>Suivant &gt;</translation>
+        <translation type="vanished">Suivant &gt;</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="70"/>
+        <location filename="../meinstall.ui" line="76"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="80"/>
         <source>&lt; Back</source>
-        <translation>&lt; Précédent</translation>
+        <translation type="vanished">&lt; Précédent</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="83"/>
+        <location filename="../meinstall.ui" line="70"/>
+        <source>Next</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meinstall.ui" line="86"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meinstall.ui" line="92"/>
         <source>Alt+K</source>
         <translation>Alt+K</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="130"/>
+        <location filename="../meinstall.ui" line="139"/>
         <source>Terms of Use</source>
         <translation>Conditions d&apos;utilisation</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="184"/>
+        <location filename="../meinstall.ui" line="193"/>
         <source>MX Linux is an independent Linux distribution based on Debian Stable
 
 MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.
@@ -771,394 +783,394 @@ MX Linux utilise certains composants de MEPIS Linux qui sont libérés en vertu 
 Profitez de l&apos;utilisation de MX Linux.</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="226"/>
+        <location filename="../meinstall.ui" line="235"/>
         <source>1c. Select type of installation</source>
         <translation>1c. Sélectionner le type d&apos;installation</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="272"/>
+        <location filename="../meinstall.ui" line="281"/>
         <source>Leave free space up to:</source>
         <translation>Laisser de l&apos;espace libre jusqu&apos;à :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="307"/>
+        <location filename="../meinstall.ui" line="316"/>
         <source>MB </source>
         <translation>Mo</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="323"/>
+        <location filename="../meinstall.ui" line="332"/>
         <source>Auto-install using entire disk </source>
         <translation>Installation automatique en utilisant l&apos;intégralité du disque  </translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="339"/>
+        <location filename="../meinstall.ui" line="348"/>
         <source>Custom install on existing partitions</source>
         <translation>Installation personnalisée sur des partitions existantes</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="358"/>
+        <location filename="../meinstall.ui" line="367"/>
         <source>1a. Choose disk for installation</source>
         <translation>1a. Choisir un disque pour l&apos;installation</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="398"/>
+        <location filename="../meinstall.ui" line="407"/>
         <source>Use disk:</source>
         <translation>Utiliser le disque :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="417"/>
+        <location filename="../meinstall.ui" line="426"/>
         <source>1b. Rearrange disk partitions (optional)</source>
         <translation>1b. Réarranger les partitions disques (optionnel)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="444"/>
+        <location filename="../meinstall.ui" line="453"/>
         <source>Run partition tool...</source>
         <translation>Exécuter outil de partitionnement ...</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="457"/>
+        <location filename="../meinstall.ui" line="466"/>
         <source>Modify partitions:</source>
         <translation>Modifier les partitions :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="521"/>
+        <location filename="../meinstall.ui" line="530"/>
         <source>2b. Preferences</source>
         <translation>2b. Préférences</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="548"/>
+        <location filename="../meinstall.ui" line="557"/>
         <source>Preserve data in /home (if upgrading)</source>
         <translation>Préserver les données de /home (en cas de mise-à-jour)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="583"/>
+        <location filename="../meinstall.ui" line="592"/>
         <source>Filesystem type:</source>
         <translation>Type du système de fichiers :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="609"/>
+        <location filename="../meinstall.ui" line="618"/>
         <source>Change default / (root) partition label:</source>
         <translation>Changer l&apos;étiquette de partition / (root) par défaut</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="623"/>
+        <location filename="../meinstall.ui" line="632"/>
         <source>ext4</source>
         <translation>ext4</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="628"/>
+        <location filename="../meinstall.ui" line="637"/>
         <source>ext3</source>
         <translation>ext3</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="633"/>
+        <location filename="../meinstall.ui" line="642"/>
         <source>ext2</source>
         <translation>ext2</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="638"/>
+        <location filename="../meinstall.ui" line="647"/>
         <source>jfs</source>
         <translation>jfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="643"/>
+        <location filename="../meinstall.ui" line="652"/>
         <source>xfs</source>
         <translation>xfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="648"/>
+        <location filename="../meinstall.ui" line="657"/>
         <source>btrfs</source>
         <translation>btrfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="653"/>
+        <location filename="../meinstall.ui" line="662"/>
         <source>reiserfs</source>
         <translation>reiserfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="664"/>
+        <location filename="../meinstall.ui" line="673"/>
         <source>Change default /home partition label:</source>
         <translation>Changer l&apos;étiquette de partition /home par défaut</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="683"/>
+        <location filename="../meinstall.ui" line="692"/>
         <source>Check for badblocks (takes longer)</source>
         <translation>Vérifier les secteurs défectueux (long)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="702"/>
+        <location filename="../meinstall.ui" line="711"/>
         <source>2a. Choose partitions</source>
         <translation>2a. Choississez les partitions</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="732"/>
+        <location filename="../meinstall.ui" line="741"/>
         <source>/ (root) partition:</source>
         <translation>/ partition racine (root) :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="748"/>
+        <location filename="../meinstall.ui" line="757"/>
         <source>swap partition:</source>
         <translation>partition d&apos;échange (swap) :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="764"/>
+        <location filename="../meinstall.ui" line="773"/>
         <source>/home partition:</source>
         <translation>partition /home :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="830"/>
-        <location filename="../meinstall.ui" line="1194"/>
+        <location filename="../meinstall.ui" line="839"/>
+        <location filename="../meinstall.ui" line="1203"/>
         <source>root</source>
         <translation>root</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="879"/>
+        <location filename="../meinstall.ui" line="888"/>
         <source>3. Installation in progress</source>
         <translation>3. Installation en cours</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="922"/>
+        <location filename="../meinstall.ui" line="931"/>
         <source>Abort</source>
         <translation>Abandonner</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="925"/>
-        <location filename="../meinstall.ui" line="1143"/>
+        <location filename="../meinstall.ui" line="934"/>
+        <location filename="../meinstall.ui" line="1152"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="964"/>
+        <location filename="../meinstall.ui" line="973"/>
         <source>Ready to install MX Linux filesystem</source>
         <translation>Prêt pour installer le système MX-Linux</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="986"/>
+        <location filename="../meinstall.ui" line="995"/>
         <source>Tips</source>
         <translation>Astuces</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1060"/>
+        <location filename="../meinstall.ui" line="1069"/>
         <source>4. Select Boot Method</source>
         <translation>4. Sélectionner une Méthode de Démarrage</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1093"/>
+        <location filename="../meinstall.ui" line="1102"/>
         <source>MBR</source>
         <translation>MBR</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1096"/>
+        <location filename="../meinstall.ui" line="1105"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1124"/>
+        <location filename="../meinstall.ui" line="1133"/>
         <source>Install on:</source>
         <translation>Installer sur :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1140"/>
+        <location filename="../meinstall.ui" line="1149"/>
         <source>Install GRUB for MX Linux and Windows</source>
         <translation>Installer GRUB pour MX Linux et Windows</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1162"/>
+        <location filename="../meinstall.ui" line="1171"/>
         <source>System boot disk:</source>
         <translation>Disque système de démarrage :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1207"/>
+        <location filename="../meinstall.ui" line="1216"/>
         <source>EFI System Partition</source>
         <translation>Partition système EFI</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1210"/>
+        <location filename="../meinstall.ui" line="1219"/>
         <source>ESP</source>
         <translation>ESP</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1280"/>
+        <location filename="../meinstall.ui" line="1289"/>
         <source>Common Services to Enable</source>
         <translation>Services courants à activer</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1320"/>
+        <location filename="../meinstall.ui" line="1329"/>
         <source>Service</source>
         <translation>Service</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1325"/>
+        <location filename="../meinstall.ui" line="1334"/>
         <source>Description</source>
         <translation>Description</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1361"/>
+        <location filename="../meinstall.ui" line="1370"/>
         <source>5. Computer Network Names</source>
         <translation>5. Noms Réseaux de l&apos;Ordinateur</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1388"/>
+        <location filename="../meinstall.ui" line="1397"/>
         <source>Workgroup</source>
         <translation>Groupe de travail :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1401"/>
+        <location filename="../meinstall.ui" line="1410"/>
         <source>Workgroup:</source>
         <translation>Groupe de travail :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1417"/>
+        <location filename="../meinstall.ui" line="1426"/>
         <source>SaMBa Server for MS Networking</source>
         <translation>Serveur SaMBa pour réseaux MS</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1433"/>
+        <location filename="../meinstall.ui" line="1442"/>
         <source>example.dom</source>
         <translation>exemple.dom</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1446"/>
+        <location filename="../meinstall.ui" line="1455"/>
         <source>Computer domain:</source>
         <translation>Nom du domaine :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1462"/>
+        <location filename="../meinstall.ui" line="1471"/>
         <source>mx1</source>
         <translation>mx1</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1478"/>
+        <location filename="../meinstall.ui" line="1487"/>
         <source>Computer name:</source>
         <translation>Nom de l&apos;ordinateur :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1551"/>
+        <location filename="../meinstall.ui" line="1560"/>
         <source>6d. Service Settings (advanced)</source>
         <translation>6d. Réglages des services (avancé)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1569"/>
+        <location filename="../meinstall.ui" line="1578"/>
         <source>Adjust which services should run at startup</source>
         <translation>Réglez les services qui doivent être exécutés au démarrage</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1572"/>
+        <location filename="../meinstall.ui" line="1581"/>
         <source>View</source>
         <translation>Voir</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1601"/>
+        <location filename="../meinstall.ui" line="1610"/>
         <source>6b. Configure Clock</source>
         <translation>6b. Régler l&apos;heure</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1629"/>
+        <location filename="../meinstall.ui" line="1638"/>
         <source>Format:</source>
         <translation>Format:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1646"/>
+        <location filename="../meinstall.ui" line="1655"/>
         <source>System clock uses LOCAL</source>
         <translation>L&apos;horloge système est LOCAL</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1675"/>
+        <location filename="../meinstall.ui" line="1684"/>
         <source>6a. Localization Defaults</source>
         <translation>6a. Localisation par défaut</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1705"/>
+        <location filename="../meinstall.ui" line="1714"/>
         <source>Locale:</source>
         <translation>Localiser :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1744"/>
+        <location filename="../meinstall.ui" line="1753"/>
         <source>Keyboard:</source>
         <translation>Clavier :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1763"/>
+        <location filename="../meinstall.ui" line="1772"/>
         <source>6c. Timezone Settings</source>
         <translation>6c. Réglages des fuseaux horaires</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1775"/>
+        <location filename="../meinstall.ui" line="1784"/>
         <source>Timezone:</source>
         <translation>Fuseau horaire:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1836"/>
+        <location filename="../meinstall.ui" line="1845"/>
         <source>7b. Root (administrator) Account</source>
         <translation>7b. Compte Administrateur (root)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1895"/>
+        <location filename="../meinstall.ui" line="1904"/>
         <source>Confirm root password:</source>
         <translation>Confirmer le mot de passe administrateur : </translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1911"/>
+        <location filename="../meinstall.ui" line="1920"/>
         <source>Root password:</source>
         <translation>Mot de passe administrateur :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1943"/>
+        <location filename="../meinstall.ui" line="1952"/>
         <source>7a. Default User Account</source>
         <translation>7a. Compte utilisateur par défaut</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2005"/>
+        <location filename="../meinstall.ui" line="2014"/>
         <source>username</source>
         <translation>nom d&apos;utilisateur</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2018"/>
+        <location filename="../meinstall.ui" line="2027"/>
         <source>Confirm user password:</source>
         <translation>Confirmer le mot de passe utilisateur :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2034"/>
+        <location filename="../meinstall.ui" line="2043"/>
         <source>Default user password:</source>
         <translation>Mot de passe utilisateur :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2050"/>
+        <location filename="../meinstall.ui" line="2059"/>
         <source>Default user login name:</source>
         <translation>Nom d&apos;utilisateur par défaut :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2069"/>
+        <location filename="../meinstall.ui" line="2078"/>
         <source>Autologin</source>
         <translation>Connexion automatique</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2082"/>
+        <location filename="../meinstall.ui" line="2091"/>
         <source>Show passwords</source>
         <translation>Afficher les mots de passe</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2095"/>
+        <location filename="../meinstall.ui" line="2104"/>
         <source>Desktop modifications made in the live environment will be carried over to the installed OS</source>
         <translation>Les modifications de bureau effectuées dans l&apos;environnement &apos;live&apos; seront reportées sur le système installé</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2098"/>
+        <location filename="../meinstall.ui" line="2107"/>
         <source>Save live desktop changes</source>
         <translation>Enregistrer les modifications de bureau en &apos;live&apos;</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2111"/>
+        <location filename="../meinstall.ui" line="2120"/>
         <source>Encrypt /home</source>
         <translation>Chiffrer /home</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2143"/>
+        <location filename="../meinstall.ui" line="2152"/>
         <source>Reminders</source>
         <translation>Rappels</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2191"/>
+        <location filename="../meinstall.ui" line="2200"/>
         <source>Support MX Linux
 
 MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.</source>

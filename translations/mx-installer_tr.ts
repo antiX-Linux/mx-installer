@@ -465,8 +465,12 @@ Returning to Step 1.</source>
     <message>
         <location filename="../minstall.cpp" line="2067"/>
         <location filename="../minstall.cpp" line="2079"/>
+        <source>Next</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Next &gt;</source>
-        <translation>İleri</translation>
+        <translation type="vanished">İleri</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2077"/>
@@ -682,32 +686,40 @@ Returning to Step 1.</source>
         <translation>Kapat</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="67"/>
         <source>Next &gt;</source>
-        <translation>İleri</translation>
+        <translation type="vanished">İleri</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="70"/>
+        <location filename="../meinstall.ui" line="76"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="80"/>
         <source>&lt; Back</source>
-        <translation>&lt; Geri</translation>
+        <translation type="vanished">&lt; Geri</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="83"/>
+        <location filename="../meinstall.ui" line="70"/>
+        <source>Next</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meinstall.ui" line="86"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meinstall.ui" line="92"/>
         <source>Alt+K</source>
         <translation>Alt+K</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="130"/>
+        <location filename="../meinstall.ui" line="139"/>
         <source>Terms of Use</source>
         <translation>Kullanım Koşulları</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="184"/>
+        <location filename="../meinstall.ui" line="193"/>
         <source>MX Linux is an independent Linux distribution based on Debian Stable
 
 MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.
@@ -716,394 +728,394 @@ Enjoy using MX Linux.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="226"/>
+        <location filename="../meinstall.ui" line="235"/>
         <source>1c. Select type of installation</source>
         <translation>1c. Kurulum türünü seçin</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="272"/>
+        <location filename="../meinstall.ui" line="281"/>
         <source>Leave free space up to:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="307"/>
+        <location filename="../meinstall.ui" line="316"/>
         <source>MB </source>
         <translation>MB </translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="323"/>
+        <location filename="../meinstall.ui" line="332"/>
         <source>Auto-install using entire disk </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="339"/>
+        <location filename="../meinstall.ui" line="348"/>
         <source>Custom install on existing partitions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="358"/>
+        <location filename="../meinstall.ui" line="367"/>
         <source>1a. Choose disk for installation</source>
         <translation>1a. Kurulacak diski seç</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="398"/>
+        <location filename="../meinstall.ui" line="407"/>
         <source>Use disk:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="417"/>
+        <location filename="../meinstall.ui" line="426"/>
         <source>1b. Rearrange disk partitions (optional)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="444"/>
+        <location filename="../meinstall.ui" line="453"/>
         <source>Run partition tool...</source>
         <translation>bölümlendirme aracını çalıştır...</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="457"/>
+        <location filename="../meinstall.ui" line="466"/>
         <source>Modify partitions:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="521"/>
+        <location filename="../meinstall.ui" line="530"/>
         <source>2b. Preferences</source>
         <translation>2b. Yeğlenenler</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="548"/>
+        <location filename="../meinstall.ui" line="557"/>
         <source>Preserve data in /home (if upgrading)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="583"/>
+        <location filename="../meinstall.ui" line="592"/>
         <source>Filesystem type:</source>
         <translation>Dosya sistemi türü:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="609"/>
+        <location filename="../meinstall.ui" line="618"/>
         <source>Change default / (root) partition label:</source>
         <translation>Öntanımlı / (kök) bölüm etiketini değiştir:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="623"/>
+        <location filename="../meinstall.ui" line="632"/>
         <source>ext4</source>
         <translation>ext4</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="628"/>
+        <location filename="../meinstall.ui" line="637"/>
         <source>ext3</source>
         <translation>ext3</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="633"/>
+        <location filename="../meinstall.ui" line="642"/>
         <source>ext2</source>
         <translation>ext2</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="638"/>
+        <location filename="../meinstall.ui" line="647"/>
         <source>jfs</source>
         <translation>jfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="643"/>
+        <location filename="../meinstall.ui" line="652"/>
         <source>xfs</source>
         <translation>xfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="648"/>
+        <location filename="../meinstall.ui" line="657"/>
         <source>btrfs</source>
         <translation>btrfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="653"/>
+        <location filename="../meinstall.ui" line="662"/>
         <source>reiserfs</source>
         <translation>reiserfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="664"/>
+        <location filename="../meinstall.ui" line="673"/>
         <source>Change default /home partition label:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="683"/>
+        <location filename="../meinstall.ui" line="692"/>
         <source>Check for badblocks (takes longer)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="702"/>
+        <location filename="../meinstall.ui" line="711"/>
         <source>2a. Choose partitions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="732"/>
+        <location filename="../meinstall.ui" line="741"/>
         <source>/ (root) partition:</source>
         <translation>/ (kök) bölümü:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="748"/>
+        <location filename="../meinstall.ui" line="757"/>
         <source>swap partition:</source>
         <translation>takas alanı:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="764"/>
+        <location filename="../meinstall.ui" line="773"/>
         <source>/home partition:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="830"/>
-        <location filename="../meinstall.ui" line="1194"/>
+        <location filename="../meinstall.ui" line="839"/>
+        <location filename="../meinstall.ui" line="1203"/>
         <source>root</source>
         <translation>Kök</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="879"/>
+        <location filename="../meinstall.ui" line="888"/>
         <source>3. Installation in progress</source>
         <translation>3. Kurulum ilerliyor</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="922"/>
+        <location filename="../meinstall.ui" line="931"/>
         <source>Abort</source>
         <translation>Vazgeç</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="925"/>
-        <location filename="../meinstall.ui" line="1143"/>
+        <location filename="../meinstall.ui" line="934"/>
+        <location filename="../meinstall.ui" line="1152"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="964"/>
+        <location filename="../meinstall.ui" line="973"/>
         <source>Ready to install MX Linux filesystem</source>
         <translation>MX Linux dosya sistemi kuruluma hazır</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="986"/>
+        <location filename="../meinstall.ui" line="995"/>
         <source>Tips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1060"/>
+        <location filename="../meinstall.ui" line="1069"/>
         <source>4. Select Boot Method</source>
         <translation>4. Önyükleme Yöntemini Seçin</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1093"/>
+        <location filename="../meinstall.ui" line="1102"/>
         <source>MBR</source>
         <translation>MBR</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1096"/>
+        <location filename="../meinstall.ui" line="1105"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1124"/>
+        <location filename="../meinstall.ui" line="1133"/>
         <source>Install on:</source>
         <translation>Buraya kur:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1140"/>
+        <location filename="../meinstall.ui" line="1149"/>
         <source>Install GRUB for MX Linux and Windows</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1162"/>
+        <location filename="../meinstall.ui" line="1171"/>
         <source>System boot disk:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1207"/>
+        <location filename="../meinstall.ui" line="1216"/>
         <source>EFI System Partition</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1210"/>
+        <location filename="../meinstall.ui" line="1219"/>
         <source>ESP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1280"/>
+        <location filename="../meinstall.ui" line="1289"/>
         <source>Common Services to Enable</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1320"/>
+        <location filename="../meinstall.ui" line="1329"/>
         <source>Service</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1325"/>
+        <location filename="../meinstall.ui" line="1334"/>
         <source>Description</source>
         <translation>Açıklama</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1361"/>
+        <location filename="../meinstall.ui" line="1370"/>
         <source>5. Computer Network Names</source>
         <translation>Bilgisayar Ağ Adları</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1388"/>
+        <location filename="../meinstall.ui" line="1397"/>
         <source>Workgroup</source>
         <translation>Çalışmagrubu</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1401"/>
+        <location filename="../meinstall.ui" line="1410"/>
         <source>Workgroup:</source>
         <translation>Çalışma grubu</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1417"/>
+        <location filename="../meinstall.ui" line="1426"/>
         <source>SaMBa Server for MS Networking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1433"/>
+        <location filename="../meinstall.ui" line="1442"/>
         <source>example.dom</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1446"/>
+        <location filename="../meinstall.ui" line="1455"/>
         <source>Computer domain:</source>
         <translation>Bilgisayar alan adı:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1462"/>
+        <location filename="../meinstall.ui" line="1471"/>
         <source>mx1</source>
         <translation>mx1</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1478"/>
+        <location filename="../meinstall.ui" line="1487"/>
         <source>Computer name:</source>
         <translation>Bilgisayar adı:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1551"/>
+        <location filename="../meinstall.ui" line="1560"/>
         <source>6d. Service Settings (advanced)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1569"/>
+        <location filename="../meinstall.ui" line="1578"/>
         <source>Adjust which services should run at startup</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1572"/>
+        <location filename="../meinstall.ui" line="1581"/>
         <source>View</source>
         <translation>Görünüm</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1601"/>
+        <location filename="../meinstall.ui" line="1610"/>
         <source>6b. Configure Clock</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1629"/>
+        <location filename="../meinstall.ui" line="1638"/>
         <source>Format:</source>
         <translation>Biçimlendirme:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1646"/>
+        <location filename="../meinstall.ui" line="1655"/>
         <source>System clock uses LOCAL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1675"/>
+        <location filename="../meinstall.ui" line="1684"/>
         <source>6a. Localization Defaults</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1705"/>
+        <location filename="../meinstall.ui" line="1714"/>
         <source>Locale:</source>
         <translation>Bölge</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1744"/>
+        <location filename="../meinstall.ui" line="1753"/>
         <source>Keyboard:</source>
         <translation>Tuş takımı:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1763"/>
+        <location filename="../meinstall.ui" line="1772"/>
         <source>6c. Timezone Settings</source>
         <translation>6c. Saat Dilimi Ayarları</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1775"/>
+        <location filename="../meinstall.ui" line="1784"/>
         <source>Timezone:</source>
         <translation>Saat dilimi:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1836"/>
+        <location filename="../meinstall.ui" line="1845"/>
         <source>7b. Root (administrator) Account</source>
         <translation>7b. Kök (yönetici) Hesabı</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1895"/>
+        <location filename="../meinstall.ui" line="1904"/>
         <source>Confirm root password:</source>
         <translation>Kök parolasını onayla:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1911"/>
+        <location filename="../meinstall.ui" line="1920"/>
         <source>Root password:</source>
         <translation>Kök parolası:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1943"/>
+        <location filename="../meinstall.ui" line="1952"/>
         <source>7a. Default User Account</source>
         <translation>7a. Öntanımlı Kullanıcı Hesabı</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2005"/>
+        <location filename="../meinstall.ui" line="2014"/>
         <source>username</source>
         <translation>kullanıcı adı</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2018"/>
+        <location filename="../meinstall.ui" line="2027"/>
         <source>Confirm user password:</source>
         <translation>Kullanıcı parolasını onayla:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2034"/>
+        <location filename="../meinstall.ui" line="2043"/>
         <source>Default user password:</source>
         <translation>Öntanımlı kullanıcı parolası:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2050"/>
+        <location filename="../meinstall.ui" line="2059"/>
         <source>Default user login name:</source>
         <translation>Öntanımlı kullanıcı giriş adı:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2069"/>
+        <location filename="../meinstall.ui" line="2078"/>
         <source>Autologin</source>
         <translation>Otomatik Oturum Aç</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2082"/>
+        <location filename="../meinstall.ui" line="2091"/>
         <source>Show passwords</source>
         <translation>Parolayı göster</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2095"/>
+        <location filename="../meinstall.ui" line="2104"/>
         <source>Desktop modifications made in the live environment will be carried over to the installed OS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2098"/>
+        <location filename="../meinstall.ui" line="2107"/>
         <source>Save live desktop changes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2111"/>
+        <location filename="../meinstall.ui" line="2120"/>
         <source>Encrypt /home</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2143"/>
+        <location filename="../meinstall.ui" line="2152"/>
         <source>Reminders</source>
         <translation>Anımsatıcılar</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2191"/>
+        <location filename="../meinstall.ui" line="2200"/>
         <source>Support MX Linux
 
 MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.</source>

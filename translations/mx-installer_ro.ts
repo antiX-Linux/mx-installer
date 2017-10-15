@@ -450,6 +450,12 @@ Sigur doriți sa opriți acum?</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../minstall.cpp" line="2067"/>
+        <location filename="../minstall.cpp" line="2079"/>
+        <source>Next</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</source>
         <translation type="vanished">&lt;p&gt;&lt;b&gt;Mulțumiri speciale&lt;/ b&gt;&lt;br/&gt;Mulțumim tuturor celor care au ales să sprijine MX Linux, cu timpul lor, bani, sugestii, muncă, laudă, idei, promovare, și/sau cu încurajare.&lt;/p&gt;&lt;p&gt;Fără dumneavoastră nu ar exista  MX Linux. &lt;/p&gt;&lt;p&gt;anticapitalista, comunitatea MX Linux&lt;/p&gt;</translation>
     </message>
@@ -513,10 +519,8 @@ Returning to Step 1.</source>
         <translation>&lt;p&gt;&lt;b&gt;Enjoy using MX Linux!&lt;/b&gt;&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2067"/>
-        <location filename="../minstall.cpp" line="2079"/>
         <source>Next &gt;</source>
-        <translation>Următorul &gt;</translation>
+        <translation type="vanished">Următorul &gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2077"/>
@@ -733,32 +737,40 @@ Returning to Step 1.</source>
         <translation>Închidere</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="67"/>
         <source>Next &gt;</source>
-        <translation>Următorul &gt;</translation>
+        <translation type="vanished">Următorul &gt;</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="70"/>
+        <location filename="../meinstall.ui" line="76"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="80"/>
         <source>&lt; Back</source>
-        <translation>&lt; Înapoi</translation>
+        <translation type="vanished">&lt; Înapoi</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="83"/>
+        <location filename="../meinstall.ui" line="70"/>
+        <source>Next</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meinstall.ui" line="86"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../meinstall.ui" line="92"/>
         <source>Alt+K</source>
         <translation>Alt+K</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="130"/>
+        <location filename="../meinstall.ui" line="139"/>
         <source>Terms of Use</source>
         <translation>Termeni de folosire</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="184"/>
+        <location filename="../meinstall.ui" line="193"/>
         <source>MX Linux is an independent Linux distribution based on Debian Stable
 
 MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.
@@ -771,394 +783,394 @@ MX Linux folosește niște componente MEPIS Linux care sunt acoperite de licenț
 Enjoy using MX Linux.</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="226"/>
+        <location filename="../meinstall.ui" line="235"/>
         <source>1c. Select type of installation</source>
         <translation>1c. Alegeți modul de instalare</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="272"/>
+        <location filename="../meinstall.ui" line="281"/>
         <source>Leave free space up to:</source>
         <translation>Lasă spațiu liber până la:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="307"/>
+        <location filename="../meinstall.ui" line="316"/>
         <source>MB </source>
         <translation>MB</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="323"/>
+        <location filename="../meinstall.ui" line="332"/>
         <source>Auto-install using entire disk </source>
         <translation>Auto-instalare folosind intregul disc</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="339"/>
+        <location filename="../meinstall.ui" line="348"/>
         <source>Custom install on existing partitions</source>
         <translation>Instalație personalizată pe partițiile existente</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="358"/>
+        <location filename="../meinstall.ui" line="367"/>
         <source>1a. Choose disk for installation</source>
         <translation>1a. Alegeți discul pentru instalare</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="398"/>
+        <location filename="../meinstall.ui" line="407"/>
         <source>Use disk:</source>
         <translation>Folosește discul:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="417"/>
+        <location filename="../meinstall.ui" line="426"/>
         <source>1b. Rearrange disk partitions (optional)</source>
         <translation>1b. Rearajează partițiile discului (opțional)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="444"/>
+        <location filename="../meinstall.ui" line="453"/>
         <source>Run partition tool...</source>
         <translation>Ruleză utilitarul de partiționare...</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="457"/>
+        <location filename="../meinstall.ui" line="466"/>
         <source>Modify partitions:</source>
         <translation>Modifică partițiile:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="521"/>
+        <location filename="../meinstall.ui" line="530"/>
         <source>2b. Preferences</source>
         <translation>2b. Preferințe</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="548"/>
+        <location filename="../meinstall.ui" line="557"/>
         <source>Preserve data in /home (if upgrading)</source>
         <translation>Păstrează datele in /home (daca reinstalați)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="583"/>
+        <location filename="../meinstall.ui" line="592"/>
         <source>Filesystem type:</source>
         <translation>Tipul de sistem de fișiere:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="609"/>
+        <location filename="../meinstall.ui" line="618"/>
         <source>Change default / (root) partition label:</source>
         <translation>Schimbă eticheta  / (root) implicită:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="623"/>
+        <location filename="../meinstall.ui" line="632"/>
         <source>ext4</source>
         <translation>ext4</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="628"/>
+        <location filename="../meinstall.ui" line="637"/>
         <source>ext3</source>
         <translation>ext3</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="633"/>
+        <location filename="../meinstall.ui" line="642"/>
         <source>ext2</source>
         <translation>ext2</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="638"/>
+        <location filename="../meinstall.ui" line="647"/>
         <source>jfs</source>
         <translation>jfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="643"/>
+        <location filename="../meinstall.ui" line="652"/>
         <source>xfs</source>
         <translation>xfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="648"/>
+        <location filename="../meinstall.ui" line="657"/>
         <source>btrfs</source>
         <translation>btrfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="653"/>
+        <location filename="../meinstall.ui" line="662"/>
         <source>reiserfs</source>
         <translation>reiserfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="664"/>
+        <location filename="../meinstall.ui" line="673"/>
         <source>Change default /home partition label:</source>
         <translation>Schimbă eticheta  /home implicită:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="683"/>
+        <location filename="../meinstall.ui" line="692"/>
         <source>Check for badblocks (takes longer)</source>
         <translation>Verifică badblocks (durează mai mult)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="702"/>
+        <location filename="../meinstall.ui" line="711"/>
         <source>2a. Choose partitions</source>
         <translation>2a. Alegeți partițiile</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="732"/>
+        <location filename="../meinstall.ui" line="741"/>
         <source>/ (root) partition:</source>
         <translation>partition / (root):</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="748"/>
+        <location filename="../meinstall.ui" line="757"/>
         <source>swap partition:</source>
         <translation>partition swap:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="764"/>
+        <location filename="../meinstall.ui" line="773"/>
         <source>/home partition:</source>
         <translation>Partiția /home:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="830"/>
-        <location filename="../meinstall.ui" line="1194"/>
+        <location filename="../meinstall.ui" line="839"/>
+        <location filename="../meinstall.ui" line="1203"/>
         <source>root</source>
         <translation>root</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="879"/>
+        <location filename="../meinstall.ui" line="888"/>
         <source>3. Installation in progress</source>
         <translation>3. Instalare in curs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="922"/>
+        <location filename="../meinstall.ui" line="931"/>
         <source>Abort</source>
         <translation>Anulare</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="925"/>
-        <location filename="../meinstall.ui" line="1143"/>
+        <location filename="../meinstall.ui" line="934"/>
+        <location filename="../meinstall.ui" line="1152"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="964"/>
+        <location filename="../meinstall.ui" line="973"/>
         <source>Ready to install MX Linux filesystem</source>
         <translation>Gata pentru a instala sitemul de fișiere MX Linux</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="986"/>
+        <location filename="../meinstall.ui" line="995"/>
         <source>Tips</source>
         <translation>Sfaturi</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1060"/>
+        <location filename="../meinstall.ui" line="1069"/>
         <source>4. Select Boot Method</source>
         <translation>4. Alege metoda de bootare</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1093"/>
+        <location filename="../meinstall.ui" line="1102"/>
         <source>MBR</source>
         <translation>MBR</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1096"/>
+        <location filename="../meinstall.ui" line="1105"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1124"/>
+        <location filename="../meinstall.ui" line="1133"/>
         <source>Install on:</source>
         <translation>Instaleaza pe:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1140"/>
+        <location filename="../meinstall.ui" line="1149"/>
         <source>Install GRUB for MX Linux and Windows</source>
         <translation>Instaleza GRUB pentru MX Linux și Windows</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1162"/>
+        <location filename="../meinstall.ui" line="1171"/>
         <source>System boot disk:</source>
         <translation>Disc boot:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1207"/>
+        <location filename="../meinstall.ui" line="1216"/>
         <source>EFI System Partition</source>
         <translation>Partiție de sistem EFI</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1210"/>
+        <location filename="../meinstall.ui" line="1219"/>
         <source>ESP</source>
         <translation>ESP</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1280"/>
+        <location filename="../meinstall.ui" line="1289"/>
         <source>Common Services to Enable</source>
         <translation>Servicii de activat</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1320"/>
+        <location filename="../meinstall.ui" line="1329"/>
         <source>Service</source>
         <translation>Serviciu</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1325"/>
+        <location filename="../meinstall.ui" line="1334"/>
         <source>Description</source>
         <translation>Descriere</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1361"/>
+        <location filename="../meinstall.ui" line="1370"/>
         <source>5. Computer Network Names</source>
         <translation>5. Nume de rețea pentru computer</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1388"/>
+        <location filename="../meinstall.ui" line="1397"/>
         <source>Workgroup</source>
         <translation>Grup de lucru:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1401"/>
+        <location filename="../meinstall.ui" line="1410"/>
         <source>Workgroup:</source>
         <translation>Grup de lucru:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1417"/>
+        <location filename="../meinstall.ui" line="1426"/>
         <source>SaMBa Server for MS Networking</source>
         <translation>Server SaMBa pentru Rețea MS </translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1433"/>
+        <location filename="../meinstall.ui" line="1442"/>
         <source>example.dom</source>
         <translation>exemplu.dom</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1446"/>
+        <location filename="../meinstall.ui" line="1455"/>
         <source>Computer domain:</source>
         <translation>Domeniu computer:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1462"/>
+        <location filename="../meinstall.ui" line="1471"/>
         <source>mx1</source>
         <translation>mx1</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1478"/>
+        <location filename="../meinstall.ui" line="1487"/>
         <source>Computer name:</source>
         <translation>Nume computer:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1551"/>
+        <location filename="../meinstall.ui" line="1560"/>
         <source>6d. Service Settings (advanced)</source>
         <translation>6d. Configurare servicii (avansat)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1569"/>
+        <location filename="../meinstall.ui" line="1578"/>
         <source>Adjust which services should run at startup</source>
         <translation>Configurați serviciile care ruleaza la pornire</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1572"/>
+        <location filename="../meinstall.ui" line="1581"/>
         <source>View</source>
         <translation>Vedere </translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1601"/>
+        <location filename="../meinstall.ui" line="1610"/>
         <source>6b. Configure Clock</source>
         <translation>6b. Configurare ceas</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1629"/>
+        <location filename="../meinstall.ui" line="1638"/>
         <source>Format:</source>
         <translation>Format:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1646"/>
+        <location filename="../meinstall.ui" line="1655"/>
         <source>System clock uses LOCAL</source>
         <translation>Ceasul de sistem folosește LOCAL</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1675"/>
+        <location filename="../meinstall.ui" line="1684"/>
         <source>6a. Localization Defaults</source>
         <translation>6a. Opțiuni prestabilite localizare </translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1705"/>
+        <location filename="../meinstall.ui" line="1714"/>
         <source>Locale:</source>
         <translation>Localizare:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1744"/>
+        <location filename="../meinstall.ui" line="1753"/>
         <source>Keyboard:</source>
         <translation>Tastatură:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1763"/>
+        <location filename="../meinstall.ui" line="1772"/>
         <source>6c. Timezone Settings</source>
         <translation>6c. Setări fus orar</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1775"/>
+        <location filename="../meinstall.ui" line="1784"/>
         <source>Timezone:</source>
         <translation>Fus orar:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1836"/>
+        <location filename="../meinstall.ui" line="1845"/>
         <source>7b. Root (administrator) Account</source>
         <translation>7b. Cont root (administrator)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1895"/>
+        <location filename="../meinstall.ui" line="1904"/>
         <source>Confirm root password:</source>
         <translation>Confirmați parola root:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1911"/>
+        <location filename="../meinstall.ui" line="1920"/>
         <source>Root password:</source>
         <translation>Parolă root:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1943"/>
+        <location filename="../meinstall.ui" line="1952"/>
         <source>7a. Default User Account</source>
         <translation>7a. Cont implicit</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2005"/>
+        <location filename="../meinstall.ui" line="2014"/>
         <source>username</source>
         <translation>nume cont utilizator</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2018"/>
+        <location filename="../meinstall.ui" line="2027"/>
         <source>Confirm user password:</source>
         <translation>Confirmați parolă utilizator:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2034"/>
+        <location filename="../meinstall.ui" line="2043"/>
         <source>Default user password:</source>
         <translation>Parolă pentru cont implicit:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2050"/>
+        <location filename="../meinstall.ui" line="2059"/>
         <source>Default user login name:</source>
         <translation>Nume utilizator implicit:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2069"/>
+        <location filename="../meinstall.ui" line="2078"/>
         <source>Autologin</source>
         <translation>Autologin</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2082"/>
+        <location filename="../meinstall.ui" line="2091"/>
         <source>Show passwords</source>
         <translation>Arată parolele</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2095"/>
+        <location filename="../meinstall.ui" line="2104"/>
         <source>Desktop modifications made in the live environment will be carried over to the installed OS</source>
         <translation>Modificarile desktop făcute în mediul live vor fi transferate la sistemul de operare instalat</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2098"/>
+        <location filename="../meinstall.ui" line="2107"/>
         <source>Save live desktop changes</source>
         <translation>Salvați modificările live desktop</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2111"/>
+        <location filename="../meinstall.ui" line="2120"/>
         <source>Encrypt /home</source>
         <translation>Criptare /home</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2143"/>
+        <location filename="../meinstall.ui" line="2152"/>
         <source>Reminders</source>
         <translation>Memo</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2191"/>
+        <location filename="../meinstall.ui" line="2200"/>
         <source>Support MX Linux
 
 MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.</source>

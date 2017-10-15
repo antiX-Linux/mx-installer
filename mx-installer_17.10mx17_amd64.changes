@@ -18,26 +18,26 @@ Changes:
  .
    * resizable installer window
 Checksums-Sha1:
- bd3dcead23a88e96a30e5ab0f49157ce2266a028 1151 mx-installer_17.10mx17.dsc
- e61701d35b9f6d9e54b07019254a462d330d7937 566968 mx-installer_17.10mx17.tar.xz
- 7e4fea4216972f5ffd9df7e08201e118979f82a9 357624 mx-installer_17.10mx17_amd64.deb
+ c7013dc88f24583d377e7e20f8caf6be31ed8d3c 1151 mx-installer_17.10mx17.dsc
+ 7b68fbd156d5666ee9325ca84483aa7bee8b6b60 283044 mx-installer_17.10mx17.tar.xz
+ ba9bdd0c4d4ea2f43b0515357c908d24768ec81d 357670 mx-installer_17.10mx17_amd64.deb
 Checksums-Sha256:
- 6e1d8523cfad0371cffbda7cf838a3b4e5be30eee04ae4bbb571e3280e5f9743 1151 mx-installer_17.10mx17.dsc
- 306e3be68c1459adf57ac113f9a4eb21ef86875e3fec1cb5892fb542bf8e9cff 566968 mx-installer_17.10mx17.tar.xz
- bba5b8d3bb1c139f11dc7a81b6145401c4ce2ae82017456453fbfcbd12a7c76b 357624 mx-installer_17.10mx17_amd64.deb
+ 9fd7b5cbc476e03382a9d0ed52a719e227554e5640463a91b1733478f2d2ad5c 1151 mx-installer_17.10mx17.dsc
+ 9724af3138f08a76eac95cb4d64ef715a44b510351f24a6b5d5f71fa9b1d5636 283044 mx-installer_17.10mx17.tar.xz
+ fd7e7de0f77ff5ca24037324f09d4b5843700722ec5bb1621fbcafac973fc0de 357670 mx-installer_17.10mx17_amd64.deb
 Files:
- 21c6488782efaae965b72ee8e8e0208e 1151 system optional mx-installer_17.10mx17.dsc
- b9916d436c8b4f30870924d813afe6ad 566968 system optional mx-installer_17.10mx17.tar.xz
- d1cab223f3913b310ee33b42c8a58afa 357624 system optional mx-installer_17.10mx17_amd64.deb
+ 8970b67da19f6ff627b59b4544de766c 1151 system optional mx-installer_17.10mx17.dsc
+ bfe08e7baa7a1fb312de884c8053630e 283044 system optional mx-installer_17.10mx17.tar.xz
+ 2aa80a7f36c48e3d379ea16e43437e4b 357670 system optional mx-installer_17.10mx17_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJZ4tDWAAoJEHCTjHgGee6Y06kH/iU3n4lGIQ1aGVTdCMJCGPLy
-ww8m5lFMHN7YbDxlyn0lOY6LslcN/bWKsxD3IFwJ+8v6swVcRHg/NcOfUfxPwNr7
-a6ERqwZKWDh9Y8lNMMwb6r5612XxBQofUhsCgJSapPnaVnYJhtohduelpdF7Ypgw
-zSz007bQU3Wc/P6B1KTvoEKH3AtRW1VGhdI50ZX7U+1b4OwmBDvoHHy2JgDhvkfF
-omFUYtv2Mvw6Jigplza0INiDCVVNSHu0eIlUh8wiMYQ9Vp+HfubPjAMp4Vfw0Iwn
-l5GoeohOOkQ7bf5VE7N+HEdIOpC3me6KDp6tqmPADKwirDhOIn/cK+bjjNNGD1A=
-=PIhj
+iQEcBAEBAgAGBQJZ42hcAAoJEHCTjHgGee6YMfYH/jS0xdUGLhunujLA47e6KSSL
+cuwwCmQ/YuHmb74ZQ8RMqt1zKHQeXZY7wbCyJyaih28ED6Dk5TT7FF89XNGCviTW
+cXr/PJEymkGQyT1j4mpvZ/Qfcc3PJ4u/GV/CYZHi2Ghlu/9yC4h1VplhjXLXszmF
+ZJLD7SvHtzhHmuTx6p7b2B3C8UhBZ/sm/UjN9fyCp+QRAh2ro7XrHZFSDdfHNGxI
+88k/N78E4vOVeOuo4Nf3vU/VA7/7Vza6PEqM3h99HOFVq9itgQ7KzNjg1cZ07dUf
+8ALoGqY1yOZjWsoMvBl05kx5bGz41Rl2+rQznBS9NTeIolzh1oxLOzU42sTzqRc=
+=2na1
 -----END PGP SIGNATURE-----

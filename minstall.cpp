@@ -2064,7 +2064,7 @@ void MInstall::gotoPage(int next)
     if (next == 0) {
         // entering first page
         nextButton->setDefault(true);
-        nextButton->setText(tr("Next >"));
+        nextButton->setText(tr("Next"));
         backButton->setEnabled(false);
     } else {
         // default
@@ -2076,7 +2076,7 @@ void MInstall::gotoPage(int next)
         // entering the last page
         nextButton->setText(tr("Finish"));
     } else {
-        nextButton->setText(tr("Next >"));
+        nextButton->setText(tr("Next"));
     }
     if (next > c-1) {
         // finished
