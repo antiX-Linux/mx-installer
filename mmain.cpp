@@ -24,7 +24,9 @@ MMain::MMain()
 {
     setupUi(this);
     minstall = new MInstall(mainFrame);
-    minstall->move(5,0);
+    minstall->resize(mainFrame->size());
+    mainHelp->resize(tab->size());
+    helpbackdrop->resize(mainHelp->size());
     firstShow = true;
 }
 
@@ -40,7 +42,6 @@ void MMain::setHelpText(const QString &text)
 
 void MMain::closeEvent(QCloseEvent *e)
 {
-    qDebug() << "close event";
     system("umount -l /mnt/antiX/home >/dev/null 2>&1");
     system("umount -l /mnt/antiX >/dev/null 2>&1");
     system("rm -r /mnt/antiX >/dev/null 2>&1");
@@ -61,7 +62,6 @@ void MMain::showEvent(QShowEvent *)
     if (firstShow) {
         firstShow = false;
         minstall->firstRefresh(this);
-        minstall->adjustSize();
     }
 }
 
