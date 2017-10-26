@@ -47,7 +47,9 @@
       <string>Close</string>
      </property>
      <property name="icon">
-      <iconset theme="window-close"/>
+      <iconset theme="window-close">
+       <normaloff/>
+      </iconset>
      </property>
     </widget>
    </item>
@@ -70,7 +72,9 @@
       <string>Next</string>
      </property>
      <property name="icon">
-      <iconset theme="go-next"/>
+      <iconset theme="go-next">
+       <normaloff/>
+      </iconset>
      </property>
      <property name="shortcut">
       <string>Alt+N</string>
@@ -86,7 +90,9 @@
       <string>Back</string>
      </property>
      <property name="icon">
-      <iconset theme="go-previous"/>
+      <iconset theme="go-previous">
+       <normaloff/>
+      </iconset>
      </property>
      <property name="shortcut">
       <string>Alt+K</string>
@@ -1868,6 +1874,12 @@ Enjoy using MX Linux.</string>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>25</height>
+             </size>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1883,6 +1895,12 @@ Enjoy using MX Linux.</string>
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>25</height>
+             </size>
             </property>
             <property name="text">
              <string/>
@@ -1975,6 +1993,12 @@ Enjoy using MX Linux.</string>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>25</height>
+             </size>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -1991,6 +2015,12 @@ Enjoy using MX Linux.</string>
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>25</height>
+             </size>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -2006,6 +2036,12 @@ Enjoy using MX Linux.</string>
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>25</height>
+             </size>
             </property>
             <property name="text">
              <string/>

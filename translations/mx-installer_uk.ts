@@ -48,9 +48,9 @@ The disk with the partition you selected for installation is failing.
         <location filename="../minstall.cpp" line="1094"/>
         <location filename="../minstall.cpp" line="1099"/>
         <location filename="../minstall.cpp" line="1124"/>
-        <location filename="../minstall.cpp" line="1839"/>
-        <location filename="../minstall.cpp" line="1853"/>
-        <location filename="../minstall.cpp" line="2550"/>
+        <location filename="../minstall.cpp" line="1840"/>
+        <location filename="../minstall.cpp" line="1854"/>
+        <location filename="../minstall.cpp" line="2551"/>
         <source>Yes</source>
         <translation>Так</translation>
     </message>
@@ -67,9 +67,9 @@ The disk with the partition you selected for installation is failing.
         <location filename="../minstall.cpp" line="1094"/>
         <location filename="../minstall.cpp" line="1099"/>
         <location filename="../minstall.cpp" line="1124"/>
-        <location filename="../minstall.cpp" line="1839"/>
-        <location filename="../minstall.cpp" line="1853"/>
-        <location filename="../minstall.cpp" line="2550"/>
+        <location filename="../minstall.cpp" line="1840"/>
+        <location filename="../minstall.cpp" line="1854"/>
+        <location filename="../minstall.cpp" line="2551"/>
         <source>No</source>
         <translation>Ні</translation>
     </message>
@@ -398,7 +398,7 @@ name before proceeding.</source>
 назву, перш ніж продовжити.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1836"/>
+        <location filename="../minstall.cpp" line="1837"/>
         <source>MX Linux installation and configuration is complete.
 To use the new installation, reboot without the installation media.
 
@@ -409,94 +409,94 @@ n Щоб користуватись нею, перезавантажтесь б�
 Перезавантажити зараз?   </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1852"/>
+        <location filename="../minstall.cpp" line="1853"/>
         <source>The installation and configuration is incomplete.
 Do you really want to stop now?</source>
         <translation>Встановлення та налаштування не завершено.\n
 Ви дійсно хочете все зупинити зараз?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1927"/>
+        <location filename="../minstall.cpp" line="1928"/>
         <source>&lt;p&gt;&lt;b&gt;General Instructions&lt;/b&gt;&lt;br/&gt;BEFORE PROCEEDING, CLOSE ALL OTHER APPLICATIONS.&lt;/p&gt;&lt;p&gt;On each page, please read the instructions, make your selections, and then click on Next when you are ready to proceed. You will be prompted for confirmation before any destructive actions are performed.&lt;/p&gt;&lt;p&gt;MX Linux requires about 3.5 GB of space. 5 GB or more is preferred. You can use the entire disk or you can put MX Linux on existing partitions. &lt;/p&gt;&lt;p&gt;If you are running Mac OS or Windows OS (from Vista onwards), you may have to use that system&apos;s software to set up partitions and boot manager before installing MX Linux.&lt;/p&gt;&lt;p&gt;The ext2, ext3, ext4, jfs, xfs, btrfs and reiserfs Linux filesystems are supported and ext4 is recommended.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Загальні вказівки&lt;/b&gt;&lt;br/&gt;ПЕРЕД ПРОДОВЖЕННЯМ, ЗАКРИЙТЕ ВСІ ІНШІ ПРОГРАМИ.&lt;/p&gt;&lt;p&gt;Уважно прочитайте вказівки на кожній сторінці, зробіть вибір і лише якщо будете готові продовжити, натискайте кнопку «Вперед». Вам буде запропоновано підтвердити виконання будь-яких деструктивних дій.&lt;/p&gt;&lt;p&gt;MX Linux потребують близько 3,5 ГБ вільного місця, але найкраще 5 ГБ або більше. Ви можете використати весь диск або встановити MX Linux у вже наявні розділи.  &lt;/p&gt;&lt;p&gt;Якщо ви використовуєте обладнання типу PC, запустіть програму GParted з цього диска, щоб змінити розділи перед нетиповим встановленням. Якщо ви використовуєте обладнання Apple, ніколи не використовуйте розподіл або GParted в завантажувальному пристрої. Натомість, перед встановленням MX Linux, потрібно встановити розділи та менеджер завантаження в OSX.&lt;/p&gt;&lt;p&gt;Підтримуються файлові системи Linux ext2, ext3, ext4, jfs, xfs, btrfs та reiserfs, але рекомендується ext4.&lt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1938"/>
+        <location filename="../minstall.cpp" line="1939"/>
         <source>&lt;p&gt;&lt;b&gt;Limitations&lt;/b&gt;&lt;br/&gt;Remember, this software is provided AS-IS with no warranty what-so-ever. It&apos;s solely your responsibility to backup your data before proceeding.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Choose Partitions&lt;/b&gt;&lt;br/&gt;MX Linux requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX Linux, you will need a swap partition that is larger than your physical memory size.&lt;/p&gt;&lt;p&gt;If you choose a separate /home partition it will be easier for you to upgrade in the future, but this will not be possible if you are upgrading from an installation that does not have a separate home partition.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrading&lt;/b&gt;&lt;br/&gt;To upgrade from an existing Linux installation, select the same home partition as before and check the preference to preserve data in /home.&lt;/p&gt;&lt;p&gt;If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. As a result, the installation will take much longer than usual.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Preferred Filesystem Type&lt;/b&gt;&lt;br/&gt;For MX Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for bad blocks on the drive. The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has bad blocks.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1952"/>
+        <location filename="../minstall.cpp" line="1953"/>
         <source>Returning to Step 1 to select another disk.</source>
         <translation>Повернення до кроку 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1956"/>
+        <location filename="../minstall.cpp" line="1957"/>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;MX Dev Team&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1959"/>
+        <location filename="../minstall.cpp" line="1960"/>
         <source>&lt;p&gt;&lt;b&gt;Installation in Progress&lt;/b&gt;&lt;br/&gt;MX Linux is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.&lt;/p&gt;&lt;p&gt;If you click the Abort button, the installation will be stopped as soon as possible.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Встановлення виконується&lt;/b&gt;&lt;br/&gt;MX Linux встановлюється. «Свіже» встановлення триватиме від 3 до 20 хвилин, залежно від швидкості системи та розміру розділів, які будуть переформатовані.&lt;/p&gt;&lt;p&gt;Якщо ви натиснете кнопку «Скасувати», встановлення буде зупинено як найшвидше.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1971"/>
+        <location filename="../minstall.cpp" line="1972"/>
         <source>Failed to create required partitions.
 Returning to Step 1.</source>
         <translation>Не вдалось створити потрібні розділи.\n
 Повернення до кроку 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1980"/>
+        <location filename="../minstall.cpp" line="1981"/>
         <source>Failed to prepare chosen partitions.
 Returning to Step 1.</source>
         <translation>Не вдалось приготувати вибрані розділи.
 Повернення до кроку 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1993"/>
+        <location filename="../minstall.cpp" line="1994"/>
         <source>&lt;p&gt;&lt;b&gt;Select Boot Method&lt;/b&gt;&lt;br/&gt;MX Linux uses the GRUB bootloader to boot MX Linux and MS-Windows. &lt;p&gt;By default GRUB2 is installed in the Master Boot Record or ESP (EFI System Partition for 64-bit UEFI boot systems) of your boot drive and replaces the boot loader you were using before. This is normal.&lt;/p&gt;&lt;p&gt;If you choose to install GRUB2 at root instead, then GRUB2 will be installed at the beginning of the root partition. This option is for experts only.&lt;/p&gt;&lt;p&gt;If you uncheck the Install GRUB box, GRUB will not be installed at this time. This option is for experts only.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2002"/>
+        <location filename="../minstall.cpp" line="2003"/>
         <source>&lt;p&gt;&lt;b&gt;Common Services to Enable&lt;/b&gt;&lt;br/&gt;Select any of these common services that you might need with your system configuration and the services will be started automatically when you start MX Linux.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2009"/>
+        <location filename="../minstall.cpp" line="2010"/>
         <source>&lt;p&gt;&lt;b&gt;Computer Identity&lt;/b&gt;&lt;br/&gt;The computer name is a common unique name which will identify your computer if it is on a network. The computer domain is unlikely to be used unless your ISP or local network requires it.&lt;/p&gt;&lt;p&gt;The computer and domain names can contain only alphanumeric characters, dots, hyphens. They cannot contain blank spaces, start or end with hyphens&lt;/p&gt;&lt;p&gt;The SaMBa Server needs to be activated if you want to use it to share some of your directories or printer with a local computer that is running MS-Windows or Mac OSX.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Ідентифікація комп&apos;ютера&lt;/b&gt;&lt;br/&gt;Назва комп&apos;ютера — це унікальна назва, яка позначає ваш комп&apos;ютер в мережі. Назва домену, навряд чи буде використовуватись для цього, хіба що цього вимагає провайдер або умови локальної мережі.&lt;/p&gt;&lt;p&gt;Імена комп&apos;ютерів і доменів можуть містити тільки букви і цифри, точки, тире. Вони не можуть містити пробіли, починатися або закінчуватися дефісом.&lt;/p&gt;&lt;p&gt;Вам потрібно активувати сервер SaMBa, щоб спільно використовувати свої каталоги та друкувати документи з локального комп&apos;ютера під керуванням MS-Windows або Mac OSX.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2020"/>
+        <location filename="../minstall.cpp" line="2021"/>
         <source>&lt;p&gt;&lt;b&gt;Localization Defaults&lt;/b&gt;&lt;br/&gt;Set the default keyboard and locale. These will apply unless they are overridden later by the user.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configure Clock&lt;/b&gt;&lt;br/&gt;If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for &apos;System clock uses LOCAL.&apos;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Timezone Settings&lt;/b&gt;&lt;br/&gt;The system boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Properties.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Service Settings&lt;/b&gt;&lt;br/&gt;Most users should not change the defaults. Users with low-resource computers sometimes want to disable unneeded services in order to keep the RAM usage as low as possible. Make sure you know what you are doing! </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2030"/>
+        <location filename="../minstall.cpp" line="2031"/>
         <source>&lt;p&gt;&lt;b&gt;Default User Login&lt;/b&gt;&lt;br/&gt;The root user is similar to the Administrator user in some other operating systems. You should not use the root user as your daily user account. Please enter the name for a new (default) user account that you will use on a daily basis. If needed, you can add other user accounts later with MX User Manager. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Passwords&lt;/b&gt;&lt;br/&gt;Enter a new password for your default user account and for the root account. Each password must be entered twice.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Типовий вхід до системи&lt;/b&gt;&lt;br/&gt;Користувач «root» подібний до користувача «Адміністратор» в деяких інших операційних системах. Не потрібно використовувати обліковий запис користувача «root» для щоденного використання. Введіть ім&apos;я користувача для нового (типового) облікового запису, який ви будете використовувати для щоденної роботи. Пізніше, якщо потрібно, ви зможете додати облікові записи інших користувачів. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Паролі&lt;/b&gt;&lt;br/&gt;Введіть новий пароль для облікового запису користувача та користувача «root». Кожний пароль потрібно вводити двічі.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2041"/>
+        <location filename="../minstall.cpp" line="2042"/>
         <source>&lt;p&gt;&lt;b&gt;Congratulations!&lt;/b&gt;&lt;br/&gt;You have completed the installation of </source>
         <translation>&lt;p&gt;&lt;b&gt;Поздоровляємо!&lt;/b&gt;&lt;br/&gt;Ви завершили встановлення </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2041"/>
+        <location filename="../minstall.cpp" line="2042"/>
         <source>&lt;/p&gt;&lt;p&gt;&lt;b&gt;Finding Applications&lt;/b&gt;&lt;br/&gt;There are hundreds of excellent applications installed with MX Linux. The best way to learn about them is to browse through the Menu and try them. Many of the apps were developed specifically for the Xfce environment. These are shown in the main menus. &lt;p&gt;In addition MX Linux includes many standard Linux applications that are run only from the command line and therefore do not show up in the Menu.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2053"/>
+        <location filename="../minstall.cpp" line="2054"/>
         <source>&lt;p&gt;&lt;b&gt;Enjoy using MX Linux!&lt;/b&gt;&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Насолоджуйтеся роботою з MX Linux!&lt;/b&gt;&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2067"/>
-        <location filename="../minstall.cpp" line="2079"/>
+        <location filename="../minstall.cpp" line="2068"/>
+        <location filename="../minstall.cpp" line="2080"/>
         <source>Next</source>
         <translation type="unfinished"></translation>
     </message>
@@ -505,202 +505,202 @@ Returning to Step 1.</source>
         <translation type="vanished">Вперед &gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2077"/>
+        <location filename="../minstall.cpp" line="2078"/>
         <source>Finish</source>
         <translation>Готово</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2142"/>
+        <location filename="../minstall.cpp" line="2143"/>
         <source>Administration</source>
         <translation>Адміністрація</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2148"/>
+        <location filename="../minstall.cpp" line="2149"/>
         <source>Runs commands periodically</source>
         <translation>Runs commands periodically </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2158"/>
+        <location filename="../minstall.cpp" line="2159"/>
         <source>Time-based job scheduler</source>
         <translation>Time-based job scheduler </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2168"/>
+        <location filename="../minstall.cpp" line="2169"/>
         <source>Execute a command as another user</source>
         <translation>Execute a command as another user </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2177"/>
+        <location filename="../minstall.cpp" line="2178"/>
         <source>Hardware</source>
         <translation>Обладнання</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2182"/>
+        <location filename="../minstall.cpp" line="2183"/>
         <source>CPU frequency, irqbalance</source>
         <translation>CPU frequency, irqbalance</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2192"/>
+        <location filename="../minstall.cpp" line="2193"/>
         <source>S.M.A.R.T. monitoring tools</source>
         <translation>S.M.A.R.T. monitoring tools </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2202"/>
+        <location filename="../minstall.cpp" line="2203"/>
         <source>Advanced Configuration and Power Interface event daemon</source>
         <translation>Advanced Configuration and Power Interface event daemon </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2212"/>
+        <location filename="../minstall.cpp" line="2213"/>
         <source>HDD temperature monitor</source>
         <translation>HDD temperature monitor </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2222"/>
+        <location filename="../minstall.cpp" line="2223"/>
         <source>Generates key events for ACPI scripts</source>
         <translation>Generates key events for ACPI scripts </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2232"/>
+        <location filename="../minstall.cpp" line="2233"/>
         <source>Message bus daemon</source>
         <translation>Message bus daemon </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2242"/>
+        <location filename="../minstall.cpp" line="2243"/>
         <source>Mouse event server</source>
         <translation>Mouse event server </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2252"/>
+        <location filename="../minstall.cpp" line="2253"/>
         <source>Scanner daemon</source>
         <translation>Scanner daemon </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2262"/>
+        <location filename="../minstall.cpp" line="2263"/>
         <source>Random number generator</source>
         <translation>Random number generator </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2272"/>
+        <location filename="../minstall.cpp" line="2273"/>
         <source>Enables programs to publish and discover services and hosts</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2281"/>
+        <location filename="../minstall.cpp" line="2282"/>
         <source>Networking</source>
         <translation>Мережа</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2287"/>
+        <location filename="../minstall.cpp" line="2288"/>
         <source>Network connection</source>
         <translation>Бездротове</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2297"/>
+        <location filename="../minstall.cpp" line="2298"/>
         <source>Secure Shell</source>
         <translation>Secure Shell </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2307"/>
+        <location filename="../minstall.cpp" line="2308"/>
         <source>Mail filter</source>
         <translation>Mail filter </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2317"/>
+        <location filename="../minstall.cpp" line="2318"/>
         <source>Network File System</source>
         <translation>Network File System </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2331"/>
+        <location filename="../minstall.cpp" line="2332"/>
         <source>VPN program that creates secure connections</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2341"/>
+        <location filename="../minstall.cpp" line="2342"/>
         <source>Bluetooth</source>
         <translation>Bluetooth </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2351"/>
+        <location filename="../minstall.cpp" line="2352"/>
         <source>File-copying tool</source>
         <translation>File-copying tool </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2360"/>
+        <location filename="../minstall.cpp" line="2361"/>
         <source>Printing</source>
         <translation>Друк</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2366"/>
+        <location filename="../minstall.cpp" line="2367"/>
         <source>Linux and OS X printer service</source>
         <translation>Linux and OS X printer service </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2549"/>
+        <location filename="../minstall.cpp" line="2550"/>
         <source>MX Linux is installing, are you 
 sure you want to Close now?</source>
         <translation>MX Linux встановлюється, ви \n впевнені, що хочете закрити зараз? </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2576"/>
+        <location filename="../minstall.cpp" line="2577"/>
         <source>Deleting old system</source>
         <translation>Вилучення старої системи</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2585"/>
+        <location filename="../minstall.cpp" line="2586"/>
         <source>Failed to delete old MX Linux on destination.
 Returning to Step 1.</source>
         <translation>Не вдалось вилучити стару копію MX LInux.
 Повернення до кроку 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2611"/>
+        <location filename="../minstall.cpp" line="2612"/>
         <source>Copying new system</source>
         <translation>Копіювання нової системи</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2635"/>
+        <location filename="../minstall.cpp" line="2636"/>
         <source>Fixing configuration</source>
         <translation>Фіксування конфігурації</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2726"/>
+        <location filename="../minstall.cpp" line="2727"/>
         <source>Failed to write MX Linux to destination.
 Returning to Step 1.</source>
         <translation>Не вдалось записати MX Linux до місця запису.
 Повернення до кроку 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2753"/>
+        <location filename="../minstall.cpp" line="2754"/>
         <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at https://mxlinux.org There are volunteers to help you at the MX forum, https://forum.mxlinux.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2761"/>
+        <location filename="../minstall.cpp" line="2762"/>
         <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from LiveDVD or LiveUSB and running one of the utilities in MX Tools or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux LiveDVD or LiveUSB to recover data from MS-Windows systems!&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2767"/>
+        <location filename="../minstall.cpp" line="2768"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2774"/>
+        <location filename="../minstall.cpp" line="2775"/>
         <source>&lt;p&gt;&lt;b&gt;Adjusting Your Sound Mixer&lt;/b&gt;&lt;br/&gt;MX Linux attempts to configure the sound mixer for you but sometimes it will be necessary for you to turn up volumes and unmute channels in the mixer in order to hear sound.&lt;/p&gt; &lt;p&gt;The mixer shortcut is located in the menu. Click on it to open the mixer. &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Регулювання звуку в мікшері&lt;/b&gt;&lt;br/&gt;MX Linux автоматично налаштовує звук в мікшері, але іноді потрібно вимкнути гучність або приглушити якісь канали, щоб добре чути звук.&lt;/p&gt; &lt;p&gt;Ярлик мікшера розташований в системному лотку. Клацніть на ньому, щоб відкрити мікшер. &lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2782"/>
+        <location filename="../minstall.cpp" line="2783"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit https://mxlinux.org or http://antix.freeforums.org&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2802"/>
+        <location filename="../minstall.cpp" line="2803"/>
         <source>This option also encyrpts /swap, which will render the swap partition unable to be shared with other installed operating systems.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2803"/>
+        <location filename="../minstall.cpp" line="2804"/>
         <source>OK</source>
         <translation>Гаразд</translation>
     </message>
@@ -722,7 +722,7 @@ Returning to Step 1.</source>
         <translation type="vanished">Вперед &gt;</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="76"/>
+        <location filename="../meinstall.ui" line="80"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
@@ -731,27 +731,27 @@ Returning to Step 1.</source>
         <translation type="vanished">&lt; Назад</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="70"/>
+        <location filename="../meinstall.ui" line="72"/>
         <source>Next</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="86"/>
+        <location filename="../meinstall.ui" line="90"/>
         <source>Back</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="92"/>
+        <location filename="../meinstall.ui" line="98"/>
         <source>Alt+K</source>
         <translation>Alt+K</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="139"/>
+        <location filename="../meinstall.ui" line="145"/>
         <source>Terms of Use</source>
         <translation>Умови використання</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="193"/>
+        <location filename="../meinstall.ui" line="199"/>
         <source>MX Linux is an independent Linux distribution based on Debian Stable
 
 MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.
@@ -764,394 +764,394 @@ MX Linux використовує деякі компоненти з MEPIS Linux
 Насолоджуйтеся роботою з MX Linux.</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="235"/>
+        <location filename="../meinstall.ui" line="241"/>
         <source>1c. Select type of installation</source>
         <translation>1c. Вибір типу встановлення</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="281"/>
+        <location filename="../meinstall.ui" line="287"/>
         <source>Leave free space up to:</source>
         <translation>Залишити вільний простір до:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="316"/>
+        <location filename="../meinstall.ui" line="322"/>
         <source>MB </source>
         <translation>МБ </translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="332"/>
+        <location filename="../meinstall.ui" line="338"/>
         <source>Auto-install using entire disk </source>
         <translation>Встановити автоматично на весь диск </translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="348"/>
+        <location filename="../meinstall.ui" line="354"/>
         <source>Custom install on existing partitions</source>
         <translation>Встановити на наявні розділи</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="367"/>
+        <location filename="../meinstall.ui" line="373"/>
         <source>1a. Choose disk for installation</source>
         <translation>1a. Вибір диска для встановлення</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="407"/>
+        <location filename="../meinstall.ui" line="413"/>
         <source>Use disk:</source>
         <translation>Використовувати диск:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="426"/>
+        <location filename="../meinstall.ui" line="432"/>
         <source>1b. Rearrange disk partitions (optional)</source>
         <translation>1b. Перевпорядкування розділів (необов&apos;язково)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="453"/>
+        <location filename="../meinstall.ui" line="459"/>
         <source>Run partition tool...</source>
         <translation>Виконати розділ інструменту...</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="466"/>
+        <location filename="../meinstall.ui" line="472"/>
         <source>Modify partitions:</source>
         <translation>Змінити розділи:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="530"/>
+        <location filename="../meinstall.ui" line="536"/>
         <source>2b. Preferences</source>
         <translation>2b. Параметри</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="557"/>
+        <location filename="../meinstall.ui" line="563"/>
         <source>Preserve data in /home (if upgrading)</source>
         <translation>Зберегти дані в /home (під час оновлення)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="592"/>
+        <location filename="../meinstall.ui" line="598"/>
         <source>Filesystem type:</source>
         <translation>Тип файлової системи:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="618"/>
+        <location filename="../meinstall.ui" line="624"/>
         <source>Change default / (root) partition label:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="632"/>
+        <location filename="../meinstall.ui" line="638"/>
         <source>ext4</source>
         <translation>ext4</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="637"/>
+        <location filename="../meinstall.ui" line="643"/>
         <source>ext3</source>
         <translation>ext3</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="642"/>
+        <location filename="../meinstall.ui" line="648"/>
         <source>ext2</source>
         <translation>ext2</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="647"/>
+        <location filename="../meinstall.ui" line="653"/>
         <source>jfs</source>
         <translation>jfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="652"/>
+        <location filename="../meinstall.ui" line="658"/>
         <source>xfs</source>
         <translation>xfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="657"/>
+        <location filename="../meinstall.ui" line="663"/>
         <source>btrfs</source>
         <translation>btrfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="662"/>
+        <location filename="../meinstall.ui" line="668"/>
         <source>reiserfs</source>
         <translation>reiserfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="673"/>
+        <location filename="../meinstall.ui" line="679"/>
         <source>Change default /home partition label:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="692"/>
+        <location filename="../meinstall.ui" line="698"/>
         <source>Check for badblocks (takes longer)</source>
         <translation>Перевіряти на збійні блоки (триватиме довше)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="711"/>
+        <location filename="../meinstall.ui" line="717"/>
         <source>2a. Choose partitions</source>
         <translation>2a. Вибір розділів</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="741"/>
+        <location filename="../meinstall.ui" line="747"/>
         <source>/ (root) partition:</source>
         <translation>Розділ / (root):</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="757"/>
+        <location filename="../meinstall.ui" line="763"/>
         <source>swap partition:</source>
         <translation>Розділ swap:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="773"/>
+        <location filename="../meinstall.ui" line="779"/>
         <source>/home partition:</source>
         <translation>Розділ /home:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="839"/>
-        <location filename="../meinstall.ui" line="1203"/>
+        <location filename="../meinstall.ui" line="845"/>
+        <location filename="../meinstall.ui" line="1209"/>
         <source>root</source>
         <translation>root</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="888"/>
+        <location filename="../meinstall.ui" line="894"/>
         <source>3. Installation in progress</source>
         <translation>3. Виконання встановлення</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="931"/>
+        <location filename="../meinstall.ui" line="937"/>
         <source>Abort</source>
         <translation>Перервати</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="934"/>
-        <location filename="../meinstall.ui" line="1152"/>
+        <location filename="../meinstall.ui" line="940"/>
+        <location filename="../meinstall.ui" line="1158"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="973"/>
+        <location filename="../meinstall.ui" line="979"/>
         <source>Ready to install MX Linux filesystem</source>
         <translation>Готовий до встановлення файлової системи MX Linux</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="995"/>
+        <location filename="../meinstall.ui" line="1001"/>
         <source>Tips</source>
         <translation>Поради</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1069"/>
+        <location filename="../meinstall.ui" line="1075"/>
         <source>4. Select Boot Method</source>
         <translation>4. Вибір способу завантаження</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1102"/>
+        <location filename="../meinstall.ui" line="1108"/>
         <source>MBR</source>
         <translation>MBR</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1105"/>
+        <location filename="../meinstall.ui" line="1111"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1133"/>
+        <location filename="../meinstall.ui" line="1139"/>
         <source>Install on:</source>
         <translation>Встановити на:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1149"/>
+        <location filename="../meinstall.ui" line="1155"/>
         <source>Install GRUB for MX Linux and Windows</source>
         <translation>Встановити GRUB для MX Linux та Windows</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1171"/>
+        <location filename="../meinstall.ui" line="1177"/>
         <source>System boot disk:</source>
         <translation>Диск завантаження системи:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1216"/>
+        <location filename="../meinstall.ui" line="1222"/>
         <source>EFI System Partition</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1219"/>
+        <location filename="../meinstall.ui" line="1225"/>
         <source>ESP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1289"/>
+        <location filename="../meinstall.ui" line="1295"/>
         <source>Common Services to Enable</source>
         <translation>Вмикання загальних служб</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1329"/>
+        <location filename="../meinstall.ui" line="1335"/>
         <source>Service</source>
         <translation>Служба</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1334"/>
+        <location filename="../meinstall.ui" line="1340"/>
         <source>Description</source>
         <translation>Опис</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1370"/>
+        <location filename="../meinstall.ui" line="1376"/>
         <source>5. Computer Network Names</source>
         <translation>5. Назви комп&apos;ютера в мережі</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1397"/>
+        <location filename="../meinstall.ui" line="1403"/>
         <source>Workgroup</source>
         <translation>Робоча група:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1410"/>
+        <location filename="../meinstall.ui" line="1416"/>
         <source>Workgroup:</source>
         <translation>Робоча група:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1426"/>
+        <location filename="../meinstall.ui" line="1432"/>
         <source>SaMBa Server for MS Networking</source>
         <translation>Сервер SaMBa для мережі MS</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1442"/>
+        <location filename="../meinstall.ui" line="1448"/>
         <source>example.dom</source>
         <translation>example.dom</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1455"/>
+        <location filename="../meinstall.ui" line="1461"/>
         <source>Computer domain:</source>
         <translation>Домен комп&apos;ютера:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1471"/>
+        <location filename="../meinstall.ui" line="1477"/>
         <source>mx1</source>
         <translation>mx1</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1487"/>
+        <location filename="../meinstall.ui" line="1493"/>
         <source>Computer name:</source>
         <translation>Назва комп&apos;ютера:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1560"/>
+        <location filename="../meinstall.ui" line="1566"/>
         <source>6d. Service Settings (advanced)</source>
         <translation>6г. Налаштування служби (розширений) </translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1578"/>
+        <location filename="../meinstall.ui" line="1584"/>
         <source>Adjust which services should run at startup</source>
         <translation>Налаштуйте, які послуги повинні запускатися при старті </translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1581"/>
+        <location filename="../meinstall.ui" line="1587"/>
         <source>View</source>
         <translation>вид </translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1610"/>
+        <location filename="../meinstall.ui" line="1616"/>
         <source>6b. Configure Clock</source>
         <translation>6b. Налаштування годинника</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1638"/>
+        <location filename="../meinstall.ui" line="1644"/>
         <source>Format:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1655"/>
+        <location filename="../meinstall.ui" line="1661"/>
         <source>System clock uses LOCAL</source>
         <translation>Системний годинник використовує LOCAL</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1684"/>
+        <location filename="../meinstall.ui" line="1690"/>
         <source>6a. Localization Defaults</source>
         <translation>6a. Типова локалізація</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1714"/>
+        <location filename="../meinstall.ui" line="1720"/>
         <source>Locale:</source>
         <translation>Локаль:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1753"/>
+        <location filename="../meinstall.ui" line="1759"/>
         <source>Keyboard:</source>
         <translation>Розкладка клавіатури:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1772"/>
+        <location filename="../meinstall.ui" line="1778"/>
         <source>6c. Timezone Settings</source>
         <translation>6c. Виберіть часовий пояс</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1784"/>
+        <location filename="../meinstall.ui" line="1790"/>
         <source>Timezone:</source>
         <translation>Часовий пояс:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1845"/>
+        <location filename="../meinstall.ui" line="1851"/>
         <source>7b. Root (administrator) Account</source>
         <translation>7b. Обліковий запис root (адміністратор)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1904"/>
+        <location filename="../meinstall.ui" line="1922"/>
         <source>Confirm root password:</source>
         <translation>Підтвердити пароль root:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1920"/>
+        <location filename="../meinstall.ui" line="1938"/>
         <source>Root password:</source>
         <translation>Пароль root:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1952"/>
+        <location filename="../meinstall.ui" line="1970"/>
         <source>7a. Default User Account</source>
         <translation>7a. Типовий обліковий запис користувача</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2014"/>
+        <location filename="../meinstall.ui" line="2050"/>
         <source>username</source>
         <translation>ім&apos;я користувача</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2027"/>
+        <location filename="../meinstall.ui" line="2063"/>
         <source>Confirm user password:</source>
         <translation>Підтвердити пароль користувача:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2043"/>
+        <location filename="../meinstall.ui" line="2079"/>
         <source>Default user password:</source>
         <translation>Типовий пароль користувача:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2059"/>
+        <location filename="../meinstall.ui" line="2095"/>
         <source>Default user login name:</source>
         <translation>Типове ім&apos;я користувача для входу:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2078"/>
+        <location filename="../meinstall.ui" line="2114"/>
         <source>Autologin</source>
         <translation>Autologin</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2091"/>
+        <location filename="../meinstall.ui" line="2127"/>
         <source>Show passwords</source>
         <translation>Показати паролі</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2104"/>
+        <location filename="../meinstall.ui" line="2140"/>
         <source>Desktop modifications made in the live environment will be carried over to the installed OS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2107"/>
+        <location filename="../meinstall.ui" line="2143"/>
         <source>Save live desktop changes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2120"/>
+        <location filename="../meinstall.ui" line="2156"/>
         <source>Encrypt /home</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2152"/>
+        <location filename="../meinstall.ui" line="2188"/>
         <source>Reminders</source>
         <translation>Нагадування</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2200"/>
+        <location filename="../meinstall.ui" line="2236"/>
         <source>Support MX Linux
 
 MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.</source>

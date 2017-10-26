@@ -1,3 +1,9 @@
+mx-installer (17.10.02mx17) mx; urgency=medium
+
+  * UI tweaks
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 26 Oct 2017 12:30:53 -0400
+
 mx-installer (17.10.01) mx; urgency=medium
 
   * timezone setup change
