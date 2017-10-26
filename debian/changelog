@@ -1,4 +1,10 @@
-mx-installer (17.10mx17) mx; urgency=medium
+mx-installer (17.10.01) mx; urgency=medium
+
+  * timezone setup change
+
+ -- dolphinoracle <dolphinoracle@gmail.com>  Wed, 25 Oct 2017 08:01:28 -0400
+ 
+ mx-installer (17.10mx17) mx; urgency=medium
 
   * resizable installer window
 

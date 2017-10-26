@@ -1493,10 +1493,11 @@ void MInstall::setLocale()
     system(cmd.toUtf8());
     cmd = QString("Language=%1").arg(localeCombo->currentText());
 
-    // /etc/localtime is a symlink to one of the timezone files in /usr/share/zoneinfo. Use the one selected by the user.
-    cmd = QString("ln -nfs /usr/share/zoneinfo/%1 /mnt/antiX/etc/localtime").arg(timezoneCombo->currentText());
+    // /etc/localtime is either a file or a symlink to a file in /usr/share/zoneinfo. Use the one selected by the user.
+    //replace with link
+    cmd = QString("ln -fs /usr/share/zoneinfo/%1 /mnt/antiX/etc/localtime").arg(timezoneCombo->currentText());
     system(cmd.toUtf8());
-    cmd = QString("ln -nfs /usr/share/zoneinfo/%1 /etc/localtime").arg(timezoneCombo->currentText());
+    cmd = QString("ln -fs /usr/share/zoneinfo/%1 /etc/localtime").arg(timezoneCombo->currentText());
     system(cmd.toUtf8());
     // /etc/timezone is text file with the timezone written in it. Write the user-selected timezone in it now.
     cmd = QString("echo %1 > /mnt/antiX/etc/timezone").arg(timezoneCombo->currentText());
