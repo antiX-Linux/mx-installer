@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 05 Nov 2017 13:50:53 -0500
+Source: mx-installer
+Binary: mx-installer
+Architecture: source amd64
+Version: 17.11mx17+1
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-installer - GUI installer for MX Linux.
+Changes:
+ mx-installer (17.11mx17+1) mx; urgency=medium
+ .
+   * new build
+Checksums-Sha1:
+ 0d552299bd49d81190dbd5f4e41e93bceee67b5d 1159 mx-installer_17.11mx17+1.dsc
+ 610b69f4b13df154aa734a2ca8dfe885d0523c68 342748 mx-installer_17.11mx17+1.tar.xz
+ 60b252ea7ad5bf0af6904678d15e9197d36fbed7 415212 mx-installer_17.11mx17+1_amd64.deb
+Checksums-Sha256:
+ 6ca54faa5e21027232dd9dd37081f8bebf88a959da1fca914074333397cefec1 1159 mx-installer_17.11mx17+1.dsc
+ 1971bd52a60edce3200b1a3b0cbdf85721958972ae1d010464a4ff109424b81a 342748 mx-installer_17.11mx17+1.tar.xz
+ 9082abb947dc2a91de65e1450d5d2b8ea7b4dd4510af7c98d7ae2de8dd93586a 415212 mx-installer_17.11mx17+1_amd64.deb
+Files:
+ ae8362aa981a48ab78c6cb15816718b6 1159 system optional mx-installer_17.11mx17+1.dsc
+ 6775b05609ad5b7755611a2afe0d842d 342748 system optional mx-installer_17.11mx17+1.tar.xz
+ 2ab5d8546c7d8fa4af1a895a6dbfbfbf 415212 system optional mx-installer_17.11mx17+1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJZ/14SAAoJEHCTjHgGee6Yit8H/2+eV2Qi+Vwmamqwdr6CATWC
+1ZWpTGKgPI1I8AimFMaxa89BtoLDGygKR8/bY/s5/iCYbY4deYxuye4bCk5E3LUf
+kAsye6gPDvH0C/7PRV1N5CtXwAu7wCQCQ3umBZhkRPv9nxHRq5/qoBnSLgtxGs1v
+z2Ph7gfimm0mr5/z8Fz1z3jfoh1RiSjfS1VRR+QBapmUqBranKyu6naXVY2j5dBg
+vMTrtjLct8jl0/KmRhzIPHCppZYjU+folEMqdzEjkpg/48TRgDVY50zYAp1V+lXR
+b1IV0GKYRkDPWd531PxPJ2IZEXLMH4aT3Wqsf6UMmlAwl3XLMAPkIQGWatVM+DY=
+=6U9k
+-----END PGP SIGNATURE-----

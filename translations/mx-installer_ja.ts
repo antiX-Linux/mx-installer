@@ -452,6 +452,16 @@ Do you really want to stop now?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../minstall.cpp" line="2768"/>
+        <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2783"/>
+        <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit https://mxlinux.org&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</source>
         <translation type="vanished">&lt;p&gt;&lt;b&gt;スペシャルサンクス&lt;/b&gt;&lt;br/&gt;時間、金銭、作業、賞賛、アイデアなど、MX Linux を支援していただく皆様に感謝いたします。&lt;/p&gt;&lt;p&gt;あなたなしでは MX Linux は存在しません。&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</translation>
     </message>
@@ -695,9 +705,8 @@ Step 1 へ処理を戻します。</translation>
         <translation>&lt;p&gt;&lt;b&gt;インストールの修復&lt;/b&gt;&lt;br/&gt;MX Linux はハードドライブから作業を停止した場合、LiveDVD や LiveUSB からブートし MX ツールのユーティリティいずれかを実行するか、システムを修復するため Linux ツールを使用して問題を解決することが可能です。&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;また、MS-Windows システムからデータを回復するために MX Linux LiveDVD やLiveUSB を使用することができます！&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2768"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;MX Linux のサポート&lt;/b&gt;&lt;br/&gt;MX Linux はあなたのような人々によってサポートされています。サポートフォーラム https://forum.mxlinux.org および http://antix.freeforums.org で他の人たちが助けてくれます。また別の言語やヘルプファイルの翻訳、新たなソフトウェアのテスト、ドキュメントを製作、提案などを行っています。&lt;/p&gt;</translation>
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;MX Linux のサポート&lt;/b&gt;&lt;br/&gt;MX Linux はあなたのような人々によってサポートされています。サポートフォーラム https://forum.mxlinux.org および http://antix.freeforums.org で他の人たちが助けてくれます。また別の言語やヘルプファイルの翻訳、新たなソフトウェアのテスト、ドキュメントを製作、提案などを行っています。&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2775"/>
@@ -705,9 +714,8 @@ Step 1 へ処理を戻します。</translation>
         <translation>&lt;p&gt;&lt;b&gt;音量調整&lt;/b&gt;&lt;br/&gt;MX Linux は音楽ミキサーを備えます。たまに音を聞くため、ミキサーでチャンネル毎の音量調整が必要になるかもしれません。&lt;/p&gt; &lt;p&gt;ミキサーの素早い起動はメニューからミキサーをクリックして開いて下さい。 &lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2783"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit https://mxlinux.org or http://antix.freeforums.org&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;MX Linux を最新にする&lt;/b&gt;&lt;br/&gt;MX Linux 情報やアップデートについてをご参照ください。  https://mxlinux.org または  http://antix.freeforums.org&lt;/p&gt;</translation>
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;MX Linux を最新にする&lt;/b&gt;&lt;br/&gt;MX Linux 情報やアップデートについてをご参照ください。  https://mxlinux.org または  http://antix.freeforums.org&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2803"/>

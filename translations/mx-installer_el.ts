@@ -450,6 +450,16 @@ Do you really want to stop now?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../minstall.cpp" line="2768"/>
+        <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2783"/>
+        <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit https://mxlinux.org&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</source>
         <translation type="vanished">&lt;p&gt;&lt;b&gt;Ιδιαίτερες Ευχαριστίες&lt;/b&gt;&lt;br/&gt;Τις ευχαριστίες μου προς όλους εκείνους που επέλεξαν να υποστηρίξουν το MX Linux με τον χρόνο τους, χρήμα, υποδείξεις, εργασία, επαίνους, ιδέες, προώθηση και/ή ενθάρρυνση.&lt;/p&gt;&lt;p&gt;Χωρίς εσάς, δεν θα υπήρχε καθόλου το MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</translation>
     </message>
@@ -693,9 +703,8 @@ Returning to Step 1.</source>
         <translation>&lt;p&gt;&lt;b&gt;Επισκευή της Εγκατάστασής σας&lt;/b&gt;&lt;br/&gt;Αν το MX Linux σταματήσει να λειτουργεί από τον σκληρό δίσκο, μπορεί, ορισμένες φορές, να είναι εφικτή η διόρθωση του προβλήματος, κάνοντας εκκίνηση από το CD και τρέχοντας ένα από τα utilities στη Ρύθμιση Συστήματος, είτε χρησιμοποιώντας ένα από τα συνηθισμένα εργαλεία Linux για την επισκευή του συστήματος.&lt;/p&gt;&lt;p&gt;Μπορείτε, επίσης, να χρησιμοποιήσετε το LiveDVD η LiveUSB του MX Linux για να ανακτήσετε δεδομένα από συστήματα MS-Windows!&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2768"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Υποστηρίξτε το MX Linux&lt;/b&gt;&lt;br/&gt;Το MX Linux στηρίζεται από ανθρώπους σαν κι&apos; εσάς. Κάποιο βοηθούν κάποιους άλλους στο forum υποστήριξης- https://forum.mxlinux.org, - http://antix.freeforums.org  ή μεταφράζουν αρχεία βοήθειας σε διάφορες γλώσσες, ή κάνουν υποδείξεις, γράφουν τεκμηρίωση, ή βοηθούν δοκιμάζοντας νέο λογισμικό.&lt;/p&gt;</translation>
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;Υποστηρίξτε το MX Linux&lt;/b&gt;&lt;br/&gt;Το MX Linux στηρίζεται από ανθρώπους σαν κι&apos; εσάς. Κάποιο βοηθούν κάποιους άλλους στο forum υποστήριξης- https://forum.mxlinux.org, - http://antix.freeforums.org  ή μεταφράζουν αρχεία βοήθειας σε διάφορες γλώσσες, ή κάνουν υποδείξεις, γράφουν τεκμηρίωση, ή βοηθούν δοκιμάζοντας νέο λογισμικό.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2775"/>
@@ -703,9 +712,8 @@ Returning to Step 1.</source>
         <translation>&lt;p&gt;&lt;b&gt;Ρύθμιση του Μίκτη Ήχου&lt;/b&gt;&lt;br/&gt;Το MX Linux προσπαθεί να ρυθμίσει τον Μίκτη Ήχου για σας, αλλά μπορεί να πρέπει πρώτα να δυναμώσετε την ένταση του ήχου και να βγάλετε τη Σίγαση από τα κανάλια του μίκτη, για να ακούσετε ήχο.&lt;/p&gt; &lt;p&gt;Η συντόμευση για τον μίκτη βρίσκεται στο tray. Κάντε κλικ πάνω της για να ανοίξετε τον Μίκτη. &lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2783"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit https://mxlinux.org or http://antix.freeforums.org&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Διατηρείστε ενημερωμένο το αντίγραφό σας του MX Linux&lt;/b&gt;&lt;br/&gt;Για πληροφορίες και ενημερώσεις του MX Linux, παρακαλώ επισκεφθείτε τη διεύθυνση  https://mxlinux.org η http://antix.freeforums.org&lt;/p&gt; </translation>
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;Διατηρείστε ενημερωμένο το αντίγραφό σας του MX Linux&lt;/b&gt;&lt;br/&gt;Για πληροφορίες και ενημερώσεις του MX Linux, παρακαλώ επισκεφθείτε τη διεύθυνση  https://mxlinux.org η http://antix.freeforums.org&lt;/p&gt; </translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2803"/>

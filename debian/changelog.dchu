@@ -1,8 +1,8 @@
-mx-installer (17.11mx17+1) mx; urgency=medium
+mx-installer (17.11mx17) mx; urgency=medium
 
   * new build
 
- -- Adrian <adrian@mxlinux.org>  Sun, 05 Nov 2017 13:50:53 -0500
+ -- Adrian <adrian@mxlinux.org>  Sun, 05 Nov 2017 13:50:33 -0500
 
 mx-installer (17.11mx17) mx; urgency=medium
 

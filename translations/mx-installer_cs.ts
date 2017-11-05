@@ -449,6 +449,16 @@ Ak použijete separátní /home (domovský) oddíl bude pro Vás jednoduchší p
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../minstall.cpp" line="2768"/>
+        <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2783"/>
+        <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit https://mxlinux.org&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</source>
         <translation type="vanished">&lt;p&gt;&lt;b&gt;Zvláštní poděkování&lt;/b&gt;&lt;br/&gt;Děkujeme všem, kteří se rozhodli podpořit MX Linux svým časem, peněžnými prostředky, návrhry, nápady, prací, uznáním, propagací, a/nebo povzbuzováním.&lt;/p&gt;&lt;p&gt;Bez vás by MX Linux neexistoval.&lt;/p&gt;&lt;p&gt;anticapitalista, MX komunita&lt;/p&gt;</translation>
     </message>
@@ -692,9 +702,8 @@ Návrat ke Kroku 1.</translation>
         <translation>&lt;p&gt;&lt;b&gt;Oprava Vaší instalace&lt;/b&gt;&lt;br/&gt;Ak MX Linux přestane fungovat, někdy je možné opravit vzniknutý problém zavedením systému z LiveDVD nebo LiveUSB a následným spuštěním jedné z utilit MX Tools nebo použitím jednoho z dostupných Linuxových nástrojů na opravu systému.&lt;/p&gt;&lt;p&gt;MX Linux LiveDVD nebo LiveUSB můžete také použít pro obnovu dat z systémů MS-Windows!&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2768"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Podpořte MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux je podporovaný lidmi jako jste Vy. Někteří pomáhají jiným přes podpůrné fórum - https://forum.mxlinux.org, - http://antix.freeforums.org nebo překládají soubory nápovědy do různých jazyků, přinášejí návrhy, píšou dokumentaci nebo pomáhají testovat nový software.&lt;/p&gt;</translation>
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;Podpořte MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux je podporovaný lidmi jako jste Vy. Někteří pomáhají jiným přes podpůrné fórum - https://forum.mxlinux.org, - http://antix.freeforums.org nebo překládají soubory nápovědy do různých jazyků, přinášejí návrhy, píšou dokumentaci nebo pomáhají testovat nový software.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2775"/>
@@ -702,9 +711,8 @@ Návrat ke Kroku 1.</translation>
         <translation>&lt;p&gt;&lt;b&gt;Úprava Vašeho  Mixéru Zvuku&lt;/b&gt;&lt;br/&gt;MX Linux se pokusí Vám nastavit mixér zvuku, ale někdy bude potřeba, abyste zvýšili hlasitost a zrušili ztlumení některých kanálů, abyste slyšeli zvuk .&lt;/p&gt; &lt;p&gt;Zkratka mixéru je umístěna v hlavním panelu. Klikněte na ni pro otevření mixéru.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2783"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit https://mxlinux.org or http://antix.freeforums.org&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Udržujte Vaši kopii MX Linux aktualizovanou&lt;/b&gt;&lt;br/&gt;Pro informaci o MX Linux a aktulizace prosím navštivte https://mxlinux.org nebo http://antix.freeforums.org&lt;/p&gt;</translation>
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;Udržujte Vaši kopii MX Linux aktualizovanou&lt;/b&gt;&lt;br/&gt;Pro informaci o MX Linux a aktulizace prosím navštivte https://mxlinux.org nebo http://antix.freeforums.org&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2803"/>

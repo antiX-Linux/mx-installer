@@ -456,6 +456,16 @@ Sigur doriți sa opriți acum?</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../minstall.cpp" line="2768"/>
+        <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2783"/>
+        <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit https://mxlinux.org&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</source>
         <translation type="vanished">&lt;p&gt;&lt;b&gt;Mulțumiri speciale&lt;/ b&gt;&lt;br/&gt;Mulțumim tuturor celor care au ales să sprijine MX Linux, cu timpul lor, bani, sugestii, muncă, laudă, idei, promovare, și/sau cu încurajare.&lt;/p&gt;&lt;p&gt;Fără dumneavoastră nu ar exista  MX Linux. &lt;/p&gt;&lt;p&gt;anticapitalista, comunitatea MX Linux&lt;/p&gt;</translation>
     </message>
@@ -699,9 +709,8 @@ Returning to Step 1.</source>
         <translation>&lt;p&gt;&lt;b&gt;Repararea instalării&lt;/b&gt;&lt;br/&gt;Dacă MX Linux nu mai funcționează de pe hard disk, uneori, este posibil să rezolvați problema pornind de pe DVD sau USB și rulând unul dintre utilitarele din System Configuration sau folosind unul dintre obișnuitele utilitare Linux pentru a repara sistemul. &lt;/p&gt;&lt;p&gt;Puteți folosi, de asemenea, DVD-ul MX Linux pentru a recupera datele de pe sistemele MS-Windows!&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2768"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Sprijin MX Linux&lt;/ b&gt;&lt;br/&gt;MX Linux este susținut de către oameni ca tine. Se ajută unii pe alții pe forumul comunitații - https://forum.mxlinux.org, - http://antix.freeforums.org, traduc fișiere de ajutor în diverse limbi, fac sugestii, scriu documentație, sau ajută la testarea programelor noi.&lt;/p&gt;</translation>
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;Sprijin MX Linux&lt;/ b&gt;&lt;br/&gt;MX Linux este susținut de către oameni ca tine. Se ajută unii pe alții pe forumul comunitații - https://forum.mxlinux.org, - http://antix.freeforums.org, traduc fișiere de ajutor în diverse limbi, fac sugestii, scriu documentație, sau ajută la testarea programelor noi.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2775"/>
@@ -709,9 +718,8 @@ Returning to Step 1.</source>
         <translation>&lt;p&gt; &lt;b&gt;Reglarea mixer de sunet &lt;/b&gt;&lt;br/&gt; MX Linux încercă să configureze mixerul de sunet automat, dar, uneori, pentru a auzi ceva, va fi necesar să modificați volumul și canale de activare sunet în mixer.&lt;/p&gt;&lt;p&gt;Comanda pentru mixer se află în meniu. Faceți clic pe el pentru a deschide mixerul. &lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2783"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit https://mxlinux.org or http://antix.freeforums.org&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Țineți MX Linux la curent&lt;/b&gt;&lt;br/&gt;Pentru informații despre MX Linux și actualizări, vă rugăm să vizitați https://mxlinux.org sau http://antix.freeforums.org&lt;/p&gt;</translation>
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;Țineți MX Linux la curent&lt;/b&gt;&lt;br/&gt;Pentru informații despre MX Linux și actualizări, vă rugăm să vizitați https://mxlinux.org sau http://antix.freeforums.org&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2803"/>

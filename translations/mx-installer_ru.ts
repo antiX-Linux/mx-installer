@@ -450,6 +450,16 @@ Do you really want to stop now?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../minstall.cpp" line="2768"/>
+        <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2783"/>
+        <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit https://mxlinux.org&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</source>
         <translation type="vanished">&lt;p&gt;&lt;b&gt;Особая благодарность&lt;/b&gt;&lt;br/&gt;Спасибо всем, кто поддержал MX Linux времeнем, деньгaми, предложениями, работой, отзывами, идеями, продвижением и / или поощрением.&lt;/p&gt;&lt;p&gt;Без вас не было бы никакого MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Сообщество&lt;/p&gt;</translation>
     </message>
@@ -693,9 +703,8 @@ Returning to Step 1.</source>
         <translation>&lt;p&gt;&lt;b&gt;Восстановление установки&lt;/b&gt;&lt;br/&gt;Если MX Linux перестает работать с жесткого диска, иногда можно исправить эту проблему, загрузившись с компакт-диска и работая под управлением одной из утилит в MX Инструменты, или с помощью одного из официальных инструментов Linux для восстановления системы.&lt;/p&gt;&lt;p&gt;Вы также можете использовать MX Linux CD для восстановления данных из систем MS-Windows!&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2768"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Поддержка MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux поддерживается такими же людьми, как Вы. Некоторые помогают другим на форуме поддержки - https://forum.mxlinux.org, - http://antix.freeforums.org, или переводят файлы справки на различные языки, или внoсят предложения, пишут документацию, или помогают в тестировании нового программного обеспечения.&lt;/p&gt;</translation>
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;Поддержка MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux поддерживается такими же людьми, как Вы. Некоторые помогают другим на форуме поддержки - https://forum.mxlinux.org, - http://antix.freeforums.org, или переводят файлы справки на различные языки, или внoсят предложения, пишут документацию, или помогают в тестировании нового программного обеспечения.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2775"/>
@@ -703,9 +712,8 @@ Returning to Step 1.</source>
         <translation>&lt;p&gt;&lt;b&gt;Настройка Вашего звуковогo микшерa&lt;/b&gt;&lt;br/&gt;MX Linux пытается сама настроить звуковой микшер для Вас, но иногда Вам придется увеличить звук и включить звуковые каналы в микшере, чтобы услышать звук.&lt;/p&gt; &lt;p&gt;Ярлык микшера находится в меню. Нажмите на него, чтобы открыть микшер. &lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2783"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit https://mxlinux.org or http://antix.freeforums.org&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Имейте Вашу копию MX Linux обновленной&lt;/b&gt;&lt;br/&gt;Для получения дополнительной информации и обновлений MX Linux, пожалуйста, посетите https://mxlinux.org или http://antix.freeforums.org&lt;/p&gt;</translation>
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;Имейте Вашу копию MX Linux обновленной&lt;/b&gt;&lt;br/&gt;Для получения дополнительной информации и обновлений MX Linux, пожалуйста, посетите https://mxlinux.org или http://antix.freeforums.org&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2803"/>

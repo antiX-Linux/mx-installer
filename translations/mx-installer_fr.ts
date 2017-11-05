@@ -457,6 +457,16 @@ Voulez vous vraiment quitter maintenant ?</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../minstall.cpp" line="2768"/>
+        <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2783"/>
+        <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit https://mxlinux.org&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</source>
         <translation type="vanished">&lt;p&gt;&lt;b&gt;Remerciements&lt;/b&gt;&lt;br/&gt;Merci à tous ceux qui ont choisi de soutenir MX Linux en donnant de leur temps, de l&apos;argent, des suggestions, du travail, des idées, en en faisant la promotion et/ou en l&apos;encourageant.&lt;/p&gt;&lt;p&gt;Sans vous il n&apos;y aurait pas de MX Linux&lt;/p&gt;&lt;p&gt;anticapitalista, la communauté MX&lt;/p&gt;</translation>
     </message>
@@ -699,9 +709,8 @@ Returning to Step 1.</source>
         <translation>&lt;p&gt;&lt;b&gt;Réparer votre Installation&lt;/b&gt;&lt;br/&gt;Si MX Linux arrête de fonctionner depuis le disque dur, il est parfois possible de corriger le problème en démarrant depuis le LiveDVD ou LiveUSB et en exécutant l&apos;un des utilitaires de MX Outils ou un autre outil Linux pour réparer le système. &lt;/p&gt;&lt;p&gt;Vous pouvez également utiliser le LiveDVD MX Linux ou le LiveUSB MX Linux pour récupérer des données d&apos;un système MS-Windows !&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2768"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Supporter MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux est supporté par des personnes telles que vous. Certains aident les autres sur le Forum - https://forum.mxlinux.org, - http://antix.freeforums.org, d&apos;autres traduisent des fichiers d&apos;aides dans d&apos;autres langues, font des suggestions, écrivent des documentations ou aident à tester de nouveaux logiciels.&lt;/p&gt;</translation>
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;Supporter MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux est supporté par des personnes telles que vous. Certains aident les autres sur le Forum - https://forum.mxlinux.org, - http://antix.freeforums.org, d&apos;autres traduisent des fichiers d&apos;aides dans d&apos;autres langues, font des suggestions, écrivent des documentations ou aident à tester de nouveaux logiciels.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2775"/>
@@ -709,9 +718,8 @@ Returning to Step 1.</source>
         <translation>&lt;p&gt;&lt;b&gt; Réglages de la console de mixage &lt;/b&gt;&lt;br/&gt;MX Linux essaie de configurer la console de mixage à votre place mais il est parfois nécessaire de modifier le volume et les canaux de la console pour entendre du son.&lt;/p&gt; &lt;p&gt;Le raccourci vers la console est situé dans le panneau. Cliquez dessus pour l’ouvrir.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2783"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit https://mxlinux.org or http://antix.freeforums.org&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Gardez votre copie de MX Liniux à jour&lt;/b&gt;&lt;br/&gt;Pour plus d&apos;informations et de mises-à-jour sur MX Linux, veuillez visiter  https://mxlinux.org ou http://antix.freeforums.org&lt;/p&gt;</translation>
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;Gardez votre copie de MX Liniux à jour&lt;/b&gt;&lt;br/&gt;Pour plus d&apos;informations et de mises-à-jour sur MX Linux, veuillez visiter  https://mxlinux.org ou http://antix.freeforums.org&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2803"/>
