@@ -78,7 +78,7 @@
       <widget class="QTextEdit" name="mainHelp">
        <property name="geometry">
         <rect>
-         <x>-1</x>
+         <x>0</x>
          <y>9</y>
          <width>291</width>
          <height>371</height>
@@ -89,6 +89,18 @@
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>291</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>291</width>
+         <height>16777215</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
