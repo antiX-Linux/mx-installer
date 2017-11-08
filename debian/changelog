@@ -1,3 +1,9 @@
+mx-installer (17.11mx17+2) mx; urgency=medium
+
+  * UI fixes
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 07 Nov 2017 18:56:01 -0500
+
 mx-installer (17.11mx17+1) mx; urgency=medium
 
   * new build
