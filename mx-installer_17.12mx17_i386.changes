@@ -18,20 +18,20 @@ Changes:
  .
    * rename 'demo' string in conky config file
 Checksums-Sha1:
- ff635f5a6157cd6b8a2da89c786afac43b9eed4f 425008 mx-installer_17.12mx17_i386.deb
+ 04f733a16e3456dc0d07671ea8f291106d9c1cc4 424840 mx-installer_17.12mx17_i386.deb
 Checksums-Sha256:
- 39f03c64ad6db54b4ddecb19c30422fbbb5bd36f88c16c71c1b10b1b22c865ff 425008 mx-installer_17.12mx17_i386.deb
+ 3391fa54d2d3c644c5015247327fa22a40b6ada5225f8683c36345a0e892ac7c 424840 mx-installer_17.12mx17_i386.deb
 Files:
- 6b86e595c48bb175f69605b00db35d62 425008 system optional mx-installer_17.12mx17_i386.deb
+ d271e1e7e6671b550b0c2bdc774abca8 424840 system optional mx-installer_17.12mx17_i386.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJaLX8CAAoJEHCTjHgGee6YLzIH/ixY7SrqEoy4h+nOdvPBTi+K
-PWVej0IQxyCAgUFO1FObRMR4Kr7p570PGvCknapec8VcjxPjCbqtg1qHSPsS9aAz
-5C80CNSjKkop6hECv5qaTq3Qe+Otqf4F2BgdVgYnDL4bAE0f4yExnF2Om+DgVfcN
-FROxrqULA6UPQxck2nhgogabLd0mgftYzddHxiC6XKQIDs7qfCu2chVzhgUCLPLE
-BCr63HJ06Z4eX4hVg+iKfjQLdXAOOMzxLVvjKcOvK4FRka5POFEXSwW/tcIMZGkC
-JsiBtEO7OyrO+UvDUazxBeZRcsfZ7PgN7s3O1m9ttezmTthaRqjPzXqAl4mcpBU=
-=mwvB
+iQEcBAEBAgAGBQJaLYTwAAoJEHCTjHgGee6YrqcH/047tVszsFEfoCCbs1SpmJrH
+XDZMIzgrhuo9iZUW681k0Exe3iEWyf+pL3wcBPdYinxO554kpFsfMWIApOC+eQEW
+JxBoUpnlk4/fvBcm9kZKJqivCLjmCvz9XXIm48ddusv5a6ytqhktOUS0sNYJqkAd
+YfZKWPj8jomkjYjZRULT39xd3Z7Dmjes1U1FhjexJZupRM2FC5VuMKNSnJJ1BEBt
+ThAIUlhr8wj9/LMyNjqxTK82/sY15VONRtxFAHKc/imf7qMXI3cJs7hifAOFu3CT
+/x91Wbxev5Jyt1JqZcDe5eqOpMddokARb5Ppwztn/XHr7ZmBlRUzOTJ9U8acH7U=
+=RnIZ
 -----END PGP SIGNATURE-----

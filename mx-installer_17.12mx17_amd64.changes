@@ -18,26 +18,26 @@ Changes:
  .
    * rename 'demo' string in conky config file
 Checksums-Sha1:
- 55178469870c0d630619045ab49809a47824fcb2 1151 mx-installer_17.12mx17.dsc
- 7b0e549887d91da0fab354631a379cc36900b004 345784 mx-installer_17.12mx17.tar.xz
- 0057ba0a170b99bcf9bb45d5ff97cf61da52f05b 423478 mx-installer_17.12mx17_amd64.deb
+ cf9ac40aa5cb7434ce63c876d316363c1aadf15f 1151 mx-installer_17.12mx17.dsc
+ 4c8dce9331fb00724e5616e9e32f74da55711957 345788 mx-installer_17.12mx17.tar.xz
+ 439a81178aa0654234b586a3ef63f25affa1e8d0 423186 mx-installer_17.12mx17_amd64.deb
 Checksums-Sha256:
- eeedff3c86aa1ccf10fa882d83cfcc33604dffb62c6e5ad8fc3b94f0531afc03 1151 mx-installer_17.12mx17.dsc
- a5ce30b90b50f7af055e51554eccd6897afcb95bc7adef3c24d7f4b25cfba826 345784 mx-installer_17.12mx17.tar.xz
- 2acedde80574954cd70cb3a1c26a6e3603d6586c34f8582df3d0fff34c561b3e 423478 mx-installer_17.12mx17_amd64.deb
+ 32c4e4e66ab97186899692a20a02d9366dfb9019ff08ec7f813af72524f762ba 1151 mx-installer_17.12mx17.dsc
+ 5aae120e62d78fc645bcc6c0ccd86df93885e671350506009a3f5b7c82c082f5 345788 mx-installer_17.12mx17.tar.xz
+ 48c241104ab659a1462cdb9447ccba442a1b36054f371211d3ef212b9d3a4180 423186 mx-installer_17.12mx17_amd64.deb
 Files:
- 0391dfc174981c963effd454789326f6 1151 system optional mx-installer_17.12mx17.dsc
- 58bf8c865f23ae25901d8afca61a7173 345784 system optional mx-installer_17.12mx17.tar.xz
- 01cafbed9544b6c6ba01c55b9e24b46f 423478 system optional mx-installer_17.12mx17_amd64.deb
+ 6910e3b6d1398dd1b146f49b19c71498 1151 system optional mx-installer_17.12mx17.dsc
+ c15a3029f45cd0ecd3dbbdda927290bf 345788 system optional mx-installer_17.12mx17.tar.xz
+ 2a9d0e01361ae8899375510e9c42e43e 423186 system optional mx-installer_17.12mx17_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJaLXyrAAoJEHCTjHgGee6YmdQIAMZX0ZQFeqQ8eqS0lHMp11VI
-iMj+tzdfmSj1vaD4gwXkqU1H7biXGPY+4RJgKsPikS76EOhrPk+Y97kUtImV6DIo
-RlOCoU578OSwpFbM3xeG/My70/kvTqk/JPcvAFOnL+BmmPP46avMhoGPD978Z/MI
-pWzb9LU3meh4KK/s1MVYzI94pjqenldBWfC2GcmTVAqvOXr3Zy8fajsfpDx6zhr1
-n9ksJrNW1AqUYIUMzITC26Pm1UG5M4S63yjqcGVMmeet7gG7rVN5SZQzqQMGA8g4
-iqFPBs8kduZGHtAeSmsIrmVedMc7BZwK+UXBFdSTc2o/LCkYUdwsr9OvwK5dRvo=
-=RDcX
+iQEcBAEBAgAGBQJaLYSfAAoJEHCTjHgGee6YgUcIAMtGfFRS8Qogn0g2pbG1CALi
+4UhMMM6cGw19oWbxRsOn1L3/+vhIZWR782H0RiW/4butHJwKPuyyraFPm1GP6Exs
+goVfU0cspp1GznLhATCLVHy7SxXcE68CtDbAGeHvAw6vzSkMq82zvZtbV0HDcEZb
+cCCtI/QbF7hkF0AoLGKt6SxjrSX+vHu1lV3mBTjWoW61nuasjglSfy7WhB3zw1lZ
+jwSx/wzkDh7Ox+AuGshwxQLvkwUhux/IgdSku711PAR998TM+xQ4Bu7ZQZsEW8q5
+SRZvW2fHpYFjLvDtdbxxv0DNsq9vJLdx7E9X4sGF9LRzyZVCorj87V5qwoxHKJw=
+=aomi
 -----END PGP SIGNATURE-----
