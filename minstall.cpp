@@ -1182,6 +1182,8 @@ bool MInstall::setUserName()
             setCursor(QCursor(Qt::ArrowCursor));
             QMessageBox::critical(0, QString::null,
                                   tr("Sorry, failed to save desktop changes."));
+        } else {
+            replaceStringInFile("/home/demo", "/home/" + userNameEdit->text(), dpath + "/.conky/conky-startup.sh");
         }
     }
     // fix the ownership, demo=newuser
