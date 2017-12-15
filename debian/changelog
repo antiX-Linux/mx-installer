@@ -1,3 +1,9 @@
+mx-installer (17.12mx17+1) mx; urgency=medium
+
+  * rename 'demo' string in dconf/user
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 14 Dec 2017 21:51:47 -0500
+
 mx-installer (17.12mx17) mx; urgency=medium
 
   * rename 'demo' string in conky config file

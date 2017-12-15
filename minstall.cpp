@@ -1184,6 +1184,7 @@ bool MInstall::setUserName()
                                   tr("Sorry, failed to save desktop changes."));
         } else {
             replaceStringInFile("\\/home\\/demo", "\\/home\\/" + userNameEdit->text(), dpath + "/.conky/conky-startup.sh");
+            replaceStringInFile("\\/home\\/demo", "\\/home\\/" + userNameEdit->text(), dpath + "/.config/dconf/user");
         }
     }
     // fix the ownership, demo=newuser
