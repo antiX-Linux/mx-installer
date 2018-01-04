@@ -2803,7 +2803,7 @@ void MInstall::on_encryptCheckBox_toggled(bool checked)
         autologinCheckBox->setChecked(false);
         autologinCheckBox->setDisabled(true);
         QMessageBox::warning(0, QString::null,
-                             tr("This option also encyrpts /swap, which will render the swap partition unable to be shared with other installed operating systems."),
+                             tr("This option also encrypts /swap, which will render the swap partition unable to be shared with other installed operating systems."),
                              tr("OK"));
     } else {
         autologinCheckBox->setDisabled(false);
