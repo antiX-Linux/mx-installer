@@ -2,7 +2,8 @@ QT       += core gui widgets
 
 TEMPLATE = app
 TARGET = minstall
-TRANSLATIONS += translations/mx-installer_bg.ts \
+TRANSLATIONS += translations/mx-installer_am.ts \
+                translations/mx-installer_bg.ts \
                 translations/mx-installer_ca.ts \
                 translations/mx-installer_cs.ts \
                 translations/mx-installer_de.ts \
