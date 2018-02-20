@@ -1,3 +1,9 @@
+mx-installer (18.2mx17) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 19 Feb 2018 22:43:35 -0500
+
 mx-installer (17.12mx17+1) mx; urgency=medium
 
   * rename 'demo' string in dconf/user
