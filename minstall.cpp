@@ -965,6 +965,11 @@ bool MInstall::installLoader()
 
     if (grubMbrButton->isChecked()) {
         boot = bootdrv;
+        QString drive = rootpart;
+        QString part_num = rootpart;
+        part_num.remove(QRegularExpression("\\D+\\d*\\D+")); // remove the non-digit part to get the number of the root partition
+        drive.remove(QRegularExpression("\\d*$|p\\d*$"));    // remove partition number to get the root drive
+        runCmd("parted -s /dev/" + drive + " set " + part_num + " boot on");
     } else if (grubRootButton->isChecked()) {
         boot = rootpart;
     } else if (grubEspButton->isChecked()) {

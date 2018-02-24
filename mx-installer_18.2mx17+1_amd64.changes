@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sat, 24 Feb 2018 16:07:17 -0500
+Source: mx-installer
+Binary: mx-installer
+Architecture: source amd64
+Version: 18.2mx17+1
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-installer - GUI installer for MX Linux.
+Changes:
+ mx-installer (18.2mx17+1) mx; urgency=medium
+ .
+   * set root partition bootable when install GRUB on MBR
+Checksums-Sha1:
+ 5aea7b8fb41434fc08d121c728dd09e1bfac3513 1155 mx-installer_18.2mx17+1.dsc
+ 7fe07a11195e449b9fbe08ec31e1b9a174306d9a 346700 mx-installer_18.2mx17+1.tar.xz
+ d139f5d53439d035c54093731c33e462c24d7d33 426826 mx-installer_18.2mx17+1_amd64.deb
+Checksums-Sha256:
+ 4c41f48e41e67e97971615aaf06f61f5b579ecc7bdc0a039da6c2383cc4db549 1155 mx-installer_18.2mx17+1.dsc
+ 85a6c0a20af839dee9f8783dc5b905f4f98a63eb73f66593b1b956121e9010a9 346700 mx-installer_18.2mx17+1.tar.xz
+ 7b23ed857b1d0a3fd8fb817b9a5952fa8a4db3e4f5ca925058ad80ee50823b15 426826 mx-installer_18.2mx17+1_amd64.deb
+Files:
+ c12750e56ec9cc15364bc289d24c436e 1155 system optional mx-installer_18.2mx17+1.dsc
+ 9fd45478eab2c093ba23f16b17bd158d 346700 system optional mx-installer_18.2mx17+1.tar.xz
+ 0f4e2d67f96658a907f07bc7ee9bb85c 426826 system optional mx-installer_18.2mx17+1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJakdhYAAoJEHCTjHgGee6YHnEIAMTNNoCKwgrWXdCRLY6xfF6j
+Cy7RV54Z0hxhfZ0EnH3gTNaisK6kDxPg9/4MMFTxlmN/3LO3I0GdXc6QrWRtGlmq
+3L0i26LAWPeqpNAiJSSoOkfSFdKTs2XRMzlAFVs1HQ8LSBx0kFL/AILxfPdTrmbD
+EuHalKnn3bs0PrKPUPaebn5zXW1zzmNQ52GDK1dyb2HeM+xYc0YZybwqqwqxZdkY
+1p1U1ZhdKvwaMyCRiJWe63aSvASoealEfEXNR3u+Xo7EYPA1RcEWKCkYn8Vq7pVz
+IfGZVI5NAXJLpLvvQSBsSJG3XWwL4nNbfKHNJmCFJHIe/ifZmEFNKwGEgWJETHI=
+=R7TL
+-----END PGP SIGNATURE-----
