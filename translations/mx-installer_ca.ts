@@ -53,7 +53,7 @@ El disc amb la partició que heu seleccionat per a la instal·lació està falla
         <location filename="../minstall.cpp" line="1131"/>
         <location filename="../minstall.cpp" line="1850"/>
         <location filename="../minstall.cpp" line="1864"/>
-        <location filename="../minstall.cpp" line="2561"/>
+        <location filename="../minstall.cpp" line="2562"/>
         <source>Yes</source>
         <translation>Sí</translation>
     </message>
@@ -72,7 +72,7 @@ El disc amb la partició que heu seleccionat per a la instal·lació està falla
         <location filename="../minstall.cpp" line="1131"/>
         <location filename="../minstall.cpp" line="1850"/>
         <location filename="../minstall.cpp" line="1864"/>
-        <location filename="../minstall.cpp" line="2561"/>
+        <location filename="../minstall.cpp" line="2562"/>
         <source>No</source>
         <translation>No</translation>
     </message>
@@ -643,73 +643,73 @@ Retornant al primer pas.</translation>
         <translation>Servei d&apos;impressió per a Linux i OS X </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2560"/>
+        <location filename="../minstall.cpp" line="2561"/>
         <source>MX Linux is installing, are you 
 sure you want to Close now?</source>
         <translation>S&apos;està instal·lant MX Linux, esteu
 segurs que voleu acabar ara?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2587"/>
+        <location filename="../minstall.cpp" line="2588"/>
         <source>Deleting old system</source>
         <translation>Esborrant el sistema antic </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2596"/>
+        <location filename="../minstall.cpp" line="2597"/>
         <source>Failed to delete old MX Linux on destination.
 Returning to Step 1.</source>
         <translation>Ha fallat l&apos;esborrat del sistema MX Linux a la
 destinació. Retornant al primer pas.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2622"/>
+        <location filename="../minstall.cpp" line="2623"/>
         <source>Copying new system</source>
         <translation>Copiant el nou sistema </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2646"/>
+        <location filename="../minstall.cpp" line="2647"/>
         <source>Fixing configuration</source>
         <translation>Arranjant la configuració</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2737"/>
+        <location filename="../minstall.cpp" line="2738"/>
         <source>Failed to write MX Linux to destination.
 Returning to Step 1.</source>
         <translation>Ha fallat escrivint MX Linux a la destinació.
 Retornant al primer pas.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2764"/>
+        <location filename="../minstall.cpp" line="2765"/>
         <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at https://mxlinux.org There are volunteers to help you at the MX forum, https://forum.mxlinux.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Cercar Ajuda&lt;/b&gt;&lt;br/&gt;Trobareu informació bàsica quant a MX Linux a https://mxlinux.org Hi ha voluntaris per ajudar-vos al fòrum MX https://forum.mxlinux.org . Al fòrum GNU-Linux de Softcatalà a http://www.softcatala.org/forum i molts altres també trobareu ajuda en la nostra llengua.&lt;/p&gt;&lt;p&gt;Si demaneu ajuda, recordeu-vos de descriure el vostre problema i el maquinari. Normalment títols com &apos;No funciona!&apos; no son gens útils.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2772"/>
+        <location filename="../minstall.cpp" line="2773"/>
         <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from LiveDVD or LiveUSB and running one of the utilities in MX Tools or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux LiveDVD or LiveUSB to recover data from MS-Windows systems!&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Reparar la instal·lació&lt;/b&gt;&lt;br/&gt;Si MX Linux deixés de funcionar des del disc dur, sovint es pot arreglar el problema arrencant des del DVD o USB autònom i executant alguna de les utilitats que trobareu a &apos;Eines de MX&apos; o bé usant alguna de les eines típiques de Linux per a reparar el sistema.&lt;/p&gt;&lt;p&gt;Fins i tot podeu usar usar el DVD o USB autònom de MX Linux per recuperar dades dels sistemes MS-Windows!&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2778"/>
+        <location filename="../minstall.cpp" line="2779"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Suport de MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux té el suport de gent com vosaltres. Alguns n&apos;ajuden d&apos;altres als fòrums de suport, com  http://forum.mxlinux.org, altres tradueixen programari o fitxers d&apos;ajuda a altres llengües, fan suggeriments, escriuen manuals i documentació, o ajuden a provar el funcionament del programari nou.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2785"/>
+        <location filename="../minstall.cpp" line="2786"/>
         <source>&lt;p&gt;&lt;b&gt;Adjusting Your Sound Mixer&lt;/b&gt;&lt;br/&gt;MX Linux attempts to configure the sound mixer for you but sometimes it will be necessary for you to turn up volumes and unmute channels in the mixer in order to hear sound.&lt;/p&gt; &lt;p&gt;The mixer shortcut is located in the menu. Click on it to open the mixer. &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Ajustar el Volum del Mesclador de So&lt;/b&gt;&lt;br/&gt;MX Linux intenta configurar el mesclador de so, però amb alguns dispositius pot ser necessari apujar el volum del mesclador o &quot;desenmudir&quot; algun canal per tal d&apos;escoltar so.&lt;/p&gt; &lt;p&gt;La drecera del mesclador està situada al menú i al plafó. Cliqueu sobre la icona per a obrir el mesclador. &lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2793"/>
+        <location filename="../minstall.cpp" line="2794"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit https://mxlinux.org&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Mantenir el vostre MX Linux al dia&lt;/b&gt;&lt;br/&gt;Per a tenir informació i actualitzacions de MX Linux visiteu https://mxlinux.org&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2813"/>
+        <location filename="../minstall.cpp" line="2814"/>
         <source>This option also encrypts /swap, which will render the swap partition unable to be shared with other installed operating systems.</source>
         <translation>Aquesta opció també encripta /swap, el que fa que la partició d&apos;intercanvi no es pugui compartir amb altres Sistemes Operatius instal·lats.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2814"/>
+        <location filename="../minstall.cpp" line="2815"/>
         <source>OK</source>
         <translation>D&apos;acord</translation>
     </message>

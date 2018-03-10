@@ -50,7 +50,7 @@ Disk s oddílem jenž jste vybráli pro instalaci selhává.
         <location filename="../minstall.cpp" line="1131"/>
         <location filename="../minstall.cpp" line="1850"/>
         <location filename="../minstall.cpp" line="1864"/>
-        <location filename="../minstall.cpp" line="2561"/>
+        <location filename="../minstall.cpp" line="2562"/>
         <source>Yes</source>
         <translation>Ano</translation>
     </message>
@@ -69,7 +69,7 @@ Disk s oddílem jenž jste vybráli pro instalaci selhává.
         <location filename="../minstall.cpp" line="1131"/>
         <location filename="../minstall.cpp" line="1850"/>
         <location filename="../minstall.cpp" line="1864"/>
-        <location filename="../minstall.cpp" line="2561"/>
+        <location filename="../minstall.cpp" line="2562"/>
         <source>No</source>
         <translation>Ne</translation>
     </message>
@@ -638,73 +638,73 @@ Návrat ke Kroku 1.</translation>
         <translation>Linux a OSX služby tisku</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2560"/>
+        <location filename="../minstall.cpp" line="2561"/>
         <source>MX Linux is installing, are you 
 sure you want to Close now?</source>
         <translation>Probíhá instalace MX Linux, jste si 
 jisti, že chcete nyní Zavřít?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2587"/>
+        <location filename="../minstall.cpp" line="2588"/>
         <source>Deleting old system</source>
         <translation>Odstraňování starého systému</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2596"/>
+        <location filename="../minstall.cpp" line="2597"/>
         <source>Failed to delete old MX Linux on destination.
 Returning to Step 1.</source>
         <translation>Nelze smazat starý MX Linux v cílovém umístění.
 Návrat ke Kroku 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2622"/>
+        <location filename="../minstall.cpp" line="2623"/>
         <source>Copying new system</source>
         <translation>Kopírování nového systému</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2646"/>
+        <location filename="../minstall.cpp" line="2647"/>
         <source>Fixing configuration</source>
         <translation>Fixování nastavení</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2737"/>
+        <location filename="../minstall.cpp" line="2738"/>
         <source>Failed to write MX Linux to destination.
 Returning to Step 1.</source>
         <translation>Nelze zapsat MX Linux do cílového umístnění.
 Návrat ke Kroku 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2764"/>
+        <location filename="../minstall.cpp" line="2765"/>
         <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at https://mxlinux.org There are volunteers to help you at the MX forum, https://forum.mxlinux.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Získáni pomoci&lt;/b&gt;&lt;br/&gt;Základní informace o MX Linux naleznete na https://mxlinux.org Také pomohou dobrovolníci/komunita na MX fóru, https://forum.mxlinux.org &lt;/p&gt;&lt;p&gt; Když budete žádat o pomoc, prosím nezapomeňte popsat Váš problém ale také nějaké detaily o Vašem PC. Obyčejně vyjádření typu &apos;nefungovalo to&apos; nejsou nápomocné.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2772"/>
+        <location filename="../minstall.cpp" line="2773"/>
         <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from LiveDVD or LiveUSB and running one of the utilities in MX Tools or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux LiveDVD or LiveUSB to recover data from MS-Windows systems!&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Oprava Vaší instalace&lt;/b&gt;&lt;br/&gt;Ak MX Linux přestane fungovat, někdy je možné opravit vzniknutý problém zavedením systému z LiveDVD nebo LiveUSB a následným spuštěním jedné z utilit MX Tools nebo použitím jednoho z dostupných Linuxových nástrojů na opravu systému.&lt;/p&gt;&lt;p&gt;MX Linux LiveDVD nebo LiveUSB můžete také použít pro obnovu dat z systémů MS-Windows!&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2778"/>
+        <location filename="../minstall.cpp" line="2779"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Podpořte MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux je podporovaný lidmi jako jste Vy. Někteří pomáhají jiným přes podpůrné fórum - https://forum.mxlinux.org, nebo překládají soubory nápovědy do různých jazyků, přinášejí návrhy, píšou dokumentaci nebo pomáhají testovat nový software.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2785"/>
+        <location filename="../minstall.cpp" line="2786"/>
         <source>&lt;p&gt;&lt;b&gt;Adjusting Your Sound Mixer&lt;/b&gt;&lt;br/&gt;MX Linux attempts to configure the sound mixer for you but sometimes it will be necessary for you to turn up volumes and unmute channels in the mixer in order to hear sound.&lt;/p&gt; &lt;p&gt;The mixer shortcut is located in the menu. Click on it to open the mixer. &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Úprava Vašeho  Mixéru Zvuku&lt;/b&gt;&lt;br/&gt;MX Linux se pokusí Vám nastavit mixér zvuku, ale někdy bude potřeba, abyste zvýšili hlasitost a zrušili ztlumení některých kanálů, abyste slyšeli zvuk .&lt;/p&gt; &lt;p&gt;Zkratka mixéru je umístěna v hlavním panelu. Klikněte na ni pro otevření mixéru.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2793"/>
+        <location filename="../minstall.cpp" line="2794"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit https://mxlinux.org&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Udržujte Vaši kopii MX Linux aktualizovanou&lt;/b&gt;&lt;br/&gt;Pro informaci o MX Linux a aktulizace prosím navštivte https://mxlinux.org&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2813"/>
+        <location filename="../minstall.cpp" line="2814"/>
         <source>This option also encrypts /swap, which will render the swap partition unable to be shared with other installed operating systems.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2814"/>
+        <location filename="../minstall.cpp" line="2815"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
