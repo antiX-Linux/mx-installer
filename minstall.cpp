@@ -2492,6 +2492,7 @@ void MInstall::on_rootCombo_activated(QString)
     // add back removed item
     if (removedItem != "") {
         homeCombo->insertItem(removedItemIndex, removedItem);
+        removedItem = "";
     }
     // remove item that matches root selection
     if (rootCombo->currentText() != "") {
