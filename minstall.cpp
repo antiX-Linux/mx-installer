@@ -2477,7 +2477,7 @@ void MInstall::on_diskCombo_activated(QString)
     }
 
     // build homeCombo for all disks
-    partitions = getCmdOuts("partition-info all -n --exclude=boot,swap --min-size=100");
+    partitions = getCmdOuts("partition-info all -n --exclude=boot,swap --min-size=1000");
     homeCombo->addItems(partitions);
 
     // build swapCombo for all disks
