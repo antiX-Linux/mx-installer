@@ -969,7 +969,9 @@ bool MInstall::installLoader()
         QString part_num = rootpart;
         part_num.remove(QRegularExpression("\\D+\\d*\\D+")); // remove the non-digit part to get the number of the root partition
         drive.remove(QRegularExpression("\\d*$|p\\d*$"));    // remove partition number to get the root drive
-        runCmd("parted -s /dev/" + drive + " set " + part_num + " boot on");
+        if (!isGpt("/dev/" + drive)) {
+            runCmd("parted -s /dev/" + drive + " set " + part_num + " boot on");
+        }
     } else if (grubRootButton->isChecked()) {
         boot = rootpart;
     } else if (grubEspButton->isChecked()) {
@@ -2466,7 +2468,7 @@ void MInstall::on_diskCombo_activated(QString)
     removedItem = "";
 
     // build rootCombo
-    QStringList partitions = getCmdOuts(QString("partition-info -n --exclude=all --min-size=4000 %1").arg(drv));
+    QStringList partitions = getCmdOuts(QString("partition-info -n --exclude=boot,swap --min-size=4000 %1").arg(drv));
     rootCombo->addItem(""); // add an empty item to make sure nothing is selected by default
     rootCombo->addItems(partitions);
     if (partitions.size() == 0) {
@@ -2475,7 +2477,7 @@ void MInstall::on_diskCombo_activated(QString)
     }
 
     // build homeCombo for all disks
-    partitions = getCmdOuts("partition-info all -n --exclude=all --min-size=100");
+    partitions = getCmdOuts("partition-info all -n --exclude=boot,swap --min-size=100");
     homeCombo->addItems(partitions);
 
     // build swapCombo for all disks

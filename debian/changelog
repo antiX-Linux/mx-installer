@@ -1,3 +1,9 @@
+mx-installer (18.3mx17) mx; urgency=medium
+
+  * adjusted filter for root partitions
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 10 Mar 2018 12:29:31 -0500
+
 mx-installer (18.2mx17+1) mx; urgency=medium
 
   * set root partition bootable when install GRUB on MBR
