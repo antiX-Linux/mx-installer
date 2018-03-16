@@ -2499,7 +2499,6 @@ void MInstall::on_rootCombo_activated(QString)
         int index = homeCombo->findText(rootCombo->currentText().section(' ', 0, 0).toUtf8(), Qt::MatchStartsWith);
         if ( index != -1 ) {
             removedItem = homeCombo->itemText(index);
-            qDebug() << "removed " << removedItem;
             removedItemIndex = index;
             homeCombo->removeItem(index);
         } else {
