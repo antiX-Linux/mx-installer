@@ -1021,9 +1021,12 @@ bool MInstall::installLoader()
         system("mkdir /mnt/antiX/boot/efi");
         QString mount = QString("mount /dev/%1 /mnt/antiX/boot/efi").arg(boot);
         runCmd(mount);
-        QString arch = getCmdOut("uname -m");
-        if (arch == "i686") { // rename arch to match grub-install target
+        // rename arch to match grub-install target
+        QString arch = getCmdOut("cat /sys/firmware/efi/fw_platform_size");
+        if (arch == "32") {
             arch = "i386";
+        } else if (arch == "64") {
+            arch = "x86_64";
         }
         QString release = getCmdOut("lsb_release -rs");
         cmd = QString("chroot /mnt/antiX grub-install --target=%1-efi --efi-directory=/boot/efi --bootloader-id=MX%2 --recheck").arg(arch).arg(release);
@@ -2534,8 +2537,8 @@ void MInstall::on_grubBootCombo_activated(QString)
     QString drv = QString("/dev/%1").arg(grubBootCombo->currentText().section(" ", 0, 0));
     QString cmd = QString("blkid %1 | grep -q PTTYPE=\\\"gpt\\\"").arg(drv);
     QString detectESP = QString("sgdisk -p %1 | grep -q ' EF00 '").arg(drv);
-    // if 64bit, GPT, and ESP exists
-    if (is64bit() && system(cmd.toUtf8()) == 0 && system(detectESP.toUtf8()) == 0) {
+    // if GPT, and ESP exists
+    if (system(cmd.toUtf8()) == 0 && system(detectESP.toUtf8()) == 0) {
         grubEspButton->setEnabled(true);
         if (isUefi()) { // if booted from UEFI
             grubEspButton->setChecked(true);
