@@ -17,6 +17,8 @@
 #include "mmain.h"
 #include "minstall.h"
 
+#include "QDebug"
+
 MInstall *minstall;
 bool firstShow;
 
@@ -27,6 +29,13 @@ MMain::MMain()
     minstall->resize(mainFrame->size());
     mainHelp->resize(tab->size());
     helpbackdrop->resize(mainHelp->size());
+
+    //setup system variables
+
+    PROJECTNAME=getCmdOut("grep PROJECT_NAME /usr/share/installer-data/installer.conf |cut -d= -f2");
+    PROJECTSHORTNAME=getCmdOut("grep PROJECT_SHORTNAME /usr/share/installer-data/installer.conf |cut -d= -f2");
+    PROJECTVERSION=getCmdOut("grep VERSION /usr/share/installer-data/installer.conf |cut -d= -f2");
+    setWindowTitle(PROJECTNAME + " " + tr("Installer"));
     firstShow = true;
 }
 
@@ -70,4 +79,24 @@ void MMain::resizeEvent(QResizeEvent *)
     minstall->resize(mainFrame->size());
     mainHelp->resize(tab->size());
     helpbackdrop->resize(mainHelp->size());
+}
+
+// util functions
+
+QString MMain::getCmdOut(QString cmd)
+{
+    char line[260];
+    const char* ret = "";
+    FILE* fp = popen(cmd.toUtf8(), "r");
+    if (fp == NULL) {
+        return QString (ret);
+    }
+    int i;
+    if (fgets(line, sizeof line, fp) != NULL) {
+        i = strlen(line);
+        line[--i] = '\0';
+        ret = line;
+    }
+    pclose(fp);
+    return QString (ret);
 }

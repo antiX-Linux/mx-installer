@@ -26,12 +26,29 @@
 MInstall::MInstall(QWidget *parent) : QWidget(parent)
 {
     setupUi(this);
-    labelMX->setPixmap(QPixmap(":/images/logo.png"));
+    labelMX->setPixmap(QPixmap("/usr/share/installer-data/logo.png"));
     char line[260];
     char *tok;
     FILE *fp;
     int i;
+
+    //setup system variables
+
+    PROJECTNAME=getCmdOut("grep PROJECT_NAME /usr/share/installer-data/installer.conf |cut -d= -f2");
+    PROJECTSHORTNAME=getCmdOut("grep PROJECT_SHORTNAME /usr/share/installer-data/installer.conf |cut -d= -f2");
+    PROJECTVERSION=getCmdOut("grep VERSION /usr/share/installer-data/installer.conf |cut -d= -f2");
+    PROJECTURL=getCmdOut("grep PROJECT_URL /usr/share/installer-data/installer.conf |cut -d= -f2");
+    PROJECTFORUM=getCmdOut("grep PROJECT_FORUM /usr/share/installer-data/installer.conf |cut -d= -f2");
+    INSTALL_FROM_ROOT_DEVICE=getCmdOut("grep INSTALL_FROM_ROOT_DEVICE /usr/share/installer-data/installer.conf |cut -d= -f2");
+    MIN_ROOT_DEVICE_SIZE=getCmdOut("grep MIN_ROOT_DRIVE_SIZE /usr/share/installer-data/installer.conf |cut -d= -f2");
+    qDebug() << PROJECTNAME << PROJECTSHORTNAME << PROJECTVERSION << PROJECTURL;
+    if ( system("grep -q OFFER_HOME_ENCRYPTION=n /usr/share/installer-data/installer.conf") == 0); {
+        encryptCheckBox->hide();
+    }
     // timezone
+
+    copyrightBrowser->setPlainText(PROJECTNAME + " " + tr("is an independent Linux distribution based on Debian Stable\n\n") + PROJECTNAME + " " + tr("uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for") + " " + PROJECTNAME + tr(".\n\nEnjoy using") + " " + PROJECTNAME);
+
     timezoneCombo->clear();
     fp = popen("awk -F '\\t' '!/^#/ { print $3 }' /usr/share/zoneinfo/zone.tab | sort", "r");
     if (fp != NULL) {
@@ -47,35 +64,65 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent)
     timezoneCombo->setCurrentIndex(timezoneCombo->findText(getCmdOut("cat /etc/timezone")));
 
 
-    // keyboard
-    system("ls -1 /usr/share/keymaps/i386/azerty > /tmp/mlocale");
-    system("ls -1 /usr/share/keymaps/i386/qwerty >> /tmp/mlocale");
-    system("ls -1 /usr/share/keymaps/i386/qwertz >> /tmp/mlocale");
-    system("ls -1 /usr/share/keymaps/i386/dvorak >> /tmp/mlocale");
-    system("ls -1 /usr/share/keymaps/i386/fgGIod >> /tmp/mlocale");
-    system("ls -1 /usr/share/keymaps/mac >> /tmp/mlocale");
-    keyboardCombo->clear();
-    fp = popen("sort /tmp/mlocale", "r");
-    if (fp != NULL) {
-        while (fgets(line, sizeof line, fp) != NULL) {
-            i = strlen(line) - 9;
-            line[i] = '\0';
-            if (line != NULL && strlen(line) > 1) {
-                keyboardCombo->addItem(line);
-            }
-        }
-        pclose(fp);
-    }
-    QString kb;
-    kb = getCmdOut("grep XKBLAYOUT /etc/default/keyboard");
-    kb = kb.section('=', 1);
-    kb = kb.section(',', 0, 0);
-    kb.remove(QChar('"'));
-    if (keyboardCombo->findText(kb) != -1) {
-        keyboardCombo->setCurrentIndex(keyboardCombo->findText(kb));
-    } else {
-        keyboardCombo->setCurrentIndex(keyboardCombo->findText("us"));
-    }
+//    // keyboard
+//    system("ls -1 /usr/share/keymaps/i386/azerty > /tmp/mlocale");
+//    system("ls -1 /usr/share/keymaps/i386/qwerty >> /tmp/mlocale");
+//    system("ls -1 /usr/share/keymaps/i386/qwertz >> /tmp/mlocale");
+//    system("ls -1 /usr/share/keymaps/i386/dvorak >> /tmp/mlocale");
+//    system("ls -1 /usr/share/keymaps/i386/fgGIod >> /tmp/mlocale");
+//    system("ls -1 /usr/share/keymaps/mac >> /tmp/mlocale");
+//    keyboardCombo->clear();
+//    fp = popen("sort /tmp/mlocale", "r");
+//    if (fp != NULL) {
+//        while (fgets(line, sizeof line, fp) != NULL) {  // keyboard
+//    system("ls -1 /usr/share/keymaps/i386/azerty > /tmp/mlocale");
+//    system("ls -1 /usr/share/keymaps/i386/qwerty >> /tmp/mlocale");
+//    system("ls -1 /usr/share/keymaps/i386/qwertz >> /tmp/mlocale");
+//    system("ls -1 /usr/share/keymaps/i386/dvorak >> /tmp/mlocale");
+//    system("ls -1 /usr/share/keymaps/i386/fgGIod >> /tmp/mlocale");
+//    system("ls -1 /usr/share/keymaps/mac >> /tmp/mlocale");
+    //keyboardCombo->clear();
+//    fp = popen("sort /tmp/mlocale", "r");
+//    if (fp != NULL) {
+//        while (fgets(line, sizeof line, fp) != NULL) {
+//            i = strlen(line) - 9;
+//            line[i] = '\0';
+//            if (line != NULL && strlen(line) > 1) {
+//                keyboardCombo->addItem(line);
+//            }
+//        }
+//        pclose(fp);
+//    }
+//    QString kb;
+//    kb = getCmdOut("grep XKBLAYOUT /etc/default/keyboard");
+//    kb = kb.section('=', 1);
+//    kb = kb.section(',', 0, 0);
+//    kb.remove(QChar('"'));
+//    if (keyboardCombo->findText(kb) != -1) {
+//        keyboardCombo->setCurrentIndex(keyboardCombo->findText(kb));
+//    } else {
+//        keyboardCombo->setCurrentIndex(keyboardCombo->findText("us"));
+//    }
+//            i = strlen(line) - 9;
+//            line[i] = '\0';
+//            if (line != NULL && strlen(line) > 1) {
+//                keyboardCombo->addItem(line);
+//            }
+//        }
+//        pclose(fp);
+//    }
+//    QString kb;
+//    kb = getCmdOut("grep XKBLAYOUT /etc/default/keyboard");
+//    kb = kb.section('=', 1);
+//    kb = kb.section(',', 0, 0);
+//    kb.remove(QChar('"'));
+//    if (keyboardCombo->findText(kb) != -1) {
+//        keyboardCombo->setCurrentIndex(keyboardCombo->findText(kb));
+//    } else {
+//        keyboardCombo->setCurrentIndex(keyboardCombo->findText("us"));
+//    }
+
+    setupkeyboardbutton();
 
     // locale
     localeCombo->clear();
@@ -108,7 +155,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent)
     proc = new QProcess(this);
     timer = new QTimer(this);
 
-    rootLabelEdit->setText("rootMX" + getCmdOut("lsb_release -rs"));
+    rootLabelEdit->setText("root" + PROJECTSHORTNAME + " " + getCmdOut("lsb_release -rs"));
 
     // if it looks like an apple...
     if (system("grub-probe -d /dev/sda2 2>/dev/null | grep hfsplus") == 0) {
@@ -337,7 +384,7 @@ int MInstall::getPartitionNumber()
 // unmount antiX in case we are retrying
 void MInstall::prepareToInstall()
 {
-    updateStatus(tr("Ready to install MX Linux filesystem"), 0);
+    updateStatus(tr("Ready to install ") + PROJECTNAME + " " + tr("filesystem"), 0);
 
     // unmount /boot/efi if mounted by previous run
     if (system("mountpoint -q /mnt/antiX/boot/efi") == 0) {
@@ -355,7 +402,7 @@ void MInstall::prepareToInstall()
 
 bool MInstall::makeSwapPartition(QString dev)
 {
-    QString cmd = QString("/sbin/mkswap %1 -L MXswap").arg(dev);
+    QString cmd = QString("/sbin/mkswap %1 -L " + PROJECTSHORTNAME + "swap").arg(dev);
     if (system(cmd.toUtf8()) != 0) {
         // error
         return false;
@@ -483,7 +530,7 @@ bool MInstall::makeDefaultPartitions()
     QString rootdev, swapdev;
 
     QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
-    QString msg = QString(tr("OK to format and use the entire disk (%1) for MX Linux?")).arg(drv);
+    QString msg = QString(tr("OK to format and use the entire disk (%1) for").arg(drv) + " " + PROJECTNAME + "?");
     ans = QMessageBox::information(0, QString::null, msg,
                                    tr("Yes"), tr("No"));
     if (ans != 0) { // don't format--stop install
@@ -1029,7 +1076,7 @@ bool MInstall::installLoader()
             arch = "x86_64";
         }
         QString release = getCmdOut("lsb_release -rs");
-        cmd = QString("chroot /mnt/antiX grub-install --target=%1-efi --efi-directory=/boot/efi --bootloader-id=MX%2 --recheck").arg(arch).arg(release);
+        cmd = QString("chroot /mnt/antiX grub-install --target=%1-efi --efi-directory=/boot/efi --bootloader-id=" + PROJECTSHORTNAME +"%2 --recheck").arg(arch).arg(release);
     }
     if (runCmd(cmd) != 0) {
         // error, try again
@@ -1039,7 +1086,7 @@ bool MInstall::installLoader()
             progress->close();
             setCursor(QCursor(Qt::ArrowCursor));
             QMessageBox::critical(this, QString::null,
-                                  tr("Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the LiveDVD or LiveUSB and repair the installation with the reinstall GRUB function."));
+                                  tr("Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing then reboot to the LiveDVD or LiveUSB and repair the installation with the reinstall GRUB function."));
             system("umount /mnt/antiX/proc; umount /mnt/antiX/sys; umount /mnt/antiX/dev");
             if (system("mountpoint -q /mnt/antiX/boot/efi") == 0) {
                 system("umount /mnt/antiX/boot/efi");
@@ -1439,7 +1486,7 @@ bool MInstall::setComputerName()
                                   tr("Sorry your workgroup needs to be at least\n2 characters long. You'll have to select a different\nname before proceeding."));
             return false;
         }
-        replaceStringInFile("mx1", computerNameEdit->text(), "/mnt/antiX/etc/samba/smb.conf");
+        replaceStringInFile(PROJECTSHORTNAME + "1", computerNameEdit->text(), "/mnt/antiX/etc/samba/smb.conf");
         replaceStringInFile("WORKGROUP", computerGroupEdit->text(), "/mnt/antiX/etc/samba/smb.conf");
     }
     if (sambaCheckBox->isChecked()) {
@@ -1470,7 +1517,7 @@ bool MInstall::setComputerName()
         system("mv -f /mnt/antiX/etc/rc2.d/S01nmbd /mnt/antiX/etc/rc2.d/K01nmbd >/dev/null 2>&1");
     }
 
-    replaceStringInFile("mx1", computerNameEdit->text(), "/mnt/antiX/etc/hosts");
+    replaceStringInFile(PROJECTSHORTNAME + "1", computerNameEdit->text(), "/mnt/antiX/etc/hosts");
 
     QString cmd = QString("echo \"%1\" | cat > /mnt/antiX/etc/hostname").arg(computerNameEdit->text());
     system(cmd.toUtf8());
@@ -1487,19 +1534,20 @@ bool MInstall::setComputerName()
 void MInstall::setLocale()
 {
     QString cmd2;
-    QString kb = keyboardCombo->currentText();
+    QString cmd;
+    //QString kb = keyboardCombo->currentText();
     //keyboard
-    QString cmd = QString("chroot /mnt/antiX /usr/sbin/install-keymap \"%1\"").arg(kb);
-    system(cmd.toUtf8());
-    if (kb == "uk") {
-        kb = "gb";
-    }
-    if (kb == "us") {
-        cmd = QString("sed -i 's/.*us/XKBLAYOUT=\"%1/g' /mnt/antiX/etc/default/keyboard").arg(kb);
-    } else {
-        cmd = QString("sed -i 's/.*us/XKBLAYOUT=\"%1,us/g' /mnt/antiX/etc/default/keyboard").arg(kb);
-    }
-    system(cmd.toUtf8());
+//    QString cmd = QString("chroot /mnt/antiX /usr/sbin/install-keymap \"%1\"").arg(kb);
+//    system(cmd.toUtf8());
+//    if (kb == "uk") {
+//        kb = "gb";
+//    }
+//    if (kb == "us") {
+//        cmd = QString("sed -i 's/.*us/XKBLAYOUT=\"%1/g' /mnt/antiX/etc/default/keyboard").arg(kb);
+//    } else {
+//        cmd = QString("sed -i 's/.*us/XKBLAYOUT=\"%1,us/g' /mnt/antiX/etc/default/keyboard").arg(kb);
+//    }
+//    system(cmd.toUtf8());
 
     //locale
     cmd = QString("chroot /mnt/antiX /usr/sbin/update-locale \"LANG=%1\"").arg(localeCombo->currentText());
@@ -1847,7 +1895,7 @@ void MInstall::stopInstall()
         return;
     } else if (curr >= c-3) {
         int ans = QMessageBox::information(0, QString::null,
-                                           tr("MX Linux installation and configuration is complete.\n"
+                                             tr("Installation and configuration is complete.\n"
                                               "To use the new installation, reboot without the installation media.\n\n"
                                               "Do you want to reboot now?"),
                                            tr("Yes"), tr("No"));
@@ -1941,9 +1989,9 @@ void MInstall::pageDisplayed(int next)
         ((MMain *)mmn)->setHelpText(tr("<p><b>General Instructions</b><br/>BEFORE PROCEEDING, CLOSE ALL OTHER APPLICATIONS.</p>"
                                        "<p>On each page, please read the instructions, make your selections, and then click on Next when you are ready to proceed. "
                                        "You will be prompted for confirmation before any destructive actions are performed.</p>"
-                                       "<p>MX Linux requires about 3.5 GB of space. 5 GB or more is preferred. "
-                                       "You can use the entire disk or you can put MX Linux on existing partitions. </p>"
-                                       "<p>If you are running Mac OS or Windows OS (from Vista onwards), you may have to use that system's software to set up partitions and boot manager before installing MX Linux.</p>"
+                                       "<p>Installation requires about 6 GB of space. 10 GB or more is preferred. "
+                                       "You can use the entire disk or you can put the installation on existing partitions. </p>"
+                                       "<p>If you are running Mac OS or Windows OS (from Vista onwards), you may have to use that system's software to set up partitions and boot manager before installing.</p>"
                                        "<p>The ext2, ext3, ext4, jfs, xfs, btrfs and reiserfs Linux filesystems are supported and ext4 is recommended.</p>"));
         break;
 
@@ -1951,12 +1999,12 @@ void MInstall::pageDisplayed(int next)
         setCursor(QCursor(Qt::ArrowCursor));
         ((MMain *)mmn)->setHelpText(tr("<p><b>Limitations</b><br/>Remember, this software is provided AS-IS with no warranty what-so-ever. "
                                        "It's solely your responsibility to backup your data before proceeding.</p>"
-                                       "<p><b>Choose Partitions</b><br/>MX Linux requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX Linux, you will need a swap partition that is larger than your physical memory size.</p>"
+                                       "<p><b>Choose Partitions</b><br/>") + PROJECTNAME + " " + tr("requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of") + " " + PROJECTNAME + tr(", you will need a swap partition that is larger than your physical memory size.</p>"
                                        "<p>If you choose a separate /home partition it will be easier for you to upgrade in the future, but this will not be possible if you are upgrading from an installation that does not have a separate home partition.</p>"
                                        "<p><b>Upgrading</b><br/>To upgrade from an existing Linux installation, select the same home partition as before and check the preference to preserve data in /home.</p>"
                                        "<p>If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. "
                                        "As a result, the installation will take much longer than usual.</p>"
-                                       "<p><b>Preferred Filesystem Type</b><br/>For MX Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. </p>"
+                                       "<p><b>Preferred Filesystem Type</b><br/>For") + " " + PROJECTNAME + tr(", you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. </p>"
                                        "<p><b>Bad Blocks</b><br/>If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for bad blocks on the drive. "
                                        "The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has bad blocks.</p>"));
         break;
@@ -1967,11 +2015,11 @@ void MInstall::pageDisplayed(int next)
             break;
         }
         setCursor(QCursor(Qt::WaitCursor));
-        tipsEdit->setText(tr("<p><b>Special Thanks</b><br/>Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.</p>"
-                             "<p>Without you there would be no MX Linux.</p>"
-                             "<p>MX Dev Team</p>"));
+        tipsEdit->setText(tr("<p><b>Special Thanks</b><br/>Thanks to everyone who has chosen to support ") + PROJECTNAME + tr("with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.</p>"
+                             "<p>Without you there would be no ") + PROJECTNAME +"</p>"
+                             "<p>" + PROJECTSHORTNAME + tr("Dev Team</p>"));
         ((MMain *)mmn)->setHelpText(tr("<p><b>Installation in Progress</b><br/>"
-                                       "MX Linux is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.</p>"
+                                       "") + PROJECTNAME + " " + tr("is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.</p>"
                                        "<p>If you click the Abort button, the installation will be stopped as soon as possible.</p>"));
         nextButton->setEnabled(false);
         prepareToInstall();
@@ -2004,7 +2052,7 @@ void MInstall::pageDisplayed(int next)
     case 4:
         on_grubBootCombo_activated();
         setCursor(QCursor(Qt::ArrowCursor));
-        ((MMain *)mmn)->setHelpText(tr("<p><b>Select Boot Method</b><br/>MX Linux uses the GRUB bootloader to boot MX Linux and MS-Windows. "
+        ((MMain *)mmn)->setHelpText(tr("<p><b>Select Boot Method</b><br/>") + " " + PROJECTNAME + " " + tr("uses the GRUB bootloader to boot") + " " + PROJECTNAME + " " + tr("and MS-Windows. "
                                        "<p>By default GRUB2 is installed in the Master Boot Record or ESP (EFI System Partition for 64-bit UEFI boot systems) of your boot drive and replaces the boot loader you were using before. This is normal.</p>"
                                        "<p>If you choose to install GRUB2 at root instead, then GRUB2 will be installed at the beginning of the root partition. This option is for experts only.</p>"
                                        "<p>If you uncheck the Install GRUB box, GRUB will not be installed at this time. This option is for experts only.</p>"));
@@ -2013,7 +2061,7 @@ void MInstall::pageDisplayed(int next)
 
     case 5:
         setCursor(QCursor(Qt::ArrowCursor));
-        ((MMain *)mmn)->setHelpText(tr("<p><b>Common Services to Enable</b><br/>Select any of these common services that you might need with your system configuration and the services will be started automatically when you start MX Linux.</p>"));
+        ((MMain *)mmn)->setHelpText(tr("<p><b>Common Services to Enable</b><br/>Select any of these common services that you might need with your system configuration and the services will be started automatically when you start ") + PROJECTNAME + " .</p>");
         nextButton->setEnabled(true);
         backButton->setEnabled(true);
         break;
@@ -2044,7 +2092,7 @@ void MInstall::pageDisplayed(int next)
         ((MMain *)mmn)->setHelpText(tr("<p><b>Default User Login</b><br/>The root user is similar to the Administrator user in some other operating systems. "
                                        "You should not use the root user as your daily user account. "
                                        "Please enter the name for a new (default) user account that you will use on a daily basis. "
-                                       "If needed, you can add other user accounts later with MX User Manager. </p>"
+                                       "If needed, you can add other user accounts later with") + " " + PROJECTNAME + " " + tr("User Manager. </p>"
                                        "<p><b>Passwords</b><br/>Enter a new password for your default user account and for the root account. "
                                        "Each password must be entered twice.</p>"));
         nextButton->setEnabled(true);
@@ -2052,19 +2100,19 @@ void MInstall::pageDisplayed(int next)
 
     case 9:
         setCursor(QCursor(Qt::ArrowCursor));
-        ((MMain *)mmn)->setHelpText(tr("<p><b>Congratulations!</b><br/>You have completed the installation of ") + " MX Linux." + tr("</p>"
-                                                                                                                                     "<p><b>Finding Applications</b><br/>There are hundreds of excellent applications installed with MX Linux. "
+        ((MMain *)mmn)->setHelpText(tr("<p><b>Congratulations!</b><br/>You have completed the installation of ") + PROJECTNAME + tr("</p>"
+                                                                                                                                     "<p><b>Finding Applications</b><br/>There are hundreds of excellent applications installed with" ) + PROJECTNAME + tr(" "
                                                                                                                                      "The best way to learn about them is to browse through the Menu and try them. "
                                                                                                                                      "Many of the apps were developed specifically for the Xfce environment. "
                                                                                                                                      "These are shown in the main menus. "
-                                                                                                                                     "<p>In addition MX Linux includes many standard Linux applications that are run only from the command line and therefore do not show up in the Menu.</p>"));
+                                                                                                                                     "<p>In addition ") + PROJECTNAME + tr(" includes many standard Linux applications that are run only from the command line and therefore do not show up in the Menu.</p>"));
         nextButton->setEnabled(true);
         backButton->setEnabled(false);
         break;
 
     default:
         // case 0 or any other
-        ((MMain *)mmn)->setHelpText(tr("<p><b>Enjoy using MX Linux!</b></p>"));
+        ((MMain *)mmn)->setHelpText("<p><b>" + tr("Enjoy using ") + PROJECTNAME + "</b></p>");
         break;
     }
 }
@@ -2130,9 +2178,12 @@ void MInstall::updatePartitionWidgets()
 void MInstall::refresh()
 {
     this->updatePartitionWidgets();
-
     //  system("umount -a 2>/dev/null");
-    QStringList drives = getCmdOuts("partition-info --exclude=boot --min-size=4000 -n drives");
+    QString exclude;
+    if ( INSTALL_FROM_ROOT_DEVICE == "n" ) {
+        exclude = " --exclude=boot";
+    }
+    QStringList drives = getCmdOuts("partition-info" + exclude + " --min-size=" + MIN_ROOT_DEVICE_SIZE + " -n drives");
     diskCombo->clear();
     grubBootCombo->clear();
     homeLabelEdit->setHidden(true);
@@ -2471,7 +2522,11 @@ void MInstall::on_diskCombo_activated(QString)
     removedItem = "";
 
     // build rootCombo
-    QStringList partitions = getCmdOuts(QString("partition-info -n --exclude=boot,swap --min-size=4000 %1").arg(drv));
+    QString exclude;
+    if ( INSTALL_FROM_ROOT_DEVICE == "n" ) {
+        exclude = "boot,";
+    }
+    QStringList partitions = getCmdOuts(QString("partition-info -n --exclude=" + exclude + "swap --min-size=" + MIN_ROOT_DEVICE_SIZE + " %1").arg(drv));
     rootCombo->addItem(""); // add an empty item to make sure nothing is selected by default
     rootCombo->addItems(partitions);
     if (partitions.size() == 0) {
@@ -2480,7 +2535,7 @@ void MInstall::on_diskCombo_activated(QString)
     }
 
     // build homeCombo for all disks
-    partitions = getCmdOuts("partition-info all -n --exclude=boot,swap --min-size=1000");
+    partitions = getCmdOuts("partition-info all -n --exclude=" + exclude + "swap --min-size=1000");
     homeCombo->addItems(partitions);
 
     // build swapCombo for all disks
@@ -2560,7 +2615,7 @@ bool MInstall::close()
 {
     if (proc->state() != QProcess::NotRunning) {
         int ans = QMessageBox::warning(0, QString::null,
-                                       tr("MX Linux is installing, are you \nsure you want to Close now?"),
+                                       PROJECTNAME + " " + tr("is installing, are you \nsure you want to Close now?"),
                                        tr("Yes"), tr("No"));
         if (ans != 0) {
             return false;
@@ -2596,7 +2651,7 @@ void MInstall::delDone(int, QProcess::ExitStatus exitStatus)
         copyLinux();
     } else {
         nextButton->setEnabled(true);
-        unmountGoBack(tr("Failed to delete old MX Linux on destination.\nReturning to Step 1."));
+        unmountGoBack(tr("Failed to delete old") + " " + PROJECTNAME + " " + tr("on destination.\nReturning to Step 1."));
     }
 }
 
@@ -2737,7 +2792,7 @@ void MInstall::copyDone(int, QProcess::ExitStatus exitStatus)
         on_nextButton_clicked();
     } else {
         nextButton->setEnabled(true);
-        unmountGoBack(tr("Failed to write MX Linux to destination.\nReturning to Step 1."));
+        unmountGoBack(tr("Failed to write") + " " + PROJECTNAME + " " + tr("to destination.\nReturning to Step 1."));
     }
 }
 
@@ -2765,36 +2820,36 @@ void MInstall::copyTime()
     switch (i) {
     case 1:
         tipsEdit->setText(tr("<p><b>Getting Help</b><br/>"
-                             "Basic information about MX Linux is at https://mxlinux.org "
-                             "There are volunteers to help you at the MX forum, https://forum.mxlinux.org </p>"
+                             "Basic information about") + " " + PROJECTNAME + " " + tr("is at") + " " +  PROJECTURL + tr(""
+                             "There are volunteers to help you at the") + " " + PROJECTSHORTNAME + " " + tr("forum,") + " " + PROJECTFORUM + tr("</p>"
                              "<p>If you ask for help, please remember to describe your problem and your computer "
                              "in some detail. Usually statements like 'it didn't work' are not helpful.</p>"));
         break;
 
     case 15:
         tipsEdit->setText(tr("<p><b>Repairing Your Installation</b><br/>"
-                             "If MX Linux stops working from the hard drive, sometimes it's possible to fix the problem by booting from LiveDVD or LiveUSB and running one of the utilities in MX Tools or by using one of the regular Linux tools to repair the system.</p>"
-                             "<p>You can also use your MX Linux LiveDVD or LiveUSB to recover data from MS-Windows systems!</p>"));
+                             "If") + " " + PROJECTNAME + " " + tr("stops working from the hard drive, sometimes it's possible to fix the problem by booting from LiveDVD or LiveUSB and running one of the included utilities in") + " " + PROJECTNAME + " " + tr("or by using one of the regular Linux tools to repair the system.</p>"
+                             "<p>You can also use your") + " " + PROJECTNAME + " " + tr("LiveDVD or LiveUSB to recover data from MS-Windows systems!</p>"));
         break;
 
     case 30:
-        tipsEdit->setText(tr("<p><b>Support MX Linux</b><br/>"
-                             "MX Linux is supported by people like you. Some help others at the "
-                             "support forum - https://forum.mxlinux.org, or translate help files into different "
+        tipsEdit->setText(tr("<p><b>Support") + " " + PROJECTNAME + "</b><br/>"
+                             "" + " " + PROJECTNAME + " " + tr("is supported by people like you. Some help others at the "
+                             "support forum") + " - " + PROJECTFORUM + " - " + tr("or translate help files into different "
                              "languages, or make suggestions, write documentation, or help test new software.</p>"));
         break;
 
     case 45:
-        tipsEdit->setText(tr("<p><b>Adjusting Your Sound Mixer</b><br/>"
-                             "MX Linux attempts to configure the sound mixer for you but sometimes it will be "
+        tipsEdit->setText(tr("<p><b>Adjusting Your Sound Mixer</b><br/>") +
+                             " " + PROJECTNAME + " " + tr("attempts to configure the sound mixer for you but sometimes it will be "
                              "necessary for you to turn up volumes and unmute channels in the mixer "
                              "in order to hear sound.</p> "
                              "<p>The mixer shortcut is located in the menu. Click on it to open the mixer. </p>"));
         break;
 
     case 60:
-        tipsEdit->setText(tr("<p><b>Keep Your Copy of MX Linux up-to-date</b><br/>"
-                             "For MX Linux information and updates please visit https://mxlinux.org</p>"));
+        tipsEdit->setText(tr("<p><b>Keep Your Copy of") + " " + PROJECTNAME + " " + tr("up-to-date</b><br/>"
+                             "For more information and updates please visit") + PROJECTFORUM + "</p>");
         break;
 
     default:
@@ -2823,4 +2878,44 @@ void MInstall::on_encryptCheckBox_toggled(bool checked)
 void MInstall::on_saveHomeCheck_toggled(bool checked)
 {
     encryptCheckBox->setEnabled(!checked);
+}
+
+void MInstall::setupkeyboardbutton()
+{
+    QString kb;
+    kb = getCmdOut("grep XKBLAYOUT /etc/default/keyboard");
+    kb = kb.section('=', 1);
+    kb = kb.section(',', 0, 0);
+    kb.remove(QChar('"'));
+    QString kb2;
+    kb2 = getCmdOut("grep XKBVARIANT /etc/default/keyboard");
+    kb2 = kb2.section('=', 1);
+    kb2 = kb2.section(',', 0, 0);
+    kb2.remove(QChar('"'));
+    buttonSetKeyboard->setText(kb + " " + kb2);
+}
+
+void MInstall::on_buttonSetKeyboard_clicked()
+{
+    system("DEBIAN_FRONTEND=gnome dpkg-reconfigure keyboard-configuration");
+    QString kb;
+    kb = getCmdOut("grep XKBMODEL /etc/default/keyboard");
+    kb = kb.section('=', 1);
+    kb = kb.section(',', 0, 0);
+    kb.remove(QChar('"'));
+    QString kb2;
+    kb2 = getCmdOut("grep XKBLAYOUT /etc/default/keyboard");
+    kb2 = kb2.section('=', 1);
+    kb2 = kb2.section(',', 0, 0);
+    kb2.remove(QChar('"'));
+    QString kb3;
+    kb3 = getCmdOut("grep XKBVARIANT /etc/default/keyboard");
+    kb3 = kb3.section('=', 1);
+    kb3 = kb3.section(',', 0, 0);
+    kb3.remove(QChar('"'));
+    QString cmd = "setxkbmap -model " + kb + " -layout " + kb2 + " -variant " + kb3;
+    system(cmd.toUtf8());
+    setupkeyboardbutton();
+
+
 }

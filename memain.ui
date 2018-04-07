@@ -159,7 +159,7 @@ color: rgb(24, 12, 12);</string>
         <string/>
        </property>
        <property name="pixmap">
-        <pixmap resource="images.qrc">:/images/backdrop-textbox.png</pixmap>
+        <pixmap>../../../../usr/share/installer-data/backdrop-textbox.png</pixmap>
        </property>
       </widget>
       <zorder>helpbackdrop</zorder>
@@ -189,8 +189,6 @@ color: rgb(24, 12, 12);</string>
   </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources>
-  <include location="images.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
