@@ -1,3 +1,9 @@
+mx-installer (18.4.02mx17) UNRELEASED; urgency=medium
+
+  * working on bugs 
+
+ -- dolphinoracle <dolphin@mx>  Sat, 07 Apr 2018 09:55:38 -0400
+
 mx-installer (18.4.01mx17) mx; urgency=medium
 
   * heavy modification in effort to make customizations easier

@@ -143,7 +143,7 @@
       </size>
      </property>
      <property name="currentIndex">
-      <number>8</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="Step_0">
       <layout class="QGridLayout">
@@ -225,11 +225,7 @@
              <enum>Qt::ScrollBarAlwaysOff</enum>
             </property>
             <property name="plainText">
-             <string>MX Linux is an independent Linux distribution based on Debian Stable
-
-MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.
-
-Enjoy using MX Linux.</string>
+             <string/>
             </property>
             <property name="textInteractionFlags">
              <set>Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -1547,7 +1543,7 @@ Enjoy using MX Linux.</string>
              </sizepolicy>
             </property>
             <property name="text">
-             <string>mx</string>
+             <string/>
             </property>
             <property name="placeholderText">
              <string/>

@@ -38,13 +38,23 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent)
     PROJECTSHORTNAME=getCmdOut("grep PROJECT_SHORTNAME /usr/share/installer-data/installer.conf |cut -d= -f2");
     PROJECTVERSION=getCmdOut("grep VERSION /usr/share/installer-data/installer.conf |cut -d= -f2");
     PROJECTURL=getCmdOut("grep PROJECT_URL /usr/share/installer-data/installer.conf |cut -d= -f2");
-    PROJECTFORUM=getCmdOut("grep PROJECT_FORUM /usr/share/installer-data/installer.conf |cut -d= -f2");
+    PROJECTFORUM=getCmdOut("grep FORUM_URL /usr/share/installer-data/installer.conf |cut -d= -f2");
     INSTALL_FROM_ROOT_DEVICE=getCmdOut("grep INSTALL_FROM_ROOT_DEVICE /usr/share/installer-data/installer.conf |cut -d= -f2");
     MIN_ROOT_DEVICE_SIZE=getCmdOut("grep MIN_ROOT_DRIVE_SIZE /usr/share/installer-data/installer.conf |cut -d= -f2");
-    qDebug() << PROJECTNAME << PROJECTSHORTNAME << PROJECTVERSION << PROJECTURL;
-    if ( system("grep -q OFFER_HOME_ENCRYPTION=n /usr/share/installer-data/installer.conf") == 0); {
+    DEFAULT_HOSTNAME=getCmdOut("grep DEFAULT_HOSTNAME /usr/share/installer-data/installer.conf |cut -d= -f2");
+    qDebug() << PROJECTNAME << PROJECTSHORTNAME << PROJECTVERSION << PROJECTURL << PROJECTFORUM << DEFAULT_HOSTNAME;
+
+    //do not offer home folder encyrption if so configured in installer.conf
+    QString OFFER_HOME_ENCRYPTION = getCmdOut("grep OFFER_HOME_ENCRYPTION /usr/share/installer-data/installer.conf |cut -d= -f2");
+    if ( OFFER_HOME_ENCRYPTION == "n" ) {
+        qDebug() << "Offer Home Encryption is " << OFFER_HOME_ENCRYPTION;
         encryptCheckBox->hide();
     }
+
+    // set default host name
+
+    computerNameEdit->setText(DEFAULT_HOSTNAME);
+
     // timezone
 
     copyrightBrowser->setPlainText(PROJECTNAME + " " + tr("is an independent Linux distribution based on Debian Stable\n\n") + PROJECTNAME + " " + tr("uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for") + " " + PROJECTNAME + tr(".\n\nEnjoy using") + " " + PROJECTNAME);
@@ -1486,7 +1496,7 @@ bool MInstall::setComputerName()
                                   tr("Sorry your workgroup needs to be at least\n2 characters long. You'll have to select a different\nname before proceeding."));
             return false;
         }
-        replaceStringInFile(PROJECTSHORTNAME + "1", computerNameEdit->text(), "/mnt/antiX/etc/samba/smb.conf");
+        //replaceStringInFile(PROJECTSHORTNAME + "1", computerNameEdit->text(), "/mnt/antiX/etc/samba/smb.conf");
         replaceStringInFile("WORKGROUP", computerGroupEdit->text(), "/mnt/antiX/etc/samba/smb.conf");
     }
     if (sambaCheckBox->isChecked()) {
@@ -1517,9 +1527,11 @@ bool MInstall::setComputerName()
         system("mv -f /mnt/antiX/etc/rc2.d/S01nmbd /mnt/antiX/etc/rc2.d/K01nmbd >/dev/null 2>&1");
     }
 
-    replaceStringInFile(PROJECTSHORTNAME + "1", computerNameEdit->text(), "/mnt/antiX/etc/hosts");
-
-    QString cmd = QString("echo \"%1\" | cat > /mnt/antiX/etc/hostname").arg(computerNameEdit->text());
+    //replaceStringInFile(PROJECTSHORTNAME + "1", computerNameEdit->text(), "/mnt/antiX/etc/hosts");
+    QString cmd;
+    cmd = QString("sed -i 's/'\"$(grep 127.0.0.1 /etc/hosts | grep -v localhost | head -1 | awk '{print $2}')\"'/" + computerNameEdit->text() + "/' /mnt/antiX/etc/hosts");
+    system(cmd.toUtf8());
+    cmd = QString("echo \"%1\" | cat > /mnt/antiX/etc/hostname").arg(computerNameEdit->text());
     system(cmd.toUtf8());
     cmd = QString("echo \"%1\" | cat > /mnt/antiX/etc/mailname").arg(computerNameEdit->text());
     system(cmd.toUtf8());
@@ -2015,9 +2027,9 @@ void MInstall::pageDisplayed(int next)
             break;
         }
         setCursor(QCursor(Qt::WaitCursor));
-        tipsEdit->setText(tr("<p><b>Special Thanks</b><br/>Thanks to everyone who has chosen to support ") + PROJECTNAME + tr("with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.</p>"
+        tipsEdit->setText(tr("<p><b>Special Thanks</b><br/>Thanks to everyone who has chosen to support ") + PROJECTNAME + " " + tr("with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.</p>"
                              "<p>Without you there would be no ") + PROJECTNAME +"</p>"
-                             "<p>" + PROJECTSHORTNAME + tr("Dev Team</p>"));
+                             "<p>" + PROJECTSHORTNAME + " " + tr("Dev Team</p>"));
         ((MMain *)mmn)->setHelpText(tr("<p><b>Installation in Progress</b><br/>"
                                        "") + PROJECTNAME + " " + tr("is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.</p>"
                                        "<p>If you click the Abort button, the installation will be stopped as soon as possible.</p>"));
@@ -2820,9 +2832,9 @@ void MInstall::copyTime()
     switch (i) {
     case 1:
         tipsEdit->setText(tr("<p><b>Getting Help</b><br/>"
-                             "Basic information about") + " " + PROJECTNAME + " " + tr("is at") + " " +  PROJECTURL + tr(""
-                             "There are volunteers to help you at the") + " " + PROJECTSHORTNAME + " " + tr("forum,") + " " + PROJECTFORUM + tr("</p>"
-                             "<p>If you ask for help, please remember to describe your problem and your computer "
+                             "Basic information about") + " " + PROJECTNAME + " " + tr("is at") + " " +  PROJECTURL + ".</p><p>"
+                             "" + tr("There are volunteers to help you at the") + " " + PROJECTSHORTNAME + " " + tr("forum,") + " " + PROJECTFORUM + "</p>"
+                             "<p>" + tr("If you ask for help, please remember to describe your problem and your computer "
                              "in some detail. Usually statements like 'it didn't work' are not helpful.</p>"));
         break;
 
@@ -2849,7 +2861,7 @@ void MInstall::copyTime()
 
     case 60:
         tipsEdit->setText(tr("<p><b>Keep Your Copy of") + " " + PROJECTNAME + " " + tr("up-to-date</b><br/>"
-                             "For more information and updates please visit") + PROJECTFORUM + "</p>");
+                             "For more information and updates please visit") + "</p><p>" + PROJECTFORUM + "</p>");
         break;
 
     default:
@@ -2897,7 +2909,9 @@ void MInstall::setupkeyboardbutton()
 
 void MInstall::on_buttonSetKeyboard_clicked()
 {
-    system("DEBIAN_FRONTEND=gnome dpkg-reconfigure keyboard-configuration");
+    mmn->hide();
+    system("fskbsetting");
+    mmn->show();
     QString kb;
     kb = getCmdOut("grep XKBMODEL /etc/default/keyboard");
     kb = kb.section('=', 1);

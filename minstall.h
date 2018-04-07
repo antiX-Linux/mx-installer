@@ -130,6 +130,7 @@ public:
     QString PROJECTFORUM;
     QString INSTALL_FROM_ROOT_DEVICE;
     QString MIN_ROOT_DEVICE_SIZE;
+    QString DEFAULT_HOSTNAME;
 
     void setupkeyboardbutton();
     void gotoPage(int next);
