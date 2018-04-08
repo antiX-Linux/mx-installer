@@ -23,12 +23,18 @@ public:
     MMain();
     ~MMain();
 
+    QString PROJECTNAME;
+    QString PROJECTVERSION;
+    QString PROJECTSHORTNAME;
+
     void setHelpText(const QString &text);
     void closeEvent(QCloseEvent * e);
+    static QString getCmdOut(QString cmd);
 
 public slots:
     virtual void closeClicked();
-    virtual void showEvent(QShowEvent *e);
+    virtual void showEvent(QShowEvent *);
+    virtual void resizeEvent(QResizeEvent *);
 };
 
 

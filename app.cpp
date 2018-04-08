@@ -28,6 +28,7 @@
 #include "mmain.h"
 
 
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -49,10 +50,10 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    // check if 32bit on UEFI
-    if (system("uname -m | grep -q i686") == 0 && system("test -d /sys/firmware/efi") == 0)
+    // check if 32bit on 64 bit UEFI
+    if (system("uname -m | grep -q i686") == 0 && system("grep -q 64 /sys/firmware/efi/fw_platform_size") == 0)
     {        
-        int ans = QMessageBox::question(0, QString::null, QApplication::tr("You are running 32bit OS started in UEFI mode, the system will not be able to boot"
+        int ans = QMessageBox::question(0, QString::null, QApplication::tr("You are running 32bit OS started in 64 bit UEFI mode, the system will not be able to boot"
                                                                            " unless you select Legacy Boot or similar at restart.\n"
                                                                            "We recommend you quit now and restart in Legacy Boot\n\n"
                                                                            "Do you want to continue the installation?"),
@@ -62,8 +63,8 @@ int main(int argc, char *argv[])
         }
     }
 
-
     if (getuid() == 0) {
+    //if (getuid() == 0) {
         MMain mmain;
         mmain.show();
         return a.exec();

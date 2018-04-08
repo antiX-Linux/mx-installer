@@ -1,3 +1,89 @@
+mx-installer (18.4.02mx17) UNRELEASED; urgency=medium
+
+  * working on bugs 
+
+ -- dolphinoracle <dolphin@mx>  Sat, 07 Apr 2018 09:55:38 -0400
+
+mx-installer (18.4.01mx17) mx; urgency=medium
+
+  * heavy modification in effort to make customizations easier
+  * 32 bit UEFI installer 
+  * installer.conf file
+
+ -- dolphinoracle <dolphinoracle@gmail.com>  Fri, 06 Apr 2018 21:42:55 -0400
+
+mx-installer (18.3.01mx17) mx; urgency=medium
+
+  * adjusted filter for root partitions
+
+ -- dolphinoracle <dolphinoracle@gmail.com>  Sun, 25 Mar 2018 13:02:23 -0500
+
+mx-installer (18.3mx17) mx; urgency=medium
+
+  * adjusted filter for root partitions
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 10 Mar 2018 12:29:31 -0500
+
+mx-installer (18.2mx17+1) mx; urgency=medium
+
+  * set root partition bootable when install GRUB on MBR
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 24 Feb 2018 16:07:17 -0500
+
+mx-installer (18.2mx17) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 19 Feb 2018 22:43:35 -0500
+
+mx-installer (17.12mx17+1) mx; urgency=medium
+
+  * rename 'demo' string in dconf/user
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 14 Dec 2017 21:51:47 -0500
+
+mx-installer (17.12mx17) mx; urgency=medium
+
+  * rename 'demo' string in conky config file
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 10 Dec 2017 13:24:18 -0500
+
+mx-installer (17.11mx17+2) mx; urgency=medium
+
+  * UI fixes
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 07 Nov 2017 18:56:01 -0500
+
+mx-installer (17.11mx17+1) mx; urgency=medium
+
+  * new build
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 05 Nov 2017 13:50:53 -0500
+
+mx-installer (17.11mx17) mx; urgency=medium
+
+  * UI tweaks
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 02 Nov 2017 09:15:50 -0400
+
+mx-installer (17.10.02mx17) mx; urgency=medium
+
+  * UI tweaks
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 26 Oct 2017 12:30:53 -0400
+
+mx-installer (17.10.01) mx; urgency=medium
+
+  * timezone setup change
+
+ -- dolphinoracle <dolphinoracle@gmail.com>  Wed, 25 Oct 2017 08:01:28 -0400
+ 
+ mx-installer (17.10mx17) mx; urgency=medium
+
+  * resizable installer window
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 14 Oct 2017 17:08:05 -0400
+
 mx-installer (17.9) mx; urgency=medium
 
   * generalize name for root partition and for GRUB installation

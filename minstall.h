@@ -91,6 +91,7 @@ public:
     static bool replaceStringInFile(QString oldtext, QString newtext, QString filepath);
     static int getPartitionNumber();
     static int command(const QString &string);
+
     bool is32bit();
     bool is64bit();
     bool isInsideVB();
@@ -122,6 +123,16 @@ public:
     bool setUserInfo();
     bool setUserName();
 
+    QString PROJECTNAME;
+    QString PROJECTVERSION;
+    QString PROJECTSHORTNAME;
+    QString PROJECTURL;
+    QString PROJECTFORUM;
+    QString INSTALL_FROM_ROOT_DEVICE;
+    QString MIN_ROOT_DEVICE_SIZE;
+    QString DEFAULT_HOSTNAME;
+
+    void setupkeyboardbutton();
     void gotoPage(int next);
     void pageDisplayed(int next);
     int showPage(int curr, int next);
@@ -150,6 +161,9 @@ public slots:
     void copyTime();
     void procTime();
 
+
+
+
 private slots:
     void on_viewServicesButton_clicked();
     void on_homeCombo_activated(const QString &arg1);
@@ -157,4 +171,5 @@ private slots:
     void on_closeButton_clicked();
     void on_encryptCheckBox_toggled(bool checked);
     void on_saveHomeCheck_toggled(bool checked);
+    void on_buttonSetKeyboard_clicked();
 };
