@@ -1999,10 +1999,13 @@ void MInstall::buildServiceList()
     foreach (const QString &service, ENABLE_SERVICES) {
         QString lang_str = (lang == "EN")? "" : "_" + lang;
         QStringList list = services_desc.value(service + lang_str).toStringList();
-        QString category, description;
         if (list.size() != 2) {
-           continue;
+            list = services_desc.value(service).toStringList(); // Use English definition
+            if (list.size() != 2) {
+                continue;
+            }
         }
+        QString category, description;
         category = list.at(0);
         description = list.at(1);
         QString val = getCmdValue("dpkg -s " + service + " | grep '^Status'", "ok", " ", " ");
