@@ -20,7 +20,7 @@ class MMain : public QDialog, public Ui::MeMain {
     Q_OBJECT
 
 public:
-    MMain();
+    MMain(QStringList args);
     ~MMain();
 
     QString PROJECTNAME;

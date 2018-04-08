@@ -71,7 +71,7 @@ protected:
 
 public:
     /** constructor */
-    MInstall(QWidget* parent=0);
+    MInstall(QWidget* parent=0, QStringList args = QStringList());
     /** destructor */
     ~MInstall();
 
@@ -79,6 +79,7 @@ public:
 
     int removedItemIndex;
     QString removedItem;
+    QStringList args;
 
     void goBack(QString msg);
     void unmountGoBack(QString msg);
@@ -123,7 +124,6 @@ public:
     bool setUserInfo();
     bool setUserName();
 
-
     bool INSTALL_FROM_ROOT_DEVICE;
     QString PROJECTNAME;
     QString PROJECTVERSION;
@@ -132,6 +132,7 @@ public:
     QString PROJECTFORUM;
     QString MIN_ROOT_DEVICE_SIZE;
     QString DEFAULT_HOSTNAME;
+    QStringList ENABLE_SERVICES;
 
     void setupkeyboardbutton();
     void gotoPage(int next);

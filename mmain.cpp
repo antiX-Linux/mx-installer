@@ -22,10 +22,10 @@
 MInstall *minstall;
 bool firstShow;
 
-MMain::MMain()
+MMain::MMain(QStringList args = QStringList())
 {
     setupUi(this);
-    minstall = new MInstall(mainFrame);
+    minstall = new MInstall(mainFrame, args);
     minstall->resize(mainFrame->size());
     mainHelp->resize(tab->size());
     helpbackdrop->resize(mainHelp->size());
