@@ -1797,6 +1797,7 @@ void MInstall::pageDisplayed(int next)
     case 3:
         foreach (const QString &arg, args) {
             if(arg == "--pretend" || arg == "-p") {
+                buildServiceList(); // build anyway
                 gotoPage(4);
                 return;
             }
@@ -1838,6 +1839,7 @@ void MInstall::pageDisplayed(int next)
         system("make-fstab -s");
         system("/sbin/swapon -a 2>&1");
         installLinux();
+        buildServiceList();
         break;
 
     case 4:
@@ -2082,7 +2084,6 @@ void MInstall::on_abortInstallButton_clicked()
 // clicking advanced button to go to Services page
 void MInstall::on_viewServicesButton_clicked()
 {
-    buildServiceList();
     gotoPage(5);
 }
 
