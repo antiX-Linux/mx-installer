@@ -45,11 +45,12 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent)
     qDebug() << PROJECTNAME << PROJECTSHORTNAME << PROJECTVERSION << PROJECTURL << PROJECTFORUM << DEFAULT_HOSTNAME;
 
     //do not offer home folder encyrption if so configured in installer.conf
-    QString OFFER_HOME_ENCRYPTION = getCmdOut("grep OFFER_HOME_ENCRYPTION /usr/share/installer-data/installer.conf |cut -d= -f2");
-    if ( OFFER_HOME_ENCRYPTION == "n" ) {
-        qDebug() << "Offer Home Encryption is " << OFFER_HOME_ENCRYPTION;
-        encryptCheckBox->hide();
+    QString OFFER_HOME_ENCRYPTION = getCmdOut("grep OFFER_HOME_ENCRYPTION /usr/share/installer-data/installer.conf |cut -d= -f2").simplified().toLower();
+    qDebug() << "Offer Home Encryption is " << OFFER_HOME_ENCRYPTION;
+    if ( OFFER_HOME_ENCRYPTION == "false" ) {
+    encryptCheckBox->hide();
     }
+
 
     // set default host name
 
@@ -57,7 +58,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent)
 
     // timezone
 
-    copyrightBrowser->setPlainText(PROJECTNAME + " " + tr("is an independent Linux distribution based on Debian Stable\n\n") + PROJECTNAME + " " + tr("uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for") + " " + PROJECTNAME + tr(".\n\nEnjoy using") + " " + PROJECTNAME);
+    copyrightBrowser->setPlainText(tr("%1 is an independent Linux distribution based on Debian Stable.\n\n%1 uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for %1.\n\nEnjoy using %1").arg(PROJECTNAME));
 
     timezoneCombo->clear();
     fp = popen("awk -F '\\t' '!/^#/ { print $3 }' /usr/share/zoneinfo/zone.tab | sort", "r");
@@ -394,7 +395,7 @@ int MInstall::getPartitionNumber()
 // unmount antiX in case we are retrying
 void MInstall::prepareToInstall()
 {
-    updateStatus(tr("Ready to install ") + PROJECTNAME + " " + tr("filesystem"), 0);
+    updateStatus(tr("Ready to install %1 filesystem").arg(PROJECTNAME), 0);
 
     // unmount /boot/efi if mounted by previous run
     if (system("mountpoint -q /mnt/antiX/boot/efi") == 0) {
@@ -540,7 +541,7 @@ bool MInstall::makeDefaultPartitions()
     QString rootdev, swapdev;
 
     QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
-    QString msg = QString(tr("OK to format and use the entire disk (%1) for").arg(drv) + " " + PROJECTNAME + "?");
+    QString msg = QString(tr("OK to format and use the entire disk (%1) for %2?").arg(drv).arg(PROJECTNAME));
     ans = QMessageBox::information(0, QString::null, msg,
                                    tr("Yes"), tr("No"));
     if (ans != 0) { // don't format--stop install
@@ -2011,14 +2012,14 @@ void MInstall::pageDisplayed(int next)
         setCursor(QCursor(Qt::ArrowCursor));
         ((MMain *)mmn)->setHelpText(tr("<p><b>Limitations</b><br/>Remember, this software is provided AS-IS with no warranty what-so-ever. "
                                        "It's solely your responsibility to backup your data before proceeding.</p>"
-                                       "<p><b>Choose Partitions</b><br/>") + PROJECTNAME + " " + tr("requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of") + " " + PROJECTNAME + tr(", you will need a swap partition that is larger than your physical memory size.</p>"
+                                       "<p><b>Choose Partitions</b><br/>%1 requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of %1, you will need a swap partition that is larger than your physical memory size.</p>"
                                        "<p>If you choose a separate /home partition it will be easier for you to upgrade in the future, but this will not be possible if you are upgrading from an installation that does not have a separate home partition.</p>"
                                        "<p><b>Upgrading</b><br/>To upgrade from an existing Linux installation, select the same home partition as before and check the preference to preserve data in /home.</p>"
                                        "<p>If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. "
                                        "As a result, the installation will take much longer than usual.</p>"
-                                       "<p><b>Preferred Filesystem Type</b><br/>For") + " " + PROJECTNAME + tr(", you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. </p>"
+                                       "<p><b>Preferred Filesystem Type</b><br/>For %1, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. </p>"
                                        "<p><b>Bad Blocks</b><br/>If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for bad blocks on the drive. "
-                                       "The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has bad blocks.</p>"));
+                                       "The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has bad blocks.</p>").arg(PROJECTNAME));
         break;
 
     case 3:
@@ -2027,12 +2028,12 @@ void MInstall::pageDisplayed(int next)
             break;
         }
         setCursor(QCursor(Qt::WaitCursor));
-        tipsEdit->setText(tr("<p><b>Special Thanks</b><br/>Thanks to everyone who has chosen to support ") + PROJECTNAME + " " + tr("with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.</p>"
-                             "<p>Without you there would be no ") + PROJECTNAME +"</p>"
-                             "<p>" + PROJECTSHORTNAME + " " + tr("Dev Team</p>"));
+        tipsEdit->setText(tr("<p><b>Special Thanks</b><br/>Thanks to everyone who has chosen to support %1 with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.</p>"
+                             "<p>Without you there would be no %1.</p>"
+                             "<p>%2 Dev Team</p>").arg(PROJECTNAME).arg(PROJECTSHORTNAME));
         ((MMain *)mmn)->setHelpText(tr("<p><b>Installation in Progress</b><br/>"
-                                       "") + PROJECTNAME + " " + tr("is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.</p>"
-                                       "<p>If you click the Abort button, the installation will be stopped as soon as possible.</p>"));
+                                       " %1 is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.</p>"
+                                       "<p>If you click the Abort button, the installation will be stopped as soon as possible.</p>").arg(PROJECTNAME));
         nextButton->setEnabled(false);
         prepareToInstall();
         if (entireDiskButton->isChecked()) {
@@ -2064,16 +2065,16 @@ void MInstall::pageDisplayed(int next)
     case 4:
         on_grubBootCombo_activated();
         setCursor(QCursor(Qt::ArrowCursor));
-        ((MMain *)mmn)->setHelpText(tr("<p><b>Select Boot Method</b><br/>") + " " + PROJECTNAME + " " + tr("uses the GRUB bootloader to boot") + " " + PROJECTNAME + " " + tr("and MS-Windows. "
+        ((MMain *)mmn)->setHelpText(tr("<p><b>Select Boot Method</b><br/> %1 uses the GRUB bootloader to boot %1 and MS-Windows. "
                                        "<p>By default GRUB2 is installed in the Master Boot Record or ESP (EFI System Partition for 64-bit UEFI boot systems) of your boot drive and replaces the boot loader you were using before. This is normal.</p>"
                                        "<p>If you choose to install GRUB2 at root instead, then GRUB2 will be installed at the beginning of the root partition. This option is for experts only.</p>"
-                                       "<p>If you uncheck the Install GRUB box, GRUB will not be installed at this time. This option is for experts only.</p>"));
+                                       "<p>If you uncheck the Install GRUB box, GRUB will not be installed at this time. This option is for experts only.</p>").arg(PROJECTNAME));
         backButton->setEnabled(false);
         break;
 
     case 5:
         setCursor(QCursor(Qt::ArrowCursor));
-        ((MMain *)mmn)->setHelpText(tr("<p><b>Common Services to Enable</b><br/>Select any of these common services that you might need with your system configuration and the services will be started automatically when you start ") + PROJECTNAME + " .</p>");
+        ((MMain *)mmn)->setHelpText(tr("<p><b>Common Services to Enable</b><br/>Select any of these common services that you might need with your system configuration and the services will be started automatically when you start %1.</p>").arg(PROJECTNAME));
         nextButton->setEnabled(true);
         backButton->setEnabled(true);
         break;
@@ -2104,27 +2105,24 @@ void MInstall::pageDisplayed(int next)
         ((MMain *)mmn)->setHelpText(tr("<p><b>Default User Login</b><br/>The root user is similar to the Administrator user in some other operating systems. "
                                        "You should not use the root user as your daily user account. "
                                        "Please enter the name for a new (default) user account that you will use on a daily basis. "
-                                       "If needed, you can add other user accounts later with") + " " + PROJECTNAME + " " + tr("User Manager. </p>"
+                                       "If needed, you can add other user accounts later with %1 User Manager. </p>"
                                        "<p><b>Passwords</b><br/>Enter a new password for your default user account and for the root account. "
-                                       "Each password must be entered twice.</p>"));
-        nextButton->setEnabled(true);
-        break;
-
+                                       "Each password must be entered twice.</p>").arg(PROJECTNAME));
     case 9:
         setCursor(QCursor(Qt::ArrowCursor));
-        ((MMain *)mmn)->setHelpText(tr("<p><b>Congratulations!</b><br/>You have completed the installation of ") + PROJECTNAME + tr("</p>"
-                                                                                                                                     "<p><b>Finding Applications</b><br/>There are hundreds of excellent applications installed with" ) + PROJECTNAME + tr(" "
+        ((MMain *)mmn)->setHelpText(tr("<p><b>Congratulations!</b><br/>You have completed the installation of %1</p>"
+                                                                                                                                     "<p><b>Finding Applications</b><br/>There are hundreds of excellent applications installed with %1 "
                                                                                                                                      "The best way to learn about them is to browse through the Menu and try them. "
                                                                                                                                      "Many of the apps were developed specifically for the Xfce environment. "
                                                                                                                                      "These are shown in the main menus. "
-                                                                                                                                     "<p>In addition ") + PROJECTNAME + tr(" includes many standard Linux applications that are run only from the command line and therefore do not show up in the Menu.</p>"));
+                                                                                                                                     "<p>In addition %1 includes many standard Linux applications that are run only from the command line and therefore do not show up in the Menu.</p>").arg(PROJECTNAME));
         nextButton->setEnabled(true);
         backButton->setEnabled(false);
         break;
 
     default:
         // case 0 or any other
-        ((MMain *)mmn)->setHelpText("<p><b>" + tr("Enjoy using ") + PROJECTNAME + "</b></p>");
+        ((MMain *)mmn)->setHelpText("<p><b>" + tr("Enjoy using %1</b></p>").arg(PROJECTNAME));
         break;
     }
 }
@@ -2191,9 +2189,9 @@ void MInstall::refresh()
 {
     this->updatePartitionWidgets();
     //  system("umount -a 2>/dev/null");
-    QString exclude;
-    if ( INSTALL_FROM_ROOT_DEVICE == "n" ) {
-        exclude = " --exclude=boot";
+    QString exclude = " --exclude=boot";
+    if ( INSTALL_FROM_ROOT_DEVICE.simplified().toLower() == "true" ) {
+        exclude.clear();
     }
     QStringList drives = getCmdOuts("partition-info" + exclude + " --min-size=" + MIN_ROOT_DEVICE_SIZE + " -n drives");
     diskCombo->clear();
@@ -2627,7 +2625,7 @@ bool MInstall::close()
 {
     if (proc->state() != QProcess::NotRunning) {
         int ans = QMessageBox::warning(0, QString::null,
-                                       PROJECTNAME + " " + tr("is installing, are you \nsure you want to Close now?"),
+                                       tr("%1 is installing, are you \nsure you want to Close now?").arg(PROJECTNAME),
                                        tr("Yes"), tr("No"));
         if (ans != 0) {
             return false;
@@ -2663,7 +2661,7 @@ void MInstall::delDone(int, QProcess::ExitStatus exitStatus)
         copyLinux();
     } else {
         nextButton->setEnabled(true);
-        unmountGoBack(tr("Failed to delete old") + " " + PROJECTNAME + " " + tr("on destination.\nReturning to Step 1."));
+        unmountGoBack(tr("Failed to delete old %1 on destination.\nReturning to Step 1.").arg(PROJECTNAME));
     }
 }
 
@@ -2804,7 +2802,7 @@ void MInstall::copyDone(int, QProcess::ExitStatus exitStatus)
         on_nextButton_clicked();
     } else {
         nextButton->setEnabled(true);
-        unmountGoBack(tr("Failed to write") + " " + PROJECTNAME + " " + tr("to destination.\nReturning to Step 1."));
+        unmountGoBack(tr("Failed to write %1 to destination.\nReturning to Step 1.").arg(PROJECTNAME));
     }
 }
 
@@ -2832,36 +2830,36 @@ void MInstall::copyTime()
     switch (i) {
     case 1:
         tipsEdit->setText(tr("<p><b>Getting Help</b><br/>"
-                             "Basic information about") + " " + PROJECTNAME + " " + tr("is at") + " " +  PROJECTURL + ".</p><p>"
-                             "" + tr("There are volunteers to help you at the") + " " + PROJECTSHORTNAME + " " + tr("forum,") + " " + PROJECTFORUM + "</p>"
-                             "<p>" + tr("If you ask for help, please remember to describe your problem and your computer "
-                             "in some detail. Usually statements like 'it didn't work' are not helpful.</p>"));
+                             "Basic information about %1 is at %2.</p><p>"
+                             "There are volunteers to help you at the %3 forum, %4</p>"
+                             "<p>If you ask for help, please remember to describe your problem and your computer "
+                             "in some detail. Usually statements like 'it didn't work' are not helpful.</p>").arg(PROJECTNAME).arg(PROJECTURL).arg(PROJECTSHORTNAME).arg(PROJECTFORUM));
         break;
 
     case 15:
         tipsEdit->setText(tr("<p><b>Repairing Your Installation</b><br/>"
-                             "If") + " " + PROJECTNAME + " " + tr("stops working from the hard drive, sometimes it's possible to fix the problem by booting from LiveDVD or LiveUSB and running one of the included utilities in") + " " + PROJECTNAME + " " + tr("or by using one of the regular Linux tools to repair the system.</p>"
-                             "<p>You can also use your") + " " + PROJECTNAME + " " + tr("LiveDVD or LiveUSB to recover data from MS-Windows systems!</p>"));
+                             "If %1 stops working from the hard drive, sometimes it's possible to fix the problem by booting from LiveDVD or LiveUSB and running one of the included utilities in %1 or by using one of the regular Linux tools to repair the system.</p>"
+                             "<p>You can also use your %1 LiveDVD or LiveUSB to recover data from MS-Windows systems!</p>").arg(PROJECTNAME));
         break;
 
     case 30:
-        tipsEdit->setText(tr("<p><b>Support") + " " + PROJECTNAME + "</b><br/>"
-                             "" + " " + PROJECTNAME + " " + tr("is supported by people like you. Some help others at the "
-                             "support forum") + " - " + PROJECTFORUM + " - " + tr("or translate help files into different "
-                             "languages, or make suggestions, write documentation, or help test new software.</p>"));
+        tipsEdit->setText(tr("<p><b>Support %1</b><br/>"
+                             "%1 is supported by people like you. Some help others at the "
+                             "support forum - %2 - or translate help files into different "
+                             "languages, or make suggestions, write documentation, or help test new software.</p>").arg(PROJECTNAME).arg(PROJECTFORUM));
         break;
 
     case 45:
-        tipsEdit->setText(tr("<p><b>Adjusting Your Sound Mixer</b><br/>") +
-                             " " + PROJECTNAME + " " + tr("attempts to configure the sound mixer for you but sometimes it will be "
+        tipsEdit->setText(tr("<p><b>Adjusting Your Sound Mixer</b><br/>"
+                             " %1 attempts to configure the sound mixer for you but sometimes it will be "
                              "necessary for you to turn up volumes and unmute channels in the mixer "
                              "in order to hear sound.</p> "
-                             "<p>The mixer shortcut is located in the menu. Click on it to open the mixer. </p>"));
+                             "<p>The mixer shortcut is located in the menu. Click on it to open the mixer. </p>").arg(PROJECTNAME));
         break;
 
     case 60:
-        tipsEdit->setText(tr("<p><b>Keep Your Copy of") + " " + PROJECTNAME + " " + tr("up-to-date</b><br/>"
-                             "For more information and updates please visit") + "</p><p>" + PROJECTFORUM + "</p>");
+        tipsEdit->setText(tr("<p><b>Keep Your Copy of %1 up-to-date</b><br/>"
+                             "For more information and updates please visit</p><p> %2</p>").arg(PROJECTNAME).arg(PROJECTFORUM));
         break;
 
     default:
