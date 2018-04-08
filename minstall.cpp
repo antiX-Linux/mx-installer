@@ -33,15 +33,15 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent)
     int i;
 
     //setup system variables
-
-    PROJECTNAME=getCmdOut("grep PROJECT_NAME /usr/share/installer-data/installer.conf |cut -d= -f2");
-    PROJECTSHORTNAME=getCmdOut("grep PROJECT_SHORTNAME /usr/share/installer-data/installer.conf |cut -d= -f2");
-    PROJECTVERSION=getCmdOut("grep VERSION /usr/share/installer-data/installer.conf |cut -d= -f2");
-    PROJECTURL=getCmdOut("grep PROJECT_URL /usr/share/installer-data/installer.conf |cut -d= -f2");
-    PROJECTFORUM=getCmdOut("grep FORUM_URL /usr/share/installer-data/installer.conf |cut -d= -f2");
-    INSTALL_FROM_ROOT_DEVICE=getCmdOut("grep INSTALL_FROM_ROOT_DEVICE /usr/share/installer-data/installer.conf |cut -d= -f2");
-    MIN_ROOT_DEVICE_SIZE=getCmdOut("grep MIN_ROOT_DRIVE_SIZE /usr/share/installer-data/installer.conf |cut -d= -f2");
-    DEFAULT_HOSTNAME=getCmdOut("grep DEFAULT_HOSTNAME /usr/share/installer-data/installer.conf |cut -d= -f2");
+    QSettings settings("/usr/share/installer-data/installer.conf", QSettings::NativeFormat);
+    PROJECTNAME=settings.value("PROJECT_NAME").toString();
+    PROJECTSHORTNAME=settings.value("PROJECT_SHORTNAME").toString();
+    PROJECTVERSION=settings.value("VERSION").toString();
+    PROJECTURL=settings.value("PROJECT_URL").toString();
+    PROJECTFORUM=settings.value("FORUM_URL").toString();
+    INSTALL_FROM_ROOT_DEVICE=settings.value("INSTALL_FROM_ROOT_DEVICE").toBool();
+    MIN_ROOT_DEVICE_SIZE=settings.value("MIN_ROOT_DRIVE_SIZE").toString();
+    DEFAULT_HOSTNAME=settings.value("DEFAULT_HOSTNAME").toString();
     qDebug() << PROJECTNAME << PROJECTSHORTNAME << PROJECTVERSION << PROJECTURL << PROJECTFORUM << DEFAULT_HOSTNAME;
 
     //do not offer home folder encyrption if so configured in installer.conf
@@ -2190,7 +2190,7 @@ void MInstall::refresh()
     this->updatePartitionWidgets();
     //  system("umount -a 2>/dev/null");
     QString exclude = " --exclude=boot";
-    if ( INSTALL_FROM_ROOT_DEVICE.simplified().toLower() == "true" ) {
+    if (INSTALL_FROM_ROOT_DEVICE) {
         exclude.clear();
     }
     QStringList drives = getCmdOuts("partition-info" + exclude + " --min-size=" + MIN_ROOT_DEVICE_SIZE + " -n drives");
@@ -2533,7 +2533,7 @@ void MInstall::on_diskCombo_activated(QString)
 
     // build rootCombo
     QString exclude;
-    if ( INSTALL_FROM_ROOT_DEVICE == "n" ) {
+    if (!INSTALL_FROM_ROOT_DEVICE) {
         exclude = "boot,";
     }
     QStringList partitions = getCmdOuts(QString("partition-info -n --exclude=" + exclude + "swap --min-size=" + MIN_ROOT_DEVICE_SIZE + " %1").arg(drv));

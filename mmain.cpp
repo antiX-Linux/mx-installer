@@ -31,10 +31,10 @@ MMain::MMain()
     helpbackdrop->resize(mainHelp->size());
 
     //setup system variables
-
-    PROJECTNAME=getCmdOut("grep PROJECT_NAME /usr/share/installer-data/installer.conf |cut -d= -f2");
-    PROJECTSHORTNAME=getCmdOut("grep PROJECT_SHORTNAME /usr/share/installer-data/installer.conf |cut -d= -f2");
-    PROJECTVERSION=getCmdOut("grep VERSION /usr/share/installer-data/installer.conf |cut -d= -f2");
+    QSettings settings("/usr/share/installer-data/installer.conf", QSettings::NativeFormat);
+    PROJECTNAME = settings.value("PROJECT_NAME").toString();
+    PROJECTSHORTNAME = settings.value("PROJECT_SHORTNAME").toString();
+    PROJECTVERSION = settings.value("VERSION").toString();
     setWindowTitle(PROJECTNAME + " " + tr("Installer"));
     firstShow = true;
 }
@@ -79,24 +79,4 @@ void MMain::resizeEvent(QResizeEvent *)
     minstall->resize(mainFrame->size());
     mainHelp->resize(tab->size());
     helpbackdrop->resize(mainHelp->size());
-}
-
-// util functions
-
-QString MMain::getCmdOut(QString cmd)
-{
-    char line[260];
-    const char* ret = "";
-    FILE* fp = popen(cmd.toUtf8(), "r");
-    if (fp == NULL) {
-        return QString (ret);
-    }
-    int i;
-    if (fgets(line, sizeof line, fp) != NULL) {
-        i = strlen(line);
-        line[--i] = '\0';
-        ret = line;
-    }
-    pclose(fp);
-    return QString (ret);
 }

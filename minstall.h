@@ -123,12 +123,13 @@ public:
     bool setUserInfo();
     bool setUserName();
 
+
+    bool INSTALL_FROM_ROOT_DEVICE;
     QString PROJECTNAME;
     QString PROJECTVERSION;
     QString PROJECTSHORTNAME;
     QString PROJECTURL;
     QString PROJECTFORUM;
-    QString INSTALL_FROM_ROOT_DEVICE;
     QString MIN_ROOT_DEVICE_SIZE;
     QString DEFAULT_HOSTNAME;
 
