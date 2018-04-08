@@ -42,6 +42,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent)
     INSTALL_FROM_ROOT_DEVICE=settings.value("INSTALL_FROM_ROOT_DEVICE").toBool();
     MIN_ROOT_DEVICE_SIZE=settings.value("MIN_ROOT_DRIVE_SIZE").toString();
     DEFAULT_HOSTNAME=settings.value("DEFAULT_HOSTNAME").toString();
+    ENABLE_SERVICES=settings.value("ENABLE_SERVICES").toStringList();
     qDebug() << PROJECTNAME << PROJECTSHORTNAME << PROJECTVERSION << PROJECTURL << PROJECTFORUM << DEFAULT_HOSTNAME;
 
     //do not offer home folder encyrption if so configured in installer.conf
