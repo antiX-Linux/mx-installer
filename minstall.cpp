@@ -1955,9 +1955,10 @@ void MInstall::goBack(QString msg)
 int MInstall::showPage(int curr, int next)
 {
     bool pretend = false;
-    if (args.size() > 1) {
-        if(args.at(1) == "--pretend" || args.at(1) == "-p") {
+    foreach (const QString &arg, args) {
+        if(arg == "--pretend" || arg == "-p") {
             pretend = true;
+            break;
         }
     }
     if (next == 1 && curr == 0) {
@@ -2048,10 +2049,10 @@ void MInstall::pageDisplayed(int next)
         break;
 
     case 3:
-        if (args.size() > 1) {
-            if(args.at(1) == "--pretend" || args.at(1) == "-p") {
+        foreach (const QString &arg, args) {
+            if(arg == "--pretend" || arg == "-p") {
                 gotoPage(4);
-                break;
+                return;
             }
         }
         if (!checkDisk()) {
