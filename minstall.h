@@ -33,39 +33,6 @@ protected:
     QTimer *timer;
     QProgressBar *bar;
     QFutureWatcher<void> futureWatcher;
-    QTreeWidgetItem *webminItem;
-    QTreeWidgetItem *sshItem;
-    QTreeWidgetItem *cupsItem;
-    QTreeWidgetItem *mysqlItem;
-    QTreeWidgetItem *cpufreqItem;
-    QTreeWidgetItem *anacronItem;
-    QTreeWidgetItem *dbusItem;
-    QTreeWidgetItem *cronItem;
-    QTreeWidgetItem *gpmItem;
-    QTreeWidgetItem *sudoItem;
-    QTreeWidgetItem *postfixItem;
-    QTreeWidgetItem *sanedItem;
-    QTreeWidgetItem *rsyncItem;
-    QTreeWidgetItem *bindItem;
-    QTreeWidgetItem *dhcpItem;
-    QTreeWidgetItem *spamassassinItem;
-    QTreeWidgetItem *shorewallItem;
-    QTreeWidgetItem *snortItem;
-    QTreeWidgetItem *squidItem;
-    QTreeWidgetItem *bluetoothItem;
-    QTreeWidgetItem *guarddogItem;
-    QTreeWidgetItem *networkmanagerItem;
-    QTreeWidgetItem *isdnItem;
-    QTreeWidgetItem *nfsItem;
-    QTreeWidgetItem *openvpnItem;
-    QTreeWidgetItem *smartmontoolsItem;
-    QTreeWidgetItem *acpidItem;
-    QTreeWidgetItem *hddtempItem;
-    QTreeWidgetItem *acpifakekeyItem;
-    QTreeWidgetItem *havegedItem;
-    QTreeWidgetItem *avahiItem;
-
-
     QDialog *mmn;
 
 
