@@ -71,7 +71,7 @@ protected:
 
 public:
     /** constructor */
-    MInstall(QWidget* parent=0);
+    MInstall(QWidget* parent=0, QStringList args = QStringList());
     /** destructor */
     ~MInstall();
 
@@ -79,6 +79,7 @@ public:
 
     int removedItemIndex;
     QString removedItem;
+    QStringList args;
 
     void goBack(QString msg);
     void unmountGoBack(QString msg);
@@ -122,7 +123,6 @@ public:
     bool setPasswords();
     bool setUserInfo();
     bool setUserName();
-
 
     bool INSTALL_FROM_ROOT_DEVICE;
     QString PROJECTNAME;

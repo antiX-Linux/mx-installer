@@ -23,9 +23,10 @@
 #include <QDebug>
 
 
-MInstall::MInstall(QWidget *parent) : QWidget(parent)
+MInstall::MInstall(QWidget *parent, QStringList args) : QWidget(parent)
 {
     setupUi(this);
+    this->args = args;
     labelMX->setPixmap(QPixmap("/usr/share/installer-data/logo.png"));
     char line[260];
     char *tok;
@@ -1949,8 +1950,16 @@ void MInstall::goBack(QString msg)
     gotoPage(1);
 }
 
+
+// logic displaying pages
 int MInstall::showPage(int curr, int next)
 {
+    bool pretend = false;
+    if (args.size() > 1) {
+        if(args.at(1) == "--pretend" || args.at(1) == "-p") {
+            pretend = true;
+        }
+    }
     if (next == 1 && curr == 0) {
     } else if (next == 2 && curr == 1) {
         if (entireDiskButton->isChecked()) {
@@ -1959,6 +1968,9 @@ int MInstall::showPage(int curr, int next)
     } else if (next == 3 && curr == 4) {
         return 1;
     } else if (next == 5 && curr == 4) {
+        if (pretend) {
+            return next + 1; // skip Services screen
+        }
         if (!installLoader()) {
             return curr;
         } else {
@@ -1966,14 +1978,23 @@ int MInstall::showPage(int curr, int next)
         }
 
     } else if (next == 9 && curr == 8) {
+        if (pretend) {
+            return next;
+        }
         if (!setUserInfo()) {
             return curr;
         }
     } else if (next == 7 && curr == 6) {
+        if (pretend) {
+            return next;
+        }
         if (!setComputerName()) {
             return curr;
         }
     } else if (next == 8 && curr == 7) {
+        if (pretend) {
+            return next;
+        }
         setLocale();
         // Detect snapshot-backup account(s)
         // test if there's another user than demo in /home, if exists, copy the /home and skip to next step, also skip account setup if demo is present on squashfs
@@ -1985,6 +2006,9 @@ int MInstall::showPage(int curr, int next)
             next +=1;
         }
     } else if (next == 6 && curr == 5) {
+        if (pretend) {
+            return 7;
+        }
         setServices();
         return 7; // goes back to the screen that called Services screen
     } else if (next == 4 && curr == 5) {
@@ -2024,6 +2048,12 @@ void MInstall::pageDisplayed(int next)
         break;
 
     case 3:
+        if (args.size() > 1) {
+            if(args.at(1) == "--pretend" || args.at(1) == "-p") {
+                gotoPage(4);
+                break;
+            }
+        }
         if (!checkDisk()) {
             goBack(tr("Returning to Step 1 to select another disk."));
             break;
@@ -2213,6 +2243,17 @@ void MInstall::buildServiceList()
     //setup csView
     csView->header()->setMinimumSectionSize(150);
     csView->header()->resizeSection(0,150);
+
+//    foreach (const QString &service, ENABLE_SERVICES) {
+//        QTreeWidgetItem *item = new QTreeWidgetItem(csView);
+
+//        QString val = getCmdValue("dpkg -s " + service + " | grep '^Status'", "ok", " ", " ");
+//        if (val == "installed") {
+//            item->setCheckState(0, Qt::Checked);
+//        } else {
+//            item = NULL;
+//        }
+//    }
 
     QTreeWidgetItem *adminItem = new QTreeWidgetItem(csView);
     adminItem->setText(0, tr("Administration"));
