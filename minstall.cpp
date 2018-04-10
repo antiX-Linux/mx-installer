@@ -2010,8 +2010,8 @@ void MInstall::buildServiceList()
         QString category, description;
         category = list.at(0);
         description = list.at(1);
-        QString val = getCmdValue("dpkg -s " + service + " | grep '^Status'", "ok", " ", " ");
-        if (val == "installed") {
+
+        if (QFile("/etc/init.d/" + service).exists()) {
             QList<QTreeWidgetItem *> found_items = csView->findItems(category, Qt::MatchExactly, 0);
             QTreeWidgetItem *top_item;
             QTreeWidgetItem *item;
