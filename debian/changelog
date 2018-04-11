@@ -1,3 +1,9 @@
+mx-installer (18.4.01mx17) mx; urgency=medium
+
+  * 32 bit UEFI support 
+
+ -- dolphin oracle <dolphinoracle@gmail.com>  Wed, 11 Apr 2018 18:40:51 -0400
+
 mx-installer (18.3mx17) mx; urgency=medium
 
   * adjusted filter for root partitions
