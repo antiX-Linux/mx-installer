@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 11 Apr 2018 21:17:45 -0400
+Source: mx-installer
+Binary: mx-installer
+Architecture: i386
+Version: 18.4.02mx17
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-installer - GUI installer for MX Linux.
+Changes:
+ mx-installer (18.4.02mx17) mx; urgency=medium
+ .
+   * new build
+Checksums-Sha1:
+ b8d0482b3677fde4f43149dff0ba9a2ad8079396 427434 mx-installer_18.4.02mx17_i386.deb
+Checksums-Sha256:
+ 1019e7ab70e5ebe08433812883b47b6fe4460dfaa4ceb877373c5750bdaac1b2 427434 mx-installer_18.4.02mx17_i386.deb
+Files:
+ 94e99408d2d743bfd085191594431959 427434 system optional mx-installer_18.4.02mx17_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJazr43AAoJEHCTjHgGee6YWjwH/1OzSrdlbeMLMKriUtMXwtZX
+ak2cNq3aBKx4+DKnSybRPvzSc1cgqqEt/3r1az/EktnehxCTzG37mXeH380UWcEs
+dx8Rfo+LeYhSaBmqzw3s0bNc2ZvUodxvuzvRnNn5B41wwIL4KA17RZYtKGiAUtdI
+KDKUbT8+CGaFolq2kVrY8LuvUVMNxaXMgOVrO/bYUvbCAAQBBWlnQ6Lx0+ceGw+e
+GKD5mSqhd3kY9d0HPfNwLsE4HODx1X6eaI0P6zIQ1NzZnu44Dt93Abh197Kyt97K
+rNoacVsMg3+5lyYJOoTgUYFcBTXRzPxSHq55qdbHuwol4TBZbJpLMi30+f8D+Qs=
+=eZmi
+-----END PGP SIGNATURE-----

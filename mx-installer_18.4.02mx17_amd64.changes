@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 11 Apr 2018 21:17:45 -0400
+Source: mx-installer
+Binary: mx-installer
+Architecture: source amd64
+Version: 18.4.02mx17
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-installer - GUI installer for MX Linux.
+Changes:
+ mx-installer (18.4.02mx17) mx; urgency=medium
+ .
+   * new build
+Checksums-Sha1:
+ 68ec59755d9d076d21f364dea6ac2614815b9be8 1159 mx-installer_18.4.02mx17.dsc
+ 7695efa6e5d2b6e2c53e52de42d75b86c1ec5ae7 346652 mx-installer_18.4.02mx17.tar.xz
+ 5365a7036f41454b492edb53949c29d228f43c25 425316 mx-installer_18.4.02mx17_amd64.deb
+Checksums-Sha256:
+ 68010a8b3b50e3835c8e161f5cca912a052ac11eb9f5552841b7a12ad8862384 1159 mx-installer_18.4.02mx17.dsc
+ a16abf6cce6bc02bd7260753a760d5f5f689febc30e41ca74c4c4e01294cd91a 346652 mx-installer_18.4.02mx17.tar.xz
+ 2a7117c4a7ea14bd3bb21b355d2694492fbc7584a105905ae404fe071cbb37e9 425316 mx-installer_18.4.02mx17_amd64.deb
+Files:
+ 84be36fa63c60f1fcce11a82d30de9ab 1159 system optional mx-installer_18.4.02mx17.dsc
+ 19f26a2ebb73ded362dd55925a10ca77 346652 system optional mx-installer_18.4.02mx17.tar.xz
+ 40ca54db271580f4761d3e7283cd1914 425316 system optional mx-installer_18.4.02mx17_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJazrQGAAoJEHCTjHgGee6YWswH/iBBQIB/3/q2p9cY3CBny5L1
+npANRN9LHnDG4z0/so+cBQBzs9a0tKkqT5No83fUWZbakzt5c4QELG0gdfrtEdh6
+CGJlWYWOErfxoXPOhKqXDN9Km7ci9wPp5PivzMGI6q1gDyEEYvx+L4Cbnv01Abd4
+5kfEgvA3Sk9UE63ll9mwira2w6NT/PVGH/0pvf1p/h46JeO4rFA8EW5+cmmQhrYi
+rPNQSXpXOX4MJbVV0SiUb5et+zVvuuPQEOCC2rFLq3DoTYQlbuoKoD5qdmDNTVCp
+uMIGSKEcRj9/QHf355gsBUZoiIDt4I9Ja7SrGCsy06bpKrey2LQApGj5AVo9E5c=
+=WDz3
+-----END PGP SIGNATURE-----
