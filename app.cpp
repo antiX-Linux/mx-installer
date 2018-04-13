@@ -28,6 +28,7 @@
 #include "mmain.h"
 
 
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -56,15 +57,14 @@ int main(int argc, char *argv[])
                                                                            " unless you select Legacy Boot or similar at restart.\n"
                                                                            "We recommend you quit now and restart in Legacy Boot\n\n"
                                                                            "Do you want to continue the installation?"),
-                                        QApplication::tr("Yes"), QApplication::tr("No"));
+                                    QApplication::tr("Yes"), QApplication::tr("No"));
         if (ans != 0) {
             return 1;
         }
     }
 
-
     if (getuid() == 0) {
-        MMain mmain;
+        MMain mmain(a.arguments());
         mmain.show();
         return a.exec();
     } else {

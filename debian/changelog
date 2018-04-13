@@ -1,8 +1,28 @@
+mx-installer (18.4.04mx17) mx; urgency=medium
+
+  * misc. changes for antiX/mx  
+
+ -- dolphinoracle <dolphin@mx>  Wed, 11 Apr 2018 21:33:42 -0400
+
+mx-installer (18.4.03mx17) mx; urgency=medium
+
+  *  new services module (adrian)
+
+ -- dolphinoracle <dolphin@mx>  Sun, 08 Apr 2018 20:08:53 -0400
+
 mx-installer (18.4.01mx17) mx; urgency=medium
 
-  * 32 bit UEFI support 
+  * heavy modification in effort to make customizations easier
+  * 32 bit UEFI installer 
+  * installer.conf file
 
- -- dolphin oracle <dolphinoracle@gmail.com>  Wed, 11 Apr 2018 18:40:51 -0400
+ -- dolphinoracle <dolphinoracle@gmail.com>  Fri, 06 Apr 2018 21:42:55 -0400
+
+mx-installer (18.3.01mx17) mx; urgency=medium
+
+  * adjusted filter for root partitions
+
+ -- dolphinoracle <dolphinoracle@gmail.com>  Sun, 25 Mar 2018 13:02:23 -0500
 
 mx-installer (18.3mx17) mx; urgency=medium
 

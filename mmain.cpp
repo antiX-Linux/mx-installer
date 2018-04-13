@@ -17,16 +17,25 @@
 #include "mmain.h"
 #include "minstall.h"
 
+#include "QDebug"
+
 MInstall *minstall;
 bool firstShow;
 
-MMain::MMain()
+MMain::MMain(QStringList args = QStringList())
 {
     setupUi(this);
-    minstall = new MInstall(mainFrame);
+    minstall = new MInstall(mainFrame, args);
     minstall->resize(mainFrame->size());
     mainHelp->resize(tab->size());
     helpbackdrop->resize(mainHelp->size());
+
+    //setup system variables
+    QSettings settings("/usr/share/installer-data/installer.conf", QSettings::NativeFormat);
+    PROJECTNAME = settings.value("PROJECT_NAME").toString();
+    PROJECTSHORTNAME = settings.value("PROJECT_SHORTNAME").toString();
+    PROJECTVERSION = settings.value("VERSION").toString();
+    setWindowTitle(PROJECTNAME + " " + tr("Installer"));
     firstShow = true;
 }
 
