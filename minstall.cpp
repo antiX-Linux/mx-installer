@@ -59,6 +59,8 @@ MInstall::MInstall(QWidget *parent, QStringList args) : QWidget(parent)
         computerGroupLabel->setEnabled(false);
         computerGroupEdit->setEnabled(false);
         computerGroupEdit->setText("");
+        sambaCheckBox->setChecked(false);
+        sambaCheckBox->setEnabled(false);
     }
 
     // set default host name
