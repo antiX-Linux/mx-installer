@@ -1,3 +1,17 @@
+mx-installer (18.4.06mx17) mx; urgency=medium
+
+  *  text changes
+
+ -- dolphinoracle <dolphin@mx>  Fri, 13 Apr 2018 22:52:04 -0400
+
+mx-installer (18.4.05mx17) mx; urgency=medium
+
+  * misc. changes to sync up antiX/mx installs
+  * new live-to-installed script 
+  * incorporating changes from anticapitalista 
+
+ -- dolphinoracle <dolphin@mx>  Fri, 13 Apr 2018 18:38:35 -0400
+
 mx-installer (18.4.04mx17) mx; urgency=medium
 
   * misc. changes for antiX/mx  
