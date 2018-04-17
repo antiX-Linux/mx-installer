@@ -1822,6 +1822,7 @@ void MInstall::pageDisplayed(int next)
                                        "<p><b>Preferred Filesystem Type</b><br/>For %1, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. </p>"
                                        "<p><b>Bad Blocks</b><br/>If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for bad blocks on the drive. "
                                        "The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has bad blocks.</p>").arg(PROJECTNAME));
+        ((MMain *)mmn)->mainHelp->resize(((MMain *)mmn)->tab->size());
         break;
 
     case 3:
@@ -2490,17 +2491,20 @@ void MInstall::setupkeyboardbutton()
     QString kb;
     kb = getCmdOut("grep XKBMODEL /etc/default/keyboard");
     kb = kb.section('=', 1);
-    kb = kb.section(',', 0, 0);
+    //kb = kb.section(',', 0, 0);
+    kb.replace(","," ");
     kb.remove(QChar('"'));
     QString kb2;
     kb2 = getCmdOut("grep XKBLAYOUT /etc/default/keyboard");
     kb2 = kb2.section('=', 1);
-    kb2 = kb2.section(',', 0, 0);
+    //kb2 = kb2.section(',', 0, 0);
+    kb2.replace(","," ");
     kb2.remove(QChar('"'));
     QString kb3;
     kb3 = getCmdOut("grep XKBVARIANT /etc/default/keyboard");
     kb3 = kb3.section('=', 1);
-    kb3 = kb3.section(',', 0, 0);
+    //kb3 = kb3.section(',', 0, 0);
+    kb3.replace(","," ");
     kb3.remove(QChar('"'));
     labelModel->setText(kb);
     labelLayout->setText(kb2);
@@ -2512,23 +2516,23 @@ void MInstall::on_buttonSetKeyboard_clicked()
     mmn->hide();
     system("fskbsetting");
     mmn->show();
-    QString kb;
-    kb = getCmdOut("grep XKBMODEL /etc/default/keyboard");
-    kb = kb.section('=', 1);
-    kb = kb.section(',', 0, 0);
-    kb.remove(QChar('"'));
-    QString kb2;
-    kb2 = getCmdOut("grep XKBLAYOUT /etc/default/keyboard");
-    kb2 = kb2.section('=', 1);
-    kb2 = kb2.section(',', 0, 0);
-    kb2.remove(QChar('"'));
-    QString kb3;
-    kb3 = getCmdOut("grep XKBVARIANT /etc/default/keyboard");
-    kb3 = kb3.section('=', 1);
-    kb3 = kb3.section(',', 0, 0);
-    kb3.remove(QChar('"'));
-    QString cmd = "setxkbmap -model " + kb + " -layout " + kb2 + " -variant " + kb3;
-    system(cmd.toUtf8());
+//    QString kb;
+//    kb = getCmdOut("grep XKBMODEL /etc/default/keyboard");
+//    kb = kb.section('=', 1);
+//    //kb = kb.section(',', 0, 0);
+//    kb.remove(QChar('"'));
+//    QString kb2;
+//    kb2 = getCmdOut("grep XKBLAYOUT /etc/default/keyboard");
+//    kb2 = kb2.section('=', 1);
+//    kb2 = kb2.section(',', 0, 0);
+//    kb2.remove(QChar('"'));
+//    QString kb3;
+//    kb3 = getCmdOut("grep XKBVARIANT /etc/default/keyboard");
+//    kb3 = kb3.section('=', 1);
+//    kb3 = kb3.section(',', 0, 0);
+//    kb3.remove(QChar('"'));
+//    //QString cmd = "setxkbmap -model " + kb + " -layout " + kb2 + " -variant " + kb3;
+//    //system(cmd.toUtf8());
     setupkeyboardbutton();
 
 
