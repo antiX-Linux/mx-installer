@@ -1,3 +1,9 @@
+mx-installer (18.4.03mx17) mx; urgency=medium
+
+  * nvme and mmcblk support in autoinstaller
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 16 Apr 2018 19:51:22 -0400
+
 mx-installer (18.4.02mx17) mx; urgency=medium
 
   * new build
